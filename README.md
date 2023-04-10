@@ -39,7 +39,7 @@ Join us on [Discord](https://discord.com/invite/D7FNG2q)
 ### nvm
 
 - [Install nvm]([https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm/blob/master/README.md#install--update-script)
-- Restart your terminal after installing nvm
+- Restart your terminal
 
 ### Elixir
 
