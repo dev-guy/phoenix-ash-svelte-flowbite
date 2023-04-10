@@ -4,19 +4,17 @@
 
 This is a Phoenix 1.7 LiveView project that combines:
 
-- Ash Framework (with Phlegethon)
-- Svelte
-- Flowbite
+- [x] Ash Framework (with Phlegethon and Ash Authentication)
+- [x] Svelte via [LiveSvelte](https://github.com/woutdp/live_svelte)
+- [ ] Flowbite
 
 ## Requirements
 
-- Erlang
-- Elixir
-- Postgres
+### Install Postgres
 
-## Installing Erlang and Elixir
+### Install Erlang and Elixir
 
-### MacOS
+#### MacOS
 
 ```sh
 brew install asdf
@@ -48,9 +46,11 @@ Open a browser to http://localhost:4000
 
 Go to http://localhost:4000/svelte
 
+This is similar to the [basic number increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef?version=3.29.0).
+
 ## References
 
-1. [Installing Ash Authentication](https://hexdocs.pm/ash_authentication_phoenix/getting-started-with-ash-authentication-phoenix.html)
-2. [Installing Phlegethon](https://github.com/frankdugan3/phlegethon/blob/main/documentation/tutorials/get-started.md)
-3. [Installing LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
-
+1. [Install Ash Authentication](https://hexdocs.pm/ash_authentication_phoenix/getting-started-with-ash-authentication-phoenix.html)
+2. [Install Phlegethon](https://github.com/frankdugan3/phlegethon/blob/main/documentation/tutorials/get-started.md)
+3. [Install LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
+4. [Install Flowbite-Svelte](https://medium.com/mkdir-awesome/getting-started-with-flowbite-svelte-37b086ce9db5)
