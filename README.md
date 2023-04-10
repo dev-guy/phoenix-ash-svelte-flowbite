@@ -10,8 +10,9 @@ This is a Phoenix 1.7 LiveView project that combines:
 
 ## Features
 
-- Dark/light mode toggling
+- Dark/light mode toggle
 - Login screen
+- Users and passwords (hashed) stored in Postgres
 
 ## Requirements
 
