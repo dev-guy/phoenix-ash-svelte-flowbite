@@ -20,8 +20,10 @@ MIT
 
 ## Credits
 
-- This project was created by Terris Linenbach with help from the Ash community
-- Ash Framework is sponsored by [Alembic](https://alembic.com.au)
+This repository was created by [Terris Linenbach](https://genserver.social/Terris) in April 2023 with tremendous amounts of assistance from the friendly Ash community.
+
+## Getting help and additional information
+
 - Join us on [Discord](https://discord.com/invite/D7FNG2q)
 
 ## Requirements
