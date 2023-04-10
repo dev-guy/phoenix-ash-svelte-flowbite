@@ -14,12 +14,12 @@ This is a sample full-stack web browser application demonstrating:
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://github.com/woutdp/live_svelte)
 - [x] [Flowbite](https://flowbite.com) components
 
-## Features
+## Demonstrated Features
 
 - Toggle dark and light theme
 - Login screen with users and hashed passwords in Postgres
 - [Svelte component](https://github.com/woutdp/live_svelte#create-a-svelte-component) similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
-- Flowbite DatePicker component (supports dark mode!)
+- [Flowbite Date Picker](https://flowbite.com/docs/plugins/datepicker/) (supports dark mode!)
 
 ## License
 
