@@ -9,7 +9,7 @@
   "devDependencies": {
     "@popperjs/core": "^2.11.7",
     "classnames": "^2.3.2",
-    "esbuild": "^0.16.17",
+    "esbuild": "0.16.17",
     "esbuild-plugin-import-glob": "^0.1.1",
     "esbuild-svelte": "^0.7.3",
     "flowbite": "^1.6.4",
