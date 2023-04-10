@@ -16,6 +16,7 @@ This is a sample full-stack web browser sample application demonstrating:
 
 - Dark and light mode buttons
 - Login screen with users and hashed passwords in Postgres
+- The Svelte example is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef?version=3.29.0) but it communicates with the backend via Websockets
 
 ## License
 
@@ -33,22 +34,23 @@ Join us on [Discord](https://discord.com/invite/D7FNG2q)
 
 ### Postgres
 
-[Installation](https://www.postgresql.org/docs/current/tutorial-install.html)
+[Installing Postgres](https://www.postgresql.org/docs/current/tutorial-install.html)
 
 ### nvm
 
 - [Install nvm]([https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm/blob/master/README.md#install--update-script)
-- Restart your terminal after installing
+- Restart your terminal after installing nvm
 
 ### Elixir
 
-Restart your terminal after installing.
+Restart your terminal after installing Elixir.
 
 #### MacOS
 
-First, [install Homebrew](https://docs.brew.sh/Installation) and restart your terminal.
+- [Install Homebrew](https://docs.brew.sh/Installation)
+- Restart your terminal
 
-You can use [Homebrew](https://docs.brew.sh) to install Elixir but asdf is the preferred method in the Elixir community.
+You can use `brew` to install Elixir but `asdf` is preferred by the Elixir community.
 
 Either: `brew install elixir` or:
 
@@ -80,10 +82,6 @@ mix phx.server
 ```
 
 Open a browser to http://localhost:4000
-
-### Svelte example
-
-The example at http://localhost:4000/svelte is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef?version=3.29.0).
 
 ## Referencess
 
