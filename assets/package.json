@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "live_svelte": "file:../deps/live_svelte",
+    "phlegethon": "file:../deps/phlegethon",
+    "phoenix": "file:../deps/phoenix",
+    "phoenix_html": "file:../deps/phoenix_html",
+    "phoenix_live_view": "file:../deps/phoenix_live_view"
+  },
+  "devDependencies": {
+    "@popperjs/core": "^2.11.7",
+    "classnames": "^2.3.2",
+    "esbuild": "^0.16.17",
+    "esbuild-plugin-import-glob": "^0.1.1",
+    "esbuild-svelte": "^0.7.3",
+    "flowbite": "^1.6.4",
+    "flowbite-svelte": "^0.34.7",
+    "svelte": "^3.58.0",
+    "svelte-preprocess": "^5.0.3"
+  }
+}
