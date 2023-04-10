@@ -1,10 +1,10 @@
 # Phoenix + Ash + Svelte + Flowbite Demo
 
-<img src="https://seeklogo.com/images/P/phoenix-logo-D15F067911-seeklogo.com.png" height=45 width=45><img align="top" src="https://ash-hq.org/images/ash-logo-side.svg" height=50 width=100><nbsp><img  src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height=45 width=45><img src="https://flowbite-svelte.com/images/flowbite-svelte-icon-logo.svg" height=45 width=45>
+<img src="https://seeklogo.com/images/P/phoenix-logo-D15F067911-seeklogo.com.png" height=40 width=45><img align="top" src="https://ash-hq.org/images/ash-logo-side.svg" height=50 width=100><nbsp><img  src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height=45 width=45><img src="https://flowbite-svelte.com/images/flowbite-svelte-icon-logo.svg" height=45 width=45>
 
 ## Introduction
 
-This is a sample full-stack web browser sample application demonstrating:
+This is a sample full-stack web browser application demonstrating:
 
 - [x] [Phoenix](https://www.phoenixframework.org/) 1.7
 - [x] [Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html) 0.18 
@@ -83,7 +83,7 @@ mix phx.server
 
 Open a browser to http://localhost:4000
 
-## Referencess
+## References
 
 1. [Install Phoenix](https://hexdocs.pm/phoenix/installation.html)
 2. [Install Ash Authentication](https://hexdocs.pm/ash_authentication_phoenix/getting-started-with-ash-authentication-phoenix.html)
