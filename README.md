@@ -28,14 +28,16 @@ Join us on [Discord](https://discord.com/invite/D7FNG2q)
 
 ## Requirements
 
-### Install Postgres
+### Postgres
 
-### Install nvm
+[Installation](https://www.postgresql.org/docs/current/tutorial-install.html)
+
+### nvm
 
 - See [nvm](https://github.com/nvm-sh/nvm)
 - Restart your terminal after installing
 
-### Install Elixir
+### Elixir
 
 #### MacOS
 
