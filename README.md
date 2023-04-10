@@ -10,7 +10,7 @@ This is a [Phoenix](https://www.phoenixframework.org/) 1.7 LiveView example that
 
 ## Features
 
-- Dark/light mode toggle
+- Dark and light mode buttons
 - Login screen
 - Users and passwords (hashed) stored in Postgres
 
@@ -34,14 +34,20 @@ Join us on [Discord](https://discord.com/invite/D7FNG2q)
 
 ### nvm
 
-- See [nvm](https://github.com/nvm-sh/nvm)
+- [Install nvm]([https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm/blob/master/README.md#install--update-script)
 - Restart your terminal after installing
 
 ### Elixir
 
+Restart your terminal after installing.
+
 #### MacOS
 
-You can use brew but asdf is the preferred method in the Elixir community.
+First, [install Homebrew](https://docs.brew.sh/Installation) and restart your terminal.
+
+You can use [Homebrew](https://docs.brew.sh) to install Elixir but asdf is the preferred method in the Elixir community.
+
+Either: `brew install elixir` or:
 
 ```sh
 brew install asdf
@@ -58,8 +64,6 @@ asdf plugin add elixir
 asdf install elixir 1.14.4-otp-25
 asdf global elixir 1.14.4-otp-25
 ```
-
-Restart your terminal after installing.
 
 ## Usage
 
