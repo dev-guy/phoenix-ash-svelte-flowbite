@@ -1,5 +1,5 @@
 # `/lib/app_web/live/live_svelte.ex`
-defmodule KantanWeb.SvelteLive do
+defmodule KantanWeb.SvelteExample do
   use KantanWeb, :live_view
 
   def render(assigns) do
