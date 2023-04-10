@@ -36,10 +36,12 @@ Join us on [Discord](https://discord.com/invite/D7FNG2q)
 
 ```sh
 brew install asdf
+# I use zsh. Change the following line to >> ~/.bashrc if you use bash.
+echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
+# Restart your terminal
 # Find the current versions of erlang and elixir:
 # asdf list-all erlang
 # asdf list-all elixir
-echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 asdf plugin add erlang
 KERL_BUILD_DOCS=yes asdf install erlang 25.3 # For VSCode extension
 asdf global erlang 25.3
