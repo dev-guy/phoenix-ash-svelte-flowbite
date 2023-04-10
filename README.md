@@ -1,4 +1,6 @@
-# Phoenix LiveView Ash Svelte Flowbite Starter
+# Ash Framework + Phoenix LiveView + Svelte + Flowbite Example
+
+<img align="top" src="https://ash-hq.org/images/ash-logo-side.svg" height=50 width=100><nbsp><img  src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height=45 width=45><img src="https://flowbite-svelte.com/images/flowbite-svelte-icon-logo.svg" height=45 width=45>
 
 ## Introduction
 
@@ -10,7 +12,7 @@ This is a [Phoenix](https://www.phoenixframework.org/) 1.7 LiveView example that
 
 ## Features
 
-- Dark/light mode toggle
+- Dark and light mode buttons
 - Login screen
 - Users and passwords (hashed) stored in Postgres
 
@@ -20,24 +22,34 @@ MIT
 
 ## Credits
 
-This repository was created by [Terris Linenbach](https://genserver.social/Terris) in April 2023 with tremendous amounts of assistance from the friendly Ash community.
+This repository was created by [Terris Linenbach](https://genserver.social/Terris) in April 2023 with assistance from the friendly Ash community.
 
-## Getting help and additional information
+## Help and additional information
 
 Join us on [Discord](https://discord.com/invite/D7FNG2q)
 
 ## Requirements
 
-### Install Postgres
+### Postgres
 
-### Install nvm
+[Installation](https://www.postgresql.org/docs/current/tutorial-install.html)
 
-- See [nvm](https://github.com/nvm-sh/nvm)
-- Restart terminal after installing
+### nvm
 
-### Install Elixir
+- [Install nvm]([https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm/blob/master/README.md#install--update-script)
+- Restart your terminal after installing
+
+### Elixir
+
+Restart your terminal after installing.
 
 #### MacOS
+
+First, [install Homebrew](https://docs.brew.sh/Installation) and restart your terminal.
+
+You can use [Homebrew](https://docs.brew.sh) to install Elixir but asdf is the preferred method in the Elixir community.
+
+Either: `brew install elixir` or:
 
 ```sh
 brew install asdf
@@ -54,8 +66,6 @@ asdf plugin add elixir
 asdf install elixir 1.14.4-otp-25
 asdf global elixir 1.14.4-otp-25
 ```
-
-Restart terminal after installing
 
 ## Usage
 
@@ -74,13 +84,15 @@ Open a browser to http://localhost:4000
 
 The example at http://localhost:4000/svelte is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef?version=3.29.0).
 
-## References
+## Referencess
 
 1. [Install Phoenix](https://hexdocs.pm/phoenix/installation.html)
 2. [Install Ash Authentication](https://hexdocs.pm/ash_authentication_phoenix/getting-started-with-ash-authentication-phoenix.html)
 3. [Install Phlegethon](https://github.com/frankdugan3/phlegethon/blob/main/documentation/tutorials/get-started.md)
 4. [Install LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
-5. [Getting Started: Phoenix 1.7 with Svelte](https://medium.com/@alistairisrael/phoenix-1-7-with-svelte-12257d853ed1)
-6. [LiveSvelte - E2E reactivity in LiveView with Svelte](https://elixirforum.com/t/livesvelte-e2e-reactivity-in-liveview-with-svelte/54822/4)
-7. [Install Flowbite-Svelte](https://medium.com/mkdir-awesome/getting-started-with-flowbite-svelte-37b086ce9db5)
-8. [Tailwind CSS Phoenix (Elixir) - Flowbite](https://flowbite.com/docs/getting-started/phoenix/)
+5. [Phoenix and Third-Party JS Packages](https://hexdocs.pm/phoenix/asset_management.html)
+6. [Getting Started: Phoenix 1.7 with Svelte](https://medium.com/@alistairisrael/phoenix-1-7-with-svelte-12257d853ed1)
+7. [LiveSvelte - E2E reactivity in LiveView with Svelte](https://elixirforum.com/t/livesvelte-e2e-reactivity-in-liveview-with-svelte/54822/4)
+8. [Install Flowbite-Svelte](https://medium.com/mkdir-awesome/getting-started-with-flowbite-svelte-37b086ce9db5)
+9. [Tailwind CSS Phoenix (Elixir) - Flowbite](https://flowbite.com/docs/getting-started/phoenix/)
+
