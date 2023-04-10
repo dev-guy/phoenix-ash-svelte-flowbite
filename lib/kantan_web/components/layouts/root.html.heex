@@ -12,6 +12,22 @@
     </script>
   </head>
   <body class="bg-white antialiased">
+<header class="px-4 sm:px-6 lg:px-8">
+  <div class="flex items-center justify-between border-b border-zinc-100 py-3 text-sm">
+    <div class="flex items-center gap-4">
+      <a href="/">
+        <img src={~p"/images/logo.svg"} width="36" />
+      </a>
+      <p class="bg-brand/5 text-brand rounded-full px-2 font-medium leading-6">
+        v<%= Application.spec(:phoenix, :vsn) %>
+      </p>
+    </div>
+
+    <.button
+      href="/"
+    >
+      <.icon name="hero-home-modern" /> Home
+    </.button>
 
     <.button
       type="button"
@@ -27,6 +43,7 @@
     >
       <.icon name="hero-moon-mini" /> Dark
     </.button>
+
     <.button
       type="button"
       class="whitespace-nowrap"
@@ -34,6 +51,28 @@
     >
       <.icon name="hero-sun-mini" /> Light
     </.button>
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        <%= if @current_user do %>
+          <span class="px-3 py-2 text-sm font-medium text-white rounded-md">
+            <%= @current_user.email %>
+          </span>
+          <a
+            href="/sign-out"
+            class="rounded-lg bg-zinc-100 px-2 py-1 text-[0.8125rem] font-semibold leading-6 text-zinc-900 hover:bg-zinc-200/80 active:text-zinc-900/70"
+          >
+            Sign out
+          </a>
+        <% else %>
+          <a
+            href="/sign-in"
+            class="rounded-lg bg-zinc-100 px-2 py-1 text-[0.8125rem] font-semibold leading-6 text-zinc-900 hover:bg-zinc-200/80 active:text-zinc-900/70"
+          >
+            Sign In
+          </a>
+        <% end %>
+      </div>
+  </div>
+</header>
 
     <%= @inner_content %>
   </body>

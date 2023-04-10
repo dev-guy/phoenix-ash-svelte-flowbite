@@ -13,6 +13,6 @@ defmodule KantanWeb.SvelteLive do
   end
 
   def mount(_params, _session, socket) do
-    {:ok, assign(socket, :number, 5)}
+    {:ok, assign(socket, :number, 0)}
   end
 end
