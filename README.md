@@ -16,7 +16,7 @@ This is a sample full-stack web browser application demonstrating:
 
 - Buttons for dark and light themes
 - Login screen with users and hashed passwords in Postgres
-- A [Svelte example](https://github.com/woutdp/live_svelte#create-a-svelte-component) that is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef) that communicates with the backend via Websockets
+- A [Svelte example](https://github.com/woutdp/live_svelte#create-a-svelte-component) (similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef)) that communicates with the backend via Websockets
 
 ## License
 
