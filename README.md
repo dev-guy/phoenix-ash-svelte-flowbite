@@ -64,6 +64,7 @@ git clone https://github.com/dev-guy/ash-svelte-flowbite.git
 cd ash-svelte-flowbite
 nvm i
 mix setup
+mix esbuild.install # register the latest version of esbuild
 mix phx.server
 ```
 
@@ -72,10 +73,6 @@ Open a browser to http://localhost:4000
 ### Svelte example
 
 The example at http://localhost:4000/svelte is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef?version=3.29.0).
-
-## TODO
-
-The version of esbuild should be upgraded (using 0.16.17, current version is 0.17.x) but it requires replacing the use of 'watch' in dev.exs.
 
 ## References
 
