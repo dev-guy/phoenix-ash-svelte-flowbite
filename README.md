@@ -1,11 +1,13 @@
-# Ash Framework + Phoenix LiveView + Svelte + Flowbite Example
+# Ash Framework + Phoenix LiveView + Svelte + Flowbite
 
 <img align="top" src="https://ash-hq.org/images/ash-logo-side.svg" height=50 width=100><nbsp><img  src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height=45 width=45><img src="https://flowbite-svelte.com/images/flowbite-svelte-icon-logo.svg" height=45 width=45>
 
 ## Introduction
 
-This is a [Phoenix](https://www.phoenixframework.org/) 1.7 LiveView example that combines:
+This is a sample full-stack web browser sample application demonstrating:
 
+- [x] [Phoenix](https://www.phoenixframework.org/) 1.7
+- [x] [Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html) 0.18 
 - [x] [Ash Framework](https://ash-hq.org) with [Ash Authentication](https://github.com/team-alembic/ash_authentication) and [Phlegethon Ash Extensions](https://github.com/frankdugan3/phlegethon) 
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://github.com/woutdp/live_svelte)
 - [ ] [Flowbite](https://flowbite.com) components via [Flowbite-Svelte](https://flowbite-svelte.com) (in progress)
@@ -13,8 +15,7 @@ This is a [Phoenix](https://www.phoenixframework.org/) 1.7 LiveView example that
 ## Features
 
 - Dark and light mode buttons
-- Login screen
-- Users and passwords (hashed) stored in Postgres
+- Login screen with users and hashed passwords in Postgres
 
 ## License
 
