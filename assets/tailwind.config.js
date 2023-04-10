@@ -15,6 +15,7 @@ module.exports = {
     "../deps/phlegethon/lib/phlegethon/**/*.*ex",
     "./svelte/**/*.svelte",
     "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}",
+    "./node_modules/flowbite/**/*.js",
   ],
   theme: {
     extend: {

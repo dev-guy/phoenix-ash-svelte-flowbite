@@ -24,9 +24,7 @@ import topbar from "../vendor/topbar"
 import {getHooks} from "live_svelte"
 import * as SvelteComponents from "../svelte/**/*"
 import { hooks, getTimezone } from "phlegethon"
-
-// Flowbite Svelte components
-// import { Checkbox } from "flowbite-svelte"
+import "flowbite/dist/flowbite.phoenix.js";
   
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 let liveSocket = new LiveSocket("/live", Socket, {
