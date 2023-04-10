@@ -14,7 +14,7 @@ This is a sample full-stack web browser application demonstrating:
 
 ## Features
 
-- Buttons for dark and light themes
+- Toggle for dark and light theme
 - Login screen with users and hashed passwords in Postgres
 - A [Svelte example](https://github.com/woutdp/live_svelte#create-a-svelte-component) (similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef)) that communicates with the backend via Websockets
 
@@ -63,7 +63,7 @@ echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 # asdf list-all erlang
 # asdf list-all elixir
 asdf plugin add erlang
-KERL_BUILD_DOCS=yes asdf install erlang 25.3 # For VSCode extension
+KERL_BUILD_DOCS=yes asdf install erlang 25.3 # For VSCode's Elixir language server extension
 asdf global erlang 25.3
 asdf plugin add elixir
 asdf install elixir 1.14.4-otp-25
@@ -77,7 +77,8 @@ git clone https://github.com/dev-guy/ash-svelte-flowbite.git
 cd ash-svelte-flowbite
 nvm i
 mix setup
-mix esbuild.install # register the latest version of esbuild
+# Register the version of esbuild installed by npm
+mix esbuild.install
 mix phx.server
 ```
 
