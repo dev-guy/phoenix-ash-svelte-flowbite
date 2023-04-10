@@ -14,6 +14,7 @@ module.exports = {
     "../deps/ash_authentication_phoenix/**/*.ex",
     "../deps/phlegethon/lib/phlegethon/**/*.*ex",
     "./svelte/**/*.svelte",
+    "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}",
   ],
   theme: {
     extend: {
@@ -71,6 +72,9 @@ module.exports = {
     // phlegethon
     plugin(({ addVariant }) =>
     addVariant('aria-selected', '&[aria-selected]'),
+
+    // flowbite
+    require('flowbite/plugin')
   ),
   plugin(({ addVariant }) =>
     addVariant('aria-checked', '&[aria-checked]'),
