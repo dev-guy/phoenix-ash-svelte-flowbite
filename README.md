@@ -63,7 +63,7 @@ Open a browser to http://localhost:4000
 
 ### Svelte example
 
-The example at http://localhost:4000/svelte is similar to the [number increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef?version=3.29.0).
+The example at http://localhost:4000/svelte is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef?version=3.29.0).
 
 ## References
 
