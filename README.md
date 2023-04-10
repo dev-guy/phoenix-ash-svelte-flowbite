@@ -22,7 +22,7 @@ MIT
 
 This repository was created by [Terris Linenbach](https://genserver.social/Terris) in April 2023 with tremendous amounts of assistance from the friendly Ash community.
 
-## Getting help and additional information
+## Help and additional information
 
 Join us on [Discord](https://discord.com/invite/D7FNG2q)
 
@@ -33,11 +33,13 @@ Join us on [Discord](https://discord.com/invite/D7FNG2q)
 ### Install nvm
 
 - See [nvm](https://github.com/nvm-sh/nvm)
-- Restart terminal after installing
+- Restart your terminal after installing
 
 ### Install Elixir
 
 #### MacOS
+
+You can use brew but asdf is the preferred method in the Elixir community.
 
 ```sh
 brew install asdf
@@ -55,7 +57,7 @@ asdf install elixir 1.14.4-otp-25
 asdf global elixir 1.14.4-otp-25
 ```
 
-Restart terminal after installing
+Restart your terminal after installing.
 
 ## Usage
 
@@ -74,7 +76,7 @@ Open a browser to http://localhost:4000
 
 The example at http://localhost:4000/svelte is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef?version=3.29.0).
 
-## References
+## Referencess
 
 1. [Install Phoenix](https://hexdocs.pm/phoenix/installation.html)
 2. [Install Ash Authentication](https://hexdocs.pm/ash_authentication_phoenix/getting-started-with-ash-authentication-phoenix.html)
