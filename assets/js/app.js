@@ -25,10 +25,23 @@ import {getHooks} from "live_svelte"
 import * as SvelteComponents from "../svelte/**/*"
 import { hooks, getTimezone } from "phlegethon"
 import "flowbite/dist/flowbite.phoenix.js";
+import Datepicker from 'flowbite-datepicker/Datepicker';
+
+const dtHook = {
+  mounted() {
+      const datepickerEl = this.el;
+      new Datepicker(datepickerEl, {
+          // options
+      });
+  },
+  updated() {
+      this.mounted();
+  }
+};
   
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 let liveSocket = new LiveSocket("/live", Socket, {
-  hooks: {...hooks, ...getHooks(SvelteComponents)},
+  hooks: {...hooks, ...getHooks(SvelteComponents), Datepicker: dtHook },
   params: {_csrf_token: csrfToken}})
 
 // Show progress bar on live navigation and form submits
