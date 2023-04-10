@@ -1,4 +1,4 @@
-# Phoenix LiveView Ash Svelte Flowbite Example
+# Phoenix LiveView Ash Svelte Flowbite Starter
 
 ## Introduction
 
