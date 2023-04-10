@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a Phoenix 1.7 LiveView project that combines:
+This is a [Phoenix](https://www.phoenixframework.org/) 1.7 LiveView example that combines:
 
 - [x] [Ash Framework](https://ash-hq.org) with [Ash Authentication](https://github.com/team-alembic/ash_authentication) and [Phlegethon UI Extensions](https://github.com/frankdugan3/phlegethon) 
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://github.com/woutdp/live_svelte)
@@ -24,7 +24,7 @@ This repository was created by [Terris Linenbach](https://genserver.social/Terri
 
 ## Getting help and additional information
 
-- Join us on [Discord](https://discord.com/invite/D7FNG2q)
+Join us on [Discord](https://discord.com/invite/D7FNG2q)
 
 ## Requirements
 
@@ -54,7 +54,6 @@ asdf global elixir 1.14.4-otp-25
 git clone https://github.com/dev-guy/ash-svelte-flowbite.git
 cd ash-svelte-flowbite
 mix setup
-mix ecto.migrate
 mix phx.server
 ```
 
@@ -62,13 +61,12 @@ Open a browser to http://localhost:4000
 
 ### Svelte example
 
-Go to http://localhost:4000/svelte
-
-This is similar to the [basic number increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef?version=3.29.0).
+The example at http://localhost:4000/svelte is similar to the [number increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef?version=3.29.0).
 
 ## References
 
-1. [Install Ash Authentication](https://hexdocs.pm/ash_authentication_phoenix/getting-started-with-ash-authentication-phoenix.html)
-2. [Install Phlegethon](https://github.com/frankdugan3/phlegethon/blob/main/documentation/tutorials/get-started.md)
-3. [Install LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
-4. [Install Flowbite-Svelte](https://medium.com/mkdir-awesome/getting-started-with-flowbite-svelte-37b086ce9db5)
+1. [Install Phoenix](https://hexdocs.pm/phoenix/installation.html)
+2. [Install Ash Authentication](https://hexdocs.pm/ash_authentication_phoenix/getting-started-with-ash-authentication-phoenix.html)
+3. [Install Phlegethon](https://github.com/frankdugan3/phlegethon/blob/main/documentation/tutorials/get-started.md)
+4. [Install LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
+5. [Install Flowbite-Svelte](https://medium.com/mkdir-awesome/getting-started-with-flowbite-svelte-37b086ce9db5)
