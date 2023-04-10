@@ -14,9 +14,9 @@ This is a sample full-stack web browser application demonstrating:
 
 ## Features
 
-- Dark and light mode buttons
+- Buttons for dark and light themes
 - Login screen with users and hashed passwords in Postgres
-- The Svelte example is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
+- A Svelte example that is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef) which communicates with the backend via Websockets.
 
 ## License
 
