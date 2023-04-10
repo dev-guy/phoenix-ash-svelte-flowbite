@@ -30,7 +30,7 @@ Join us on [Discord](https://discord.com/invite/D7FNG2q)
 
 ### Install Postgres
 
-### Install Erlang and Elixir
+### Install Elixir
 
 #### MacOS
 
