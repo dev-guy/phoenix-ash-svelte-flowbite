@@ -1,6 +1,6 @@
 # Phoenix LiveView Ash Svelte Flowbite Starter
 
-<img src="https://ash-hq.org/images/ash-logo-side.svg" height=100 width=100><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height=50 width=50><img src="https://flowbite-svelte.com/images/flowbite-svelte-icon-logo.svg" height=50 width=50>
+<img align="top" src="https://ash-hq.org/images/ash-logo-side.svg" height=50 width=100><img  src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height=45 width=45><img src="https://flowbite-svelte.com/images/flowbite-svelte-icon-logo.svg" height=45 width=45>
 
 ## Introduction
 
