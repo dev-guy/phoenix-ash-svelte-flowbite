@@ -30,6 +30,11 @@ Join us on [Discord](https://discord.com/invite/D7FNG2q)
 
 ### Install Postgres
 
+### Install nvm
+
+- See [nvm](https://github.com/nvm-sh/nvm)
+- Restart terminal after installing
+
 ### Install Elixir
 
 #### MacOS
@@ -50,11 +55,14 @@ asdf install elixir 1.14.4-otp-25
 asdf global elixir 1.14.4-otp-25
 ```
 
+Restart terminal after installing
+
 ## Usage
 
 ```sh
 git clone https://github.com/dev-guy/ash-svelte-flowbite.git
 cd ash-svelte-flowbite
+nvm i
 mix setup
 mix phx.server
 ```
