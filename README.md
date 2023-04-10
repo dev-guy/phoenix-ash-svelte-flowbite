@@ -10,13 +10,14 @@ This is a sample full-stack web browser application demonstrating:
 - [x] [Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html) 0.18 
 - [x] [Ash](https://ash-hq.org) 2.6 with [Ash Authentication](https://github.com/team-alembic/ash_authentication) and [Phlegethon Ash Extensions](https://github.com/frankdugan3/phlegethon) 
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://github.com/woutdp/live_svelte)
-- [ ] [Flowbite](https://flowbite.com) components via [Flowbite-Svelte](https://flowbite-svelte.com) (in progress)
+- [x] [Flowbite](https://flowbite.com) components
 
 ## Features
 
 - Toggle for dark and light theme
 - Login screen with users and hashed passwords in Postgres
-- A [Svelte example](https://github.com/woutdp/live_svelte#create-a-svelte-component) (similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef)) that communicates with the backend via Websockets
+- [Svelte component](https://github.com/woutdp/live_svelte#create-a-svelte-component) similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
+- Flowbite DatePicker component (supports dark mode!)
 
 ## License
 
@@ -94,5 +95,5 @@ Open a browser to http://localhost:4000
 5. [Phoenix and Third-Party JS Packages](https://hexdocs.pm/phoenix/asset_management.html)
 6. [Getting Started: Phoenix 1.7 with Svelte](https://medium.com/@alistairisrael/phoenix-1-7-with-svelte-12257d853ed1)
 7. [LiveSvelte - E2E reactivity in LiveView with Svelte](https://elixirforum.com/t/livesvelte-e2e-reactivity-in-liveview-with-svelte/54822/4)
-8. [Install Flowbite-Svelte](https://medium.com/mkdir-awesome/getting-started-with-flowbite-svelte-37b086ce9db5)
-9. [Tailwind CSS Phoenix (Elixir) - Flowbite](https://flowbite.com/docs/getting-started/phoenix/)
+8. [Tailwind CSS Phoenix (Elixir) - Flowbite](https://flowbite.com/docs/getting-started/phoenix/)
+9. [Install Flowbite-Svelte](https://medium.com/mkdir-awesome/getting-started-with-flowbite-svelte-37b086ce9db5) (TODO)
