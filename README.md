@@ -4,9 +4,14 @@
 
 This is a Phoenix 1.7 LiveView project that combines:
 
-- [x] Ash Framework (with Phlegethon and Ash Authentication)
+- [x] [Ash Framework](https://ash-hq.org) with [Ash Authentication](https://github.com/team-alembic/ash_authentication) and [Phlegethon UX Extensions](https://github.com/frankdugan3/phlegethon) 
 - [x] Svelte via [LiveSvelte](https://github.com/woutdp/live_svelte)
 - [ ] Flowbite
+
+## Features
+
+- Dark/light mode toggling
+- Login screen
 
 ## Requirements
 
@@ -18,7 +23,7 @@ This is a Phoenix 1.7 LiveView project that combines:
 
 ```sh
 brew install asdf
-# Find the current versions of erlang and elixir
+# Find the current versions of erlang and elixir:
 # asdf list-all erlang
 # asdf list-all elixir
 echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
