@@ -14,6 +14,16 @@ This is a Phoenix 1.7 LiveView project that combines:
 - Login screen
 - Users and passwords (hashed) stored in Postgres
 
+## License
+
+MIT
+
+## Credits
+
+- This project was created by Terris Linenbach with help from the Ash community
+- Ash Framework is sponsored by [Alembic](https://alembic.com.au)
+- Join us on [Discord](https://discord.com/invite/D7FNG2q)
+
 ## Requirements
 
 ### Install Postgres
