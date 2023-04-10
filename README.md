@@ -6,7 +6,7 @@ This is a [Phoenix](https://www.phoenixframework.org/) 1.7 LiveView example that
 
 - [x] [Ash Framework](https://ash-hq.org) with [Ash Authentication](https://github.com/team-alembic/ash_authentication) and [Phlegethon UI Extensions](https://github.com/frankdugan3/phlegethon) 
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://github.com/woutdp/live_svelte)
-- [ ] [Flowbite](https://flowbite.com) Components on top of Tailwind CSS
+- [ ] [Flowbite](https://flowbite.com) Components on top of Tailwind CSS (in progress)
 
 ## Features
 
