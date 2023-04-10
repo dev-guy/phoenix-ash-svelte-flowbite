@@ -1,3 +1,5 @@
+# Phoenix LiveView Ash Svelte Flowbite Example
+
 ## Introduction
 
 This is a Phoenix 1.7 LiveView project that combines:
@@ -33,7 +35,8 @@ asdf global elixir 1.14.4-otp-25
 ## Usage
 
 ```sh
-git clone ...
+git clone https://github.com/dev-guy/ash-svelte-flowbite.git
+cd ash-svelte-flowbite
 mix setup
 mix ecto.migrate
 mix phx.server
@@ -44,3 +47,10 @@ Open a browser to http://localhost:4000
 ### Svelte example
 
 Go to http://localhost:4000/svelte
+
+## References
+
+1. [Installing Ash Authentication](https://hexdocs.pm/ash_authentication_phoenix/getting-started-with-ash-authentication-phoenix.html)
+2. [Installing Phlegethon](https://github.com/frankdugan3/phlegethon/blob/main/documentation/tutorials/get-started.md)
+3. [Installing LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
+
