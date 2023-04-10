@@ -4,9 +4,9 @@
 
 This is a Phoenix 1.7 LiveView project that combines:
 
-- [x] [Ash Framework](https://ash-hq.org) with [Ash Authentication](https://github.com/team-alembic/ash_authentication) and [Phlegethon UX Extensions](https://github.com/frankdugan3/phlegethon) 
-- [x] Svelte via [LiveSvelte](https://github.com/woutdp/live_svelte)
-- [ ] Flowbite
+- [x] [Ash Framework](https://ash-hq.org) with [Ash Authentication](https://github.com/team-alembic/ash_authentication) and [Phlegethon UI Extensions](https://github.com/frankdugan3/phlegethon) 
+- [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://github.com/woutdp/live_svelte)
+- [ ] [Flowbite](https://flowbite.com) Components on top of Tailwind CSS
 
 ## Features
 
