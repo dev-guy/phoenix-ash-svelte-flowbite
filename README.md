@@ -1,7 +1,5 @@
 # Phoenix LiveView Ash Svelte Flowbite Starter
 
-![Ash](https://ash-hq.org/images/ash-framework-light.png) ![Svelte](https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg) ![Flowbite-Svelte](https://flowbite-svelte.com/images/flowbite-svelte-icon-logo.svg)
-
 ## Introduction
 
 This is a [Phoenix](https://www.phoenixframework.org/) 1.7 LiveView example that combines:
