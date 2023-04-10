@@ -46,13 +46,11 @@ let optsServer = {
 if (watch) {
     optsClient = {
         ...optsClient,
-        watch,
         sourcemap: "inline",
     }
 
     optsServer = {
         ...optsServer,
-        watch,
         sourcemap: "inline",
     }
 }
@@ -64,8 +62,17 @@ if (deploy) {
     }
 }
 
-const client = esbuild.build(optsClient)
-const server = esbuild.build(optsServer)
+const client = esbuild.context(optsClient).then(context => {
+    if (watch) {
+        context.watch()
+    }
+})
+
+const server = esbuild.context(optsServer).then(context => {
+    if (watch) {
+        context.watch()
+    }
+})
 
 if (watch) {
     client.then(_result => {
