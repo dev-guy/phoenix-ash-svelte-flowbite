@@ -20,7 +20,7 @@ MIT
 
 ## Credits
 
-This repository was created by [Terris Linenbach](https://genserver.social/Terris) in April 2023 with tremendous amounts of assistance from the friendly Ash community.
+This repository was created by [Terris Linenbach](https://genserver.social/Terris) in April 2023 with assistance from the friendly Ash community.
 
 ## Help and additional information
 
