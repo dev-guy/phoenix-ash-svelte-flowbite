@@ -75,7 +75,7 @@ The example at http://localhost:4000/svelte is similar to the [increment/decreme
 
 ## TODO
 
-The version of esbuild (0.16->0.17) should be upgraded but this requires replacing the use of 'watch' in dev.exs.
+The version of esbuild should be upgraded (using 0.16.17, current version is 0.17.x) but it requires replacing the use of 'watch' in dev.exs.
 
 ## References
 
