@@ -90,6 +90,10 @@ mix phx.server
 
 Open a browser to http://localhost:4000
 
+## Notes
+  
+1. Views that use most Flowbite-Svelte components should use ssr={false}; otherwise, runtime errors will occur
+  
 ## References
 
 ### Guides
