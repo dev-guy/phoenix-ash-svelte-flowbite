@@ -15,7 +15,7 @@ A sample web browser application demonstrating:
 - [x] [Flowbite](https://flowbite.com) components
 - [x] [Flowbite-Svelte](https://flowbite-svelte.com) components
 
-## Demonstrated Features
+## Features
 
 - Toggle dark and light theme
 - Login screen with users and hashed passwords in Postgres
