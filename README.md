@@ -27,10 +27,6 @@ This is a sample full-stack web browser application demonstrating:
 
 MIT
 
-## Credits
-
-This repository was created by [Terris Linenbach](https://genserver.social/Terris) in April 2023 with assistance from the friendly Ash community.
-
 ## Help and additional information
 
 Join us on [Discord](https://discord.com/invite/D7FNG2q)
