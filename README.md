@@ -70,7 +70,7 @@ asdf plugin add elixir
 asdf install elixir 1.14.4-otp-25
 asdf global elixir 1.14.4-otp-25
 ```
-
+ 
 ## Usage
 
 ```sh
