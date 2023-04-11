@@ -1,5 +1,5 @@
 <script>
-    import { Checkbox } from 'flowbite-svelte'
+    import { Checkbox, Accordion, AccordionItem } from 'flowbite-svelte'
 
     // The number prop is reactive,
     // this means if the server assigns the number, it will update in the frontend
@@ -24,10 +24,18 @@
     }
 </script>
 
-This is a flowbite-svelte component: <Checkbox>A checkbox</Checkbox>
-
-<p>The number is {number}</p>
+<h2>Increment / Decrement Number Example</h2>
+<div>The number is {number}. Click the buttons to change it: 
 <button on:click={increase}>+</button>
 <button on:click={decrease}>-</button>
+</div>
 
-<footer>foot</footer>
+<h2>Flowbite-Svelte Components</h2>
+
+<Checkbox>A checkbox</Checkbox>
+
+<Accordion>
+    <AccordionItem title="Title 1">Content 1</AccordionItem>
+    <AccordionItem title="Title 2">Content 2</AccordionItem>
+    <AccordionItem title="Title 3">Content 3</AccordionItem>
+</Accordion>
