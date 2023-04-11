@@ -96,3 +96,7 @@ Open a browser to http://localhost:4000
 7. [LiveSvelte - E2E reactivity in LiveView with Svelte](https://elixirforum.com/t/livesvelte-e2e-reactivity-in-liveview-with-svelte/54822/4)
 8. [Install Flowbite-Svelte](https://medium.com/mkdir-awesome/getting-started-with-flowbite-svelte-37b086ce9db5)
 9. [Tailwind CSS Phoenix (Elixir) - Flowbite](https://flowbite.com/docs/getting-started/phoenix/)
+
+## TODO
+
+1. Upgrade flowbite-svelte

@@ -4,7 +4,7 @@ defmodule KantanWeb.SvelteExample do
 
   def render(assigns) do
     ~H"""
-    <LiveSvelte.render name="Example" props={%{number: @number}} />
+    <LiveSvelte.render ssr={false} name="Example" props={%{number: @number}} />
     """
   end
 
