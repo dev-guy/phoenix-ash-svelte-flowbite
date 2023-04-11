@@ -9,7 +9,7 @@ const deploy = args.includes("--deploy")
 
 let optsClient = {
     entryPoints: ["js/app.js"],
-    // mainFields: ["svelte", "browser", "module", "main"],
+    mainFields: ["svelte", "browser", "module", "main"],
     bundle: true,
     minify: false,
     target: "es2017",
