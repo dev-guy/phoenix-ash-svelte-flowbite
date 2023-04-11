@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This is a sample full-stack web browser application demonstrating:
+A sample web browser application demonstrating:
 
 - [x] [Phoenix](https://www.phoenixframework.org/) 1.7
 - [x] [Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html) 0.18 
