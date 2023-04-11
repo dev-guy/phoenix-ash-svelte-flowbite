@@ -4,7 +4,7 @@
     "classnames": "^2.3.2",
     "flowbite": "^1.6.4",
     "flowbite-datepicker": "^1.2.2",
-    "flowbite-svelte": "^0.34.7",
+    "flowbite-svelte": "0.29.13",
     "live_svelte": "file:../deps/live_svelte",
     "phlegethon": "file:../deps/phlegethon",
     "phoenix": "file:../deps/phoenix",

@@ -1,5 +1,6 @@
 <script>
-// import { AccordionItem, Accordion } from 'flowbite-svelte'
+    import { Checkbox, Accordion, AccordionItem } from 'flowbite-svelte'
+
     // The number prop is reactive,
     // this means if the server assigns the number, it will update in the frontend
     export let number = 1
@@ -22,17 +23,19 @@
         pushEvent("set_number", {number: number - 1}, () => {})
     }
 </script>
-<!--
 
-    <Accordion>
-      <AccordionItem>
-        <span slot="header">My Header 1</span>
-        <p class="mb-2 text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo ab necessitatibus sint explicabo ...</p>
-        <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/" target="_blank" rel="noreferrer" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
-      </AccordionItem>
-      </Accordion>
-    -->
-
-<p>The number is {number}</p>
+<h2>Increment / Decrement Number Example</h2>
+<div>The number is {number}. Click the buttons to change it: 
 <button on:click={increase}>+</button>
 <button on:click={decrease}>-</button>
+</div>
+
+<h2>Flowbite-Svelte Components</h2>
+
+<Checkbox>A checkbox</Checkbox>
+
+<Accordion>
+    <AccordionItem title="Title 1">Content 1</AccordionItem>
+    <AccordionItem title="Title 2">Content 2</AccordionItem>
+    <AccordionItem title="Title 3">Content 3</AccordionItem>
+</Accordion>

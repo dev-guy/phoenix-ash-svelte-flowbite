@@ -1,6 +1,6 @@
 # Phoenix + Ash + Svelte + Flowbite Demo
 
-<img alt='Phoenix' src="https://seeklogo.com/images/P/phoenix-logo-D15F067911-seeklogo.com.png" height=40 width=45><img alt='ash' align="top" src="https://ash-hq.org/images/ash-logo-side.svg" height=50 width=100><nbsp><img alt='Svelte' src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height=45 width=45><img alt='Flowbite' src="https://flowbite.com/docs/images/logo.svg" height=45 width=45>
+<img alt='Phoenix' src="https://seeklogo.com/images/P/phoenix-logo-D15F067911-seeklogo.com.png" height=40 width=45><img alt='ash' align="top" src="https://ash-hq.org/images/ash-logo-side.svg" height=50 width=100><nbsp><img alt='Svelte' src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height=45 width=45><img alt='Flowbite' src="https://flowbite.com/docs/images/logo.svg" height=45 width=45><img src="https://flowbite-svelte.com/images/flowbite-svelte-icon-logo.svg" height=45 width=45>
 
 ## Introduction
 
@@ -13,6 +13,7 @@ This is a sample full-stack web browser application demonstrating:
   - [x] [Phlegethon Ash Extensions](https://github.com/frankdugan3/phlegethon) 
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://github.com/woutdp/live_svelte)
 - [x] [Flowbite](https://flowbite.com) components
+- [x] [Flowbite-Svelte](https://flowbite-svelte.com) components
 
 ## Demonstrated Features
 
@@ -20,6 +21,7 @@ This is a sample full-stack web browser application demonstrating:
 - Login screen with users and hashed passwords in Postgres
 - [Svelte component](https://github.com/woutdp/live_svelte#create-a-svelte-component) similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
 - [Flowbite Date Picker](https://flowbite.com/docs/plugins/datepicker/) (supports dark mode!)
+- [Flowbite-Svelte Checkbox](https://flowbite-svelte.com/forms/checkbox)
 
 ## License
 
@@ -90,12 +92,21 @@ Open a browser to http://localhost:4000
 
 ## References
 
+### Guides
+
 1. [Install Phoenix](https://hexdocs.pm/phoenix/installation.html)
 2. [Install Ash Authentication](https://hexdocs.pm/ash_authentication_phoenix/getting-started-with-ash-authentication-phoenix.html)
 3. [Install Phlegethon](https://github.com/frankdugan3/phlegethon/blob/main/documentation/tutorials/get-started.md)
 4. [Install LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
-5. [Phoenix and Third-Party JS Packages](https://hexdocs.pm/phoenix/asset_management.html)
-6. [Getting Started: Phoenix 1.7 with Svelte](https://medium.com/@alistairisrael/phoenix-1-7-with-svelte-12257d853ed1)
-7. [LiveSvelte - E2E reactivity in LiveView with Svelte](https://elixirforum.com/t/livesvelte-e2e-reactivity-in-liveview-with-svelte/54822/4)
-8. [Tailwind CSS Phoenix (Elixir) - Flowbite](https://flowbite.com/docs/getting-started/phoenix/)
-9. [Install Flowbite-Svelte](https://medium.com/mkdir-awesome/getting-started-with-flowbite-svelte-37b086ce9db5) (TODO)
+5. [Install Flowbite](https://flowbite.com/docs/getting-started/phoenix/)
+6. [Install Flowbite-Svelte](https://medium.com/mkdir-awesome/getting-started-with-flowbite-svelte-37b086ce9db5)
+
+### Other
+
+1. [Phoenix and Third-Party JS Packages](https://hexdocs.pm/phoenix/asset_management.html)
+2. [Getting Started: Phoenix 1.7 with Svelte](https://medium.com/@alistairisrael/phoenix-1-7-with-svelte-12257d853ed1)
+3. [LiveSvelte - E2E reactivity in LiveView with Svelte](https://elixirforum.com/t/livesvelte-e2e-reactivity-in-liveview-with-svelte/54822/4)
+
+## TODO
+
+1. Upgrade flowbite-svelte - see [#647](https://github.com/themesberg/flowbite-svelte/issues/647)
