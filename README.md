@@ -110,3 +110,4 @@ Open a browser to http://localhost:4000
 ## TODO
 
 1. Upgrade flowbite-svelte - see [#647](https://github.com/themesberg/flowbite-svelte/issues/647)
+2. Sync the styles between Svelte and Phlegethon components
