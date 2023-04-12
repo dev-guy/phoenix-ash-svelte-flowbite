@@ -14,7 +14,7 @@ A web browser application demonstrating:
 - [x] [Phlegethon Ash Extensions](https://github.com/frankdugan3/phlegethon) 
   - Toggle dark and light themes
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://github.com/woutdp/live_svelte)
-  - Svelte has many advantages over a stock Phoenix app such as animations but combining LiveView and Svelte is 10x!
+  - Svelte has advantages over stock Phoenix apps such as animations. Combining LiveView and Svelte is 10x!
   - [LiveSvelte video](https://www.youtube.com/watch?v=JMkvbW35QvA)
   - [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
 - [x] [Flowbite](https://flowbite.com)
@@ -28,7 +28,7 @@ Want another component? Add it to package.json!
 
 ## License
 
-MIT
+[MIT](LICENSE)
 
 ## Help and additional information
 
