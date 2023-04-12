@@ -1,6 +1,4 @@
 <script>
-    import { Checkbox, Accordion, AccordionItem } from 'flowbite-svelte'
-
     // The number prop is reactive,
     // this means if the server assigns the number, it will update in the frontend
     export let number = 1
@@ -29,13 +27,3 @@
     <button class="bg-green-600 hover:bg-green-700 text-white text-sm px-4 py-2  border rounded-full" on:click={increase}>+</button>
     <button class="bg-red-600 hover:bg-red-700 text-white text-sm px-4 py-2  border rounded-full"on:click={decrease}>-</button>
 </div>
-
-<h2 class="text-lg">Flowbite-Svelte Components</h2>
-
-<Checkbox>A checkbox</Checkbox>
-
-<Accordion>Accordion
-    <AccordionItem title="Title 1">Content 1</AccordionItem>
-    <AccordionItem title="Title 2">Content 2</AccordionItem>
-    <AccordionItem title="Title 3">Content 3</AccordionItem>
-</Accordion>

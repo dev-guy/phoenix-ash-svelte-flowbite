@@ -15,14 +15,14 @@ A web browser application demonstrating:
   - Toggle dark and light themes
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://github.com/woutdp/live_svelte)
   - Svelte has many advantages over a stock Phoenix app such as animations but combining LiveView and Svelte is 10x!
-  - [Svelte Sidebar Menu](https://www.npmjs.com/package/svelte-sidebar-menu) on the LiveSvelte page
   - [LiveSvelte video](https://www.youtube.com/watch?v=JMkvbW35QvA)
-  - The [LiveSvelte component](https://github.com/woutdp/live_svelte#create-a-svelte-component) on the LiveSvelte page is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
+  - [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
 - [x] [Flowbite](https://flowbite.com)
-  - [Flowbite Date Picker](https://flowbite.com/docs/plugins/datepicker/) on home page
+  - [Flowbite Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
 - [x] [Flowbite-Svelte](https://flowbite-svelte.com)
-  - [Flowbite-Svelte Checkbox](https://flowbite-svelte.com/forms/checkbox) on LiveSvelte page
-  - [Flowbite-Svelte Accordion](https://flowbite-svelte.com/components/accordion) on LiveSvelte page
+  - [Flowbite-Svelte Checkbox](https://flowbite-svelte.com/forms/checkbox) on the Flowbite-Svelte Components page
+  - [Flowbite-Svelte Accordion](https://flowbite-svelte.com/components/accordion) on the Flowbite-Svelte Components page
+  - [Svelte Sidebar Menu](https://www.npmjs.com/package/svelte-sidebar-menu) on the Flowbite-Svelte Components page
   
 Want another component? Add it to package.json!
 
@@ -102,6 +102,20 @@ Open a browser to http://localhost:4000
 ```
 
 2. LiveSvelte elements that use most Flowbite-Svelte components must contain ssr={false}; otherwise, runtime errors will occur
+
+3. You will get warnings from Flowbite-Svelte that can be ignored (for now):
+
+```
+▲ [WARNING] A11y: The attribute 'aria-expanded' is not supported by the role 'heading'. This role is implicit on the element <h2>. [plugin esbuild-svelte]
+
+    node_modules/flowbite-svelte/accordions/AccordionItem.svelte:43:4:
+      43 │ 41: </script>
+         ╵     ~~~~~~~~~
+
+42:
+43: <h2 aria-expanded={open} class="group">
+        ^
+```
   
 ## References
 
@@ -119,6 +133,7 @@ Open a browser to http://localhost:4000
 1. [Phoenix and Third-Party JS Packages](https://hexdocs.pm/phoenix/asset_management.html)
 2. [Getting Started: Phoenix 1.7 with Svelte](https://medium.com/@alistairisrael/phoenix-1-7-with-svelte-12257d853ed1)
 3. [LiveSvelte - E2E reactivity in LiveView with Svelte](https://elixirforum.com/t/livesvelte-e2e-reactivity-in-liveview-with-svelte/54822/4)
+4. [A Svelte Sidebar Menu Component Implemented with Tailwind CSS](https://medium.com/mkdir-awesome/a-svelte-sidebar-menu-component-implemented-with-tailwind-css-c039b23010e)
 
 ## TODO
 

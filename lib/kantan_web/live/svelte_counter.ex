@@ -1,10 +1,9 @@
-# `/lib/app_web/live/live_svelte.ex`
-defmodule KantanWeb.SvelteExample do
+defmodule KantanWeb.SvelteCounter do
   use KantanWeb, :live_view
 
   def render(assigns) do
     ~H"""
-    <LiveSvelte.render ssr={false} name="Example" props={%{number: @number}} />
+    <LiveSvelte.render ssr={false} name="Counter" props={%{number: @number}} />
     """
   end
 
