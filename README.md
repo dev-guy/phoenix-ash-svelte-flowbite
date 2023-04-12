@@ -22,9 +22,7 @@ A web browser application demonstrating:
 - [x] [Flowbite-Svelte](https://flowbite-svelte.com) examples on the Flowbite-Svelte Components page:
   - [Checkbox](https://flowbite-svelte.com/forms/checkbox)
   - [Accordion](https://flowbite-svelte.com/components/accordion)
-  - [Sidebar Menu](https://flowbite-svelte.com/components/sidebar) 
-  
-Want another component? Add it to package.json!
+  - [Sidebar Menu](https://flowbite-svelte.com/components/sidebar)
 
 ## License
 
@@ -42,7 +40,7 @@ Join us on [Discord](https://discord.com/invite/D7FNG2q)
 
 ### nvm
 
-- [Install nvm](https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm/blob/master/README.md#install--update-script)
+- [Install nvm](https://github.com/nvm-sh/nvm/blob/master/README.md#install--update-script)
 - Restart your terminal
 
 ### Elixir
@@ -101,9 +99,11 @@ Open a browser to http://localhost:4000
     "phoenix_live_view": "file:../deps/phoenix_live_view"
 ```
 
-2. LiveSvelte elements that use most Flowbite-Svelte components must contain ssr={false}; otherwise, runtime errors will occur
+2. Want another component? Add it to package.json!
 
-3. You will get warnings from Flowbite-Svelte that can be ignored (for now):
+3. LiveSvelte elements that use most Flowbite-Svelte components must contain ssr={false}; otherwise, runtime errors will occur
+
+4. You will get warnings from Flowbite-Svelte that can be ignored (for now):
 
 ```
 ▲ [WARNING] A11y: The attribute 'aria-expanded' is not supported by the role 'heading'. This role is implicit on the element <h2>. [plugin esbuild-svelte]
@@ -116,6 +116,8 @@ Open a browser to http://localhost:4000
 43: <h2 aria-expanded={open} class="group">
         ^
 ```
+
+5. Beware [Svelte-Kit $app dependencies](https://github.com/woutdp/live_svelte/discussions/30)!
   
 ## References
 
