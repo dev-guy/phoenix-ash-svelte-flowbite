@@ -1,12 +1,27 @@
 <script>
     import { Checkbox, Accordion, AccordionItem } from 'flowbite-svelte'
 
+    import { Drawer, Button, CloseButton } from 'flowbite-svelte';
+    import { sineIn } from 'svelte/easing';
+
     import { Sidebar, SidebarBrand, SidebarCta, SidebarDropdownItem, SidebarDropdownWrapper, SidebarGroup, SidebarItem, SidebarWrapper } from 'flowbite-svelte';
     let spanClass = 'flex-1 ml-3 whitespace-nowrap';
+
+  let hidden1 = true; 
+  let transitionParams = {
+    x: -320,
+    duration: 200,
+    easing: sineIn
+  };
 </script>
 
 <!-- From https://flowbite-svelte.com/components/sidebar -->
 
+<div class="text-center">
+  <Button on:click={() => (hidden1 = false)}>Show/Hide Sidebar Menu</Button>
+</div>
+
+<Drawer transitionType="fly" {transitionParams} bind:hidden={hidden1} id='sidebar1'>
 <Sidebar>
     <SidebarWrapper>
       <SidebarGroup>
@@ -63,6 +78,8 @@
         </SidebarItem>
       </SidebarGroup>
     </SidebarWrapper>
+  </Sidebar>
+</Drawer>
 
     <Checkbox>Checkbox</Checkbox>
 
@@ -71,4 +88,3 @@
         <AccordionItem title="Title 2">Content 2</AccordionItem>
         <AccordionItem title="Title 3">Content 3</AccordionItem>
     </Accordion>
-  </Sidebar>
