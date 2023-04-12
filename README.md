@@ -13,8 +13,9 @@ A web browser application demonstrating:
   - Login page with users and passwords stored in Postgres without writing any imperative code
 - [x] [Phlegethon Ash Extensions](https://github.com/frankdugan3/phlegethon) 
   - Toggle dark and light themes
+  - Excellent LiveView toolkit
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://wout.space/notes/live-svelte)
-  - Svelte has advantages over stock Phoenix apps such as animations. Combining LiveView and Svelte is 10x!
+  - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
   - [LiveSvelte video](https://www.youtube.com/watch?v=JMkvbW35QvA)
   - The [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) page is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
 - [x] [Flowbite](https://flowbite.com)
