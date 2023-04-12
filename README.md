@@ -26,7 +26,7 @@ A web browser application demonstrating:
 
 ## Video
 
-[Download](https://drive.google.com/file/d/17rqo8kdDJMo3MS_yYRSgk4_7-m3QrYdH/view)
+[Download a video of the demo (MP4)](https://drive.google.com/file/d/17rqo8kdDJMo3MS_yYRSgk4_7-m3QrYdH/view)
 
 ## License
 
