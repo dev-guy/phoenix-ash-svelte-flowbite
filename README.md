@@ -26,8 +26,7 @@ A web browser application demonstrating:
 
 ## Video
 
-<video src="[LINK](https://drive.google.com/file/d/17rqo8kdDJMo3MS_yYRSgk4_7-m3QrYdH/view?usp=share_link)" controls="controls" style="max-width: 730px;">
-Watch the demo!</video>
+![watch](https://drive.google.com/file/d/17rqo8kdDJMo3MS_yYRSgk4_7-m3QrYdH/view?usp=share_link)
 
 ## License
 
