@@ -22,7 +22,7 @@ A web browser application demonstrating:
 - [x] [Flowbite-Svelte](https://flowbite-svelte.com) examples on the Flowbite-Svelte Components page:
   - [Checkbox](https://flowbite-svelte.com/forms/checkbox)
   - [Accordion](https://flowbite-svelte.com/components/accordion)
-  - [Sidebar Menu](https://flowbite-svelte.com/components/sidebar)
+  - [Sidebar Menu](https://flowbite-svelte.com/components/sidebar) with [Drawer](https://flowbite-svelte.com/components/drawer)
 
 ## Video
 
@@ -138,8 +138,6 @@ Open a browser to http://localhost:4000
 
 1. [Phoenix and Third-Party JS Packages](https://hexdocs.pm/phoenix/asset_management.html)
 2. [Getting Started: Phoenix 1.7 with Svelte](https://medium.com/@alistairisrael/phoenix-1-7-with-svelte-12257d853ed1)
-3. [LiveSvelte - E2E reactivity in LiveView with Svelte](https://elixirforum.com/t/livesvelte-e2e-reactivity-in-liveview-with-svelte/54822/4)
-4. [A Svelte Sidebar Menu Component Implemented with Tailwind CSS](https://medium.com/mkdir-awesome/a-svelte-sidebar-menu-component-implemented-with-tailwind-css-c039b23010e)
 
 ## TODO
 
