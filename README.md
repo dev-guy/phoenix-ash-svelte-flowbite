@@ -142,5 +142,5 @@ Open a browser to http://localhost:4000
 
 ## TODO
 
+1. Upgrade flowbite-svelte - see [#647](https://github.com/themesberg/flowbite-svelte/issues/647)
 1. Sync styles between Svelte and Phlegethon components - [see here](https://github.com/woutdp/live_svelte/discussions/28)
-
