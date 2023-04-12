@@ -26,7 +26,7 @@ A web browser application demonstrating:
 
 ## Video
 
-![watch](https://drive.google.com/file/d/17rqo8kdDJMo3MS_yYRSgk4_7-m3QrYdH/view?usp=share_link)
+https://drive.google.com/file/d/17rqo8kdDJMo3MS_yYRSgk4_7-m3QrYdH/view?usp=share_link
 
 ## License
 
