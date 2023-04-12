@@ -34,7 +34,7 @@ A web browser application demonstrating:
 
 ## Help and additional information
 
-Join us on [Discord](https://discord.com/invite/D7FNG2q)
+Join the [Ash Discord Server](https://discord.com/invite/D7FNG2q)
 
 ## Requirements
 
