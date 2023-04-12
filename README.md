@@ -103,7 +103,7 @@ Open a browser to http://localhost:4000
     "phoenix_live_view": "file:../deps/phoenix_live_view"
 ```
 
-2. Want another component? Add it to package.json!
+2. Need another component? Add it to package.json!
 
 3. LiveSvelte elements that use most Flowbite-Svelte components must contain ssr={false}; otherwise, runtime errors will occur
 
