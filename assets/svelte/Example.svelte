@@ -24,13 +24,13 @@
     }
 </script>
 
-<h2>Increment / Decrement Number Example</h2>
-<div>The number is {number}. 
+<h2 class="text-lg">Increment / Decrement Number Example</h2>
+<div class='text-sm'>The number is {number}. 
     <button class="bg-green-600 hover:bg-green-700 text-white text-sm px-4 py-2  border rounded-full" on:click={increase}>+</button>
     <button class="bg-red-600 hover:bg-red-700 text-white text-sm px-4 py-2  border rounded-full"on:click={decrease}>-</button>
 </div>
 
-<h2>Flowbite-Svelte Components</h2>
+<h2 class="text-lg">Flowbite-Svelte Components</h2>
 
 <Checkbox>A checkbox</Checkbox>
 
