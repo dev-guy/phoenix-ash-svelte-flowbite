@@ -40,7 +40,7 @@ Join the [Ash Discord Server](https://discord.com/invite/D7FNG2q)
 
 ### Postgres
 
-[Installing Postgres](https://www.postgresql.org/docs/current/tutorial-install.html)
+[Install Postgres](https://www.postgresql.org/docs/current/tutorial-install.html)
 
 ### nvm
 
