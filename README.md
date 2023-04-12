@@ -16,13 +16,13 @@ A web browser application demonstrating:
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://github.com/woutdp/live_svelte)
   - Svelte has advantages over stock Phoenix apps such as animations. Combining LiveView and Svelte is 10x!
   - [LiveSvelte video](https://www.youtube.com/watch?v=JMkvbW35QvA)
-  - [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
+  - The [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) page is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
 - [x] [Flowbite](https://flowbite.com)
   - [Flowbite Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
-- [x] [Flowbite-Svelte](https://flowbite-svelte.com)
-  - [Flowbite-Svelte Checkbox](https://flowbite-svelte.com/forms/checkbox) on the Flowbite-Svelte Components page
-  - [Flowbite-Svelte Accordion](https://flowbite-svelte.com/components/accordion) on the Flowbite-Svelte Components page
-  - [Svelte Sidebar Menu](https://www.npmjs.com/package/svelte-sidebar-menu) on the Flowbite-Svelte Components page
+- [x] [Flowbite-Svelte](https://flowbite-svelte.com) examples on the Flowbite-Svelte Components page:
+  - [Checkbox](https://flowbite-svelte.com/forms/checkbox)
+  - [Accordion](https://flowbite-svelte.com/components/accordion)
+  - [Sidebar Menu](https://flowbite-svelte.com/components/sidebar) 
   
 Want another component? Add it to package.json!
 
