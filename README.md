@@ -9,20 +9,17 @@ A sample web browser application demonstrating:
 - [x] [Phoenix](https://www.phoenixframework.org/) 1.7
 - [x] [Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html) 0.18 
 - [x] [Ash](https://ash-hq.org) 2.6
-  - [x] [Ash Authentication](https://github.com/team-alembic/ash_authentication)
-  - [x] [Phlegethon Ash Extensions](https://github.com/frankdugan3/phlegethon) 
+- [x] [Ash Authentication](https://github.com/team-alembic/ash_authentication)
+  - Login page with users and hashed passwords in Postgres
+- [x] [Phlegethon Ash Extensions](https://github.com/frankdugan3/phlegethon) 
+  - Toggle dark and light themes
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://github.com/woutdp/live_svelte) - [video introduction](https://www.youtube.com/watch?v=JMkvbW35QvA)
-- [x] [Flowbite](https://flowbite.com) components
-- [x] [Flowbite-Svelte](https://flowbite-svelte.com) components
-
-## Features
-
-- Toggle dark and light themes
-- Login screen with users and hashed passwords in Postgres
-- [Svelte component](https://github.com/woutdp/live_svelte#create-a-svelte-component) similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
-- [Flowbite Date Picker](https://flowbite.com/docs/plugins/datepicker/) (supports dark mode!)
-- [Flowbite-Svelte Checkbox](https://flowbite-svelte.com/forms/checkbox)
-- [Flowbite-Svelte Accordion](https://flowbite-svelte.com/components/accordion)
+  - The [LiveSvelte component](https://github.com/woutdp/live_svelte#create-a-svelte-component) on the LiveSvelte page is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
+- [x] [Flowbite](https://flowbite.com)
+  - [Flowbite Date Picker](https://flowbite.com/docs/plugins/datepicker/) on home page
+- [x] [Flowbite-Svelte](https://flowbite-svelte.com)
+  - [Flowbite-Svelte Checkbox](https://flowbite-svelte.com/forms/checkbox) on LiveSvelte page
+  - [Flowbite-Svelte Accordion](https://flowbite-svelte.com/components/accordion) on LiveSvelte page
 
 ## License
 
