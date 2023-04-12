@@ -1,6 +1,6 @@
 # Phoenix + Ash + Svelte + Flowbite Demo
 
-<img alt='Phoenix' src="https://seeklogo.com/images/P/phoenix-logo-D15F067911-seeklogo.com.png" height=40 width=45><img alt='ash' align="top" src="https://ash-hq.org/images/ash-logo-side.svg" height=50 width=100><img alt='Svelte' src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height=45 width=45><img alt='Flowbite' src="https://flowbite.com/docs/images/logo.svg" height=45 width=45><img alt='Flowbite-Svelte' src="https://flowbite-svelte.com/images/flowbite-svelte-icon-logo.svg" height=45 width=45><img alt='Tailwind CSS' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" height=45 width=45>
+<img alt='Phoenix' src="https://seeklogo.com/images/P/phoenix-logo-D15F067911-seeklogo.com.png" height=40 width=45><img alt='ash' align="top" src="https://ash-hq.org/images/ash-logo-side.svg" height=50 width=100><img alt='Tailwind CSS' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" height=45 width=45><img alt='Svelte' src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height=45 width=45><img alt='Flowbite' src="https://flowbite.com/docs/images/logo.svg" height=45 width=45><img alt='Flowbite-Svelte' src="https://flowbite-svelte.com/images/flowbite-svelte-icon-logo.svg" height=45 width=45>
 
 ## Introduction
 
@@ -11,7 +11,7 @@ A sample web browser application demonstrating:
 - [x] [Ash](https://ash-hq.org) 2.6
   - [x] [Ash Authentication](https://github.com/team-alembic/ash_authentication)
   - [x] [Phlegethon Ash Extensions](https://github.com/frankdugan3/phlegethon) 
-- [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://github.com/woutdp/live_svelte)
+- [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://github.com/woutdp/live_svelte) - [video introduction](https://www.youtube.com/watch?v=JMkvbW35QvA)
 - [x] [Flowbite](https://flowbite.com) components
 - [x] [Flowbite-Svelte](https://flowbite-svelte.com) components
 
@@ -22,6 +22,7 @@ A sample web browser application demonstrating:
 - [Svelte component](https://github.com/woutdp/live_svelte#create-a-svelte-component) similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
 - [Flowbite Date Picker](https://flowbite.com/docs/plugins/datepicker/) (supports dark mode!)
 - [Flowbite-Svelte Checkbox](https://flowbite-svelte.com/forms/checkbox)
+- [Flowbite-Svelte Accordion](https://flowbite-svelte.com/components/accordion)
 
 ## License
 
@@ -87,8 +88,18 @@ mix phx.server
 Open a browser to http://localhost:4000
 
 ## Notes
-  
-1. Views that use most Flowbite-Svelte components should use ssr={false}; otherwise, runtime errors will occur
+
+1. package.json contains JavaScript dependencies that are installed as Hex packages. This is apparently needed for Svelte SSR.
+
+```js
+    "live_svelte": "file:../deps/live_svelte",
+    "phlegethon": "file:../deps/phlegethon",
+    "phoenix": "file:../deps/phoenix",
+    "phoenix_html": "file:../deps/phoenix_html",
+    "phoenix_live_view": "file:../deps/phoenix_live_view"
+```
+
+2. LiveSvelte elements that use most Flowbite-Svelte components must contain ssr={false}; otherwise, runtime errors will occur
   
 ## References
 
@@ -110,4 +121,4 @@ Open a browser to http://localhost:4000
 ## TODO
 
 1. Upgrade flowbite-svelte - see [#647](https://github.com/themesberg/flowbite-svelte/issues/647)
-2. Sync styles between Svelte and Phlegethon components - [see here](https://github.com/woutdp/live_svelte/discussions/28#discussioncomment-5575058)
+2. Sync styles between Svelte and Phlegethon components - [see here](https://github.com/woutdp/live_svelte/discussions/28)
