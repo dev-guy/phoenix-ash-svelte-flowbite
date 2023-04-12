@@ -10,7 +10,7 @@ A web browser application demonstrating:
 - [x] [Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html) 0.18 
 - [x] [Ash Framework](https://ash-hq.org) 2.6
 - [x] [Ash Authentication](https://github.com/team-alembic/ash_authentication)
-  - Login page with users and passwords stored in Postgres without writing any code
+  - Login page with users and passwords stored in Postgres without writing any imperative code
 - [x] [Phlegethon Ash Extensions](https://github.com/frankdugan3/phlegethon) 
   - Toggle dark and light themes
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://github.com/woutdp/live_svelte)
