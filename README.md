@@ -19,7 +19,7 @@ A web browser application demonstrating:
   - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
   - Watch the [LiveSvelte video](https://www.youtube.com/watch?v=JMkvbW35QvA)
   - [x] The [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) page is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
-  - [x] [TipTap Editor](https://tiptap.dev/) launched via Svelte
+  - [x] [TipTap Editor](https://tiptap.dev/) "dead view" managed via Svelte
 - [x] [Flowbite-Svelte](https://flowbite-svelte.com) examples on the Flowbite-Svelte Components page ("dead" view):
   - [Checkbox](https://flowbite-svelte.com/forms/checkbox)
   - [Accordion](https://flowbite-svelte.com/components/accordion)
