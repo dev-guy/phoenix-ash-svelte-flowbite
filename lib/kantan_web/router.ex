@@ -22,7 +22,8 @@ defmodule KantanWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
-    get "/svelte/components", PageController, :svelte
+    get "/svelte/flowbite", PageController, :flowbiteSvelte
+    get "/svelte/tiptap", PageController, :tiptap
 
     live "/svelte/counter", SvelteCounter
 
