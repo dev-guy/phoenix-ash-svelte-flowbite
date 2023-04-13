@@ -6,4 +6,6 @@ defmodule KantanWeb.PageController do
     # so skip the default app layout.
     render(conn, :home, layout: false)
   end
+
+  def svelte(conn, _params), do: render(conn, :svelte)
 end
