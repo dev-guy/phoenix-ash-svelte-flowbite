@@ -1,8 +1,14 @@
 {
   "dependencies": {
+    "@tiptap/core": "^2.0.3",
+    "@tiptap/extension-paragraph": "^2.0.3",
+    "@tiptap/extension-task-item": "^2.0.3",
+    "@tiptap/extension-task-list": "^2.0.3",
+    "@tiptap/extension-text": "^2.0.3",
+    "@tiptap/starter-kit": "^2.0.3",
     "flowbite": "^1.6.5",
     "flowbite-datepicker": "^1.2.2",
-    "flowbite-svelte": "^0.34.9",
+    "flowbite-svelte": "^0.29.13",
     "live_svelte": "file:../deps/live_svelte",
     "phlegethon": "file:../deps/phlegethon",
     "phoenix": "file:../deps/phoenix",
@@ -13,6 +19,7 @@
     "esbuild": "^0.17.11",
     "esbuild-plugin-import-glob": "^0.1.1",
     "esbuild-svelte": "^0.7.3",
+    "sass": "^1.62.0",
     "svelte-preprocess": "^5.0.3"
   }
 }
