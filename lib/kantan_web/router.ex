@@ -22,9 +22,9 @@ defmodule KantanWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/svelte/components", PageController, :svelte
 
     live "/svelte/counter", SvelteCounter
-    live "/svelte/components", SvelteComponents
 
     sign_in_route()
     sign_out_route AuthController
