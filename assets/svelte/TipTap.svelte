@@ -50,20 +50,11 @@ const CustomTaskItem = TaskItem.extend({
     });
   });
 </script>
+
 <!--
-  :global stops the Svelte esbuild plugin from removing these styles.
-  If you know of a better way please create an issue or a PR.
+  :global prevents the Svelte esbuild plugin from removing these styles.
 -->
 <style lang="scss"> 
-  :global(div[data-type="tiptap"]) {
-    :global(button) {
-      border-radius: 5px;
-      border: 1px solid #000;
-      padding: 1px 2px;
-      background: blue;
-    }
-  }
-
   :global(ul[data-type="taskList"]) {
     list-style: none;
     padding: 0;
@@ -81,16 +72,12 @@ const CustomTaskItem = TaskItem.extend({
         flex: 1 1 auto;
       }
     }
-  
-    :global(input[type="checkbox"]) {
-      cursor: help;
-    }
   }
 </style>
 
-    {#if editor}
+{#if editor}
   <div>
-    <div data-type="tiptap">
+    <div class="tiptap-toolbar">
       <button
         on:click={() => console.log && editor.chain().focus().toggleBold().run()}
         disabled={!editor.can().chain().focus().toggleBold().run()}
@@ -206,4 +193,5 @@ const CustomTaskItem = TaskItem.extend({
     </div>
   </div>
 {/if}
-<div bind:this={element} />
+
+<div class='tiptapEditor' bind:this={element} />
