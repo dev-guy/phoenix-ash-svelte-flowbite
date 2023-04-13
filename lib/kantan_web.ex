@@ -84,14 +84,14 @@ defmodule KantanWeb do
       # HTML escaping functionality
       import Phoenix.HTML
       # Core UI components and translation
-      # import KantanWeb.CoreComponents
+      # import KantanWeb.CoreComponents # Use Phlegethon instead
+
       import KantanWeb.Gettext
 
       # Shortcut for generating JS commands
       alias Phoenix.LiveView.JS
 
       # Import all Phlegethon components
-      # This doesn't work because it conflicts with Kantan.CoreComponents
       use Phlegethon.Components
 
       # Routes generation with the ~p sigil

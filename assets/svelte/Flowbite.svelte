@@ -13,10 +13,10 @@
     duration: 200,
     easing: sineIn
   };
+
 </script>
 
 <!-- From https://flowbite-svelte.com/components/sidebar -->
-
 <div class="text-center">
   <Button on:click={() => (hidden1 = false)}>Show/Hide Sidebar Menu</Button>
 </div>

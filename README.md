@@ -10,16 +10,17 @@ A web browser application demonstrating:
 - [x] [Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html) 0.18
 - [x] [Ash Framework](https://ash-hq.org) 2.6
 - [x] [Ash Authentication](https://github.com/team-alembic/ash_authentication)
-  - Login page with users and passwords stored in Postgres without writing any imperative code
+  - [x] Login page with users and passwords stored in Postgres without writing any imperative code
 - [x] [Phlegethon](https://github.com/frankdugan3/phlegethon)
-  - Toggle dark and light themes
+  - [x] Toggle dark and light themes
 - [x] [Flowbite](https://flowbite.com) Tailwind CSS Components
   - [Flowbite Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://wout.space/notes/live-svelte)
   - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
-  - [LiveSvelte video](https://www.youtube.com/watch?v=JMkvbW35QvA)
-  - The [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) page is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
-- [x] [Flowbite-Svelte](https://flowbite-svelte.com) examples on the Flowbite-Svelte Components page (dead view):
+  - Watch the [LiveSvelte video](https://www.youtube.com/watch?v=JMkvbW35QvA)
+  - [x] The [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) page is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
+  - [x] [TipTap Editor](https://tiptap.dev/) "dead view" managed via Svelte
+- [x] [Flowbite-Svelte](https://flowbite-svelte.com) examples on the Flowbite-Svelte Components page ("dead" view):
   - [Checkbox](https://flowbite-svelte.com/forms/checkbox)
   - [Accordion](https://flowbite-svelte.com/components/accordion)
   - [Sidebar Menu](https://flowbite-svelte.com/components/sidebar) with [Drawer](https://flowbite-svelte.com/components/drawer)
