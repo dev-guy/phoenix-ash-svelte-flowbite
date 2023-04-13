@@ -194,4 +194,4 @@ const CustomTaskItem = TaskItem.extend({
   </div>
 {/if}
 
-<div class='tiptapEditor' bind:this={element} />
+<div bind:this={element} />
