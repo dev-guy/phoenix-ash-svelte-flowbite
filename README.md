@@ -141,7 +141,7 @@ Open a browser to http://localhost:4000
 - [ElixirConf 2022 - Ryan Cooke - E2E Reactivity - using Svelte with Phoenix LiveView](https://www.youtube.com/watch?v=asm2TTm035o)
 - [LiveSvelte video](https://www.youtube.com/watch?v=JMkvbW35QvA)
 - [Getting Started: Phoenix 1.7 with Svelte](https://medium.com/@alistairisrael/phoenix-1-7-with-svelte-12257d853ed1)
-- [Svelte and Tailwind](https://github.com/woutdp/live_svelte/discussions/32)
+- [Svelte, Tailwind, and Sass](https://github.com/woutdp/live_svelte/discussions/32)
 
 ## TODO
 
