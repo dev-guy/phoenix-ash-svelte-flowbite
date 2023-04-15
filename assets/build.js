@@ -2,6 +2,8 @@ const esbuild = require("esbuild")
 const sveltePlugin = require("esbuild-svelte")
 const importGlobPlugin = require("esbuild-plugin-import-glob").default
 const sveltePreprocess = require("svelte-preprocess")
+const tailwind = require('tailwindcss')
+const autoprefixer = require('autoprefixer')
 
 const args = process.argv.slice(2)
 const watch = args.includes("--watch")
@@ -18,7 +20,14 @@ let optsClient = {
     plugins: [
         importGlobPlugin(),
         sveltePlugin({
-            preprocess: sveltePreprocess(),
+            preprocess: sveltePreprocess({
+                postcss: {
+                    plugins: [
+                        tailwind, 
+                        autoprefixer
+                    ]
+                }
+            }),
             compilerOptions: {hydratable: true, css: true},
         }),
     ],
