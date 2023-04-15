@@ -17,6 +17,7 @@ A web browser application demonstrating:
   - [Flowbite Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://wout.space/notes/live-svelte)
   - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
+  - Styles in .svelte files can reference Tailwind utility classes (see TipTap.svelte)
   - [x] The [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) page is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
   - [x] [TipTap Editor](https://tiptap.dev/) "dead view" managed via Svelte
 - [x] [Flowbite-Svelte](https://flowbite-svelte.com) examples on the Flowbite-Svelte Components page ("dead" view):
@@ -140,6 +141,7 @@ Open a browser to http://localhost:4000
 - [ElixirConf 2022 - Ryan Cooke - E2E Reactivity - using Svelte with Phoenix LiveView](https://www.youtube.com/watch?v=asm2TTm035o)
 - [LiveSvelte video](https://www.youtube.com/watch?v=JMkvbW35QvA)
 - [Getting Started: Phoenix 1.7 with Svelte](https://medium.com/@alistairisrael/phoenix-1-7-with-svelte-12257d853ed1)
+- [Svelte and Tailwind](https://github.com/woutdp/live_svelte/discussions/32)
 
 ## TODO
 
