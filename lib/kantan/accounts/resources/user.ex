@@ -36,6 +36,14 @@ defmodule Kantan.Accounts.User do
     identity :unique_email, [:email]
   end
 
+  multitenancy do
+    strategy :context
+  end
+
+  relationships do
+    belongs_to :tenant, Kantan.Accounts.Tenant
+  end
+
   # If using policies, add the following bypass:
   # policies do
   #   bypass AshAuthentication.Checks.AshAuthenticationInteraction do
