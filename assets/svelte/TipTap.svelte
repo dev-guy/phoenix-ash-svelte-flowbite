@@ -3,7 +3,6 @@ import Document from '@tiptap/extension-document'
 import Paragraph from '@tiptap/extension-paragraph'
 import TaskItem from '@tiptap/extension-task-item'
 import TaskList from '@tiptap/extension-task-list'
-import Text from '@tiptap/extension-text'
 
 import StarterKit from "@tiptap/starter-kit";
 import { Editor } from "@tiptap/core";
@@ -21,7 +20,6 @@ onMount(() => {
     element: element,
     extensions: [
       StarterKit,
-      Paragraph,
       TaskList,
       CustomTaskItem,
     ],
