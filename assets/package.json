@@ -8,7 +8,6 @@
     "@tiptap/starter-kit": "^2.0.3",
     "flowbite": "^1.6.5",
     "flowbite-datepicker": "^1.2.2",
-    "flowbite-svelte": "^0.29.13",
     "live_svelte": "file:../deps/live_svelte",
     "phlegethon": "file:../deps/phlegethon",
     "phoenix": "file:../deps/phoenix",
@@ -16,6 +15,7 @@
     "phoenix_live_view": "file:../deps/phoenix_live_view"
   },
   "devDependencies": {
+    "@skeletonlabs/skeleton": "^1.2.0",
     "@tailwindcss/forms": "^0.5.3",
     "autoprefixer": "^10.4.14",
     "esbuild": "^0.17.11",

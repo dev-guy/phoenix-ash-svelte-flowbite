@@ -133,7 +133,7 @@ Open a browser to http://localhost:4000
 3. [Install Phlegethon](https://github.com/frankdugan3/phlegethon/blob/main/documentation/tutorials/get-started.md)
 4. [Install LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
 5. [Install Flowbite](https://flowbite.com/docs/getting-started/phoenix/)
-6. [Install Flowbite-Svelte](https://medium.com/mkdir-awesome/getting-started-with-flowbite-svelte-37b086ce9db5)
+6. [Install Skeleton for Svelte](https://www.skeleton.dev/docs/get-started)
 
 ### Other
 

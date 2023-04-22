@@ -14,8 +14,11 @@ module.exports = {
     "../deps/ash_authentication_phoenix/**/*.ex",
     "../deps/phlegethon/lib/phlegethon/**/*.*ex",
     "./svelte/**/*.svelte",
-    "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}",
     "./node_modules/flowbite/**/*.js",
+    require('path').join(require.resolve(
+			'@skeletonlabs/skeleton'),
+			'../**/*.{html,js,svelte,ts}'
+		)
   ],
   theme: {
     extend: {
@@ -71,14 +74,15 @@ module.exports = {
     }),
 
     // phlegethon
+    plugin(({ addVariant }) => addVariant('aria-selected', '&[aria-selected]')),
     plugin(({ addVariant }) =>
-    addVariant('aria-selected', '&[aria-selected]'),
+      addVariant('aria-checked', '&[aria-checked]'),
+    ),
 
-    // flowbite
-    require('flowbite/plugin')
-  ),
-  plugin(({ addVariant }) =>
-    addVariant('aria-checked', '&[aria-checked]'),
-  )
+    // flowbite - commented out due to Skeleton
+    // require('flowbite/plugin'),
+
+    // Svelte Skeleton
+    ...require('@skeletonlabs/skeleton/tailwind/skeleton.cjs')()
   ]
 }

@@ -40,6 +40,8 @@ const dtHook = {
 };
   
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
+
+// phlegethon
 let liveSocket = new LiveSocket("/live", Socket, {
   hooks: {...hooks, ...getHooks(SvelteComponents), Datepicker: dtHook },
   params: {_csrf_token: csrfToken}})

@@ -53,12 +53,8 @@ const CustomTaskItem = TaskItem.extend({
 
 <!--
   :global prevents the Svelte esbuild plugin from removing these styles.
--->
+-->;
 <style lang='scss'>
-  .tiptap-toolbar button {
-    @apply bg-blue-700 py-2 px-4 shadow-md no-underline rounded-full text-white font-sans font-semibold text-sm focus:outline-none active:shadow-none mr-2;
-  }
-
   :global(ul[data-type="taskList"]) {
     list-style: none;
     padding: 0;
