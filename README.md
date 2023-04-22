@@ -15,12 +15,15 @@ A web browser application demonstrating:
   - [x] Toggle dark and light themes
 - [x] [Flowbite](https://flowbite.com) Tailwind CSS Components
   - [x] [Flowbite Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
-   - Flowbite does not require JavaScript
+  - Flowbite does not require JavaScript
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://wout.space/notes/live-svelte)
   - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
   - Styles in .svelte files can reference Tailwind utility classes (see TipTap.svelte)
-  - [x] The [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) page is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
-  - [x] [TipTap Editor](https://tiptap.dev/) "dead view" managed via Svelte
+  - Support Sass/PostCSS
+  - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
+  - [x] [TipTap Editor](https://tiptap.dev/) "dead view"
+  - [live_svelte will be even easier to use soon](https://github.com/woutdp/live_svelte/discussions/33)
+  - Using @apply in `<style>` blocks in svelte files is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
 - [x] [Svelte Skeleton](https://www.skeleton.dev/) examples on the Skeleton Components page ("dead" view):
   - [Accordion](https://www.skeleton.dev/components/accordions)
 
@@ -107,23 +110,9 @@ Open a browser to http://localhost:4000
 
 2. Need another component? Add it to package.json!
 
-3. LiveSvelte elements that use most Flowbite-Svelte components must contain ssr={false}; otherwise, runtime errors will occur
+3. LiveSvelte elements that use most Svelte Skeleton components must contain ssr={false}; otherwise, runtime errors will occur
 
-4. You will get warnings from Flowbite-Svelte that can be ignored (for now):
-
-```
-▲ [WARNING] A11y: The attribute 'aria-expanded' is not supported by the role 'heading'. This role is implicit on the element <h2>. [plugin esbuild-svelte]
-
-    node_modules/flowbite-svelte/accordions/AccordionItem.svelte:43:4:
-      43 │ 41: </script>
-         ╵     ~~~~~~~~~
-
-42:
-43: <h2 aria-expanded={open} class="group">
-        ^
-```
-
-5. Beware [Svelte-Kit $app dependencies](https://github.com/woutdp/live_svelte/discussions/30)!
+4. Beware [Svelte-Kit $app dependencies](https://github.com/woutdp/live_svelte/discussions/30)!
   
 ## References
 
@@ -132,8 +121,8 @@ Open a browser to http://localhost:4000
 1. [Install Phoenix](https://hexdocs.pm/phoenix/installation.html)
 2. [Install Ash Authentication](https://hexdocs.pm/ash_authentication_phoenix/getting-started-with-ash-authentication-phoenix.html)
 3. [Install Phlegethon](https://github.com/frankdugan3/phlegethon/blob/main/documentation/tutorials/get-started.md)
-4. [Install LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
-5. [Install Flowbite](https://flowbite.com/docs/getting-started/phoenix/)
+4. [Install Flowbite](https://flowbite.com/docs/getting-started/phoenix/)
+6. [Install LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
 6. [Install Skeleton for Svelte](https://www.skeleton.dev/docs/get-started)
 
 ### Other
@@ -142,14 +131,8 @@ Open a browser to http://localhost:4000
 - [ElixirConf 2022 - Ryan Cooke - E2E Reactivity - using Svelte with Phoenix LiveView](https://www.youtube.com/watch?v=asm2TTm035o)
 - [LiveSvelte video](https://www.youtube.com/watch?v=JMkvbW35QvA)
 - [Getting Started: Phoenix 1.7 with Svelte](https://medium.com/@alistairisrael/phoenix-1-7-with-svelte-12257d853ed1)
-- [Svelte, Tailwind, and Sass](https://github.com/woutdp/live_svelte/discussions/32)
 
 ## TODO
 
-1. Upgrade flowbite-svelte - see [#647](https://github.com/themesberg/flowbite-svelte/issues/647)
-2. Sync styles between Svelte and Phlegethon components - [see here](https://github.com/woutdp/live_svelte/discussions/28)
-
-## Notes
-
-- [live_svelte will be even easier to use soon](https://github.com/woutdp/live_svelte/discussions/33)
-- Using @apply in `<style>` blocks in svelte files is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
+1. Sync styles between Svelte and Phlegethon components (if possible)
+  - [see here](https://github.com/woutdp/live_svelte/discussions/28)

@@ -3,7 +3,7 @@ defmodule KantanWeb.SvelteCounter do
 
   def render(assigns) do
     ~H"""
-    <LiveSvelte.render ssr={false} name="Counter" props={%{number: @number}} />
+    <LiveSvelte.render name="Counter" props={%{number: @number}} />
     """
   end
 
