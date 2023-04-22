@@ -20,13 +20,6 @@ module.exports = {
 			'../**/*.{html,js,svelte,ts}'
 		)
   ],
-  theme: {
-    extend: {
-      colors: {
-        brand: "#FD4F00",
-      }
-    },
-  },
   plugins: [
     require("@tailwindcss/forms"),
     // Allows prefixing tailwind classes with LiveView classes to add rules

@@ -56,17 +56,17 @@
               <%= @current_user.email %>
             </span>
             <.button
-              href="/sign-out"
-              type="button"
-              class="whitespace-nowrap"
+              navigate={~p"/sign-out"}
+              case="capitalize"
+              class="unstyled"
             >
               Sign out
             </.button>
           <% else %>
             <.button
-              type="button"
-              class="whitespace-nowrap"
-              href="/sign-in"
+              navigate={~p"/sign-in"}
+              case="capitalize"
+              class="unstyled"
             >
           <.icon name="hero-computer-desktop-mini" /> 
               Sign In
