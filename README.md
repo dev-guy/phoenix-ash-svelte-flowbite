@@ -146,4 +146,9 @@ Open a browser to http://localhost:4000
 ## TODO
 
 1. Upgrade flowbite-svelte - see [#647](https://github.com/themesberg/flowbite-svelte/issues/647)
-1. Sync styles between Svelte and Phlegethon components - [see here](https://github.com/woutdp/live_svelte/discussions/28)
+2. Sync styles between Svelte and Phlegethon components - [see here](https://github.com/woutdp/live_svelte/discussions/28)
+
+## Notes
+
+- [live_svelte is about to be even easier to use](https://github.com/woutdp/live_svelte/discussions/33)
+- Using @apply in `<style>` blocks in svelte files is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
