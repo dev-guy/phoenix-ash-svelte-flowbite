@@ -1,3 +1,7 @@
+# Don't add these by mistake
+/package.json
+/package-lock.json
+
 # Git
 *.orig
 

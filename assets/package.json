@@ -1,4 +1,5 @@
 {
+  "version": "0.1.0,
   "dependencies": {
     "@tiptap/core": "^2.0.3",
     "@tiptap/extension-paragraph": "^2.0.3",
