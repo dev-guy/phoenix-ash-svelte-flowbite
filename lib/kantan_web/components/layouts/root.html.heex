@@ -53,19 +53,19 @@
             <span class="px-3 py-2 text-sm font-medium text-white rounded-md">
               <%= @current_user.email %>
             </span>
-            <a
+            <.button
               href="/sign-out"
-              class="rounded-lg bg-zinc-100 px-2 py-1 text-[0.8125rem] font-semibold leading-6 text-zinc-900 hover:bg-zinc-200/80 active:text-zinc-900/70"
+              class="whitespace-nowrap"
             >
               Sign out
-            </a>
+            </.button>
           <% else %>
-            <a
+            <.button
               href="/sign-in"
-              class="rounded-lg bg-zinc-100 px-2 py-1 text-[0.8125rem] font-semibold leading-6 text-zinc-900 hover:bg-zinc-200/80 active:text-zinc-900/70"
+              class="whitespace-nowrap"
             >
               Sign In
-            </a>
+            </.button>
           <% end %>
         </div>
       </div>

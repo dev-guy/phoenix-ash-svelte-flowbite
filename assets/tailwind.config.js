@@ -71,14 +71,10 @@ module.exports = {
     }),
 
     // phlegethon
-    plugin(({ addVariant }) =>
-    addVariant('aria-selected', '&[aria-selected]'),
+    plugin(({ addVariant }) => addVariant('aria-selected', '&[aria-selected]')),
+    plugin(({ addVariant }) => addVariant('aria-checked', '&[aria-checked]')),
 
     // flowbite
-    require('flowbite/plugin')
-  ),
-  plugin(({ addVariant }) =>
-    addVariant('aria-checked', '&[aria-checked]'),
-  )
+    require('flowbite/plugin'),
   ]
 }
