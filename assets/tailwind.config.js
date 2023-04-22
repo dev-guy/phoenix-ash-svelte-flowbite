@@ -75,9 +75,7 @@ module.exports = {
 
     // phlegethon
     plugin(({ addVariant }) => addVariant('aria-selected', '&[aria-selected]')),
-    plugin(({ addVariant }) =>
-      addVariant('aria-checked', '&[aria-checked]'),
-    ),
+    plugin(({ addVariant }) => addVariant('aria-checked', '&[aria-checked]')),
 
     // flowbite - commented out due to Skeleton
     // require('flowbite/plugin'),

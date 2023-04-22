@@ -9,30 +9,24 @@ import StarterKit from "@tiptap/starter-kit";
 import { Editor } from "@tiptap/core";
 import { onMount } from "svelte";
 
-  const CustomDocument = Document.extend({
-  content: 'taskList',
-})
-
 const CustomTaskItem = TaskItem.extend({
   content: 'inline*',
-})
+});
 
-  let element;
-  let editor;
+let element;
+let editor;
 
-  onMount(() => {
-    editor = new Editor({
-      element: element,
-      extensions: [
-        StarterKit,
-        CustomDocument,
-        Paragraph,
-        Text,
-        TaskList,
-        CustomTaskItem,
-      ],
+onMount(() => {
+  editor = new Editor({
+    element: element,
+    extensions: [
+      StarterKit,
+      Paragraph,
+      TaskList,
+      CustomTaskItem,
+    ],
 
-      content: `
+    content: `
       <ul data-type="taskList">
         <li data-type="taskItem" data-checked="true">flour</li>
         <li data-type="taskItem" data-checked="true">baking powder</li>
@@ -42,18 +36,20 @@ const CustomTaskItem = TaskItem.extend({
         <li data-type="taskItem" data-checked="false">eggs</li>
         <li data-type="taskItem" data-checked="false">butter</li>
       </ul>
+      <p>Preheat the oven to 200°C/400°F/gas 6. Sift the flour, baking powder and salt into a bowl. Stir in the sugar. Make a well in the centre and pour in the milk, eggs and melted butter. Beat until smooth.</p>
       `,
-      onTransaction: () => {
-        // force re-render so `editor.isActive` works as expected
-        editor = editor;
-      },
-    });
+
+    onTransaction: () => {
+      // force re-render so `editor.isActive` works as expected
+      editor = editor;
+    },
   });
+});
 </script>
 
 <!--
   :global prevents the Svelte esbuild plugin from removing these styles.
--->;
+-->
 <style lang='scss'>
   :global(ul[data-type="taskList"]) {
     list-style: none;
@@ -64,7 +60,7 @@ const CustomTaskItem = TaskItem.extend({
       align-items: center;
       > :global(label) {
         flex: 0 0 auto;
-        margin-right: .5rem;
+        margin-right: 2rem;
         user-select: none;
       }
   

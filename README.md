@@ -1,12 +1,12 @@
 # Phoenix Ash Flowbite Svelte TipTap Mash-Up
 
-<img alt='Phoenix' src="https://seeklogo.com/images/P/phoenix-logo-D15F067911-seeklogo.com.png" height=40 width=45><img alt='ash' align="top" src="https://ash-hq.org/images/ash-logo-side.svg" height=50 width=100><img alt='Tailwind CSS' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" height=45 width=45><img alt='Svelte' src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height=45 width=45><img alt='Flowbite' src="https://flowbite.com/docs/images/logo.svg" height=45 width=45><img alt='Flowbite-Svelte' src="https://flowbite-svelte.com/images/flowbite-svelte-icon-logo.svg" height=45 width=45>
+<img alt='Phoenix' src="https://seeklogo.com/images/P/phoenix-logo-D15F067911-seeklogo.com.png" height=40 width=45><img alt='ash' align="top" src="https://ash-hq.org/images/ash-logo-side.svg" height=50 width=100><img alt='Tailwind CSS' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" height=45 width=45><img alt='Flowbite' src="https://flowbite.com/docs/images/logo.svg" height=45 width=45><img alt='Svelte' src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height=45 width=45><img alt='Skeleton' height=45 width=45 src="https://pbs.twimg.com/profile_images/1587479781544759297/TINbbJLC_400x400.png"/>
 
 ## Introduction
 
 A web browser application demonstrating:
 
-- [x] [Phoenix](https://www.phoenixframework.org/) 1.7
+- [x] [Phoenix](https://www.phoenixframework.org/) 1.7 with [TailwindCSS](https://tailwindcss.com) 3.3.1
 - [x] [Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html) 0.18
 - [x] [Ash Framework](https://ash-hq.org) 2.6
 - [x] [Ash Authentication](https://github.com/team-alembic/ash_authentication)
@@ -14,16 +14,15 @@ A web browser application demonstrating:
 - [x] [Phlegethon](https://github.com/frankdugan3/phlegethon)
   - [x] Toggle dark and light themes
 - [x] [Flowbite](https://flowbite.com) Tailwind CSS Components
-  - [Flowbite Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
+  - [x] [Flowbite Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
+   - Flowbite does not require JavaScript
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://wout.space/notes/live-svelte)
   - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
   - Styles in .svelte files can reference Tailwind utility classes (see TipTap.svelte)
   - [x] The [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) page is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
   - [x] [TipTap Editor](https://tiptap.dev/) "dead view" managed via Svelte
-- [x] [Flowbite-Svelte](https://flowbite-svelte.com) examples on the Flowbite-Svelte Components page ("dead" view):
-  - [Checkbox](https://flowbite-svelte.com/forms/checkbox)
-  - [Accordion](https://flowbite-svelte.com/components/accordion)
-  - [Sidebar Menu](https://flowbite-svelte.com/components/sidebar) with [Drawer](https://flowbite-svelte.com/components/drawer)
+- [x] [Svelte Skeleton](https://www.skeleton.dev/) examples on the Skeleton Components page ("dead" view):
+  - [Accordion](https://www.skeleton.dev/components/accordions)
 
 ## Video
 
@@ -84,6 +83,8 @@ git clone https://github.com/dev-guy/ash-svelte-flowbite.git
 cd ash-svelte-flowbite
 nvm i
 mix local.hex
+mix setup
+mix tailwind.install
 mix setup
 # Register the version of esbuild installed by npm
 mix esbuild.install
@@ -146,4 +147,9 @@ Open a browser to http://localhost:4000
 ## TODO
 
 1. Upgrade flowbite-svelte - see [#647](https://github.com/themesberg/flowbite-svelte/issues/647)
-1. Sync styles between Svelte and Phlegethon components - [see here](https://github.com/woutdp/live_svelte/discussions/28)
+2. Sync styles between Svelte and Phlegethon components - [see here](https://github.com/woutdp/live_svelte/discussions/28)
+
+## Notes
+
+- [live_svelte will be even easier to use soon](https://github.com/woutdp/live_svelte/discussions/33)
+- Using @apply in `<style>` blocks in svelte files is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
