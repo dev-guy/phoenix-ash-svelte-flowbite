@@ -14,7 +14,6 @@ config :kantan,
   ash_apis: [Kantan.Accounts]
 
 config :ash, :use_all_identities_in_manage_relationship?, false
-
 config :phlegethon, :overrides, [Phlegethon.Overrides.Default]
 
 # Configures the endpoint
@@ -48,7 +47,7 @@ config :esbuild,
 
 # Configure tailwind (the version is required)
 config :tailwind,
-  version: "3.2.7",
+  version: "3.3.1",
   default: [
     args: ~w(
       --config=tailwind.config.js

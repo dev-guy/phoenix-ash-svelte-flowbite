@@ -6,7 +6,7 @@
 
 A web browser application demonstrating:
 
-- [x] [Phoenix](https://www.phoenixframework.org/) 1.7
+- [x] [Phoenix](https://www.phoenixframework.org/) 1.7 with [TailwindCSS](https://tailwindcss.com) 3.3.1
 - [x] [Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html) 0.18
 - [x] [Ash Framework](https://ash-hq.org) 2.6
 - [x] [Ash Authentication](https://github.com/team-alembic/ash_authentication)
@@ -84,6 +84,8 @@ git clone https://github.com/dev-guy/ash-svelte-flowbite.git
 cd ash-svelte-flowbite
 nvm i
 mix local.hex
+mix setup
+mix tailwind.install
 mix setup
 # Register the version of esbuild installed by npm
 mix esbuild.install
