@@ -12,7 +12,6 @@ module.exports = {
     "../lib/*_web.ex",
     "../lib/*_web/**/*.*ex",
     "../deps/ash_authentication_phoenix/**/*.ex",
-    "../deps/phlegethon/lib/phlegethon/**/*.*ex",
     "./svelte/**/*.svelte",
     "./node_modules/flowbite/**/*.js",
     require('path').join(require.resolve(

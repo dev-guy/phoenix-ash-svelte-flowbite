@@ -51,7 +51,7 @@ defmodule KantanWeb do
 
   def live_view do
     quote do
-      use Phlegethon.LiveView,
+      use Phoenix.LiveView,
         layout: {KantanWeb.Layouts, :app}
 
       unquote(html_helpers())
@@ -60,7 +60,7 @@ defmodule KantanWeb do
 
   def live_component do
     quote do
-      use Phlegethon.LiveComponent
+      use Phoenix.LiveComponent
 
       unquote(html_helpers())
     end
@@ -68,7 +68,7 @@ defmodule KantanWeb do
 
   def html do
     quote do
-      use Phlegethon.Component
+      use Phoenix.Component
 
       # Import convenience functions from controllers
       import Phoenix.Controller,
@@ -84,15 +84,12 @@ defmodule KantanWeb do
       # HTML escaping functionality
       import Phoenix.HTML
       # Core UI components and translation
-      # import KantanWeb.CoreComponents # Use Phlegethon instead
+      import KantanWeb.CoreComponents # Use Phlegethon instead
 
       import KantanWeb.Gettext
 
       # Shortcut for generating JS commands
       alias Phoenix.LiveView.JS
-
-      # Import all Phlegethon components
-      use Phlegethon.Components
 
       # Routes generation with the ~p sigil
       unquote(verified_routes())

@@ -28,8 +28,6 @@
 -->
         <div flex items-center>
         <.button
-          type="button"
-          class="whitespace-nowrap"
           phx-click={JS.dispatch("phlegethon:theme-system")}
         >
           <.icon name="hero-computer-desktop-mini" /> System
@@ -56,17 +54,15 @@
               <%= @current_user.email %>
             </span>
             <.button
-              navigate={~p"/sign-out"}
+              href={~p"/sign-out"}
               case="capitalize"
-              class="unstyled"
             >
               Sign out
             </.button>
           <% else %>
             <.button
-              navigate={~p"/sign-in"}
+              href="/sign-in"
               case="capitalize"
-              class="unstyled"
             >
           <.icon name="hero-computer-desktop-mini" /> 
               Sign In
