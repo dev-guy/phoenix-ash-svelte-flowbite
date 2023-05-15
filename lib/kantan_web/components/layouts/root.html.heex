@@ -11,8 +11,8 @@
     <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
     </script>
   </head>
-  <body class="bg-white antialiased">
-    <header class="px-4 sm:px-6 lg:px-8">
+  <body class="h-screen">
+    <header class="px-4 sm:px-6 lg:px-8 bg-white antialiased dark:bg-black">
 <!-- Phoenix logo begin
 -->
       <div class="flex items-center justify-between border-b border-zinc-100 py-3 text-sm">
@@ -24,7 +24,7 @@
             v<%= Application.spec(:phoenix, :vsn) %>
           </p>
         </div>
-<!-- Theme selection begin
+<!-- Dark mode selection begin
 -->
         <div flex items-center>
         <.button
@@ -49,7 +49,7 @@
           <.icon name="hero-sun-mini" /> Light
         </.button>
         </div>
-<!-- Theme selection end
+<!-- Dark mode selection end
 -->
           <%= if @current_user do %>
             <span class="px-3 py-2 text-sm font-medium text-white rounded-md">
@@ -66,8 +66,8 @@
               navigate={~p"/sign-in"}
               case="capitalize"
             >
-          <.icon name="hero-computer-desktop-mini" />
-              Sign In
+            <.icon name="hero-computer-desktop-mini" />
+            Sign In
             </.button>
           <% end %>
       </div>
