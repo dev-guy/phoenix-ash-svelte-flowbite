@@ -13,6 +13,8 @@
   </head>
   <body class="bg-white antialiased">
     <header class="px-4 sm:px-6 lg:px-8">
+<!-- Phoenix logo begin
+-->
       <div class="flex items-center justify-between border-b border-zinc-100 py-3 text-sm">
         <div class="flex items-center gap-4">
           <a href="/">
@@ -24,50 +26,50 @@
         </div>
 <!-- Theme selection begin
 -->
+        <div flex items-center>
         <.button
           type="button"
           class="whitespace-nowrap"
-          phx-click={JS.dispatch("phlegethon:theme-system")}
+          phx-click={JS.dispatch("pyro:theme-system")}
         >
           <.icon name="hero-computer-desktop-mini" /> System
         </.button>
         <.button
           type="button"
           class="whitespace-nowrap"
-          phx-click={JS.dispatch("phlegethon:theme-dark")}
+          phx-click={JS.dispatch("pyro:theme-dark")}
         >
           <.icon name="hero-moon-mini" /> Dark
         </.button>
-
         <.button
           type="button"
           class="whitespace-nowrap"
-          phx-click={JS.dispatch("phlegethon:theme-light")}
+          phx-click={JS.dispatch("pyro:theme-light")}
         >
           <.icon name="hero-sun-mini" /> Light
         </.button>
+        </div>
 <!-- Theme selection end
 -->
-        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
           <%= if @current_user do %>
             <span class="px-3 py-2 text-sm font-medium text-white rounded-md">
               <%= @current_user.email %>
             </span>
             <.button
-              href="/sign-out"
-              class="whitespace-nowrap"
+              navigate={~p"/sign-out"}
+              case="capitalize"
             >
               Sign out
             </.button>
           <% else %>
             <.button
-              href="/sign-in"
-              class="whitespace-nowrap"
+              navigate={~p"/sign-in"}
+              case="capitalize"
             >
+          <.icon name="hero-computer-desktop-mini" />
               Sign In
             </.button>
           <% end %>
-        </div>
       </div>
     </header>
 

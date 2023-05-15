@@ -12,18 +12,14 @@ module.exports = {
     "../lib/*_web.ex",
     "../lib/*_web/**/*.*ex",
     "../deps/ash_authentication_phoenix/**/*.ex",
-    "../deps/phlegethon/lib/phlegethon/**/*.*ex",
+    "../deps/pyro/lib/pyro/**/*.*ex",
     "./svelte/**/*.svelte",
-    "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}",
     "./node_modules/flowbite/**/*.js",
+    require('path').join(require.resolve(
+			'@skeletonlabs/skeleton'),
+			'../**/*.{html,js,svelte,ts}'
+		)
   ],
-  theme: {
-    extend: {
-      colors: {
-        brand: "#FD4F00",
-      }
-    },
-  },
   plugins: [
     require("@tailwindcss/forms"),
     // Allows prefixing tailwind classes with LiveView classes to add rules
@@ -70,11 +66,14 @@ module.exports = {
       }, {values})
     }),
 
-    // phlegethon
+    // Pyro
     plugin(({ addVariant }) => addVariant('aria-selected', '&[aria-selected]')),
     plugin(({ addVariant }) => addVariant('aria-checked', '&[aria-checked]')),
 
-    // flowbite
-    require('flowbite/plugin'),
+    // flowbite - commented out due to Skeleton
+    // require('flowbite/plugin'),
+
+    // Svelte Skeleton
+    ...require('@skeletonlabs/skeleton/tailwind/skeleton.cjs')()
   ]
 }

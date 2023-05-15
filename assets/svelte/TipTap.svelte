@@ -3,36 +3,28 @@ import Document from '@tiptap/extension-document'
 import Paragraph from '@tiptap/extension-paragraph'
 import TaskItem from '@tiptap/extension-task-item'
 import TaskList from '@tiptap/extension-task-list'
-import Text from '@tiptap/extension-text'
 
 import StarterKit from "@tiptap/starter-kit";
 import { Editor } from "@tiptap/core";
 import { onMount } from "svelte";
 
-  const CustomDocument = Document.extend({
-  content: 'taskList',
-})
-
 const CustomTaskItem = TaskItem.extend({
   content: 'inline*',
-})
+});
 
-  let element;
-  let editor;
+let element;
+let editor;
 
-  onMount(() => {
-    editor = new Editor({
-      element: element,
-      extensions: [
-        StarterKit,
-        CustomDocument,
-        Paragraph,
-        Text,
-        TaskList,
-        CustomTaskItem,
-      ],
+onMount(() => {
+  editor = new Editor({
+    element: element,
+    extensions: [
+      StarterKit,
+      TaskList,
+      CustomTaskItem,
+    ],
 
-      content: `
+    content: `
       <ul data-type="taskList">
         <li data-type="taskItem" data-checked="true">flour</li>
         <li data-type="taskItem" data-checked="true">baking powder</li>
@@ -42,13 +34,15 @@ const CustomTaskItem = TaskItem.extend({
         <li data-type="taskItem" data-checked="false">eggs</li>
         <li data-type="taskItem" data-checked="false">butter</li>
       </ul>
+      <p>Preheat the oven to 200°C/400°F/gas 6. Sift the flour, baking powder and salt into a bowl. Stir in the sugar. Make a well in the centre and pour in the milk, eggs and melted butter. Beat until smooth.</p>
       `,
-      onTransaction: () => {
-        // force re-render so `editor.isActive` works as expected
-        editor = editor;
-      },
-    });
+
+    onTransaction: () => {
+      // force re-render so `editor.isActive` works as expected
+      editor = editor;
+    },
   });
+});
 </script>
 
 <!--
@@ -64,7 +58,7 @@ const CustomTaskItem = TaskItem.extend({
       align-items: center;
       > :global(label) {
         flex: 0 0 auto;
-        margin-right: .5rem;
+        margin-right: 2rem;
         user-select: none;
       }
   
@@ -76,8 +70,20 @@ const CustomTaskItem = TaskItem.extend({
 </style>
 
 {#if editor}
-  <div>
-    <div class="tiptap-toolbar">
+<!-- See https://www.skeleton.dev/elements/buttons -->
+    <div class="btn-group variant-filled tiptap-toolbar">
+      <button
+        on:click={() => editor.chain().focus().undo().run()}
+        disabled={!editor.can().chain().focus().undo().run()}
+      >
+        undo
+      </button>
+      <button
+        on:click={() => editor.chain().focus().redo().run()}
+        disabled={!editor.can().chain().focus().redo().run()}
+      >
+        redo
+      </button>
       <button
         on:click={() => console.log && editor.chain().focus().toggleBold().run()}
         disabled={!editor.can().chain().focus().toggleBold().run()}
@@ -100,21 +106,6 @@ const CustomTaskItem = TaskItem.extend({
         strike
       </button>
       <button
-        on:click={() => editor.chain().focus().toggleCode().run()}
-        disabled={!editor.can().chain().focus().toggleCode().run()}
-        class={editor.isActive("code") ? "is-active" : ""}
-      >
-        code
-      </button>
-      <button on:click={() => editor.chain().focus().unsetAllMarks().run()}> clear marks </button>
-      <button on:click={() => editor.chain().focus().clearNodes().run()}> clear nodes </button>
-      <button
-        on:click={() => editor.chain().focus().setParagraph().run()}
-        class={editor.isActive("paragraph") ? "is-active" : ""}
-      >
-        paragraph
-      </button>
-      <button
         on:click={() => editor.chain().focus().toggleHeading({ level: 1 }).run()}
         class={editor.isActive("heading", { level: 1 }) ? "is-active" : ""}
       >
@@ -133,34 +124,11 @@ const CustomTaskItem = TaskItem.extend({
         h3
       </button>
       <button
-        on:click={() => editor.chain().focus().toggleHeading({ level: 4 }).run()}
-        class={editor.isActive("heading", { level: 4 }) ? "is-active" : ""}
+        on:click={() => editor.chain().focus().toggleCode().run()}
+        disabled={!editor.can().chain().focus().toggleCode().run()}
+        class={editor.isActive("code") ? "is-active" : ""}
       >
-        h4
-      </button>
-      <button
-        on:click={() => editor.chain().focus().toggleHeading({ level: 5 }).run()}
-        class={editor.isActive("heading", { level: 5 }) ? "is-active" : ""}
-      >
-        h5
-      </button>
-      <button
-        on:click={() => editor.chain().focus().toggleHeading({ level: 6 }).run()}
-        class={editor.isActive("heading", { level: 6 }) ? "is-active" : ""}
-      >
-        h6
-      </button>
-      <button
-        on:click={() => editor.chain().focus().toggleBulletList().run()}
-        class={editor.isActive("bulletList") ? "is-active" : ""}
-      >
-        bullet list
-      </button>
-      <button
-        on:click={() => editor.chain().focus().toggleOrderedList().run()}
-        class={editor.isActive("orderedList") ? "is-active" : ""}
-      >
-        ordered list
+        code
       </button>
       <button
         on:click={() => editor.chain().focus().toggleCodeBlock().run()}
@@ -177,21 +145,7 @@ const CustomTaskItem = TaskItem.extend({
       <button on:click={() => editor.chain().focus().setHorizontalRule().run()}>
         horizontal rule
       </button>
-      <button on:click={() => editor.chain().focus().setHardBreak().run()}> hard break </button>
-      <button
-        on:click={() => editor.chain().focus().undo().run()}
-        disabled={!editor.can().chain().focus().undo().run()}
-      >
-        undo
-      </button>
-      <button
-        on:click={() => editor.chain().focus().redo().run()}
-        disabled={!editor.can().chain().focus().redo().run()}
-      >
-        redo
-      </button>
     </div>
-  </div>
 {/if}
 
 <div bind:this={element} />

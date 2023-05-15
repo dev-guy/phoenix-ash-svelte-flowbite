@@ -23,9 +23,10 @@ import {LiveSocket} from "phoenix_live_view"
 import topbar from "../vendor/topbar"
 import {getHooks} from "live_svelte"
 import * as SvelteComponents from "../svelte/**/*"
-import { hooks, getTimezone } from "phlegethon"
+import { hooks, getTimezone } from "pyro"
 import "flowbite/dist/flowbite.phoenix.js";
 import Datepicker from 'flowbite-datepicker/Datepicker';
+import { AppShell } from '@skeletonlabs/skeleton';
 
 const dtHook = {
   mounted() {
@@ -40,6 +41,8 @@ const dtHook = {
 };
   
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
+
+// pyro
 let liveSocket = new LiveSocket("/live", Socket, {
   hooks: {...hooks, ...getHooks(SvelteComponents), Datepicker: dtHook },
   params: {_csrf_token: csrfToken}})

@@ -1,8 +1,14 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
 /* This file is for your main application CSS */
+@import '@skeletonlabs/skeleton/src/lib/themes/theme-crimson.css';
+@import '@skeletonlabs/skeleton/src/lib/styles/all.css';
 
-@import "./phlegethon.css";
+@import "./pyro.css";
 @import "./tiptap.css";
+
+button {
+  @apply hover:!underline
+}
+
+a {
+  @apply hover:!underline !no-underline
+}
