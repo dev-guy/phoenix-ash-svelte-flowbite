@@ -11,13 +11,14 @@ src="https://www.mermaidchart.com/img/icon-logo.svg">
 
 This is a web browser application demonstrating:
 
-- [x] [Phoenix 1.7](https://www.phoenixframework.org/) with [TailwindCSS 3.3](https://tailwindcss.com)
+- [x] [Phoenix 1.7](https://www.phoenixframework.org/)
 - [x] [Phoenix LiveView 0.18](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html)
 - [x] [Ash Framework 2.9](https://ash-hq.org)
 - [x] [Ash Authentication](https://github.com/team-alembic/ash_authentication)
   - [x] Login page with users and passwords stored in Postgres without writing imperative code
 - [x] [Pyro](https://hexdocs.pm/pyro/about.html)
   - [x] Toggle dark and light themes
+- [x] [TailwindCSS 3.3](https://tailwindcss.com)
 - [x] [Flowbite 1.6](https://flowbite.com) Tailwind CSS Components
   - [x] [Flowbite Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte 0.5](https://wout.space/notes/live-svelte)
