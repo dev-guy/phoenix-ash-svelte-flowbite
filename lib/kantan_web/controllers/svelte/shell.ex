@@ -1,5 +1,5 @@
-defmodule KantanWeb.Shell do
-  use KantanWeb, :live_view
+defmodule KantanWeb.Svelte.Shell do
+  use KantanWeb, :html
   import LiveSvelte
 
   def render(assigns) do

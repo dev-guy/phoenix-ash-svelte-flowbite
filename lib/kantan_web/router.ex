@@ -26,8 +26,9 @@ defmodule KantanWeb.Router do
     get "/svelte/tiptap", PageController, :tiptap
     get "/svelte/mermaid", PageController, :mermaid
 
-    # SvelteCounter uses the ~V sigil
-    live "/svelte/counter", SvelteCounter
+    # Using the ~V sigil
+    live "/svelte/counter", Svelte.Counter
+    live "/svelte/navigation", Svelte.Navigation
 
     sign_in_route()
     sign_out_route AuthController

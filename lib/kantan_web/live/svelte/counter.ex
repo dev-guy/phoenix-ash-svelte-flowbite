@@ -1,4 +1,4 @@
-defmodule KantanWeb.SvelteCounter do
+defmodule KantanWeb.Svelte.Counter do
   use KantanWeb, :live_view
   import LiveSvelte
 
@@ -27,10 +27,6 @@ defmodule KantanWeb.SvelteCounter do
         pushEvent("set_number", {number: number - 1}, () => {})
     }
     </script>
-
-    <a href="/" ><button class='btn btn-sm variant-filled'> Back </button></a>
-    <a href="/" data-phx-link="redirect" data-phx-link-state="push"><button class='btn btn-sm variant-filled'> Back </button></a>
-    <button type='button' href="/" data-phx-link="redirect" data-phx-link-state="push"  class='btn btn-sm variant-filled'> Back </button>
 
     <h1>Increment / Decrement Number Example</h1>
     <div class='text-sm'>The number is {number}.
