@@ -12,7 +12,7 @@ module.exports = {
     "../lib/*_web.ex",
     "../lib/*_web/**/*.*ex",
     "../deps/ash_authentication_phoenix/**/*.ex",
-    "../deps/phlegethon/lib/phlegethon/**/*.*ex",
+    "../deps/pyro/lib/pyro/**/*.*ex",
     "./svelte/**/*.svelte",
     "./node_modules/flowbite/**/*.js",
     require('path').join(require.resolve(
@@ -66,7 +66,7 @@ module.exports = {
       }, {values})
     }),
 
-    // phlegethon
+    // pyro
     plugin(({ addVariant }) => addVariant('aria-selected', '&[aria-selected]')),
     plugin(({ addVariant }) => addVariant('aria-checked', '&[aria-checked]')),
 

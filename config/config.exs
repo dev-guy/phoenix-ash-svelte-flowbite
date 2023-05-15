@@ -14,7 +14,7 @@ config :kantan,
   ash_apis: [Kantan.Accounts]
 
 config :ash, :use_all_identities_in_manage_relationship?, false
-config :phlegethon, :overrides, [Phlegethon.Overrides.Default]
+config :pyro, :overrides, [Pyro.Overrides.Default]
 
 # Configures the endpoint
 config :kantan, KantanWeb.Endpoint,

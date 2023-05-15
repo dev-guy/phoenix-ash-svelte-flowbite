@@ -29,7 +29,7 @@ config :kantan, KantanWeb.Endpoint,
     # esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
     tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
   ],
-  reloadable_compilers: [:elixir, :app, :phlegethon]
+  reloadable_compilers: [:elixir, :app, :pyro]
 
 # ## SSL Support
 #

@@ -11,7 +11,7 @@ A web browser application demonstrating:
 - [x] [Ash Framework](https://ash-hq.org) 2.6
 - [x] [Ash Authentication](https://github.com/team-alembic/ash_authentication)
   - [x] Login page with users and passwords stored in Postgres without writing any imperative code
-- [x] [Phlegethon](https://github.com/frankdugan3/phlegethon)
+- [x] [Pyro](https://hexdocs.pm/pyro/about.html)
   - [x] Toggle dark and light themes
 - [x] [Flowbite](https://flowbite.com) Tailwind CSS Components
   - [x] [Flowbite Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
@@ -102,7 +102,7 @@ Open a browser to http://localhost:4000
 
 ```js
     "live_svelte": "file:../deps/live_svelte",
-    "phlegethon": "file:../deps/phlegethon",
+    "pyro": "file:../deps/pyro",
     "phoenix": "file:../deps/phoenix",
     "phoenix_html": "file:../deps/phoenix_html",
     "phoenix_live_view": "file:../deps/phoenix_live_view"
@@ -120,9 +120,9 @@ Open a browser to http://localhost:4000
 
 1. [Install Phoenix](https://hexdocs.pm/phoenix/installation.html)
 2. [Install Ash Authentication](https://hexdocs.pm/ash_authentication_phoenix/getting-started-with-ash-authentication-phoenix.html)
-3. [Install Phlegethon](https://github.com/frankdugan3/phlegethon/blob/main/documentation/tutorials/get-started.md)
-4. [Install Flowbite](https://flowbite.com/docs/getting-started/phoenix/)
-6. [Install LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
+3. [Install Pyro](https://hexdocs.pm/pyro/get-started.html)
+4. [Install Flowbite for Phoenix](https://flowbite.com/docs/getting-started/phoenix/)
+5. [Install LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
 6. [Install Skeleton for Svelte](https://www.skeleton.dev/docs/get-started)
 
 ### Other
@@ -134,5 +134,5 @@ Open a browser to http://localhost:4000
 
 ## TODO
 
-1. Sync styles between Svelte and Phlegethon components (if possible)
+1. Sync styles between Svelte and Pyro components (if possible)
   - [see here](https://github.com/woutdp/live_svelte/discussions/28)

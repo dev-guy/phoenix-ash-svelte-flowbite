@@ -48,5 +48,9 @@ npm-debug.log
 # VSCode Extensions
 /.elixir_ls/
 
-# Phlegethon
-/assets/css/phlegethon.css
+# Pyro
+/assets/css/pyro.css
+
+# Svelte
+assets/svelte/_build
+

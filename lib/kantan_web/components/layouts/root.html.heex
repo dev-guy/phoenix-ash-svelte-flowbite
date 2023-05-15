@@ -30,21 +30,21 @@
         <.button
           type="button"
           class="whitespace-nowrap"
-          phx-click={JS.dispatch("phlegethon:theme-system")}
+          phx-click={JS.dispatch("pyro:theme-system")}
         >
           <.icon name="hero-computer-desktop-mini" /> System
         </.button>
         <.button
           type="button"
           class="whitespace-nowrap"
-          phx-click={JS.dispatch("phlegethon:theme-dark")}
+          phx-click={JS.dispatch("pyro:theme-dark")}
         >
           <.icon name="hero-moon-mini" /> Dark
         </.button>
         <.button
           type="button"
           class="whitespace-nowrap"
-          phx-click={JS.dispatch("phlegethon:theme-light")}
+          phx-click={JS.dispatch("pyro:theme-light")}
         >
           <.icon name="hero-sun-mini" /> Light
         </.button>
@@ -58,7 +58,6 @@
             <.button
               navigate={~p"/sign-out"}
               case="capitalize"
-              class="unstyled"
             >
               Sign out
             </.button>
@@ -66,9 +65,8 @@
             <.button
               navigate={~p"/sign-in"}
               case="capitalize"
-              class="unstyled"
             >
-          <.icon name="hero-computer-desktop-mini" /> 
+          <.icon name="hero-computer-desktop-mini" />
               Sign In
             </.button>
           <% end %>

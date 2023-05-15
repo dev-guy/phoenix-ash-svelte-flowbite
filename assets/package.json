@@ -11,7 +11,7 @@
     "flowbite": "^1.6.5",
     "flowbite-datepicker": "^1.2.2",
     "live_svelte": "file:../deps/live_svelte",
-    "phlegethon": "file:../deps/phlegethon",
+    "pyro": "file:../deps/pyro",
     "phoenix": "file:../deps/phoenix",
     "phoenix_html": "file:../deps/phoenix_html",
     "phoenix_live_view": "file:../deps/phoenix_live_view"
@@ -23,6 +23,7 @@
     "esbuild": "^0.17.11",
     "esbuild-plugin-import-glob": "^0.1.1",
     "esbuild-svelte": "^0.7.3",
+    "mermaid": "^10.1.0",
     "postcss": "^8.4.21",
     "sass": "^1.62.0",
     "svelte-preprocess": "^5.0.3",

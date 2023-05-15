@@ -10,7 +10,7 @@ defmodule Kantan.MixProject do
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: deps(),
-      compilers: Mix.compilers() ++ [:phlegethon]
+      compilers: Mix.compilers() ++ [:pyro]
     ]
   end
 
@@ -35,28 +35,28 @@ defmodule Kantan.MixProject do
     [
       {:phoenix, "~> 1.7.2"},
       {:phoenix_ecto, "~> 4.4"},
-      {:ecto_sql, "~> 3.6"},
+      {:ecto_sql, "~> 3.10"},
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 3.3"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_live_view, "~> 0.18.16"},
-      {:phlegethon, github: "frankdugan3/phlegethon", branch: "main"},
+      {:pyro, "~> 0.0.4"},
       {:floki, ">= 0.30.0", only: :test},
       {:phoenix_live_dashboard, "~> 0.7.2"},
       {:esbuild, "~> 0.7", runtime: Mix.env() == :dev},
       {:tailwind, "~> 0.2.0", runtime: Mix.env() == :dev},
-      {:swoosh, "~> 1.3"},
+      {:swoosh, "~> 1.10"},
       {:finch, "~> 0.13"},
       {:telemetry_metrics, "~> 0.6"},
       {:telemetry_poller, "~> 1.0"},
       {:gettext, "~> 0.20"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:ash, ">= 2.6.0"},
+      {:ash, ">= 2.7.0"},
       {:ash_authentication, "~> 3.10.0"},
       {:ash_authentication_phoenix, "~> 1.7.0"},
       {:ash_postgres, "~> 1.3.0"},
-      {:live_svelte, "~> 0.4.2"}
+      {:live_svelte, "0.5.1"}
     ]
   end
 
