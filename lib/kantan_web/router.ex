@@ -22,13 +22,14 @@ defmodule KantanWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/navigationExample", PageController, :navigation_example
+    get "/svelte/shell", PageController, :shell
     get "/svelte/skeleton", PageController, :skeleton
     get "/svelte/tiptap", PageController, :tiptap
     get "/svelte/mermaid", PageController, :mermaid
 
     # Using the ~V sigil
     live "/svelte/counter", Svelte.Counter
-    live "/svelte/navigation", Svelte.Navigation
 
     sign_in_route()
     sign_out_route AuthController

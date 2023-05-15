@@ -16,7 +16,6 @@ erDiagram
   let container;
 
   async function renderDiagram() {
-	  console.log(diagram)
     const { svg } = await mermaid.render("mermaid", diagram);
     container.innerHTML = svg;
   }

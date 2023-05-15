@@ -25,7 +25,7 @@ This is a web browser application demonstrating:
   - [x] Support Sass/PostCSS
   - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets. Uses the convenient ~V sigil.
   - [x] [Mermaid diagram renderer](https://terrislinenbach.medium.com/dynamically-render-a-mermaid-diagram-with-sveltekit-and-very-little-code-d8130875cd68) "dead view" in a .svelte file
-  - [x] [TipTap 2.0](https://tiptap.dev/) "dead view"
+  - [x] [TipTap 2.0](https://tiptap.dev/) task list "dead view"
 - [x] [Svelte Skeleton 1.5](https://www.skeleton.dev/) examples on the Skeleton Components page ("dead" view):
   - [Accordion](https://www.skeleton.dev/components/accordions)
 
