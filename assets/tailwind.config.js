@@ -66,7 +66,7 @@ module.exports = {
       }, {values})
     }),
 
-    // pyro
+    // Pyro
     plugin(({ addVariant }) => addVariant('aria-selected', '&[aria-selected]')),
     plugin(({ addVariant }) => addVariant('aria-checked', '&[aria-checked]')),
 

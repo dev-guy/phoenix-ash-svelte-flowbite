@@ -7,6 +7,7 @@ defmodule KantanWeb.PageController do
     render(conn, :home, layout: false)
   end
 
-  def flowbiteSvelte(conn, _params), do: render(conn, :flowbiteSvelte)
+  def skeleton(conn, _params), do: render(conn, :skeleton)
   def tiptap(conn, _params), do: render(conn, :tiptap)
+  def mermaid(conn, _params), do: render(conn, :mermaid)
 end

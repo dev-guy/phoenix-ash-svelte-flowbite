@@ -22,9 +22,11 @@ defmodule KantanWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
-    get "/svelte/flowbite", PageController, :flowbiteSvelte
+    get "/svelte/skeleton", PageController, :skeleton
     get "/svelte/tiptap", PageController, :tiptap
+    get "/svelte/mermaid", PageController, :mermaid
 
+    # SvelteCounter uses the ~V sigil
     live "/svelte/counter", SvelteCounter
 
     sign_in_route()

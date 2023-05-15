@@ -1,13 +1,29 @@
-<.button navigate="/svelte/counter" type="button">LiveSvelte Counter</.button>
-<.button navigate="/svelte/flowbite" type="button" class='variant-filled-warning !text-white'>Skeleton Components</.button>
-<.button navigate="/svelte/tiptap" type="button" color='orange'>TipTap</.button>
+<h2>Flowbite Examples</h2>
 
 <input phx-hook="Datepicker" id="myInput" type="text" class="text-sm rounded" placeholder="Flowbite date picker">
+<.button navigate="/svelte/skeleton" >Timeline</.button>
 
-<.button size='xl'>This is a Phoenix button</.button>
-<button type="button" class='btn btn-sm variant-filled' >This is a button</button>
-<button type="button" class='btn variant-filled-tertiary' >This is a button</button>
-<button type="button" class='btn variant-filled-primary' >This is a button</button>
+<h2>Svelte Examples</h2>
+
+<.button navigate="/svelte/counter">LiveSvelte Counter</.button>
+<.button navigate="/svelte/tiptap">Checklist by TipTap</.button>
+<.button navigate="/svelte/mermaid">Mermaid Diagrams</.button>
+
+<h2>Pyro Buttons (no actual functionaity)</h2>
+
+<.button>no type</.button>
+<.button type="button">type=button</.button>
+<.button class="variant-filled-warning">variant-filled-warning only appears in dark mode</.button>
+<.button color="orange">Orange</.button>
+<.button size="xl">xl</.button>
+<h2>Skeleton Buttons (no actual functionality)</h2>
+
+<button class="btn variant-filled-primary" >Primary button</button>
+<button class="btn variant-filled-tertiary" >Tertiary button</button>
+<button class="btn variant-filled-warning" >Warning button</button>
+
+<h2>Skeleton Text</h2>
+
 <p class="text-primary-500">primary text</p>
 <p class="text-secondary-500">secondary text</p>
 <p class="text-warning-500">warning text</p>

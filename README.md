@@ -10,28 +10,22 @@ A web browser application demonstrating:
 - [x] [Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html) 0.18
 - [x] [Ash Framework](https://ash-hq.org) 2.6
 - [x] [Ash Authentication](https://github.com/team-alembic/ash_authentication)
-  - [x] Login page with users and passwords stored in Postgres without writing any imperative code
+  - [x] Login page with users and passwords stored in Postgres without writing imperative code
 - [x] [Pyro](https://hexdocs.pm/pyro/about.html)
   - [x] Toggle dark and light themes
 - [x] [Flowbite](https://flowbite.com) Tailwind CSS Components
   - [x] [Flowbite Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
-  - Flowbite does not require JavaScript
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://wout.space/notes/live-svelte)
-  - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
-  - .svelte files are located in assets/svelte
   - [x] Support Sass/PostCSS
-  - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets. Uses the convenient ~V sigil. However, until editors understand that ~V is for Svelte, using .svelte files will have a better DX.
-  - [x] [TipTap Editor](https://tiptap.dev/) "dead view". Uses .svelte file instead of ~V sigil.
+  - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets. Uses the convenient ~V sigil.
+  - [x] [TipTap Editor](https://tiptap.dev/) "dead view." Uses .svelte file instead of ~V sigil.
+  - [x] [Mermaid diagram renderer](https://terrislinenbach.medium.com/dynamically-render-a-mermaid-diagram-with-sveltekit-and-very-little-code-d8130875cd68) "dead view"
 - [x] [Svelte Skeleton](https://www.skeleton.dev/) examples on the Skeleton Components page ("dead" view):
   - [Accordion](https://www.skeleton.dev/components/accordions)
 
-## Notes
-
-- Using @apply in `<style>` blocks in Svelte files is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
-
 ## Video
 
-[Demo (MP4)](https://drive.google.com/file/d/17rqo8kdDJMo3MS_yYRSgk4_7-m3QrYdH/view)
+[Demo (MP4)](https://drive.google.com/file/d/17rqo8kdDJMo3MS_yYRSgk4_7-m3QrYdH/view) (out of date)
 
 ## License
 
@@ -40,6 +34,17 @@ A web browser application demonstrating:
 ## Help and additional information
 
 Join the [Ash Discord Server](https://discord.com/invite/D7FNG2q)
+
+## Notes
+
+- Skeleton
+  - The Skeleton theme is specified in assets/app.css
+  - Skeleton themes and Pyro themes clash. I'm working on it.
+- Svelte
+  - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
+  - .svelte files are located in assets/svelte
+  - Until editors understand that ~V is for Svelte, using .svelte files will have a better DX
+  - Using @apply in `<style>` blocks in Svelte files is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
 
 ## Requirements
 
@@ -80,7 +85,7 @@ asdf plugin add elixir
 asdf install elixir 1.14.4-otp-25
 asdf global elixir 1.14.4-otp-25
 ```
- 
+
 ## Usage
 
 ```sh
@@ -115,7 +120,7 @@ Open a browser to http://localhost:4000
 3. LiveSvelte elements that use most Svelte Skeleton components must contain ssr={false}; otherwise, runtime errors will occur
 
 4. Beware [Svelte-Kit $app dependencies](https://github.com/woutdp/live_svelte/discussions/30)!
-  
+
 ## References
 
 ### Guides

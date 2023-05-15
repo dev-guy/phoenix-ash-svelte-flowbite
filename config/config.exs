@@ -14,7 +14,7 @@ config :kantan,
   ash_apis: [Kantan.Accounts]
 
 config :ash, :use_all_identities_in_manage_relationship?, false
-config :pyro, :overrides, [Pyro.Overrides.Default]
+# config :pyro, :overrides, [Pyro.Overrides.Default]
 config :pyro, :css_file, Path.join(File.cwd!(), "assets/css/pyro.css")
 
 # Configures the endpoint
