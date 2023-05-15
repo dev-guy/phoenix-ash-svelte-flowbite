@@ -10,21 +10,21 @@
 
 This is a web browser application demonstrating:
 
-- [x] [Phoenix](https://www.phoenixframework.org/) 1.7 with [TailwindCSS](https://tailwindcss.com) 3.3.1
-- [x] [Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html) 0.18
-- [x] [Ash Framework](https://ash-hq.org) 2.9
+- [x] [Phoenix 1.7](https://www.phoenixframework.org/) with [TailwindCSS 3.3](https://tailwindcss.com)
+- [x] [Phoenix LiveView 0.18](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html)
+- [x] [Ash Framework 2.9](https://ash-hq.org)
 - [x] [Ash Authentication](https://github.com/team-alembic/ash_authentication)
   - [x] Login page with users and passwords stored in Postgres without writing imperative code
 - [x] [Pyro](https://hexdocs.pm/pyro/about.html)
   - [x] Toggle dark and light themes
-- [x] [Flowbite](https://flowbite.com) Tailwind CSS Components
+- [x] [Flowbite 1.6](https://flowbite.com) Tailwind CSS Components
   - [x] [Flowbite Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
-- [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://wout.space/notes/live-svelte)
+- [x] [Svelte](https://svelte.dev) via [LiveSvelte 0.5](https://wout.space/notes/live-svelte)
   - [x] Support Sass/PostCSS
   - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets. Uses the convenient ~V sigil.
   - [x] [Mermaid diagram renderer](https://terrislinenbach.medium.com/dynamically-render-a-mermaid-diagram-with-sveltekit-and-very-little-code-d8130875cd68) "dead view"
-  - [x] [TipTap Editor](https://tiptap.dev/) "dead view" in a .svelte file
-- [x] [Svelte Skeleton](https://www.skeleton.dev/) examples on the Skeleton Components page ("dead" view):
+  - [x] [TipTap 2.0](https://tiptap.dev/) "dead view" in a .svelte file
+- [x] [Svelte Skeleton 1.5](https://www.skeleton.dev/) examples on the Skeleton Components page ("dead" view):
   - [Accordion](https://www.skeleton.dev/components/accordions)
 
 ## Video
