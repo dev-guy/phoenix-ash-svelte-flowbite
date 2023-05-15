@@ -12,7 +12,7 @@ This is a web browser application demonstrating:
 
 - [x] [Phoenix](https://www.phoenixframework.org/) 1.7 with [TailwindCSS](https://tailwindcss.com) 3.3.1
 - [x] [Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html) 0.18
-- [x] [Ash Framework](https://ash-hq.org) 2.6
+- [x] [Ash Framework](https://ash-hq.org) 2.9
 - [x] [Ash Authentication](https://github.com/team-alembic/ash_authentication)
   - [x] Login page with users and passwords stored in Postgres without writing imperative code
 - [x] [Pyro](https://hexdocs.pm/pyro/about.html)
@@ -22,8 +22,8 @@ This is a web browser application demonstrating:
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://wout.space/notes/live-svelte)
   - [x] Support Sass/PostCSS
   - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets. Uses the convenient ~V sigil.
-  - [x] [TipTap Editor](https://tiptap.dev/) "dead view." Uses .svelte file instead of ~V sigil.
   - [x] [Mermaid diagram renderer](https://terrislinenbach.medium.com/dynamically-render-a-mermaid-diagram-with-sveltekit-and-very-little-code-d8130875cd68) "dead view"
+  - [x] [TipTap Editor](https://tiptap.dev/) "dead view" in a .svelte file
 - [x] [Svelte Skeleton](https://www.skeleton.dev/) examples on the Skeleton Components page ("dead" view):
   - [Accordion](https://www.skeleton.dev/components/accordions)
 
@@ -38,17 +38,6 @@ This is a web browser application demonstrating:
 ## Help and additional information
 
 Join the [Ash Discord Server](https://discord.com/invite/D7FNG2q)
-
-## Notes
-
-- Skeleton
-  - The Skeleton theme is specified in assets/app.css
-  - Skeleton themes and Pyro themes clash. I'm working on it.
-- Svelte
-  - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
-  - .svelte files are located in assets/svelte
-  - Until editors understand that ~V is for Svelte, using .svelte files will have a better DX
-  - Using @apply in `<style>` blocks in Svelte files is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
 
 ## Requirements
 
@@ -109,7 +98,19 @@ Open a browser to http://localhost:4000
 
 ## Notes
 
-1. package.json contains JavaScript dependencies that are installed as Hex packages. This is apparently needed for Svelte SSR.
+
+- Skeleton
+  - The Skeleton theme is specified in assets/app.css
+  - Skeleton themes and Pyro themes clash. I'm working on it.
+- Svelte
+  - Need another Svelte or JavaScript component? Add it to package.json!
+  - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
+  - .svelte files are located in assets/svelte
+  - Until editors understand that ~V is for Svelte, using .svelte files will have a better DX
+  - Using @apply in `<style>` blocks in Svelte files is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
+  - LiveSvelte elements that use most Svelte Skeleton components must contain ssr={false}; otherwise, runtime errors will occur
+  - Beware [Svelte-Kit $app dependencies](https://github.com/woutdp/live_svelte/discussions/30)!
+  - package.json contains JavaScript dependencies that are installed as Hex packages. This is apparently needed for Svelte SSR.
 
 ```js
     "live_svelte": "file:../deps/live_svelte",
@@ -118,12 +119,6 @@ Open a browser to http://localhost:4000
     "phoenix_html": "file:../deps/phoenix_html",
     "phoenix_live_view": "file:../deps/phoenix_live_view"
 ```
-
-2. Need another component? Add it to package.json!
-
-3. LiveSvelte elements that use most Svelte Skeleton components must contain ssr={false}; otherwise, runtime errors will occur
-
-4. Beware [Svelte-Kit $app dependencies](https://github.com/woutdp/live_svelte/discussions/30)!
 
 ## References
 
