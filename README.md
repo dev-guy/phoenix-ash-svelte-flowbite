@@ -1,7 +1,7 @@
 # Phoenix Ash Flowbite Svelte TipTap Mermaid Mash-Up
 
 <img alt='Phoenix' src="https://seeklogo.com/images/P/phoenix-logo-D15F067911-seeklogo.com.png" height=40 width=45><img alt='ash' align="top" src="https://ash-hq.org/images/ash-logo-side.svg" height=50 width=100><img alt='Tailwind CSS' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" height=45 width=45><img alt='Flowbite' src="https://flowbite.com/docs/images/logo.svg" height=45 width=45><img alt='Svelte' src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height=45 width=45><img alt='Skeleton' height=45 width=45 src="https://pbs.twimg.com/profile_images/1587479781544759297/TINbbJLC_400x400.png"><img height=45 width=45 alt="TipTap" src="https://pbs.twimg.com/profile_images/1357340221377974275/dza_FwlU_400x400.jpg"><img height=45 width=45 alt="Mermaid"
-src="https://raw.githubusercontent.com/mermaid-js/mermaid/458ac847495d93fc9cc3bd0104d1bc4d3bae118c/docs/public/mermaid-logo.svg">
+src="https://www.mermaidchart.com/img/icon-logo.svg">
 
 ## Previous Versions
 
