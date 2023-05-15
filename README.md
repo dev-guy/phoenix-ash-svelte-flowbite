@@ -18,14 +18,16 @@ A web browser application demonstrating:
   - Flowbite does not require JavaScript
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://wout.space/notes/live-svelte)
   - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
-  - Styles in .svelte files can reference Tailwind utility classes (see TipTap.svelte)
-  - Support Sass/PostCSS
-  - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
-  - [x] [TipTap Editor](https://tiptap.dev/) "dead view"
-  - [live_svelte will be even easier to use soon](https://github.com/woutdp/live_svelte/discussions/33)
-  - Using @apply in `<style>` blocks in svelte files is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
+  - .svelte files are located in assets/svelte
+  - [x] Support Sass/PostCSS
+  - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets. Uses the convenient ~V sigil. However, until editors understand that ~V is for Svelte, using .svelte files will have a better DX.
+  - [x] [TipTap Editor](https://tiptap.dev/) "dead view". Uses .svelte file instead of ~V sigil.
 - [x] [Svelte Skeleton](https://www.skeleton.dev/) examples on the Skeleton Components page ("dead" view):
   - [Accordion](https://www.skeleton.dev/components/accordions)
+
+## Notes
+
+- Using @apply in `<style>` blocks in Svelte files is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
 
 ## Video
 
