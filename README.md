@@ -29,7 +29,7 @@ This is a web browser application demonstrating:
 
 ## Video
 
-[Demo (MP4)](https://drive.google.com/file/d/17rqo8kdDJMo3MS_yYRSgk4_7-m3QrYdH/view) (out of date)
+[Demo (MP4)](https://drive.google.com/file/d/18IBboO6rCRTXhQt4Mpoi_J7RQA82thlq)
 
 ## License
 
