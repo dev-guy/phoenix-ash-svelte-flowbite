@@ -19,9 +19,8 @@ A web browser application demonstrating:
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte](https://wout.space/notes/live-svelte)
   - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
   - Support Sass/PostCSS
-  - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets.
-  - [x] [TipTap Editor](https://tiptap.dev/) "dead view"
-with-per-component-css)
+  - [x] [TipTap Editor](https://tiptap.dev/) "dead view" with-per-component-css. Uses .svelte file instead of ~V sigil.
+  - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets. Uses the convenient ~V sigil but frankly until editors understand that ~V is for Svelte, using .svelte files will have a better DX.
 - [x] [Svelte Skeleton](https://www.skeleton.dev/) examples on the Skeleton Components page ("dead" view):
   - [Accordion](https://www.skeleton.dev/components/accordions)
 
