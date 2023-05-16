@@ -26,7 +26,6 @@ import * as SvelteComponents from "../svelte/**/*"
 import { hooks, getTimezone } from "pyro"
 import "flowbite/dist/flowbite.phoenix.js";
 import Datepicker from 'flowbite-datepicker/Datepicker';
-import { AppShell } from '@skeletonlabs/skeleton';
 
 const dtHook = {
   mounted() {
@@ -39,7 +38,7 @@ const dtHook = {
       this.mounted();
   }
 };
-  
+
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 
 // pyro

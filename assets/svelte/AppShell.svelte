@@ -2,6 +2,7 @@
   import { AppShell } from '@skeletonlabs/skeleton';
 </script>
 
+<!-- See https://www.skeleton.dev/components/app-shell -->
 <AppShell>
   <svelte:fragment slot="header">Header</svelte:fragment>
   <svelte:fragment slot="sidebarLeft">Sidebar Left</svelte:fragment>
