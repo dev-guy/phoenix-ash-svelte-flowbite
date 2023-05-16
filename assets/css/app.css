@@ -1,16 +1,22 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 /* This file is for your main application CSS */
 @import '@skeletonlabs/skeleton/src/lib/themes/theme-gold-nouveau.css';
 @import '@skeletonlabs/skeleton/src/lib/styles/all.css';
 
-/*@import "./pyro.css";*/
+@import "./pyro.css";
 @import "./tiptap.css";
 
 body { @apply h-screen overflow-hidden antialiased }
 
-button {
-  @apply hover:!underline
+/* visited: is a hack; otherwise the color will be primary */
+/* It's not possible to reference the color of unvisited. */
+a {
+  @apply hover:!underline !no-underline visited:!text-white
 }
 
-a {
+button {
   @apply hover:!underline !no-underline
 }

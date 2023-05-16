@@ -48,14 +48,16 @@ config :esbuild,
 
 # Configure tailwind (the version is required)
 config :tailwind,
-  version: "3.3.1",
+  version: "3.3.2",
   default: [
     args: ~w(
       --config=tailwind.config.js
       --input=css/app.css
       --output=../priv/static/assets/app.css
     ),
-    cd: Path.expand("../assets", __DIR__)
+    cd: Path.expand("../assets", __DIR__),
+    # See https://elixirforum.com/t/running-phoenix-server-is-warning-from-npm-caniuse-lite-is-outdated/55570/8
+    env: %{"BROWSERSLIST_IGNORE_OLD_DATA" => "1"}
   ]
 
 # Configures Elixir's Logger

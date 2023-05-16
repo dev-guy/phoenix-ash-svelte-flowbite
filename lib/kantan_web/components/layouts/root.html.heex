@@ -52,27 +52,24 @@
 <!-- Dark mode selection end
 -->
           <%= if @current_user do %>
-            <span class="px-3 py-2 text-sm font-medium text-white rounded-md">
+            <span class="px-3 py-2">
               <%= @current_user.email %>
             </span>
             <.button
               navigate={~p"/sign-out"}
-              case="capitalize"
             >
-              Sign out
+              Sign Out
             </.button>
           <% else %>
             <.button
               navigate={~p"/sign-in"}
-              case="capitalize"
             >
             <.icon name="hero-computer-desktop-mini" />
-            Sign In
+              Sign In
             </.button>
           <% end %>
       </div>
     </header>
-
     <%= @inner_content %>
   </body>
 </html>
