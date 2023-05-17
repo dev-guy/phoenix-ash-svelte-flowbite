@@ -100,19 +100,15 @@ Open a browser to http://localhost:4000
 
 ## Notes
 
-
 - Skeleton
-  - The Skeleton theme is specified in assets/app.css
-  - Skeleton themes and Pyro themes clash. I'm working on it.
+  - The Skeleton theme is specified in assets/app.css. It is also specified in root.html.heex via data-theme="..."
+  - I'm working on adding primary, secondary, and tertiary colors to Pyro
 - Svelte
-  - Need another Svelte or JavaScript component? Add it to package.json!
   - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
+  - Need another Svelte or JavaScript component? Just add it to package.json!
   - .svelte files are located in assets/svelte
-  - Until editors understand that ~V is for Svelte, using .svelte files will have a better DX
-  - Using @apply in `<style>` blocks in Svelte files is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
-  - LiveSvelte elements that use most Svelte Skeleton components must contain ssr={false}; otherwise, runtime errors will occur
-  - Beware [Svelte-Kit $app dependencies](https://github.com/woutdp/live_svelte/discussions/30)!
-  - package.json contains JavaScript dependencies that are installed as Hex packages. This is apparently needed for Svelte SSR.
+  - package.json contains JavaScript dependencies that are installed as Hex packages. This is apparently needed for SSR.
+  - Until editors understand that ~V is for Svelte, using .svelte files will have a better DX. Plus ~V doesn't work with dead views.
 
 ```js
     "live_svelte": "file:../deps/live_svelte",
@@ -121,6 +117,11 @@ Open a browser to http://localhost:4000
     "phoenix_html": "file:../deps/phoenix_html",
     "phoenix_live_view": "file:../deps/phoenix_live_view"
 ```
+
+  - Using @apply in `<style>` blocks in Svelte files is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
+  - LiveSvelte elements that use most Svelte Skeleton components must contain ssr={false}; otherwise, runtime errors will occur
+  - Beware [Svelte-Kit $app dependencies](https://github.com/woutdp/live_svelte/discussions/30)!
+
 
 ## References
 
