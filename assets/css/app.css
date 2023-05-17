@@ -2,12 +2,31 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* This file is for your main application CSS */
-@import '@skeletonlabs/skeleton/src/lib/themes/theme-robot';
-@import '@skeletonlabs/skeleton/src/lib/styles/all.css';
+/* Skeleton begin
+See https://www.skeleton.dev/docs/themes
+Change body data-theme="" too!!
+*/
+@import '@skeletonlabs/skeleton/src/lib/themes/theme-skeleton.css';
+@import '@skeletonlabs/skeleton/src/lib/styles/skeleton.css';
+/* Skeleton end */
 
-@import "./pyro.css";
 @import "./tiptap.css";
+@import "./pyro.css";
+
+/* https://www.skeleton.dev/docs/themes */
+
+/*
+:root {
+	--theme-rounded-base: 20px;
+	--theme-rounded-container: 4px;
+  --theme-font-family-base: 'Georgia', sans-serif;
+}
+*/
+
+/*
+Is bg-surface-50-900-token;  needed?
+See https://www.skeleton.dev/docs/themes#backgrounds
+*/
 
 body { @apply h-screen overflow-hidden antialiased }
 
