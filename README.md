@@ -39,7 +39,7 @@ This is a web browser application demonstrating:
 
 ## Help and additional information
 
-Join the [Ash Discord Server](https://discord.com/invite/D7FNG2q)
+Join the [Ash Discord Server](https://discord.com/invite/D7FNG2q) and check out the Pyro channel.
 
 ## Requirements
 
