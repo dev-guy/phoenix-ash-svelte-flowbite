@@ -84,8 +84,8 @@ asdf global elixir 1.14.4-otp-25
 ## Usage
 
 ```sh
-git clone https://github.com/dev-guy/ash-svelte-flowbite.git
-cd ash-svelte-flowbite
+git clone https://github.com/dev-guy/phoenix-ash-svelte-flowbite.git
+cd phoenix-ash-svelte-flowbite
 nvm i
 mix local.hex
 mix setup
