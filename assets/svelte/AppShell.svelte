@@ -1,5 +1,6 @@
 <script>
   import { AppShell } from '@skeletonlabs/skeleton';
+  import Mermaid from './Mermaid.svelte';
 </script>
 
 <!-- See https://www.skeleton.dev/components/app-shell -->
@@ -13,6 +14,7 @@
   -->
   <!-- Router Slot -->
   <slot />
+  <Mermaid/>
   <!-- ---- / ---- -->
   <svelte:fragment slot="pageFooter">Page Footer</svelte:fragment>
   <svelte:fragment slot="footer">Footer</svelte:fragment>

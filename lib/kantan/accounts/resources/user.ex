@@ -7,6 +7,7 @@ defmodule Kantan.Accounts.User do
     uuid_primary_key :id
     attribute :email, :ci_string, allow_nil?: false
     attribute :hashed_password, :string, allow_nil?: false, sensitive?: true
+    attribute(:username, :string, allow_nil?: false)
   end
 
   authentication do
@@ -16,6 +17,7 @@ defmodule Kantan.Accounts.User do
       password :password do
         identity_field(:email)
         sign_in_tokens_enabled?(true)
+        register_action_accept([:username])
       end
     end
 

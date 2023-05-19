@@ -31,11 +31,17 @@ See https://www.skeleton.dev/docs/themes#backgrounds
 body { @apply h-screen overflow-hidden antialiased }
 
 /* visited: is a hack; otherwise the color will be primary */
-/* It's not possible to reference the color of unvisited. */
+/* It's not possible to reference the color of unvisited.
 a {
   @apply hover:!underline !no-underline visited:!text-white
 }
 
 button {
   @apply hover:!underline !no-underline
+}
+*/
+
+/* Ash Authentication */
+.error-messages {
+  @apply text-error-500 italic;
 }

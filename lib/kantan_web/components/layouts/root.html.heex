@@ -12,62 +12,66 @@
     </script>
   </head>
   <body data-theme="skeleton">
-    <header class="px-4 sm:px-6 lg:px-8 bg-white dark:bg-black">
-<!-- Phoenix logo begin
--->
-      <div class="flex items-center justify-between border-b border-zinc-100 py-3 text-sm">
-        <div class="flex items-center gap-4">
+    <header>
+      <div class="flex items-center justify-between border-b border-zinc-100">
           <a href={~p"/"}>
-            <img src={~p"/images/logo.svg"} width="36" />
+            <img src={~p"/images/kantan.svg"} width="45" />
           </a>
-          <p class="bg-brand/5 text-brand rounded-full px-2 font-medium leading-6">
-            v<%= Application.spec(:phoenix, :vsn) %>
-          </p>
-        </div>
 <!-- Dark mode selection begin
 -->
-        <div flex items-center>
+        <div class="btn-group variant-filled-surface">
+
         <.button
-          type="button"
-          class="whitespace-nowrap"
           phx-click={JS.dispatch("pyro:theme-system")}
         >
-          <.icon name="hero-computer-desktop-mini" /> System
+          <.icon name="hero-computer-desktop-mini" />
         </.button>
         <.button
-          type="button"
-          class="whitespace-nowrap"
           phx-click={JS.dispatch("pyro:theme-dark")}
         >
-          <.icon name="hero-moon-mini" /> Dark
+          <.icon name="hero-moon-mini" />
         </.button>
         <.button
-          type="button"
-          class="whitespace-nowrap"
           phx-click={JS.dispatch("pyro:theme-light")}
         >
-          <.icon name="hero-sun-mini" /> Light
+          <.icon name="hero-sun-mini" />
         </.button>
+
         </div>
 <!-- Dark mode selection end
 -->
+<div>
           <%= if @current_user do %>
             <span class="px-3 py-2">
               <%= @current_user.email %>
             </span>
             <.button
+            class='dark:outline'
+            shape='rounded'
               navigate={~p"/sign-out"}
             >
               Sign Out
             </.button>
           <% else %>
             <.button
+            class='dark:outline'
+            shape='rounded'
               navigate={~p"/sign-in"}
             >
             <.icon name="hero-computer-desktop-mini" />
               Sign In
             </.button>
           <% end %>
+</div>
+          <!-- Phoenix logo and version -->
+        <div >
+          <a href="https://www.phoenixframework.org/">
+            <img src={~p"/images/phoenix.svg"} width="36" />
+          </a>
+          <p class="font-medium leading-6 text-xs">
+            v<%= Application.spec(:phoenix, :vsn) %>
+          </p>
+          </div>
       </div>
     </header>
     <%= @inner_content %>

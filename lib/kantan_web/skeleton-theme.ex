@@ -10,7 +10,7 @@ defmodule Pyro.Overrides.Skeleton do
   ####    S T Y L E    S E T T I N G S
   ##############################################################################
 
-  @theme_colors ~w[primary secondary tertiary warning error slate gray zinc neutral stone red orange amber yellow lime green emerald teal cyan sky blue indigo violet purple fuchsia pink rose]
+  @theme_colors ~w[primary secondary tertiary surface success warning error slate gray zinc neutral stone red orange amber yellow lime green emerald teal cyan sky blue indigo violet purple fuchsia pink rose]
   @flash_kinds ~w[info error warning success] ++ @theme_colors
   @shared_link_class "font-black border-b-2 border-dotted text-slate-900 border-slate-900 dark:text-white dark:border-white hover:text-sky-500 hover:border-sky-500 active:text-sky-500 active:border-sky-500 active:border-solid"
   @shared_shadow_class "shadow-md shadow-slate-900/5 dark:shadow-slate-300/5"
@@ -22,7 +22,7 @@ defmodule Pyro.Overrides.Skeleton do
     @layer root {
       ::selection,
       ::-moz-selection {
-        @apply text-white bg-primary-500 bg-opacity-100;
+        @apply text-white bg-surface-500 bg-opacity-100;
       }
 
       :root {
@@ -322,14 +322,14 @@ defmodule Pyro.Overrides.Skeleton do
     set :ping_class, &__MODULE__.button_ping_class/1
     set :icon_class, &__MODULE__.button_icon_class/1
     set :colors, @theme_colors
-    set :color, "primary"
+    set :color, "surface"
     set :variant, "solid"
     set :variants, ~w[solid inverted outline]
     set :shape, "rounded"
     set :shapes, ~w[rounded square pill]
     set :size, "md"
     set :sizes, ~w[xs sm md lg xl]
-    set :case, "uppercase"
+    set :case, ""
   end
 
   def button_class(passed_assigns) do
@@ -354,9 +354,11 @@ defmodule Pyro.Overrides.Skeleton do
       "whitespace-nowrap",
       "active:opacity-50",
       "relative",
-      "variant-filled-primary text-primary": color == "primary" && variant == "solid",
-      "variant-filled-secondary text-secondary": color == "secondary" && variant == "solid",
-      "variant-filled-tertiary text-tertiary": color == "tertiary" && variant == "solid",
+      "btn variant-filled-primary text-primary": color == "primary" && variant == "solid",
+      "btn variant-filled-secondary text-secondary": color == "secondary" && variant == "solid",
+      "btn variant-filled-tertiary text-tertiary": color == "tertiary" && variant == "solid",
+      "variant-filled-surface text-primary": color == "surface" && variant == "solid",
+      "btn variant-filled-warning text-primary": color == "warning" && variant == "solid",
       "hover:scale-105": !disabled,
       "text-xs": size == "xs",
       "text-sm": size == "sm",

@@ -31,7 +31,9 @@ defmodule KantanWeb.Router do
     # Using the ~V sigil
     live "/svelte/counter", Svelte.Counter
 
-    sign_in_route()
+    live "/register", AuthLive.Index, :register
+    live "/sign-in", AuthLive.Index, :sign_in
+
     sign_out_route AuthController
     auth_routes_for Kantan.Accounts.User, to: AuthController
     reset_route []
