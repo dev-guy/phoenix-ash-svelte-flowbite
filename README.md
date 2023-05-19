@@ -1,4 +1,4 @@
-# Phoenix Ash Flowbite Svelte TipTap Mermaid Mash-Up
+# Phoenix Ash Flowbite Svelte Skeleton TipTap Mermaid Mash-Up
 
 <img alt='Phoenix' src="https://seeklogo.com/images/P/phoenix-logo-D15F067911-seeklogo.com.png" height=40 width=45><img alt='ash' align="top" src="https://ash-hq.org/images/ash-logo-side.svg" height=50 width=100><img alt='Tailwind CSS' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" height=45 width=45><img alt='Flowbite' src="https://flowbite.com/docs/images/logo.svg" height=45 width=45><img alt='Svelte' src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height=45 width=45><img alt='Skeleton' height=45 width=45 src="https://pbs.twimg.com/profile_images/1587479781544759297/TINbbJLC_400x400.png"><img height=45 width=45 alt="TipTap" src="https://pbs.twimg.com/profile_images/1357340221377974275/dza_FwlU_400x400.jpg"><img height=45 width=45 alt="Mermaid"
 src="https://www.mermaidchart.com/img/icon-logo.svg">
@@ -39,7 +39,7 @@ This is a web browser application demonstrating:
 
 ## Help and additional information
 
-Join the [Ash Discord Server](https://discord.com/invite/D7FNG2q)
+Join the [Ash Discord Server](https://discord.com/invite/D7FNG2q) and check out the Pyro channel.
 
 ## Requirements
 
@@ -84,8 +84,8 @@ asdf global elixir 1.14.4-otp-25
 ## Usage
 
 ```sh
-git clone https://github.com/dev-guy/ash-svelte-flowbite.git
-cd ash-svelte-flowbite
+git clone https://github.com/dev-guy/phoenix-ash-svelte-flowbite.git
+cd phoenix-ash-svelte-flowbite
 nvm i
 mix local.hex
 mix setup
@@ -118,7 +118,7 @@ Open a browser to http://localhost:4000
     "phoenix_live_view": "file:../deps/phoenix_live_view"
 ```
 
-  - Using @apply in `<style>` blocks in Svelte files is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
+  - Using @apply in `<style>` blocks with Svelte is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
   - LiveSvelte elements that use most Svelte Skeleton components must contain ssr={false}; otherwise, runtime errors will occur
   - Beware [Svelte-Kit $app dependencies](https://github.com/woutdp/live_svelte/discussions/30)!
 
