@@ -13,19 +13,19 @@
   </head>
   <body data-theme="skeleton">
     <header>
-      <div class="flex items-center justify-between border-b border-zinc-100">
-          <a href={~p"/"}>
-            <img src={~p"/images/kantan.svg"} width="45" />
-          </a>
+      <div class="flex justify-between border-b border-zinc-100">
+        <div class="flex items-left items-center">
+        <a href={~p"/"}>
+          <img src={~p"/images/kantan.svg"} width="45" />
+        </a>
+      <div class="btn-group variant-filled-surface h-7">
 <!-- Dark mode selection begin
 -->
-        <div class="btn-group variant-filled-surface">
-
-        <.button
+        <button
           phx-click={JS.dispatch("pyro:theme-system")}
         >
           <.icon name="hero-computer-desktop-mini" />
-        </.button>
+        </button>
         <.button
           phx-click={JS.dispatch("pyro:theme-dark")}
         >
@@ -36,34 +36,32 @@
         >
           <.icon name="hero-sun-mini" />
         </.button>
-
-        </div>
 <!-- Dark mode selection end
 -->
-<div>
+<!-- Sign in/sign out begin
+-->
+        <%= if @current_user do %>
+          <.button
+              navigate={~p"/sign-out"}
+          >
+              Sign Out
+          </.button>
+        <% else %>
+          <.button
+navigate={~p"/sign-in"}
+          >
+            <.icon name="hero-arrow-left-on-rectangle"/>
+          </.button>
+        <% end %>
+</div>
+</div>
+        <!-- Logged-in user -->
           <%= if @current_user do %>
             <span class="px-3 py-2">
               <%= @current_user.email %>
             </span>
-            <.button
-            class='dark:outline'
-            shape='rounded'
-              navigate={~p"/sign-out"}
-            >
-              Sign Out
-            </.button>
-          <% else %>
-            <.button
-            class='dark:outline'
-            shape='rounded'
-              navigate={~p"/sign-in"}
-            >
-            <.icon name="hero-computer-desktop-mini" />
-              Sign In
-            </.button>
           <% end %>
-</div>
-          <!-- Phoenix logo and version -->
+        <!-- Phoenix logo and version -->
         <div >
           <a href="https://www.phoenixframework.org/">
             <img src={~p"/images/phoenix.svg"} width="36" />

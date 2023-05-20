@@ -71,7 +71,7 @@ module.exports = {
     plugin(({ addVariant }) => addVariant('aria-checked', '&[aria-checked]')),
 
     // flowbite - commented out due to Skeleton
-    // require('flowbite/plugin'),
+    require('flowbite/plugin'),
 
     // Svelte Skeleton
     ...require('@skeletonlabs/skeleton/tailwind/skeleton.cjs')()

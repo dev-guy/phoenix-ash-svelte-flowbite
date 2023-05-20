@@ -16,5 +16,4 @@ defmodule KantanWeb.PageController do
   def skeleton(conn, _params), do: render(conn, :skeleton)
   def tiptap(conn, _params), do: render(conn, :tiptap)
   def mermaid(conn, _params), do: render(conn, :mermaid)
-  def navigation_example(conn, _params), do: render(conn, :navigation_example)
 end

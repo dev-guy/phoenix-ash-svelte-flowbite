@@ -9,12 +9,8 @@
   <svelte:fragment slot="sidebarLeft">Sidebar Left</svelte:fragment>
   <svelte:fragment slot="sidebarRight">Sidebar Right</svelte:fragment>
   <svelte:fragment slot="pageHeader">Page Header</svelte:fragment>
-  <!--
-    Slots are experimental
-  -->
   <!-- Router Slot -->
   <slot />
-  <Mermaid/>
   <!-- ---- / ---- -->
   <svelte:fragment slot="pageFooter">Page Footer</svelte:fragment>
   <svelte:fragment slot="footer">Footer</svelte:fragment>

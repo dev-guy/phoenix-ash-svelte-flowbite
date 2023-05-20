@@ -25,10 +25,16 @@ import {getHooks} from "live_svelte"
 import * as SvelteComponents from "../svelte/**/*"
 import { hooks, getTimezone } from "pyro"
 import "flowbite/dist/flowbite.phoenix.js";
+import {initFlowbite} from "flowbite";
 import Datepicker from 'flowbite-datepicker/Datepicker';
+import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
+import { storePopup } from '@skeletonlabs/skeleton';
+storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
 
 const dtHook = {
   mounted() {
+console.log("Resetting state. All memory has been lost!"+new Date())
+    initFlowbite();
       const datepickerEl = this.el;
       new Datepicker(datepickerEl, {
           // options
