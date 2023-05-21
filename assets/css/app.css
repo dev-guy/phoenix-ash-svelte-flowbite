@@ -1,41 +1,23 @@
+/*
+Skeleton includes these already
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+*/
 
-/* Skeleton begin
-See https://www.skeleton.dev/docs/themes
-Change body data-theme="" too!!
+/**
+ * See https://www.skeleton.dev/docs/themes
+ * Change body data-theme="" too!!
 */
 @import '@skeletonlabs/skeleton/src/lib/themes/theme-skeleton.css';
 @import '@skeletonlabs/skeleton/src/lib/styles/skeleton.css';
-/* Skeleton end */
 
 @import "./tiptap.css";
 @import "./pyro.css";
 
-/* https://www.skeleton.dev/docs/themes */
-
-/*
-:root {
-	--theme-rounded-base: 20px;
-	--theme-rounded-container: 4px;
-  --theme-font-family-base: 'Georgia', sans-serif;
-}
-*/
-
-/*
-Is bg-surface-50-900-token;  needed?
-See https://www.skeleton.dev/docs/themes#backgrounds
-*/
-
-body { @apply h-screen overflow-hidden antialiased }
-
-/* visited: is a hack; otherwise the color will be primary */
-/* It's not possible to reference the color of unvisited. */
-a {
-  @apply hover:!underline !no-underline visited:!text-white
+/* Ash Authentication */
+.error-messages {
+  @apply text-error-500 italic;
 }
 
-button {
-  @apply hover:!underline !no-underline
-}
+body { @apply antialiased overflow-hidden h-screen; }

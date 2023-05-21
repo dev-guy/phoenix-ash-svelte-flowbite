@@ -5,71 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content={get_csrf_token()} />
     <.live_title suffix=" · Phoenix Framework">
-      <%= assigns[:page_title] || "Kantan" %>
+      <%= assigns[:page_title] || "HelloWorld" %>
     </.live_title>
     <link phx-track-static rel="stylesheet" href={~p"/assets/app.css"} />
     <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
     </script>
   </head>
   <body data-theme="skeleton">
-    <header class="px-4 sm:px-6 lg:px-8 bg-white dark:bg-black">
-<!-- Phoenix logo begin
--->
-      <div class="flex items-center justify-between border-b border-zinc-100 py-3 text-sm">
-        <div class="flex items-center gap-4">
-          <a href={~p"/"}>
-            <img src={~p"/images/logo.svg"} width="36" />
-          </a>
-          <p class="bg-brand/5 text-brand rounded-full px-2 font-medium leading-6">
-            v<%= Application.spec(:phoenix, :vsn) %>
-          </p>
-        </div>
-<!-- Dark mode selection begin
--->
-        <div flex items-center>
-        <.button
-          type="button"
-          class="whitespace-nowrap"
-          phx-click={JS.dispatch("pyro:theme-system")}
-        >
-          <.icon name="hero-computer-desktop-mini" /> System
-        </.button>
-        <.button
-          type="button"
-          class="whitespace-nowrap"
-          phx-click={JS.dispatch("pyro:theme-dark")}
-        >
-          <.icon name="hero-moon-mini" /> Dark
-        </.button>
-        <.button
-          type="button"
-          class="whitespace-nowrap"
-          phx-click={JS.dispatch("pyro:theme-light")}
-        >
-          <.icon name="hero-sun-mini" /> Light
-        </.button>
-        </div>
-<!-- Dark mode selection end
--->
-          <%= if @current_user do %>
-            <span class="px-3 py-2">
-              <%= @current_user.email %>
-            </span>
-            <.button
-              navigate={~p"/sign-out"}
-            >
-              Sign Out
-            </.button>
-          <% else %>
-            <.button
-              navigate={~p"/sign-in"}
-            >
-            <.icon name="hero-computer-desktop-mini" />
-              Sign In
-            </.button>
-          <% end %>
-      </div>
-    </header>
     <%= @inner_content %>
   </body>
 </html>

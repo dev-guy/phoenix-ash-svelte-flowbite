@@ -1,6 +1,8 @@
 // See the Tailwind configuration guide for advanced usage
 // https://tailwindcss.com/docs/configuration
 
+import skeleton from '@skeletonlabs/skeleton/tailwind/skeleton.cjs';
+
 const plugin = require("tailwindcss/plugin")
 const fs = require("fs")
 const path = require("path")
@@ -21,7 +23,7 @@ module.exports = {
 		)
   ],
   plugins: [
-    require("@tailwindcss/forms"),
+    // require("@tailwindcss/forms"),
     // Allows prefixing tailwind classes with LiveView classes to add rules
     // only when LiveView classes are applied, for example:
     //
@@ -66,14 +68,14 @@ module.exports = {
       }, {values})
     }),
 
+    // Svelte Skeleton
+    ...skeleton(),
+
     // Pyro
     plugin(({ addVariant }) => addVariant('aria-selected', '&[aria-selected]')),
     plugin(({ addVariant }) => addVariant('aria-checked', '&[aria-checked]')),
 
-    // flowbite - commented out due to Skeleton
-    // require('flowbite/plugin'),
-
-    // Svelte Skeleton
-    ...require('@skeletonlabs/skeleton/tailwind/skeleton.cjs')()
+    // Without this, tooltip arrows don't work
+    require('flowbite/plugin'),
   ]
 }

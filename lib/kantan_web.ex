@@ -53,6 +53,7 @@ defmodule KantanWeb do
     quote do
       use Pyro.LiveView,
         layout: {KantanWeb.Layouts, :app}
+      import LiveSvelte
 
       unquote(html_helpers())
     end

@@ -1,6 +1,4 @@
 <script>
-import Document from '@tiptap/extension-document'
-import Paragraph from '@tiptap/extension-paragraph'
 import TaskItem from '@tiptap/extension-task-item'
 import TaskList from '@tiptap/extension-task-list'
 
@@ -52,7 +50,7 @@ onMount(() => {
   :global(ul[data-type="taskList"]) {
     list-style: none;
     padding: 0;
-   
+
     :global(li) {
       display: flex;
       align-items: center;
@@ -61,7 +59,7 @@ onMount(() => {
         margin-right: 2rem;
         user-select: none;
       }
-  
+
       > :global(div) {
         flex: 1 1 auto;
       }
@@ -149,3 +147,4 @@ onMount(() => {
 {/if}
 
 <div bind:this={element} />
+
