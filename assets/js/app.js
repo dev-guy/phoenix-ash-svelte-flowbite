@@ -27,9 +27,6 @@ import { hooks, getTimezone } from "pyro"
 import "flowbite/dist/flowbite.phoenix.js";
 import {initFlowbite} from "flowbite";
 import Datepicker from 'flowbite-datepicker/Datepicker';
-import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
-import { storePopup } from '@skeletonlabs/skeleton';
-storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
 
 const dtHook = {
   mounted() {

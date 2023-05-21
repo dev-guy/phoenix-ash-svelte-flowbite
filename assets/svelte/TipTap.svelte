@@ -5,7 +5,6 @@ import TaskList from '@tiptap/extension-task-list'
 import StarterKit from "@tiptap/starter-kit";
 import { Editor } from "@tiptap/core";
 import { onMount } from "svelte";
-import AppShell from './AppShell.svelte';
 
 const CustomTaskItem = TaskItem.extend({
   content: 'inline*',
@@ -67,8 +66,6 @@ onMount(() => {
     }
   }
 </style>
-
-<AppShell>
 
 {#if editor}
 <!-- See https://www.skeleton.dev/elements/buttons -->
@@ -151,4 +148,3 @@ onMount(() => {
 
 <div bind:this={element} />
 
-</AppShell>

@@ -28,7 +28,9 @@ Is bg-surface-50-900-token;  needed?
 See https://www.skeleton.dev/docs/themes#backgrounds
 */
 
-body { @apply h-screen overflow-hidden antialiased }
+body {
+  @apply h-screen antialiased
+}
 
 /* visited: is a hack; otherwise the color will be primary */
 /* It's not possible to reference the color of unvisited.
