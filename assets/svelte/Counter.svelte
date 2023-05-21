@@ -5,8 +5,6 @@
   // pushEvent to ... push events to the server.
   export let pushEvent;
 
-  import AppShell from "./AppShell.svelte";
-
   function increase() {
     // This pushes the event over the websocket
     // The last parameter is optional. It's a callback for when the event is finished.
@@ -24,7 +22,6 @@
   }
 </script>
 
-<AppShell>
   <h1>Increment / Decrement Number Example</h1>
   <div class="text-sm">
     The number is {number}.
@@ -37,4 +34,3 @@
       on:click={decrease}>-</button
     >
   </div>
-</AppShell>

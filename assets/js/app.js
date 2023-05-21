@@ -25,39 +25,38 @@ import {getHooks} from "live_svelte"
 import * as SvelteComponents from "../svelte/**/*"
 import { hooks, getTimezone } from "pyro"
 import "flowbite/dist/flowbite.phoenix.js";
-import {initFlowbite} from "flowbite";
+// import {initFlowbite} from "flowbite";
 import Datepicker from 'flowbite-datepicker/Datepicker';
 
-const dtHook = {
+const datepickerHook = {
   mounted() {
-    console.log("Resetting state. All memory has been lost!"+new Date())
-    initFlowbite();
-      const datepickerEl = this.el;
-      new Datepicker(datepickerEl, {
-          // options
+    // initFlowbite();
+    new Datepicker(this.el, {
+    // options
       });
   },
   updated() {
-      this.mounted();
+    this.mounted();
   }
 };
 
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 
-// pyro
 let liveSocket = new LiveSocket("/live", Socket, {
-  hooks: {...hooks, ...getHooks(SvelteComponents), Datepicker: dtHook },
+  // pyro
+  hooks: {...getHooks(SvelteComponents), Datepicker: datepickerHook },
   params: {_csrf_token: csrfToken}})
 
 // Show progress bar on live navigation and form submits
-topbar.config({barColors: {0: "#29d"}, shadowColor: "rgba(0, 0, 0, .3)"})
-window.addEventListener("phx:page-loading-start", _info => topbar.show(300))
-window.addEventListener("phx:page-loading-stop", _info => topbar.hide())
+// topbar.config({barColors: {0: "#29d"}, shadowColor: "rgba(0, 0, 0, .3)"})
+// window.addEventListener("phx:page-loading-start", _info => topbar.show(300))
+// window.addEventListener("phx:page-loading-stop", _info => topbar.hide())
 
 // connect if there are any LiveViews on the page
 liveSocket.connect()
 
 // expose liveSocket on window for web console debug logs and latency simulation:
+
 // >> liveSocket.enableDebug()
 // >> liveSocket.enableLatencySim(1000)  // enabled for duration of browser session
 // >> liveSocket.disableLatencySim()

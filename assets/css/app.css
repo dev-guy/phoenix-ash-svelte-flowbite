@@ -1,27 +1,23 @@
 /*
+Skeleton includes these already
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 */
 
-/* Skeleton begin
-See https://www.skeleton.dev/docs/themes
-Change body data-theme="" too!!
+/**
+ * See https://www.skeleton.dev/docs/themes
+ * Change body data-theme="" too!!
 */
 @import '@skeletonlabs/skeleton/src/lib/themes/theme-skeleton.css';
 @import '@skeletonlabs/skeleton/src/lib/styles/skeleton.css';
-/* Skeleton end */
 
 @import "./tiptap.css";
 @import "./pyro.css";
-
-/* https://www.skeleton.dev/docs/themes */
 
 /* Ash Authentication */
 .error-messages {
   @apply text-error-500 italic;
 }
 
-html, body { @apply h-full overflow-hidden; }
-
-body { @apply antialiased; }
+body { @apply antialiased overflow-hidden h-screen; }

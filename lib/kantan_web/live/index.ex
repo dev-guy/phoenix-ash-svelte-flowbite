@@ -4,9 +4,6 @@ defmodule KantanWeb.Live.Index do
   @impl true
   def render(assigns) do
     ~H"""
-    <div>
-    <LiveSvelte.render name="AppShell" ssr={false}>
-
     <h1 class="h1">Flowbite</h1>
     <input
       phx-hook="Datepicker"
@@ -55,9 +52,6 @@ defmodule KantanWeb.Live.Index do
     <.button color="secondary">secondary</.button>
     <.button color="tertiary">tertiary</.button>
     <.button color="warning">warning</.button>
-
-    </LiveSvelte.render>
-    </div>
     """
   end
 end
