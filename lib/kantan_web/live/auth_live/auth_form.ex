@@ -36,8 +36,9 @@ defmodule KantanWeb.AuthLive.AuthForm do
   @impl true
   def render(assigns) do
     ~H"""
-    <LiveSvelte.render ssr={false} name="AppShell">
     <div>
+      <LiveSvelte.render ssr={false} name="AppShell">
+      <div>
       <ul class="error-messages">
         <%= if @form.errors do %>
           <%= for {k, v} <- @errors do %>
@@ -83,8 +84,9 @@ defmodule KantanWeb.AuthLive.AuthForm do
         </fieldset>
         <%= submit(@cta, class: "btn btn-lg btn-primary pull-xs-right") %>
       </.form>
+      </div>
+      </LiveSvelte.render>
     </div>
-    </LiveSvelte.render>
     """
   end
 end

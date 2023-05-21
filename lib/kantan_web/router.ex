@@ -21,8 +21,9 @@ defmodule KantanWeb.Router do
   scope "/", KantanWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
-    get "/svelte/appShell", PageController, :app_shell
+    live "/", Live.Home
+
+    # Svelte dead views
     get "/svelte/timeline", PageController, :timeline
     get "/svelte/tiptap", PageController, :tiptap
     get "/svelte/mermaid", PageController, :mermaid

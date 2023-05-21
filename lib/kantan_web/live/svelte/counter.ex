@@ -4,7 +4,6 @@ defmodule KantanWeb.Svelte.Counter do
   def render(assigns) do
 ~V"""
     <script>
-    import { LightSwitch } from '@skeletonlabs/skeleton';
 
     // The number prop is reactive,
     // this means if the server assigns the number, it will update in the frontend
@@ -29,17 +28,11 @@ defmodule KantanWeb.Svelte.Counter do
     }
     </script>
 
-<LightSwitch/>
-
-    <button on:click={() => window.dispatchEvent(new CustomEvent("pyro:theme-system", {to: null}))}>dark</button>
-
     <h1>Increment / Decrement Number Example</h1>
     <div class='text-sm'>The number is {number}.
         <button class="bg-green-600 hover:bg-green-700 text-white text-sm px-4 py-2  border rounded-full" on:click={increase}>+</button>
         <button class="bg-red-600 hover:bg-red-700 text-white text-sm px-4 py-2  border rounded-full"on:click={decrease}>-</button>
     </div>
-
-<!-- <h1>{Application.spec(:phoenix, :vsn)}</h1> -->
 """
   end
 

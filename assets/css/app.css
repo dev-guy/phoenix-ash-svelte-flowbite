@@ -28,8 +28,8 @@ Is bg-surface-50-900-token;  needed?
 See https://www.skeleton.dev/docs/themes#backgrounds
 */
 
-body {
-  @apply h-screen antialiased
+html, body {
+  @apply h-full overflow-hidden;
 }
 
 /* visited: is a hack; otherwise the color will be primary */

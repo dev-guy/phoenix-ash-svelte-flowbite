@@ -70,7 +70,7 @@ module.exports = {
     plugin(({ addVariant }) => addVariant('aria-selected', '&[aria-selected]')),
     plugin(({ addVariant }) => addVariant('aria-checked', '&[aria-checked]')),
 
-    ...require('@skeletonlabs/skeleton/tailwind/skeleton.cjs')()
-   // require('flowbite/plugin'),
+    ...require('@skeletonlabs/skeleton/tailwind/skeleton.cjs')(),
+    require('flowbite/plugin'),
   ]
 }
