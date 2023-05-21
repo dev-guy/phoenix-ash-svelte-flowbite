@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content={get_csrf_token()} />
     <.live_title suffix=" · Phoenix Framework">
-      <%= assigns[:page_title] || "Kantan" %>
+      <%= assigns[:page_title] || "HelloWorld" %>
     </.live_title>
     <link phx-track-static rel="stylesheet" href={~p"/assets/app.css"} />
     <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
@@ -13,72 +13,7 @@
   </head>
   <body data-theme="skeleton">
   <div style="display: contents" class="h-full overflow-hidden">
-    <header>
-      <div class="flex justify-between border-b">
-        <div class="flex items-center">
-        <.link navigate={~p"/"}>
-          <img src={~p"/images/kantan.svg"} width="45" />
-        </.link>
-        <div class='px-5'/>
-      <div class="btn-group variant-filled h-6">
-<!-- Dark mode selection begin
--->
-        <button
-          phx-click={JS.dispatch("pyro:theme-system")}
-        >
-          <.icon name="hero-computer-desktop-mini" />
-        </button>
-        <button
-          phx-click={JS.dispatch("pyro:theme-dark")}
-        >
-          <.icon name="hero-moon-mini" />
-        </button>
-        <button
-          phx-click={JS.dispatch("pyro:theme-light")}
-        >
-          <.icon name="hero-sun-mini" />
-        </button>
-<!-- Dark mode selection end
--->
-<!-- Sign in/sign out begin
--->
-        <%= if @current_user do %>
-          <.link navigate={~p"/sign-out"} data-tooltip-target="tooltip-sign-out" data-tooltip-placement="bottom" >
-            <.icon name="hero-arrow-right-on-rectangle-mini" />
-          </.link>
-          <div id="tooltip-sign-in" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-          Sign out
-           <div class="tooltip-arrow" data-popper-arrow></div>
-          </div>
-        <% else %>
-          <.link navigate={~p"/sign-in"} data-tooltip-target="tooltip-sign-in" data-tooltip-placement="bottom" >
-            <.icon name="hero-arrow-left-on-rectangle-mini" />
-          </.link>
-          <div id="tooltip-sign-in" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-          Sign in
-           <div class="tooltip-arrow" data-popper-arrow></div>
-          </div>
-        <% end %>
-</div>
-</div>
-        <!-- Logged-in user -->
-          <%= if @current_user do %>
-            <span class="px-3 py-2">
-              <%= @current_user.email %>
-            </span>
-          <% end %>
-        <!-- Phoenix logo and version -->
-        <div >
-          <a href="https://www.phoenixframework.org/">
-            <img src={~p"/images/phoenix.svg"} width="36" />
-          </a>
-          <p class="font-medium leading-6 text-xs">
-            v<%= Application.spec(:phoenix, :vsn) %>
-          </p>
-          </div>
-      </div>
-    </header>
     <%= @inner_content %>
-    </div>
+  </div>
   </body>
 </html>

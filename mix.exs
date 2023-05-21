@@ -56,7 +56,8 @@ defmodule Kantan.MixProject do
       {:ash_authentication, "~> 3.11"},
       {:ash_authentication_phoenix, "~> 1.7"},
       {:ash_postgres, "~> 1.3"},
-      {:live_svelte, "~> 0.5"}
+      {:live_svelte, "~> 0.5"},
+      {:credo, "~> 1.6", only: [:dev, :test], runtime: false}
     ]
   end
 

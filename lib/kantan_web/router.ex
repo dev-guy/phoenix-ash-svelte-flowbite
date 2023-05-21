@@ -21,21 +21,24 @@ defmodule KantanWeb.Router do
   scope "/", KantanWeb do
     pipe_through :browser
 
-    live "/", Live.Home
-
     # Svelte dead views
     get "/svelte/timeline", PageController, :timeline
     get "/svelte/tiptap", PageController, :tiptap
     get "/svelte/mermaid", PageController, :mermaid
 
+    ash_authentication_live_session :authentication_optional,
+      on_mount: {KantanWeb.LiveUserAuth, :live_user_optional} do
+      live "/", Live.Index, :index
+      live "/svelte/counter", Svelte.Counter
+      live "/svelte/navigationExample", Svelte.NavigationExample
+    end
+
     # Using the ~V sigil
-    live "/svelte/counter", Svelte.Counter
-    live "/svelte/navigationExample", Svelte.NavigationExample
 
-    # sign_in_route()
-    live "/register", AuthLive.Index, :register
-    live "/sign-in", AuthLive.Index, :sign_in
+    # live "/register", AuthLive.Index, :register
+    # live "/sign-in", AuthLive.Index, :sign_in
 
+    sign_in_route()
     sign_out_route AuthController
     auth_routes_for Kantan.Accounts.User, to: AuthController
     reset_route []

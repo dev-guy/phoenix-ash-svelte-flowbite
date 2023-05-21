@@ -1,4 +1,4 @@
-defmodule Pyro.Overrides.Skeleton do
+defmodule Kantan.Pyro.Overrides.Skeleton do
   # credo:disable-for-this-file Credo.Check.Refactor.CyclomaticComplexity
   @moduledoc """
   This is the default style configuration for Pyro components.

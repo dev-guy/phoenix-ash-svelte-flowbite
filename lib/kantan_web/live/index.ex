@@ -1,11 +1,12 @@
-defmodule KantanWeb.Live.Home do
+defmodule KantanWeb.Live.Index do
   use KantanWeb, :live_view
 
   @impl true
   def render(assigns) do
     ~H"""
     <div>
-    <LiveSvelte.render ssr={false} name="AppShell">
+    <LiveSvelte.render name="AppShell" ssr={false}>
+
     <h1 class="h1">Flowbite</h1>
     <input
       phx-hook="Datepicker"
@@ -19,7 +20,7 @@ defmodule KantanWeb.Live.Home do
 
     <.button navigate="/svelte/counter">Counter</.button>
     <.button navigate="/svelte/tiptap">Checklist by TipTap</.button>
-    <.button navigate="/svelte/mermaid">Mermaid</.button>
+    <.button navigate={~p"/svelte/mermaid"}>Mermaid</.button>
     <.button navigate="/svelte/navigationExample">Navigation</.button>
 
     <h1 class="h1">Svelte Skeleton</h1>

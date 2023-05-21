@@ -1,5 +1,6 @@
 <script>
   import mermaid from "mermaid";
+  import AppShell from "./AppShell.svelte";
 
   // The default diagram
   let diagram = `\
@@ -22,8 +23,9 @@ erDiagram
 
   $: diagram && renderDiagram();
 </script>
-
-<main>
+    <div style="display:contents" class="h-full">
+  <AppShell>
   <pre contenteditable="true" bind:innerHTML={diagram} />
   <span bind:this={container} />
-</main>
+  </AppShell>
+  </div>

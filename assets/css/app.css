@@ -1,6 +1,8 @@
+/*
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+*/
 
 /* Skeleton begin
 See https://www.skeleton.dev/docs/themes
@@ -15,35 +17,11 @@ Change body data-theme="" too!!
 
 /* https://www.skeleton.dev/docs/themes */
 
-/*
-:root {
-	--theme-rounded-base: 20px;
-	--theme-rounded-container: 4px;
-  --theme-font-family-base: 'Georgia', sans-serif;
-}
-*/
-
-/*
-Is bg-surface-50-900-token;  needed?
-See https://www.skeleton.dev/docs/themes#backgrounds
-*/
-
-html, body {
-  @apply h-full overflow-hidden;
-}
-
-/* visited: is a hack; otherwise the color will be primary */
-/* It's not possible to reference the color of unvisited.
-a {
-  @apply hover:!underline !no-underline visited:!text-white
-}
-
-button {
-  @apply hover:!underline !no-underline
-}
-*/
-
 /* Ash Authentication */
 .error-messages {
   @apply text-error-500 italic;
 }
+
+html, body { @apply h-full overflow-hidden; }
+
+body { @apply antialiased; }

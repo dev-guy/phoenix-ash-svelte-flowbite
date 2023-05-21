@@ -30,7 +30,7 @@ import Datepicker from 'flowbite-datepicker/Datepicker';
 
 const dtHook = {
   mounted() {
-console.log("Resetting state. All memory has been lost!"+new Date())
+    console.log("Resetting state. All memory has been lost!"+new Date())
     initFlowbite();
       const datepickerEl = this.el;
       new Datepicker(datepickerEl, {
