@@ -23,7 +23,7 @@ defmodule KantanWeb.Router do
 
     get "/", PageController, :home
     get "/svelte/appShell", PageController, :app_shell
-    get "/svelte/skeleton", PageController, :skeleton
+    get "/svelte/timeline", PageController, :timeline
     get "/svelte/tiptap", PageController, :tiptap
     get "/svelte/mermaid", PageController, :mermaid
 

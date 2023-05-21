@@ -10,9 +10,9 @@ defmodule Pyro.Overrides.Skeleton do
   ####    S T Y L E    S E T T I N G S
   ##############################################################################
 
-  @theme_colors ~w[primary secondary tertiary surface success warning error slate gray zinc neutral stone red orange amber yellow lime green emerald teal cyan sky blue indigo violet purple fuchsia pink rose]
+  @theme_colors ~w[default primary secondary tertiary surface success warning error slate gray zinc neutral stone red orange amber yellow lime green emerald teal cyan sky blue indigo violet purple fuchsia pink rose]
   @flash_kinds ~w[info error warning success] ++ @theme_colors
-  @shared_link_class "font-black border-b-2 border-dotted text-slate-900 border-slate-900 dark:text-white dark:border-white hover:text-sky-500 hover:border-sky-500 active:text-sky-500 active:border-sky-500 active:border-solid"
+  @shared_link_class "font-black"
   @shared_shadow_class "shadow-md shadow-slate-900/5 dark:shadow-slate-300/5"
 
   use Pyro.Overrides,
@@ -322,7 +322,7 @@ defmodule Pyro.Overrides.Skeleton do
     set :ping_class, &__MODULE__.button_ping_class/1
     set :icon_class, &__MODULE__.button_icon_class/1
     set :colors, @theme_colors
-    set :color, "surface"
+    set :color, "neutral"
     set :variant, "solid"
     set :variants, ~w[solid inverted outline]
     set :shape, "rounded"
@@ -342,30 +342,30 @@ defmodule Pyro.Overrides.Skeleton do
     [
       passed_assigns[:case],
       @shared_shadow_class,
-      "font-semibold",
-      "text-center",
-      "inline-block",
-      "cursor-pointer",
-      "disabled:cursor-not-allowed",
-      "disabled:opacity-50",
-      "appearance-none",
-      "select-none",
-      "px-2",
-      "whitespace-nowrap",
-      "active:opacity-50",
-      "relative",
+      # "text-center",
+      #  "inline-block",
+      # "cursor-pointer",
+      # "disabled:cursor-not-allowed",
+      # "disabled:opacity-50",
+      # "appearance-none",
+      # "select-none",
+      # "px-2",
+      # "whitespace-nowrap",
+      # "active:opacity-50",
+      # "relative",
+      "btn variant-filled": color == "neutral" && variant == "solid",
       "btn variant-filled-primary text-primary": color == "primary" && variant == "solid",
       "btn variant-filled-secondary text-secondary": color == "secondary" && variant == "solid",
       "btn variant-filled-tertiary text-tertiary": color == "tertiary" && variant == "solid",
-      "variant-filled-surface text-primary": color == "surface" && variant == "solid",
+      "btn variant-filled-primary text-primary": color == "surface" && variant == "solid",
       "btn variant-filled-warning text-primary": color == "warning" && variant == "solid",
       "hover:scale-105": !disabled,
-      "text-xs": size == "xs",
-      "text-sm": size == "sm",
+      "btn-xs text-xs": size == "xs",
+      "btn-sm text-sm": size == "sm",
       "text-base": size == "md",
-      "text-lg": size == "lg",
-      "text-xl": size == "xl",
-      rounded: shape == "rounded",
+      "btn-lg text-lg": size == "lg",
+      "btn-xl text-xl": size == "xl",
+      # "rounded": shape == "rounded",
       "rounded-full": shape == "pill",
       "border border-solid": variant in ["outline", "inverted"],
       "border-2": variant in ["outline", "inverted"] && size == "md",
@@ -822,8 +822,8 @@ defmodule Pyro.Overrides.Skeleton do
 
     [
       @shared_link_class,
-      "border-solid cursor-default text-slate-900 dark:text-white border-slate-900 dark:border-white":
-        is_current
+      "border-solid":
+        !is_current
     ]
   end
 

@@ -13,12 +13,13 @@
   </head>
   <body data-theme="skeleton">
     <header>
-      <div class="flex justify-between border-b border-zinc-100">
-        <div class="flex items-left items-center">
-        <a href={~p"/"}>
+      <div class="flex justify-between border-b">
+        <div class="flex items-center">
+        <.link navigate={~p"/"}>
           <img src={~p"/images/kantan.svg"} width="45" />
-        </a>
-      <div class="btn-group variant-filled-surface h-7">
+        </.link>
+        <div class='px-5'/>
+      <div class="btn-group variant-filled h-6">
 <!-- Dark mode selection begin
 -->
         <button
@@ -26,32 +27,36 @@
         >
           <.icon name="hero-computer-desktop-mini" />
         </button>
-        <.button
+        <button
           phx-click={JS.dispatch("pyro:theme-dark")}
         >
           <.icon name="hero-moon-mini" />
-        </.button>
-        <.button
+        </button>
+        <button
           phx-click={JS.dispatch("pyro:theme-light")}
         >
           <.icon name="hero-sun-mini" />
-        </.button>
+        </button>
 <!-- Dark mode selection end
 -->
 <!-- Sign in/sign out begin
 -->
         <%= if @current_user do %>
-          <.button
-              navigate={~p"/sign-out"}
-          >
-              Sign Out
-          </.button>
+          <.link navigate={~p"/sign-out"} data-tooltip-target="tooltip-sign-out" data-tooltip-placement="bottom" >
+            <.icon name="hero-arrow-right-on-rectangle-mini" />
+          </.link>
+          <div id="tooltip-sign-in" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+          Sign out
+           <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
         <% else %>
-          <.button
-navigate={~p"/sign-in"}
-          >
-            <.icon name="hero-arrow-left-on-rectangle"/>
-          </.button>
+          <.link navigate={~p"/sign-in"} data-tooltip-target="tooltip-sign-in" data-tooltip-placement="bottom" >
+            <.icon name="hero-arrow-left-on-rectangle-mini" />
+          </.link>
+          <div id="tooltip-sign-in" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+          Sign in
+           <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
         <% end %>
 </div>
 </div>
@@ -75,3 +80,5 @@ navigate={~p"/sign-in"}
     <%= @inner_content %>
   </body>
 </html>
+
+
