@@ -23,6 +23,7 @@ module.exports = {
 		)
   ],
   plugins: [
+    require('tailwind-scrollbar-hide'),
     // require("@tailwindcss/forms"),
     // Allows prefixing tailwind classes with LiveView classes to add rules
     // only when LiveView classes are applied, for example:

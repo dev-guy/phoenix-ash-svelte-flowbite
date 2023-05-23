@@ -77,8 +77,8 @@ asdf plugin add erlang
 KERL_BUILD_DOCS=yes asdf install erlang 25.3 # For VSCode's Elixir language server extension
 asdf global erlang 25.3
 asdf plugin add elixir
-asdf install elixir 1.14.4-otp-25
-asdf global elixir 1.14.4-otp-25
+asdf install elixir 1.14.5-otp-26
+asdf global elixir 1.14.5-otp-26
 ```
 
 ## Usage
@@ -86,7 +86,8 @@ asdf global elixir 1.14.4-otp-25
 ```sh
 git clone https://github.com/dev-guy/phoenix-ash-svelte-flowbite.git
 cd phoenix-ash-svelte-flowbite
-nvm i
+nvm install
+npm install -g @pnpm/exe
 mix local.hex
 mix setup
 mix tailwind.install
@@ -133,6 +134,7 @@ Open a browser to http://localhost:4000
 4. [Install Flowbite for Phoenix](https://flowbite.com/docs/getting-started/phoenix/)
 5. [Install LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
 6. [Install Skeleton for Svelte](https://www.skeleton.dev/docs/get-started)
+7. [Install Tailwind Scrollbar Hide Plugin](https://github.com/reslear/tailwind-scrollbar-hide)
 
 ### Other
 
