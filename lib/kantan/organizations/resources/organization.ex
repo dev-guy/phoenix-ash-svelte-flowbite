@@ -10,14 +10,13 @@ defmodule Kantan.Organizations.Organization do
     postgres do
       table "organization"
       repo Kantan.Repo
+
+      manage_tenant do
+        template ["org_", :id]
+      end
     end
 
     identities do
       identity :unique_name, [:name]
-    end
-
-    manage_tenant do
-      template ["org_", :id]
-    end
   end
 end
