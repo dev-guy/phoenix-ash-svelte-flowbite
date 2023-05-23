@@ -8,7 +8,7 @@ import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
         </svg>
-         
+
     </i></svelte:fragment>
       <svelte:fragment slot="summary"><p class="font-bold">Books</p></svelte:fragment>
       <svelte:fragment slot="content">
@@ -17,7 +17,7 @@ import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
   </AccordionItem>
 </Accordion>
 
-<ol class="relative border-l border-gray-200 dark:border-gray-700">                  
+<ol class="relative border-l border-gray-200 dark:border-gray-700">
   <li class="mb-10 ml-4">
       <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
       <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022</time>

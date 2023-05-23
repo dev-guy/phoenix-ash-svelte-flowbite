@@ -9,8 +9,8 @@ Skeleton includes these already
  * See https://www.skeleton.dev/docs/themes
  * Change body data-theme="" too!!
 */
-@import '@skeletonlabs/skeleton/src/lib/themes/theme-skeleton.css';
-@import '@skeletonlabs/skeleton/src/lib/styles/skeleton.css';
+@import '@skeletonlabs/skeleton/dist/themes/theme-skeleton.css';
+@import '@skeletonlabs/skeleton/dist/styles/skeleton.css';
 
 @import "./tiptap.css";
 @import "./pyro.css";

@@ -10,7 +10,7 @@ defmodule Kantan.Pyro.Overrides.Skeleton do
   ####    S T Y L E    S E T T I N G S
   ##############################################################################
 
-  @theme_colors ~w[neutral primary secondary tertiary surface success warning error slate gray zinc neutral stone red orange amber yellow lime green emerald teal cyan sky blue indigo violet purple fuchsia pink rose]
+  @theme_colors ~w[primary secondary tertiary surface success warning error slate gray zinc neutral stone red orange amber yellow lime green emerald teal cyan sky blue indigo violet purple fuchsia pink rose]
   @flash_kinds ~w[info error warning success] ++ @theme_colors
   @shared_link_class "font-black"
   @shared_shadow_class "shadow-md shadow-slate-900/5 dark:shadow-slate-300/5"
@@ -385,11 +385,9 @@ defmodule Kantan.Pyro.Overrides.Skeleton do
       "border-zinc-500 text-zinc-500 bg-white hover:bg-zinc-500 hover:text-white":
         color == "zinc" && variant == "inverted",
       "border-zinc-500 text-zinc-500": color == "red" && variant == "outline",
-      "bg-neutral-500 text-white": color == "neutral" && variant == "solid",
       "border-neutral-500 text-neutral-500 bg-white hover:bg-neutral-500 hover:text-white":
         color == "neutral" && variant == "inverted",
       "border-neutral-500 text-neutral-500": color == "red" && variant == "outline",
-      "bg-neutral-500 text-white": color == "neutral" && variant == "solid",
       "border-neutral-500 text-neutral-500 bg-white hover:bg-neutral-500 hover:text-white":
         color == "neutral" && variant == "inverted",
       "border-neutral-500 text-neutral-500": color == "red" && variant == "outline",
