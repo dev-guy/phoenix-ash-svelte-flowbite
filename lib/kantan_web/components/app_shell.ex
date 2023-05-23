@@ -45,7 +45,7 @@ defmodule KantanWeb.AppShell do
               <span class="sr-only">Toggle sidebar</span>
             </button>
           </div>
-            <div class="flex items-center">
+          <div class="flex items-center">
             <.link navigate={~p"/"}>
               <img src={~p"/images/kantan.svg"} width="45" />
             </.link>
@@ -99,9 +99,9 @@ defmodule KantanWeb.AppShell do
                 v<%= Application.spec(:phoenix, :vsn) %>
               </p>
             </div>
-            </div>
-            <!-- Notifications -->
-            <div class="flex items-center" >
+          </div>
+          <!-- Notifications -->
+          <div class="flex items-center">
             <button
               type="button"
               data-dropdown-toggle="notification-dropdown"
@@ -686,9 +686,8 @@ defmodule KantanWeb.AppShell do
                 <li>
                   <.link
                     navigate={~p"/sign-out"}
-                  class="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    class="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                   >
-
                     Sign out
                   </.link>
                 </li>
@@ -717,12 +716,18 @@ defmodule KantanWeb.AppShell do
               aria-controls="dropdown-pages"
               data-collapse-toggle="dropdown-pages"
             >
-            <svg aria-hidden="true"
+              <svg
+                aria-hidden="true"
                 class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-     <image xlink:href="https://svelte.dev/_app/immutable/assets/stopwar-947a4798.svg" width="20" height="20"/>
-</svg>
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <image
+                  xlink:href="https://svelte.dev/_app/immutable/assets/stopwar-947a4798.svg"
+                  width="20"
+                  height="20"
+                />
+              </svg>
               <span class="flex-1 ml-3 text-left whitespace-nowrap">Svelte</span>
               <svg
                 aria-hidden="true"

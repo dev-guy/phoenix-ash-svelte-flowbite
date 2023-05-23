@@ -367,7 +367,7 @@ defmodule Kantan.Pyro.Overrides.Skeleton do
       "text-base": size == "md",
       "btn-lg text-lg": size == "lg",
       "btn-xl text-xl": size == "xl",
-      "rounded": shape == "rectangle",
+      rounded: shape == "rectangle",
       # "rounded-full": shape == "pill",
       "border border-solid": variant in ["outline", "inverted"],
       "border-2": variant in ["outline", "inverted"] && size == "md",

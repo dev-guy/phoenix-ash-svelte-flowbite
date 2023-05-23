@@ -34,7 +34,6 @@ defmodule KantanWeb.Router do
       live "/", Live.Index, :index
       live "/svelte/counter", Svelte.Counter
       live "/svelte/navigationExample", Svelte.NavigationExample
-
     end
 
     # live "/register", AuthLive.Index, :register

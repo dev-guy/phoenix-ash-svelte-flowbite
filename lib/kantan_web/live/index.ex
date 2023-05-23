@@ -36,9 +36,9 @@ defmodule KantanWeb.Live.Index do
 
     <h1 class="h1">Pyro Buttons</h1>
 
-    <.button variant='default'>default</.button>
+    <.button variant="default">default</.button>
     <.button color="neutral">neutral</.button>
-    <.button shape='rectangle' size="sm" color="neutral">sm neutral rectangle</.button>
+    <.button shape="rectangle" size="sm" color="neutral">sm neutral rectangle</.button>
     <.button size="sm" color="neutral">sm neutral</.button>
     <.button size="sm" color="success">sm success</.button>
     <.button size="sm" color="primary">sm primary</.button>
