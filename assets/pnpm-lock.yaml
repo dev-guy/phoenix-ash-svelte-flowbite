@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@skeletonlabs/skeleton':
-    specifier: ^1.5.1
-    version: 1.5.1
+    specifier: ^1.6.0
+    version: 1.6.0
   '@tiptap/core':
     specifier: ^2.0.3
     version: 2.0.3(@tiptap/pm@2.0.3)
@@ -667,11 +667,11 @@ packages:
       type-fest: 2.19.0
     dev: false
 
-  /@skeletonlabs/skeleton@1.5.1:
-    resolution: {integrity: sha512-b5D6vyUgE69XRbe9D3ImqJZHIRzEKwIa4HQik6LckjzgrfgUmTSeZXRdZeCuEVNI+6hdDcgTx4Brg9/8phcEeg==}
+  /@skeletonlabs/skeleton@1.6.0:
+    resolution: {integrity: sha512-Xfs6biNj3K9Q7ypg4jLghwn2dQA8Xg8V3Wn5mbg4RZupbneq1Qtb+FVTrVGkNshEYBXpfU+kPFcFQvfJB7MHEQ==}
     dependencies:
       esm-env: 1.0.0
-      svelte: 3.59.1
+      svelte: 3.58.0
     dev: false
 
   /@tiptap/core@2.0.3(@tiptap/pm@2.0.3):
@@ -2398,6 +2398,11 @@ packages:
       strip-indent: 3.0.0
       svelte: 3.59.1
     dev: true
+
+  /svelte@3.58.0:
+    resolution: {integrity: sha512-brIBNNB76mXFmU/Kerm4wFnkskBbluBDCjx/8TcpYRb298Yh2dztS2kQ6bhtjMcvUhd5ynClfwpz5h2gnzdQ1A==}
+    engines: {node: '>= 8'}
+    dev: false
 
   /svelte@3.59.1:
     resolution: {integrity: sha512-pKj8fEBmqf6mq3/NfrB9SLtcJcUvjYSWyePlfCqN9gujLB25RitWK8PvFzlwim6hD/We35KbPlRteuA6rnPGcQ==}
