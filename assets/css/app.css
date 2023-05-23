@@ -20,4 +20,4 @@ Skeleton includes these already
   @apply text-error-500 italic;
 }
 
-body { @apply antialiased overflow-hidden h-screen; }
+body { @apply antialiased h-screen; }

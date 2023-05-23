@@ -16,17 +16,18 @@
     "phoenix": "file:../deps/phoenix",
     "phoenix_html": "file:../deps/phoenix_html",
     "phoenix_live_view": "file:../deps/phoenix_live_view",
-    "pyro": "file:../deps/pyro"
+    "pyro": "file:../deps/pyro",
+    "svelte": "^3.59.1",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.3",
     "autoprefixer": "^10.4.14",
     "esbuild": "^0.17.11",
     "esbuild-plugin-import-glob": "^0.1.1",
     "esbuild-svelte": "^0.7.3",
     "postcss": "^8.4.21",
     "sass": "^1.62.0",
-    "svelte-preprocess": "^5.0.3",
-    "tailwindcss": "^3.3.2"
+    "svelte-preprocess": "^5.0.3"
   }
 }
