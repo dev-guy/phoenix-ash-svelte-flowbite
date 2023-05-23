@@ -2,7 +2,7 @@
   "name": "kantan",
   "version": "0.1.0",
   "dependencies": {
-    "@skeletonlabs/skeleton": "^1.5.1",
+    "@skeletonlabs/skeleton": "^1.6.0",
     "@tiptap/core": "^2.0.3",
     "@tiptap/extension-paragraph": "^2.0.3",
     "@tiptap/extension-task-item": "^2.0.3",

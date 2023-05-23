@@ -74,8 +74,8 @@ echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 # asdf list-all erlang
 # asdf list-all elixir
 asdf plugin add erlang
-KERL_BUILD_DOCS=yes asdf install erlang 25.3 # For VSCode's Elixir language server extension
-asdf global erlang 25.3
+KERL_BUILD_DOCS=yes asdf install erlang 26.0 # For VSCode's Elixir language server extension
+asdf global erlang 26.0
 asdf plugin add elixir
 asdf install elixir 1.14.5-otp-26
 asdf global elixir 1.14.5-otp-26
@@ -89,6 +89,7 @@ cd phoenix-ash-svelte-flowbite
 nvm install
 npm install -g @pnpm/exe
 mix local.hex
+mix local.rebar
 mix setup
 mix tailwind.install
 mix setup
@@ -108,8 +109,11 @@ Open a browser to http://localhost:4000
   - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
   - Need another Svelte or JavaScript component? Just add it to package.json!
   - .svelte files are located in assets/svelte
-  - package.json contains JavaScript dependencies that are installed as Hex packages. This is apparently needed for SSR.
+  - Using @apply in `<style>` blocks with Svelte is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
+  - LiveSvelte elements that use most Svelte Skeleton components must contain ssr={false}; otherwise, runtime errors will occur
+  - Beware [Svelte-Kit $app dependencies](https://github.com/woutdp/live_svelte/discussions/30)!
   - Until editors understand that ~V is for Svelte, using .svelte files will have a better DX. Plus ~V doesn't work with dead views.
+  - package.json contains JavaScript dependencies that are installed as Hex packages. This is apparently needed for SSR.
 
 ```js
     "live_svelte": "file:../deps/live_svelte",
@@ -118,11 +122,6 @@ Open a browser to http://localhost:4000
     "phoenix_html": "file:../deps/phoenix_html",
     "phoenix_live_view": "file:../deps/phoenix_live_view"
 ```
-
-  - Using @apply in `<style>` blocks with Svelte is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
-  - LiveSvelte elements that use most Svelte Skeleton components must contain ssr={false}; otherwise, runtime errors will occur
-  - Beware [Svelte-Kit $app dependencies](https://github.com/woutdp/live_svelte/discussions/30)!
-
 
 ## References
 
