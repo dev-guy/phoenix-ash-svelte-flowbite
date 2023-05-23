@@ -2,9 +2,9 @@ defmodule KantanWeb.Svelte.Counter do
   use KantanWeb, :live_view
 
   def render(assigns) do
-~H"""
-  <LiveSvelte.render name="Counter" ssr={false} props={%{number: @number}}/>
-"""
+    ~H"""
+    <LiveSvelte.render name="Counter" ssr={false} props={%{number: @number}} />
+    """
   end
 
   def handle_event("set_number", %{"number" => number}, socket) do

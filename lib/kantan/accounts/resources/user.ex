@@ -17,7 +17,7 @@ defmodule Kantan.Accounts.User do
       password :password do
         identity_field(:username)
         sign_in_tokens_enabled?(true)
-        register_action_accept([:username])
+        register_action_accept([:username, :email])
       end
     end
 
@@ -36,7 +36,6 @@ defmodule Kantan.Accounts.User do
 
   identities do
     identity :unique_username, [:username]
-    identity :unique_email, [:email]
   end
 
   # If using policies, add the following bypass:

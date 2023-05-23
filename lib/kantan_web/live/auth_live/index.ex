@@ -50,7 +50,9 @@ defmodule KantanWeb.AuthLive.Index do
           <div class="col-md-6 offset-md-3 col-xs-12">
             <h1 class="text-xs-center"><%= @cta %></h1>
             <p class="text-xs-center">
-              <a href={@alternative_path}><.button><%= @alternative %></.button></a>
+              <a href={@alternative_path}>
+                <.button><%= @alternative %></.button>
+              </a>
             </p>
 
             <.live_component

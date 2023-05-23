@@ -21,6 +21,9 @@ defmodule KantanWeb.Router do
   scope "/", KantanWeb do
     pipe_through :browser
 
+    # First test
+    get "/healthcheck", PageController, :healthcheck
+
     # Svelte dead views
     get "/svelte/timeline", PageController, :timeline
     get "/svelte/tiptap", PageController, :tiptap
@@ -31,9 +34,8 @@ defmodule KantanWeb.Router do
       live "/", Live.Index, :index
       live "/svelte/counter", Svelte.Counter
       live "/svelte/navigationExample", Svelte.NavigationExample
-    end
 
-    # Using the ~V sigil
+    end
 
     # live "/register", AuthLive.Index, :register
     # live "/sign-in", AuthLive.Index, :sign_in

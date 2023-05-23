@@ -10,7 +10,7 @@ defmodule Kantan.Pyro.Overrides.Skeleton do
   ####    S T Y L E    S E T T I N G S
   ##############################################################################
 
-  @theme_colors ~w[default primary secondary tertiary surface success warning error slate gray zinc neutral stone red orange amber yellow lime green emerald teal cyan sky blue indigo violet purple fuchsia pink rose]
+  @theme_colors ~w[neutral primary secondary tertiary surface success warning error slate gray zinc neutral stone red orange amber yellow lime green emerald teal cyan sky blue indigo violet purple fuchsia pink rose]
   @flash_kinds ~w[info error warning success] ++ @theme_colors
   @shared_link_class "font-black"
   @shared_shadow_class "shadow-md shadow-slate-900/5 dark:shadow-slate-300/5"
@@ -324,9 +324,9 @@ defmodule Kantan.Pyro.Overrides.Skeleton do
     set :colors, @theme_colors
     set :color, "neutral"
     set :variant, "solid"
-    set :variants, ~w[solid inverted outline]
-    set :shape, "rounded"
-    set :shapes, ~w[rounded square pill]
+    set :variants, ~w[default solid inverted outline]
+    set :shape, "pill"
+    set :shapes, ~w[rectangle pill]
     set :size, "md"
     set :sizes, ~w[xs sm md lg xl]
     set :case, ""
@@ -341,9 +341,9 @@ defmodule Kantan.Pyro.Overrides.Skeleton do
 
     [
       passed_assigns[:case],
-      @shared_shadow_class,
+      # @shared_shadow_class,
       # "text-center",
-      #  "inline-block",
+      # "inline-block",
       # "cursor-pointer",
       # "disabled:cursor-not-allowed",
       # "disabled:opacity-50",
@@ -353,11 +353,13 @@ defmodule Kantan.Pyro.Overrides.Skeleton do
       # "whitespace-nowrap",
       # "active:opacity-50",
       # "relative",
+      "btn",
       "btn variant-filled": color == "neutral" && variant == "solid",
       "btn variant-filled-primary text-primary": color == "primary" && variant == "solid",
       "btn variant-filled-secondary text-secondary": color == "secondary" && variant == "solid",
       "btn variant-filled-tertiary text-tertiary": color == "tertiary" && variant == "solid",
-      "btn variant-filled-primary text-primary": color == "surface" && variant == "solid",
+      "btn variant-filled-success": color == "success" && variant == "solid",
+      "btn variant-filled-primary": color == "surface" && variant == "solid",
       "btn variant-filled-warning text-primary": color == "warning" && variant == "solid",
       "hover:scale-105": !disabled,
       "btn-xs text-xs": size == "xs",
@@ -365,8 +367,8 @@ defmodule Kantan.Pyro.Overrides.Skeleton do
       "text-base": size == "md",
       "btn-lg text-lg": size == "lg",
       "btn-xl text-xl": size == "xl",
-      # "rounded": shape == "rounded",
-      "rounded-full": shape == "pill",
+      "rounded": shape == "rectangle",
+      # "rounded-full": shape == "pill",
       "border border-solid": variant in ["outline", "inverted"],
       "border-2": variant in ["outline", "inverted"] && size == "md",
       "border-2": variant in ["outline", "inverted"] && size == "lg",
@@ -822,8 +824,7 @@ defmodule Kantan.Pyro.Overrides.Skeleton do
 
     [
       @shared_link_class,
-      "border-solid":
-        !is_current
+      "border-solid": !is_current
     ]
   end
 
