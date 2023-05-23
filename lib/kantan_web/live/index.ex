@@ -13,10 +13,7 @@ defmodule KantanWeb.Live.Index do
       placeholder="Calendar Picker"
     />
 
-    <h1 class="h1">Svelte Skeleton</h1>
-
-
-    <h2 class="h2">Svelte Skeleton Text Examples</h2>
+    <h1 class="h1">Skeleton Text</h1>
 
     <p class="text-500">neutral text</p>
     <p class="text-primary-500">primary text</p>
@@ -25,7 +22,7 @@ defmodule KantanWeb.Live.Index do
     <p class="text-warning-500">warning text</p>
     <p class="text-error-900">error text</p>
 
-    <h2 class="h2">Skeleton Button Examples</h2>
+    <h1 class="h1">Skeleton Buttons</h1>
     <!-- https://www.skeleton.dev/elements/buttons -->
     <button class="btn">default</button>
     <button class="btn variant-filled">neutral</button>
@@ -37,7 +34,7 @@ defmodule KantanWeb.Live.Index do
     <button class="btn btn-lg variant-filled-tertiary">lg tertiary</button>
     <button class="btn btn-xl variant-filled-warning">xl warning</button>
 
-    <h1 class="h1">Pyro Button Examples</h1>
+    <h1 class="h1">Pyro Buttons</h1>
 
     <.button variant='default'>default</.button>
     <.button color="neutral">neutral</.button>
