@@ -111,6 +111,7 @@ Open a browser to http://localhost:4000
 - Skeleton
   - The Skeleton theme is specified in assets/app.css. It is also specified in root.html.heex via data-theme="..."
   - I'm working on adding Skeleton's surface, primary, secondary, tertiary, success, warning, and error colors to Pyro
+  - Skeleton 1.6 and Svelte 3.59 result in an <Accordion> error. Use Svelte 3.58 for now.
 - Svelte
   - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
   - Need another Svelte or JavaScript component? Just add it to package.json!
