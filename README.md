@@ -134,7 +134,7 @@ Open a browser to http://localhost:4000
 3. [Install Pyro](https://hexdocs.pm/pyro/get-started.html)
 4. [Install Flowbite for Phoenix](https://flowbite.com/docs/getting-started/phoenix/)
 5. [Install LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
-6. [Install Skeleton for Svelte](https://www.skeleton.dev/docs/get-started)
+6. [Install Svelte Skeleton](https://www.skeleton.dev/docs/get-started)
 7. [Install Tailwind Scrollbar Hide Plugin](https://github.com/reslear/tailwind-scrollbar-hide)
 
 ### Other
