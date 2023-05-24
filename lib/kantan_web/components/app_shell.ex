@@ -92,6 +92,7 @@ defmodule KantanWeb.AppShell do
             <% end %>
             <!-- Phoenix logo and version -->
             <div>
+              <.icon name='hero-check'/>
               <a href="https://www.phoenixframework.org/">
                 <img src={~p"/images/phoenix.svg"} width="36" />
               </a>
