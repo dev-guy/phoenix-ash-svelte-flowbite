@@ -26,7 +26,7 @@ This is a web browser application demonstrating:
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte 0.5](https://wout.space/notes/live-svelte)
   - [x] Support Sass/PostCSS
   - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets. Uses the convenient ~V sigil.
-  - [x] [Mermaid diagram dead view](https://terrislinenbach.medium.com/dynamically-render-a-mermaid-diagram-with-sveltekit-and-very-little-code-d8130875cd68) "dead view" in a .svelte file
+  - [x] [Mermaid diagram dead view](https://terrislinenbach.medium.com/dynamically-render-a-mermaid-diagram-with-sveltekit-and-very-little-code-d8130875cd68) in a .svelte file
   - [x] [TipTap 2.0 dead view](https://tiptap.dev/)
 - [x] [Svelte Skeleton 1.6](https://www.skeleton.dev/)
   - [x] Theme and styles provided by Skeleton
@@ -93,10 +93,9 @@ nvm install
 npm install -g @pnpm/exe
 mix local.hex
 mix local.rebar
-mix setup
 mix tailwind.install
 mix setup
-# Register the version of esbuild installed by npm
+# Register the version of esbuild installed by pnpm
 mix esbuild.install
 mix phx.server
 ```
@@ -107,7 +106,7 @@ Open a browser to http://localhost:4000
 
 - Skeleton
   - The Skeleton theme is specified in assets/app.css. It is also specified in root.html.heex via data-theme="..."
-  - I'm working on adding primary, secondary, and tertiary colors to Pyro
+  - I'm working on adding Skeleton's surface, primary, secondary, tertiary, success, warning, and error colors to Pyro
 - Svelte
   - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
   - Need another Svelte or JavaScript component? Just add it to package.json!
