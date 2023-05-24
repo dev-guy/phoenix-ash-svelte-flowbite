@@ -12,25 +12,29 @@ src="https://www.mermaidchart.com/img/icon-logo.svg">
 This is a web browser application demonstrating:
 
 - [x] [Phoenix 1.7](https://www.phoenixframework.org/)
+  - [x] [pnpm](https://pnpm.io/) replaces npm because it's faster
+  - [x] [esbuild](https://github.com/phoenixframework/esbuild)
+- [x] [TailwindCSS 3.3](https://tailwindcss.com)
 - [x] [Phoenix LiveView 0.18](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html)
 - [x] [Ash Framework 2.9](https://ash-hq.org)
-- [x] [Ash Authentication](https://github.com/team-alembic/ash_authentication)
-  - [x] Login page with users and passwords stored in Postgres without writing imperative code
+  - [x] [Ash Authentication](https://github.com/team-alembic/ash_authentication)
 - [x] [Pyro](https://hexdocs.pm/pyro/about.html)
-  - [x] Toggle dark and light themes
-- [x] [TailwindCSS 3.3](https://tailwindcss.com)
+  - [x] Toggle dark and light themes using Pyro
+  - [ ] Custom Pyro overrides to match Svelte Skeleton (partially implemented)
 - [x] [Flowbite 1.6](https://flowbite.com) Tailwind CSS Components
-  - [x] [Application Shell](https://flowbite.com/blocks/application/shells/)
+  - [x] [Application Shell](https://flowbite.com/blocks/application/shells) with header and responsive left sidebar
   - [x] [Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
-  - [x] [Tooltips](https://flowbite.com/docs/components/tooltips/s)
+  - [x] [Menu](https://flowbite.com/docs/components/navbar/#navbar-with-dropdown)
+  - [x] [Tooltips](https://flowbite.com/docs/components/tooltips)
 - [x] [Svelte](https://svelte.dev) via [LiveSvelte 0.5](https://wout.space/notes/live-svelte)
   - [x] Support Sass/PostCSS
   - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets. Uses the convenient ~V sigil.
-  - [x] [Mermaid diagram dead view](https://terrislinenbach.medium.com/dynamically-render-a-mermaid-diagram-with-sveltekit-and-very-little-code-d8130875cd68) in a .svelte file
-  - [x] [TipTap 2.0 dead view](https://tiptap.dev/)
+  - [x] [Mermaid diagram editor](https://terrislinenbach.medium.com/dynamically-render-a-mermaid-diagram-with-sveltekit-and-very-little-code-d8130875cd68) in a .svelte file (dead view)
+  - [x] [TipTap 2.0](https://tiptap.dev/) (dead view)
 - [x] [Svelte Skeleton 1.6](https://www.skeleton.dev/)
   - [x] Theme and styles provided by Skeleton
-  - [x] [Accordion dead view](https://www.skeleton.dev/components/accordions)
+  - [x] [Accordion](https://www.skeleton.dev/components/accordions) (dead view)
+  - [x] [Toast](https://www.skeleton.dev/utilities/toasts) (dead view)
 
 ## Video
 
