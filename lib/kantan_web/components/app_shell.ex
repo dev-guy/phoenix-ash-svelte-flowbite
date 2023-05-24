@@ -92,7 +92,6 @@ defmodule KantanWeb.AppShell do
             <% end %>
             <!-- Phoenix logo and version -->
             <div>
-              <.icon name='hero-check'/>
               <a href="https://www.phoenixframework.org/">
                 <img src={~p"/images/phoenix.svg"} width="36" />
               </a>
@@ -783,7 +782,7 @@ defmodule KantanWeb.AppShell do
                   patch={~p"/svelte/timeline"}
                   class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
-                  Accordion + Timeline
+                  Accordion + A slot for Flowbite toast
                 </.link>
               </li>
             </ul>
