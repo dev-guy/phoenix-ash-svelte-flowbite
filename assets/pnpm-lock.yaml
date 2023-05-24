@@ -47,8 +47,8 @@ dependencies:
     specifier: file:../deps/pyro
     version: file:../deps/pyro
   svelte:
-    specifier: ^3.59.1
-    version: 3.59.1
+    specifier: ~3.58.0
+    version: 3.58.0
   tailwind-scrollbar-hide:
     specifier: ^1.1.7
     version: 1.1.7
@@ -68,7 +68,7 @@ devDependencies:
     version: 0.1.1
   esbuild-svelte:
     specifier: ^0.7.3
-    version: 0.7.3(esbuild@0.17.11)(svelte@3.59.1)
+    version: 0.7.3(esbuild@0.17.11)(svelte@3.58.0)
   postcss:
     specifier: ^8.4.21
     version: 8.4.21
@@ -77,7 +77,7 @@ devDependencies:
     version: 1.62.0
   svelte-preprocess:
     specifier: ^5.0.3
-    version: 5.0.3(@babel/core@7.21.8)(postcss@8.4.21)(sass@1.62.0)(svelte@3.59.1)
+    version: 5.0.3(@babel/core@7.21.8)(postcss@8.4.21)(sass@1.62.0)(svelte@3.58.0)
 
 packages:
 
@@ -1016,7 +1016,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001489
-      electron-to-chromium: 1.4.404
+      electron-to-chromium: 1.4.405
       node-releases: 2.0.11
       update-browserslist-db: 1.0.11(browserslist@4.21.5)
 
@@ -1442,8 +1442,8 @@ packages:
     resolution: {integrity: sha512-jggCCd+8Iqp4Tsz0nIvpcb22InKEBrGz5dw3EQJMs8HPJDsKbFIO3STYtAvCfDx26Muevn1MHVI0XxjgFfmiSA==}
     dev: false
 
-  /electron-to-chromium@1.4.404:
-    resolution: {integrity: sha512-te57sWvQdpxmyd1GiswaodKdXdPgn9cN4ht8JlNa04QgtrfnUdWEo1261rY2vaC6TKaiHn0E7QerJWPKFCvMVw==}
+  /electron-to-chromium@1.4.405:
+    resolution: {integrity: sha512-JdDgnwU69FMZURoesf9gNOej2Cms1XJFfLk24y1IBtnAdhTcJY/mXnokmpmxHN59PcykBP4bgUU98vLY44Lhuw==}
 
   /elkjs@0.8.2:
     resolution: {integrity: sha512-L6uRgvZTH+4OF5NE/MBbzQx/WYpru1xCBE9respNj6qznEewGUIfhzmm7horWWxbNO2M0WckQypGctR8lH79xQ==}
@@ -1464,7 +1464,7 @@ packages:
       fast-glob: 3.2.12
     dev: true
 
-  /esbuild-svelte@0.7.3(esbuild@0.17.11)(svelte@3.59.1):
+  /esbuild-svelte@0.7.3(esbuild@0.17.11)(svelte@3.58.0):
     resolution: {integrity: sha512-aq4PjZowV2LhW5U6KYKDkaHiAp9q/NquthbX1tddGRGYrlaBBGgDNis58jNU4wU6+iHsNWfLVsg8G3W6ccszdw==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1472,7 +1472,7 @@ packages:
       svelte: '>=3.43.0'
     dependencies:
       esbuild: 0.17.11
-      svelte: 3.59.1
+      svelte: 3.58.0
     dev: true
 
   /esbuild@0.17.11:
@@ -2350,7 +2350,7 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
-  /svelte-preprocess@5.0.3(@babel/core@7.21.8)(postcss@8.4.21)(sass@1.62.0)(svelte@3.59.1):
+  /svelte-preprocess@5.0.3(@babel/core@7.21.8)(postcss@8.4.21)(sass@1.62.0)(svelte@3.58.0):
     resolution: {integrity: sha512-GrHF1rusdJVbOZOwgPWtpqmaexkydznKzy5qIC2FabgpFyKN57bjMUUUqPRfbBXK5igiEWn1uO/DXsa2vJ5VHA==}
     engines: {node: '>= 14.10.0'}
     requiresBuild: true
@@ -2396,16 +2396,11 @@ packages:
       sass: 1.62.0
       sorcery: 0.11.0
       strip-indent: 3.0.0
-      svelte: 3.59.1
+      svelte: 3.58.0
     dev: true
 
   /svelte@3.58.0:
     resolution: {integrity: sha512-brIBNNB76mXFmU/Kerm4wFnkskBbluBDCjx/8TcpYRb298Yh2dztS2kQ6bhtjMcvUhd5ynClfwpz5h2gnzdQ1A==}
-    engines: {node: '>= 8'}
-    dev: false
-
-  /svelte@3.59.1:
-    resolution: {integrity: sha512-pKj8fEBmqf6mq3/NfrB9SLtcJcUvjYSWyePlfCqN9gujLB25RitWK8PvFzlwim6hD/We35KbPlRteuA6rnPGcQ==}
     engines: {node: '>= 8'}
 
   /tailwind-scrollbar-hide@1.1.7:
