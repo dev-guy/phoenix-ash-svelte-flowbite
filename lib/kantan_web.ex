@@ -54,8 +54,6 @@ defmodule KantanWeb do
       use Pyro.LiveView,
         layout: {KantanWeb.Layouts, :app}
 
-      import LiveSvelte
-
       unquote(html_helpers())
     end
   end
@@ -95,6 +93,7 @@ defmodule KantanWeb do
 
       # Import all Pyro components
       use Pyro.Components
+       import LiveSvelte
 
       # Routes generation with the ~p sigil
       unquote(verified_routes())
