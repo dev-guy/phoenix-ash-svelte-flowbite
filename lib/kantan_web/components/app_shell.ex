@@ -747,7 +747,7 @@ defmodule KantanWeb.AppShell do
             <ul id="dropdown-pages" class="hidden py-2 space-y-2">
               <li>
                 <.link
-                  patch={~p"/svelte/counter"}
+                  navigate={~p"/svelte/counter"}
                   class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Counter
@@ -755,7 +755,7 @@ defmodule KantanWeb.AppShell do
               </li>
               <li>
                 <.link
-                  patch={~p"/svelte/mermaid"}
+                  navigate={~p"/svelte/mermaid"}
                   class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Mermaid
@@ -763,7 +763,15 @@ defmodule KantanWeb.AppShell do
               </li>
               <li>
                 <.link
-                  patch={~p"/svelte/tiptap"}
+                  navigate={~p"/svelte/milkdown"}
+                  class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                >
+                  Milkdown
+                </.link>
+              </li>
+              <li>
+                <.link
+                  navigate={~p"/svelte/tiptap"}
                   class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   TipTap Checklist
@@ -771,7 +779,7 @@ defmodule KantanWeb.AppShell do
               </li>
               <li>
                 <.link
-                  patch={~p"/svelte/navigationExample"}
+                  navigate={~p"/svelte/navigationExample"}
                   class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Navigation
@@ -779,7 +787,7 @@ defmodule KantanWeb.AppShell do
               </li>
               <li>
                 <.link
-                  patch={~p"/svelte/timeline"}
+                  navigate={~p"/svelte/timeline"}
                   class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Accordion + A slot for Flowbite toast
