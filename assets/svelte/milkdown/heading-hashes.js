@@ -2,7 +2,7 @@ import { Plugin, PluginKey } from '@milkdown/prose/state';
 import { DecorationSet } from '@milkdown/prose/view';
 import { $prose } from '@milkdown/utils';
 
-import Hashes from '../svelte/milkdown/Hashes.svelte';
+import Hashes from './Hashes.svelte';
 
 /**
  * @module

@@ -4,9 +4,9 @@
   // import { nord } from "@milkdown/theme-nord";
   import { emoji } from "@milkdown/plugin-emoji";
 
-  import { useProvider } from '../../milkdown/provider';
-  import { empty } from '../../milkdown/empty';
-  import { headingHashes } from '../../milkdown/heading-hashes';
+  import { useProvider } from './provider';
+  import { empty } from './empty';
+  import { headingHashes } from './heading-hashes';
 
   export let content;
 
