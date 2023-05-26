@@ -7,6 +7,10 @@ src="https://www.mermaidchart.com/img/icon-logo.svg">
 
 - [April 2023: With Flowbite-Svelte](https://github.com/dev-guy/ash-svelte-flowbite/tree/flowbite-svelte)
 
+## Video
+
+[![Phoenix Ash Svelte Mashup](https://res.cloudinary.com/marcomontalbano/image/upload/v1685122512/video_to_markdown/images/google-drive--18IBboO6rCRTXhQt4Mpoi_J7RQA82thlq-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://drive.google.com/file/d/18IBboO6rCRTXhQt4Mpoi_J7RQA82thlq "Phoenix Ash Svelte Mashup")
+
 ## Introduction
 
 This is a web browser application demonstrating:
@@ -36,10 +40,6 @@ This is a web browser application demonstrating:
   - [x] Theme and styles provided by Skeleton
   - [x] [Accordion](https://www.skeleton.dev/components/accordions) (dead view)
   - [x] [Toast](https://www.skeleton.dev/utilities/toasts) (dead view)
-
-## Video
-
-[Demo (MP4)](https://drive.google.com/file/d/18IBboO6rCRTXhQt4Mpoi_J7RQA82thlq)
 
 ## License
 
