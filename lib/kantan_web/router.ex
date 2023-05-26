@@ -25,9 +25,10 @@ defmodule KantanWeb.Router do
     get "/healthcheck", PageController, :healthcheck
 
     # Svelte dead views
+    get "/svelte/mermaid", PageController, :mermaid
+    get "/svelte/milkdown", PageController, :milkdown
     get "/svelte/timeline", PageController, :timeline
     get "/svelte/tiptap", PageController, :tiptap
-    get "/svelte/mermaid", PageController, :mermaid
 
     ash_authentication_live_session :authentication_optional,
       on_mount: {KantanWeb.LiveUserAuth, :live_user_optional} do
