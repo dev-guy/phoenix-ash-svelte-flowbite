@@ -1,7 +1,7 @@
 {
   "name": "kantan",
   "version": "0.1.0",
-  "dependencies": {
+  "devDependencies": {
     "@milkdown/core": "^7.2.1",
     "@milkdown/plugin-emoji": "^7.2.1",
     "@milkdown/preset-commonmark": "^7.2.1",
@@ -9,33 +9,31 @@
     "@milkdown/theme-nord": "^7.2.1",
     "@milkdown/utils": "^7.2.1",
     "@prosemirror-adapter/svelte": "^0.2.5",
-    "@skeletonlabs/skeleton": "~1.6.1",
+    "@skeletonlabs/skeleton": "~1.6.2",
     "@tiptap/core": "^2.0.3",
     "@tiptap/extension-paragraph": "^2.0.3",
     "@tiptap/extension-task-item": "^2.0.3",
     "@tiptap/extension-task-list": "^2.0.3",
     "@tiptap/extension-text": "^2.0.3",
     "@tiptap/starter-kit": "^2.0.3",
+    "autoprefixer": "^10.4.14",
+    "esbuild": "^0.17.19",
+    "esbuild-plugin-import-glob": "^0.1.1",
+    "esbuild-svelte": "^0.7.3",
     "flowbite": "^1.6.5",
     "flowbite-datepicker": "^1.2.2",
     "live_svelte": "file:../deps/live_svelte",
-    "mermaid": "^10.1.0",
+    "mermaid": "^10.2.0",
     "phoenix": "file:../deps/phoenix",
     "phoenix_html": "file:../deps/phoenix_html",
     "phoenix_live_view": "file:../deps/phoenix_live_view",
+    "postcss": "^8.4.23",
     "pyro": "file:../deps/pyro",
+    "sass": "^1.62.1",
     "svelte": "~3.58.0",
-    "tailwind-scrollbar-hide": "^1.1.7",
-    "tailwindcss": "^3.3.2"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "esbuild": "^0.17.11",
-    "esbuild-plugin-import-glob": "^0.1.1",
-    "esbuild-svelte": "^0.7.3",
-    "postcss": "^8.4.21",
-    "sass": "^1.62.0",
     "svelte-preprocess": "^5.0.3",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "tailwindcss": "^3.3.2",
     "typescript": "^5.0.4"
   }
 }

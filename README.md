@@ -144,6 +144,7 @@ Open a browser to http://localhost:4000
 
 ### Other
 
+- [Why all JS dependencies are devDependencies](https://github.com/sveltejs/sapper-template#using-external-components)
 - [Phoenix and Third-Party JS Packages](https://hexdocs.pm/phoenix/asset_management.html)
 - [ElixirConf 2022 - Ryan Cooke - E2E Reactivity - using Svelte with Phoenix LiveView](https://www.youtube.com/watch?v=asm2TTm035o)
 - [LiveSvelte video](https://www.youtube.com/watch?v=JMkvbW35QvA)
