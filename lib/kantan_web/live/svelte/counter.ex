@@ -27,7 +27,6 @@ defmodule KantanWeb.Svelte.Counter do
     }
     </script>
 
-    <div class="flex items-center">
     <h1 class="h1">Count: {number}</h1>
     <button
       class="btn btn-sm variant-filled-success"
@@ -37,7 +36,6 @@ defmodule KantanWeb.Svelte.Counter do
       class="btn btn-sm variant-filled-error"
       on:click={decrease}>-</button
     >
-    </div>
     """
   end
 
@@ -46,6 +44,6 @@ defmodule KantanWeb.Svelte.Counter do
   end
 
   def mount(_params, _session, socket) do
-    {:ok, assign(socket, :number, 0)}
+    {:ok, assign(socket, number: 0, svelte_opts: %{ssr: true})}
   end
 end
