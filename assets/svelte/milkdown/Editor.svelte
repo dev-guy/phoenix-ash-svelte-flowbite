@@ -3,31 +3,26 @@
   import { commonmark } from "@milkdown/preset-commonmark";
   // import { nord } from "@milkdown/theme-nord";
   import { emoji } from "@milkdown/plugin-emoji";
-  import { useHashesPlugin } from '../../milkdown/hashes';
 
-  import {
-  useWidgetViewFactory
-} from "@prosemirror-adapter/svelte";
-import {
-  useProsemirrorAdapterProvider,
-} from "@prosemirror-adapter/svelte";
+  import { useProvider } from '../../milkdown/provider';
+  import { empty } from '../../milkdown/empty';
+  import { headingHashes } from '../../milkdown/heading-hashes';
 
-useProsemirrorAdapterProvider();
-
-console.log('editorrrr');
   export let content;
-  const widgetFactory = useWidgetViewFactory();
 
   function editor(dom) {
-    Editor.make()
+    const provider = useProvider();
+
+    return Editor.make()
       .config(ctx => {
         ctx.set(rootCtx, dom);
         ctx.set(defaultValueCtx, content);
       })
-      // .use(nord)
+      //.use(nord)
       .use(emoji)
       .use(commonmark)
-      .use(useHashesPlugin(widgetFactory))
+      .use(empty)
+      .use(headingHashes(provider))
       .create();
   }
 </script>

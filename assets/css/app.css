@@ -9,9 +9,10 @@ Skeleton includes these already
  * See https://www.skeleton.dev/docs/themes
  * Change body data-theme="" too!!
 */
-@import '@skeletonlabs/skeleton/dist/themes/theme-skeleton.css';
-@import '@skeletonlabs/skeleton/dist/styles/skeleton.css';
+@import "@skeletonlabs/skeleton/dist/themes/theme-skeleton.css";
+@import "@skeletonlabs/skeleton/dist/styles/skeleton.css";
 
+@import "@milkdown/prose/lib/style/prosemirror.css";
 @import "./tiptap.css";
 @import "./pyro.css";
 
