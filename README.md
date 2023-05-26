@@ -1,6 +1,6 @@
-# Phoenix Ash Flowbite Svelte Skeleton TipTap Mermaid Mash-Up
+# Phoenix Ash Flowbite Svelte Skeleton TipTap Milkdown Mermaid Mash-Up
 
-<img alt='Phoenix' src="https://seeklogo.com/images/P/phoenix-logo-D15F067911-seeklogo.com.png" height=40 width=45><img alt='ash' align="top" src="https://ash-hq.org/images/ash-logo-side.svg" height=50 width=100><img alt='Tailwind CSS' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" height=45 width=45><img alt='Flowbite' src="https://flowbite.com/docs/images/logo.svg" height=45 width=45><img alt='Svelte' src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height=45 width=45><img alt='Skeleton' height=45 width=45 src="https://pbs.twimg.com/profile_images/1587479781544759297/TINbbJLC_400x400.png"><img height=45 width=45 alt="TipTap" src="https://pbs.twimg.com/profile_images/1357340221377974275/dza_FwlU_400x400.jpg"><img height=45 width=45 alt="Mermaid"
+<img alt='Phoenix' src="https://seeklogo.com/images/P/phoenix-logo-D15F067911-seeklogo.com.png" height=40 width=45><img alt='ash' align="top" src="https://ash-hq.org/images/ash-logo-side.svg" height=50 width=100><img alt='Tailwind CSS' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" height=45 width=45><img alt='Flowbite' src="https://flowbite.com/docs/images/logo.svg" height=45 width=45><img alt='Svelte' src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height=45 width=45><img alt='Skeleton' height=45 width=45 src="https://pbs.twimg.com/profile_images/1587479781544759297/TINbbJLC_400x400.png"><img height=45 width=45 alt="TipTap" src="https://pbs.twimg.com/profile_images/1357340221377974275/dza_FwlU_400x400.jpg"><img height=45 width=45 alt="Milkdown" src="https://milkdown.dev/milkdown-logo.svg"><img height=45 width=45 alt="Mermaid"
 src="https://www.mermaidchart.com/img/icon-logo.svg">
 
 ## Previous Versions
@@ -26,11 +26,12 @@ This is a web browser application demonstrating:
   - [x] [Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
   - [x] [Menu](https://flowbite.com/docs/components/navbar/#navbar-with-dropdown)
   - [x] [Tooltips](https://flowbite.com/docs/components/tooltips)
-- [x] [Svelte](https://svelte.dev) via [LiveSvelte 0.5](https://wout.space/notes/live-svelte)
+- [x] [Svelte 3.58](https://svelte.dev) via [LiveSvelte 0.5](https://wout.space/notes/live-svelte)
   - [x] Support Sass/PostCSS
   - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets. Uses the convenient ~V sigil.
-  - [x] [Mermaid diagram editor](https://terrislinenbach.medium.com/dynamically-render-a-mermaid-diagram-with-sveltekit-and-very-little-code-d8130875cd68) in a .svelte file (dead view)
   - [x] [TipTap 2.0](https://tiptap.dev/) (dead view)
+  - [x] [Milkdown 7.1](https://milkdown.dev) (dead view)
+  - [x] [Mermaid diagram editor](https://terrislinenbach.medium.com/dynamically-render-a-mermaid-diagram-with-sveltekit-and-very-little-code-d8130875cd68) in a .svelte file (dead view)
 - [x] [Svelte Skeleton 1.6](https://www.skeleton.dev/)
   - [x] Theme and styles provided by Skeleton
   - [x] [Accordion](https://www.skeleton.dev/components/accordions) (dead view)
@@ -111,7 +112,7 @@ Open a browser to http://localhost:4000
 - Skeleton
   - The Skeleton theme is specified in assets/app.css. It is also specified in root.html.heex via data-theme="..."
   - I'm working on adding Skeleton's surface, primary, secondary, tertiary, success, warning, and error colors to Pyro
-  - Skeleton 1.6 and Svelte 3.59 result in an <Accordion> error. Use Svelte 3.58 for now.
+  - Skeleton 1.6 + Svelte 3.59.1 result in an <Accordion> error. Use Svelte 3.58 for now.
 - Svelte
   - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
   - Need another Svelte or JavaScript component? Just add it to package.json!
