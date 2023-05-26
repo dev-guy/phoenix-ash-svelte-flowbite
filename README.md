@@ -109,16 +109,19 @@ Open a browser to http://localhost:4000
 
 ## Notes
 
-- Skeleton
-  - The Skeleton theme is specified in assets/app.css. It is also specified in root.html.heex via data-theme="..."
-  - I'm working on adding Skeleton's surface, primary, secondary, tertiary, success, warning, and error colors to Pyro
+- Svelte Skeleton
+  - Skeleton implementes styles and themes which are independent of Svelte
+  - The theme is specified in assets/app.css. It is also specified in root.html.heex via data-theme="..."
+  - I'm working on adding Skeleton's surface, primary, secondary, tertiary, success, warning, and error colors to Pyro, and performing other synchronization between them
   - Skeleton 1.6 + Svelte 3.59.1 result in an <Accordion> error. Use Svelte 3.58 for now.
-- Svelte
+- LiveSvelte
   - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
+  - [LiveSvelte video](https://www.youtube.com/watch?v=JMkvbW35QvA)
   - Need another Svelte or JavaScript component? Just add it to package.json!
   - .svelte files are located in assets/svelte
+  - SSR has been disabled temporarily because there are too many crashes
+    - LiveSvelte elements that use most Svelte Skeleton components must specify ssr={false}
   - Using @apply in `<style>` blocks with Svelte is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
-  - LiveSvelte elements that use most Svelte Skeleton components must contain ssr={false}; otherwise, runtime errors will occur
   - Beware [Svelte-Kit $app dependencies](https://github.com/woutdp/live_svelte/discussions/30)!
   - Until editors understand that ~V is for Svelte, using .svelte files will have a better DX. Plus ~V doesn't work with dead views.
   - package.json contains JavaScript dependencies that are installed as Hex packages. This is apparently needed for SSR.
@@ -142,18 +145,16 @@ Open a browser to http://localhost:4000
 5. [Install LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
 6. [Install Svelte Skeleton](https://www.skeleton.dev/docs/get-started)
 7. [Install Tailwind Scrollbar Hide Plugin](https://github.com/reslear/tailwind-scrollbar-hide)
-8. When you upgrade esbuild, modify config.exs
-9. When you upgrade tailwind, modify config.exs
+8. After upgrading esbuild, modify config.exs
+9. After upgrading tailwindcss, modify config.exs
 
 ### Other
 
 - [Why all JS dependencies are devDependencies](https://github.com/sveltejs/sapper-template#using-external-components)
 - [Phoenix and Third-Party JS Packages](https://hexdocs.pm/phoenix/asset_management.html)
 - [ElixirConf 2022 - Ryan Cooke - E2E Reactivity - using Svelte with Phoenix LiveView](https://www.youtube.com/watch?v=asm2TTm035o)
-- [LiveSvelte video](https://www.youtube.com/watch?v=JMkvbW35QvA)
 - [Getting Started: Phoenix 1.7 with Svelte](https://medium.com/@alistairisrael/phoenix-1-7-with-svelte-12257d853ed1)
 
 ## TODO
 
-1. Sync styles between Svelte and Pyro components (if possible)
-  - [see here](https://github.com/woutdp/live_svelte/discussions/28)
+1. Sync styles between Svelte and Pyro components - [details](https://github.com/woutdp/live_svelte/discussions/28)
