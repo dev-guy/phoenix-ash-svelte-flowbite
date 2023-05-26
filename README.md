@@ -9,7 +9,7 @@ src="https://www.mermaidchart.com/img/icon-logo.svg">
 
 ## Video
 
-[![Phoenix Ash Svelte Mashup](https://res.cloudinary.com/marcomontalbano/image/upload/v1685122512/video_to_markdown/images/google-drive--18IBboO6rCRTXhQt4Mpoi_J7RQA82thlq-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://drive.google.com/file/d/18IBboO6rCRTXhQt4Mpoi_J7RQA82thlq "Phoenix Ash Svelte Mashup")
+[May 26 2023](https://github.com/dev-guy/phoenix-ash-svelte-flowbite/assets/12297328/db502e70-e96b-48ee-8eea-7c382784ade3)
 
 ## Introduction
 
