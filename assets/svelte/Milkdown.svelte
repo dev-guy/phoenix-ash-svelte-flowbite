@@ -11,5 +11,4 @@ const content = `\
 
 <Editor content={content}/>
 <br/>
-<h1>Proof that you can create editor:</h1>
-<Editor content={content}/>
+<Editor content='This is *another* editor'/>
