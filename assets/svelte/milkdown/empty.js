@@ -5,6 +5,11 @@ import { $prose } from '@milkdown/utils';
 /**
  * @module
  * Milkdown plugin that adds placeholder text to an empty editor
+ *
+ * Credits
+ *
+ * Milkdown Discord by @syntaxbullet
+ * https://discord.com/channels/870181036041060352/1104785346710994955/1106921721484804176
  */
 
 // Only one instance of this plugin is needed

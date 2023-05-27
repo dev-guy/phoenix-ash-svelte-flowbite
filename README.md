@@ -158,3 +158,7 @@ Open a browser to http://localhost:4000
 ## TODO
 
 1. Sync styles between Svelte and Pyro components - [details](https://github.com/woutdp/live_svelte/discussions/28)
+
+## Credits
+
+1. [Prosemirror-adapter Svelte Example](https://stackblitz.com/edit/github-w7hjxh?file=README.md)
