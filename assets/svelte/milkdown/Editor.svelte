@@ -1,7 +1,7 @@
 <script>
   import { Editor, rootCtx, defaultValueCtx } from "@milkdown/core";
   import { commonmark } from "@milkdown/preset-commonmark";
-  // import { nord } from "@milkdown/theme-nord";
+  import { gfm } from "@milkdown/preset-gfm";
   import { emoji } from "@milkdown/plugin-emoji";
 
   import { useProvider } from './provider';
@@ -18,13 +18,13 @@
         ctx.set(rootCtx, dom);
         ctx.set(defaultValueCtx, content);
       })
-      //.use(nord)
       .use(emoji)
       .use(commonmark)
+      .use(gfm)
       .use(empty)
       .use(headingHashes(provider))
       .create();
   }
 </script>
 
-<div use:editor />
+<div use:editor/>

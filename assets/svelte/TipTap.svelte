@@ -46,7 +46,7 @@ onMount(() => {
 <!--
   :global prevents the Svelte esbuild plugin from removing these styles.
 -->
-<style lang='scss'>
+<style lang="scss">
   :global(ul[data-type="taskList"]) {
     list-style: none;
     padding: 0;

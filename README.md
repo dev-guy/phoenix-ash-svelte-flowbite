@@ -147,6 +147,7 @@ Open a browser to http://localhost:4000
 7. [Install Tailwind Scrollbar Hide Plugin](https://github.com/reslear/tailwind-scrollbar-hide)
 8. After upgrading esbuild, modify config.exs
 9. After upgrading tailwindcss, modify config.exs
+10. After upgrading node (see .nvmrc), modify build.js (see target:)
 
 ### Other
 

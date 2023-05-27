@@ -76,7 +76,7 @@ module.exports = {
     plugin(({ addVariant }) => addVariant('aria-selected', '&[aria-selected]')),
     plugin(({ addVariant }) => addVariant('aria-checked', '&[aria-checked]')),
 
-    // Without this, tooltip arrows don't work
+    // Skeleton says not to include this but Without it, tooltip arrows don't work
     require('flowbite/plugin'),
   ]
 }

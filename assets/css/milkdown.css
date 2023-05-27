@@ -1,0 +1,40 @@
+/**
+ * Without this, the cursor will sometimes disappear until you start typing.
+ * This happens when widgets are added.
+ */
+@import "@milkdown/prose/lib/style/prosemirror.css";
+
+.milkdown {
+  @apply bg-white dark:bg-black text-black dark:text-white pl-1;
+  min-height: 15px;
+}
+
+/**
+ * Removing the outline stops the cursor from disappearing when pressing Enter in the editor
+ * TODO: This results in poor accessibility
+ */
+.milkdown *:focus {
+  outline: none;
+}
+
+/**
+ * These are Skeleton classes
+ */
+.milkdown h1 {
+  @apply h1;
+}
+.milkdown h2 {
+  @apply h2;
+}
+.milkdown h3 {
+  @apply h3;
+}
+.milkdown h4 {
+  @apply h4;
+}
+.milkdown h5 {
+  @apply h5;
+}
+.milkdown h6 {
+  @apply h6;
+}
