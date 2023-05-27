@@ -5,7 +5,7 @@
 @import "@milkdown/prose/lib/style/prosemirror.css";
 
 .milkdown {
-  @apply bg-white dark:bg-black text-black dark:text-white pl-1;
+  @apply bg-white dark:bg-black text-black dark:text-white;
   min-height: 15px;
 }
 

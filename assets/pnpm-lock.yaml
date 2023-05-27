@@ -24,7 +24,7 @@ devDependencies:
     version: 7.2.1(@milkdown/core@7.2.1)(@milkdown/ctx@7.2.1)(@milkdown/prose@7.2.1)(@milkdown/transformer@7.2.1)
   '@prosemirror-adapter/svelte':
     specifier: ^0.2.5
-    version: 0.2.5(svelte@3.59.1)
+    version: 0.2.5(svelte@3.58.0)
   '@skeletonlabs/skeleton':
     specifier: ~1.6.2
     version: 1.6.2
@@ -57,7 +57,7 @@ devDependencies:
     version: 0.1.1
   esbuild-svelte:
     specifier: ^0.7.3
-    version: 0.7.3(esbuild@0.17.19)(svelte@3.59.1)
+    version: 0.7.3(esbuild@0.17.19)(svelte@3.58.0)
   flowbite:
     specifier: ^1.6.5
     version: 1.6.5
@@ -89,11 +89,11 @@ devDependencies:
     specifier: ^1.62.1
     version: 1.62.1
   svelte:
-    specifier: ~3.59.1
-    version: 3.59.1
+    specifier: ~3.58.0
+    version: 3.58.0
   svelte-preprocess:
     specifier: ^5.0.4
-    version: 5.0.4(@babel/core@7.22.1)(postcss@8.4.23)(sass@1.62.1)(svelte@3.59.1)(typescript@5.0.4)
+    version: 5.0.4(@babel/core@7.22.1)(postcss@8.4.23)(sass@1.62.1)(svelte@3.58.0)(typescript@5.0.4)
   tailwind-scrollbar-hide:
     specifier: ^1.1.7
     version: 1.1.7
@@ -859,14 +859,14 @@ packages:
       tslib: 2.5.2
     dev: true
 
-  /@prosemirror-adapter/svelte@0.2.5(svelte@3.59.1):
+  /@prosemirror-adapter/svelte@0.2.5(svelte@3.58.0):
     resolution: {integrity: sha512-xqM7QZWKl+Nn54bBhevNMZ0EkRwQjRbnNVMcc5LLhv+FMVEGSKpVufNV/Xg2NMCibsIAM7LFGl+q4tZs+M3o5g==}
     peerDependencies:
       svelte: ^3.57.0
     dependencies:
       '@prosemirror-adapter/core': 0.2.5
       nanoid: 4.0.2
-      svelte: 3.59.1
+      svelte: 3.58.0
       tslib: 2.5.2
     dev: true
 
@@ -1772,7 +1772,7 @@ packages:
       fast-glob: 3.2.12
     dev: true
 
-  /esbuild-svelte@0.7.3(esbuild@0.17.19)(svelte@3.59.1):
+  /esbuild-svelte@0.7.3(esbuild@0.17.19)(svelte@3.58.0):
     resolution: {integrity: sha512-aq4PjZowV2LhW5U6KYKDkaHiAp9q/NquthbX1tddGRGYrlaBBGgDNis58jNU4wU6+iHsNWfLVsg8G3W6ccszdw==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1780,7 +1780,7 @@ packages:
       svelte: '>=3.43.0'
     dependencies:
       esbuild: 0.17.19
-      svelte: 3.59.1
+      svelte: 3.58.0
     dev: true
 
   /esbuild@0.17.19:
@@ -3156,7 +3156,7 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /svelte-preprocess@5.0.4(@babel/core@7.22.1)(postcss@8.4.23)(sass@1.62.1)(svelte@3.59.1)(typescript@5.0.4):
+  /svelte-preprocess@5.0.4(@babel/core@7.22.1)(postcss@8.4.23)(sass@1.62.1)(svelte@3.58.0)(typescript@5.0.4):
     resolution: {integrity: sha512-ABia2QegosxOGsVlsSBJvoWeXy1wUKSfF7SWJdTjLAbx/Y3SrVevvvbFNQqrSJw89+lNSsM58SipmZJ5SRi5iw==}
     engines: {node: '>= 14.10.0'}
     requiresBuild: true
@@ -3202,17 +3202,12 @@ packages:
       sass: 1.62.1
       sorcery: 0.11.0
       strip-indent: 3.0.0
-      svelte: 3.59.1
+      svelte: 3.58.0
       typescript: 5.0.4
     dev: true
 
   /svelte@3.58.0:
     resolution: {integrity: sha512-brIBNNB76mXFmU/Kerm4wFnkskBbluBDCjx/8TcpYRb298Yh2dztS2kQ6bhtjMcvUhd5ynClfwpz5h2gnzdQ1A==}
-    engines: {node: '>= 8'}
-    dev: true
-
-  /svelte@3.59.1:
-    resolution: {integrity: sha512-pKj8fEBmqf6mq3/NfrB9SLtcJcUvjYSWyePlfCqN9gujLB25RitWK8PvFzlwim6hD/We35KbPlRteuA6rnPGcQ==}
     engines: {node: '>= 8'}
     dev: true
 
