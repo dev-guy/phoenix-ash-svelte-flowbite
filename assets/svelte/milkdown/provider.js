@@ -1,5 +1,7 @@
 import {
   useProsemirrorAdapterProvider,
+  useNodeViewFactory,
+  usePluginViewFactory,
   useWidgetViewFactory,
 } from "@prosemirror-adapter/svelte";
 
@@ -9,8 +11,10 @@ import {
  */
 function useProvider() {
   useProsemirrorAdapterProvider();
+  const nodeViewFactory = useNodeViewFactory();
+  const pluginViewFactory = usePluginViewFactory();
   const widgetViewFactory = useWidgetViewFactory();
-  return { widgetViewFactory };
+  return { nodeViewFactory, pluginViewFactory, widgetViewFactory };
 }
 
 export { useProvider };

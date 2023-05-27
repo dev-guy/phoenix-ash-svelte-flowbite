@@ -23,7 +23,7 @@ let optsClient = {
             preprocess: sveltePreprocess({
                 postcss: {
                     plugins: [
-                        tailwind, 
+                        tailwind,
                         autoprefixer
                     ]
                 }
@@ -35,12 +35,12 @@ let optsClient = {
 
 let optsServer = {
     entryPoints: ["js/server.js"],
-    mainFields: ["svelte", "module", "main"],
+    mainFields: ["svelte", "browser", "module", "main"],
     platform: "node",
     format: "cjs",
     bundle: true,
     minify: false,
-    target: "node19.6.1",
+    target: "node20",
     outdir: "../priv/static/assets/server",
     logLevel: "info",
     plugins: [

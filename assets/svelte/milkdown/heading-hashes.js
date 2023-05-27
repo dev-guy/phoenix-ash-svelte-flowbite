@@ -22,11 +22,11 @@ import Hashes from './Hashes.svelte';
 
 // Multiple instances of this plugin are needed because it is Svelte context-dependent
 export function headingHashes({widgetViewFactory}) {
+  const widgetFactory = widgetViewFactory({
+    component: Hashes,
+    as: 'i',
+  });
   return $prose(() => {
-    const widgetFactory = widgetViewFactory({
-      component: Hashes,
-      as: 'i',
-    });
     return new Plugin({
       key: new PluginKey('milkdown-hashes'),
       props: {

@@ -21,7 +21,8 @@ const plugin = new Plugin({
 
       element.classList.add('milkdown-placeholder');
       element.style.position = 'absolute';
-      element.innerText = 'Sorry to disappoint! 🧙‍♂️ Type something!';
+      element.style['font-style'] = 'italic';
+      element.innerText = 'Enter text here'
 
       const placeholderDecoration = Decoration.widget(0, element, {
         key: 'milkdown-placeholder',
