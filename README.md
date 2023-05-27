@@ -30,7 +30,7 @@ This is a web browser application demonstrating:
   - [x] [Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
   - [x] [Menu](https://flowbite.com/docs/components/navbar/#navbar-with-dropdown)
   - [x] [Tooltips](https://flowbite.com/docs/components/tooltips)
-- [x] [Svelte 3.58](https://svelte.dev) via [LiveSvelte 0.5](https://wout.space/notes/live-svelte)
+- [x] [Svelte 3.58](https://svelte.dev) via [LiveSvelte 0.6](https://wout.space/notes/live-svelte)
   - [x] Support Sass/PostCSS
   - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets. Uses the convenient ~V sigil.
   - [x] [Mermaid diagram editor](https://terrislinenbach.medium.com/dynamically-render-a-mermaid-diagram-with-sveltekit-and-very-little-code-d8130875cd68) in a .svelte file (dead view)
