@@ -7,6 +7,6 @@ const content = `\
 `;
 </script>
 
-<Editor content={content}/>
+<Editor content={content} room='one'/>
 <br/>
-<Editor content='This is **another** editor'/>
+<Editor content='This is **another** editor' room='two'/>
