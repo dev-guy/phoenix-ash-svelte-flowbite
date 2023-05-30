@@ -361,7 +361,6 @@ defmodule Kantan.Pyro.Overrides.Skeleton do
       "btn variant-filled-success": color == "success" && variant == "solid",
       "btn variant-filled-primary": color == "surface" && variant == "solid",
       "btn variant-filled-warning text-primary": color == "warning" && variant == "solid",
-      "hover:scale-105": !disabled,
       "btn-xs text-xs": size == "xs",
       "btn-sm text-sm": size == "sm",
       "text-base": size == "md",
