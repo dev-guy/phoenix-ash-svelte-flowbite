@@ -39,7 +39,8 @@
 
     editor.action((ctx) => {
       const ydoc = new Doc();
-      const rtc = new WebrtcProvider(room, ydoc);
+      const rtc = new WebrtcProvider(room, ydoc,
+      { signaling: ['ws://localhost:4444'] });
       const collabService = ctx.get(collabServiceCtx);
       collabService.bindDoc(ydoc).setAwareness(rtc.awareness);
       collabService.applyTemplate(content, (removeNode, templateNode)=> {

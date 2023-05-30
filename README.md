@@ -35,7 +35,7 @@ This is a web browser application demonstrating:
   - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets. Uses the convenient ~V sigil.
   - [x] [Mermaid diagram editor](https://terrislinenbach.medium.com/dynamically-render-a-mermaid-diagram-with-sveltekit-and-very-little-code-d8130875cd68) in a .svelte file (dead view)
   - [x] [TipTap 2.0](https://tiptap.dev/) (dead view) with task list plugin
-  - [x] [Milkdown 7.2](https://milkdown.dev) (dead view) with markdown and custom plugins
+  - [x] [Milkdown 7.2](https://milkdown.dev) (dead view) with markdown and custom plugins and collaboration
 - [x] [Svelte Skeleton 1.6](https://www.skeleton.dev/)
   - [x] Theme and styles provided by Skeleton
   - [x] [Accordion](https://www.skeleton.dev/components/accordions) (dead view)
@@ -155,6 +155,16 @@ Open a browser to http://localhost:4000
 - [Phoenix and Third-Party JS Packages](https://hexdocs.pm/phoenix/asset_management.html)
 - [ElixirConf 2022 - Ryan Cooke - E2E Reactivity - using Svelte with Phoenix LiveView](https://www.youtube.com/watch?v=asm2TTm035o)
 - [Getting Started: Phoenix 1.7 with Svelte](https://medium.com/@alistairisrael/phoenix-1-7-with-svelte-12257d853ed1)
+
+## Milkdown Collaborative Editing
+
+Tabbed collaboration works out of the box. Cross-browser collaboration requires running a WebRTC server and changing the code to point to it. By default it uses localhost and you can run a local RTC server via:
+
+```sh
+nvm i
+cd assets
+PORT=4444 npx y-webrtc server.js
+```
 
 ## TODO
 
