@@ -164,7 +164,7 @@ Open a browser to http://localhost:4000
 
 ## Milkdown Collaborative Editing
 
-Tabbed collaboration works out of the box. Cross-browser collaboration requires running a WebRTC server and changing the code to point to it. By default it uses localhost and you can run a local RTC server via:
+Tabbed collaboration works out of the box. Cross-browser collaboration requires running a WebRTC server:
 
 ```sh
 nvm i
