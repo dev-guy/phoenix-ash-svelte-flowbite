@@ -1,8 +1,13 @@
 <.svelte name="Timeline">
-  <!-- Slots + LiveSvelte is not supported yet, but it works -->
+  <!-- Slots + LiveSvelte is not supported yet, but it works
+
+  Elixir outputs a warning during compilation.
+   -->
   <:toast>
   <div class='flex' align-items>
-  <.icon name='hero-eye-dropper'/><span>How about some toast?</span>
+  <.button color='error'>
+  <.icon name='hero-exclamation-triangle'/>How about some toast?
+  </.button>
   </div>
   </:toast>
 </.svelte>
