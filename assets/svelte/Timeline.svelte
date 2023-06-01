@@ -1,6 +1,8 @@
 <script>
   import { Accordion, AccordionItem, TabGroup, Tab } from "@skeletonlabs/skeleton";
   import mermaid from "mermaid";
+  import { toastStore } from '@skeletonlabs/skeleton';
+
 
   let tabSet = 0;
   let diagramContainer;
@@ -18,6 +20,15 @@
   }
 
   $: tabSet === 1 && diagram && renderDiagram();
+
+function addToast() {
+  const t = {
+  message: 'Why is this purple?',
+  autohide: true
+  };
+  toastStore.trigger(t);
+}
+
 </script>
 
 <h1 class='h1'>Tab Group + Mermaid</h1>
@@ -130,7 +141,7 @@
   </AccordionItem>
 </Accordion>
 
-<h1 class='h1'>Slotted Toast</h1>
+<h1 class='h1'>Slotted Flowbite Toast</h1>
 
 <div
   id="toast-default"
@@ -178,3 +189,6 @@
     >
   </button>
 </div>
+
+<h1 class='h1'>Skeleton Toast</h1>
+<button class='btn btn-sm variant-filled-warning' on:click={addToast}>Toast?</button>

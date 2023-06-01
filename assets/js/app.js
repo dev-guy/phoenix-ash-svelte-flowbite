@@ -25,12 +25,10 @@ import {getHooks} from "live_svelte"
 import * as SvelteComponents from "../svelte/**/*"
 import { hooks, getTimezone } from "pyro"
 import "flowbite/dist/flowbite.phoenix.js";
-// import {initFlowbite} from "flowbite";
 import Datepicker from 'flowbite-datepicker/Datepicker';
 
 const datepickerHook = {
   mounted() {
-    // initFlowbite();
     new Datepicker(this.el, {
     // options
       });
