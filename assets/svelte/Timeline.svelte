@@ -39,7 +39,7 @@
 
 <Accordion>
   <AccordionItem open>
-    <svelte:fragment slot="lead">(lead)
+    <svelte:fragment slot="lead">
       <i class="fa-solid fa-book text-xl w-6 text-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -58,15 +58,9 @@
       </i></svelte:fragment
     >
     <svelte:fragment slot="summary"
-      >(summary)<p class="font-bold">Books</p></svelte:fragment>
-    <svelte:fragment slot="content">(content)
-      <p>This is the content panel for the <strong>books</strong> item.</p>
-    </svelte:fragment>
-  </AccordionItem>
-</Accordion>
-
-<h1 class='h1'>Flowbite Timeline</h1>
-
+      ><p class="font-bold">Timeline</p></svelte:fragment>
+    <svelte:fragment slot="content">
+      <!-- This is the timeline -->
 <ol class="relative border-l border-gray-200 dark:border-gray-700">
   <li class="mb-10 ml-4">
     <div
@@ -132,9 +126,11 @@
     </p>
   </li>
 </ol>
+    </svelte:fragment>
+  </AccordionItem>
+</Accordion>
 
-<h1 class='h1'>Toast</h1>
-<!-- Flowbite toast -->
+<h1 class='h1'>Slotted Toast</h1>
 
 <div
   id="toast-default"
@@ -158,7 +154,9 @@
     >
     <span class="sr-only">Fire icon</span>
   </div>
-  <slot/> <!-- User-provided content -->
+  <slot name="toast">
+    <h2 class="h5">No toast</h2>
+  </slot>
   <button
     type="button"
     class="ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
