@@ -64,7 +64,7 @@ Join the [Ash Discord Server](https://discord.com/invite/D7FNG2q) and check out 
 
 Restart your terminal after installing Elixir.
 
-#### MacOS
+#### Installing Elixir on MacOS
 
 - [Install Homebrew](https://docs.brew.sh/Installation)
 - Restart your terminal
@@ -78,6 +78,12 @@ brew install asdf
 # I use zsh. Change the following line to >> ~/.bashrc if you use bash.
 echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 # Restart your terminal
+# Proceed to the next section
+```
+
+### Installing Elixir on All Platforms with asdf
+
+```sh
 # Find the current versions of erlang and elixir:
 # asdf list-all erlang
 # asdf list-all elixir
