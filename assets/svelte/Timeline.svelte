@@ -1,6 +1,41 @@
 <script>
-  import { Accordion, AccordionItem } from "@skeletonlabs/skeleton";
+  import { Accordion, AccordionItem, TabGroup, Tab } from "@skeletonlabs/skeleton";
+  import mermaid from "mermaid";
+
+  let tabSet = 0;
+  let diagramContainer;
+
+  let diagram = `\
+  pie title Pets adopted by volunteers
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 15
+  `;
+
+  async function renderDiagram() {
+    const { svg } = await mermaid.render("mermaid", diagram);
+    diagramContainer.innerHTML = svg;
+  }
+
+  $: tabSet === 1 && diagram && renderDiagram();
 </script>
+
+<h1 class='h1'>Tab Group + Mermaid</h1>
+
+<TabGroup>
+	<Tab bind:group={tabSet} name="tab1" value={0}>Code</Tab>
+	<Tab bind:group={tabSet} name="tab2" value={1}>Diagram</Tab>
+	<!-- Tab Panels --->
+	<svelte:fragment slot="panel">
+		{#if tabSet === 0}
+      <pre contenteditable="true" bind:innerHTML={diagram} />
+		{:else if tabSet === 1}
+      <span bind:this={diagramContainer} />
+    {/if}
+	</svelte:fragment>
+</TabGroup>
+
+<h1 class='h1'>Accordion</h1>
 
 <Accordion>
   <AccordionItem open>
@@ -30,7 +65,8 @@
   </AccordionItem>
 </Accordion>
 
-<!-- Flowbite timeline -->
+<h1 class='h1'>Flowbite Timeline</h1>
+
 <ol class="relative border-l border-gray-200 dark:border-gray-700">
   <li class="mb-10 ml-4">
     <div
@@ -97,6 +133,7 @@
   </li>
 </ol>
 
+<h1 class='h1'>Toast</h1>
 <!-- Flowbite toast -->
 
 <div
@@ -121,7 +158,7 @@
     >
     <span class="sr-only">Fire icon</span>
   </div>
-  <slot/>
+  <slot/> <!-- User-provided content -->
   <button
     type="button"
     class="ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
