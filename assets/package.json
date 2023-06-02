@@ -4,6 +4,7 @@
   "devDependencies": {
     "@milkdown/core": "^7.2.1",
     "@milkdown/plugin-collab": "^7.2.1",
+    "@milkdown/plugin-diagram": "^7.2.2",
     "@milkdown/plugin-emoji": "^7.2.1",
     "@milkdown/preset-commonmark": "^7.2.1",
     "@milkdown/preset-gfm": "^7.2.1",

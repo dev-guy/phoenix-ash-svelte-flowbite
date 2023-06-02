@@ -3,7 +3,6 @@
   import mermaid from "mermaid";
   import { toastStore } from '@skeletonlabs/skeleton';
 
-
   let tabSet = 0;
   let diagramContainer;
 

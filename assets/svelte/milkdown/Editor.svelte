@@ -2,12 +2,13 @@
   import {
     Editor,
     rootCtx,
-    defaultValueCtx,
     remarkStringifyOptionsCtx,
+    defaultValueCtx,
   } from "@milkdown/core";
   import { commonmark } from "@milkdown/preset-commonmark";
   import { gfm } from "@milkdown/preset-gfm";
   import { collab, collabServiceCtx } from "@milkdown/plugin-collab";
+  import { mermaid } from './mermaid';
 
   // Yjs
   import { Doc } from "yjs";
@@ -28,25 +29,26 @@
       .config((ctx) => {
         ctx.set(remarkStringifyOptionsCtx, { emphasis: "*" });
         ctx.set(rootCtx, dom);
-        // ctx.set(defaultValueCtx, content);
+        ctx.set(defaultValueCtx, content);
       })
       .use(commonmark)
       .use(gfm)
       .use(empty)
       .use(headingHashes(provider))
-      .use(collab)
+      // .use(collab)
+      .use(mermaid(provider))
       .create();
 
     editor.action((ctx) => {
-      const ydoc = new Doc();
-      const rtc = new WebrtcProvider(room, ydoc,
-      { signaling: ['ws://localhost:4444'] });
-      const collabService = ctx.get(collabServiceCtx);
-      collabService.bindDoc(ydoc).setAwareness(rtc.awareness);
-      collabService.applyTemplate(content, (removeNode, templateNode)=> {
-        return true;
-      });
-      collabService.connect();
+      // const ydoc = new Doc();
+      /// const rtc = new WebrtcProvider(room, ydoc,
+      // { signaling: ['ws://localhost:4444'] });
+      // const collabService = ctx.get(collabServiceCtx);
+      // collabService.bindDoc(ydoc).setAwareness(rtc.awareness);
+      // collabService.applyTemplate(content, (removeNode, templateNode)=> {
+      //  return true;
+      //});
+      // collabService.connect();
     });
 
     return editor;
