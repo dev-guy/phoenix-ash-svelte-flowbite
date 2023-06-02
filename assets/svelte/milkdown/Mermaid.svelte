@@ -1,29 +1,24 @@
 <script>
-  import { TabGroup, Tab } from "@skeletonlabs/skeleton";
-  import { useNodeViewContext } from "@prosemirror-adapter/svelte";
   import mermaid from "mermaid";
+  import { useNodeViewContext } from "@prosemirror-adapter/svelte";
+  const contentRef = useNodeViewContext("contentRef");
+  const node = useNodeViewContext("node");
+  let diagram = $node.attrs.value
+  let container;
 
-  let tabSet = 0;
-  const contentRef = useNodeViewContext('contentRef');
+async function renderDiagram() {
+  // https://stackoverflow.com/questions/7394748/whats-the-right-way-to-decode-a-string-that-has-special-html-entities-in-it?lq=1
+  var txt = document.createElement("textarea");
+  txt.innerHTML = diagram;
+  const { svg } = await mermaid.render("mermaid", txt.value);
+  container.innerHTML = svg;
+}
 
-  let diagramContainer;
-
-  async function renderDiagram() {
-//    const { svg } = await mermaid.render("mermaid", contentRef.innerHTML);
-    //diagramContainer.innerHTML = svg;
-  }
-
-  $: tabSet === 1 && contentRef && renderDiagram();
+  $: diagram && renderDiagram();
 </script>
+<textarea bind:value={diagram} contenteditable="true"/>
+<span bind:this={container} />
 
-<TabGroup>
-	<Tab bind:group={tabSet} name="tab1" value={0}>Code</Tab>
-	<Tab bind:group={tabSet} name="tab2" value={1}>Diagram</Tab>
-	<svelte:fragment slot="panel">
-		{#if tabSet === 0}
-    <div use:contentRef/>
-		{:else if tabSet === 1}
-     <!-- <span bind:this={diagramContainer} /> -->
-    {/if}
-	</svelte:fragment>
-</TabGroup>
+<style>
+	textarea { width: 100%; height: 200px; }
+</style>

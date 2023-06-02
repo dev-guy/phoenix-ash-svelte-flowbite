@@ -1,0 +1,42 @@
+kantan@0.1.0 /Users/terrislinenbach/agle/202308/phoenix-ash-svelte-flowbite/assets
+├── @milkdown/core@7.2.1 -> ./node_modules/.pnpm/@milkdown+core@7.2.1_@milkdown+ctx@7.2.1_@milkdown+prose@7.2.1_@milkdown+transformer@7.2.1/node_modules/@milkdown/core
+├── @milkdown/plugin-collab@7.2.1 -> ./node_modules/.pnpm/@milkdown+plugin-collab@7.2.1_@milkdown+core@7.2.1_@milkdown+ctx@7.2.1_@milkdown+prose@7.2.1__wmuf4paqnjab3ti5cqka3cp7ga/node_modules/@milkdown/plugin-collab
+├── @milkdown/plugin-diagram@7.2.2 -> ./node_modules/.pnpm/@milkdown+plugin-diagram@7.2.2_@milkdown+core@7.2.1_@milkdown+ctx@7.2.1_@milkdown+prose@7.2.1_efw7eydctbox3ckleqseubobgi/node_modules/@milkdown/plugin-diagram
+├── @milkdown/plugin-emoji@7.2.1 -> ./node_modules/.pnpm/@milkdown+plugin-emoji@7.2.1_@milkdown+core@7.2.1_@milkdown+ctx@7.2.1_@milkdown+prose@7.2.1_@milkdown+transformer@7.2.1/node_modules/@milkdown/plugin-emoji
+├── @milkdown/preset-commonmark@7.2.1 -> ./node_modules/.pnpm/@milkdown+preset-commonmark@7.2.1_@milkdown+core@7.2.1_@milkdown+ctx@7.2.1_@milkdown+prose@7._idpxcadiet55gymf5zardw3zpm/node_modules/@milkdown/preset-commonmark
+├── @milkdown/preset-gfm@7.2.1 -> ./node_modules/.pnpm/@milkdown+preset-gfm@7.2.1_@milkdown+core@7.2.1_@milkdown+ctx@7.2.1_@milkdown+preset-commonma_sgnuiowwqqpd4xuvefw2f2qxcy/node_modules/@milkdown/preset-gfm
+├── @milkdown/prose@7.2.1 -> ./node_modules/.pnpm/@milkdown+prose@7.2.1/node_modules/@milkdown/prose
+├── @milkdown/utils@7.2.1 -> ./node_modules/.pnpm/@milkdown+utils@7.2.1_@milkdown+core@7.2.1_@milkdown+ctx@7.2.1_@milkdown+prose@7.2.1_@milkdown+transformer@7.2.1/node_modules/@milkdown/utils
+├── @prosemirror-adapter/svelte@0.2.5 -> ./node_modules/.pnpm/@prosemirror-adapter+svelte@0.2.5_svelte@3.58.0/node_modules/@prosemirror-adapter/svelte
+├── @skeletonlabs/skeleton@1.6.2 -> ./node_modules/.pnpm/@skeletonlabs+skeleton@1.6.2/node_modules/@skeletonlabs/skeleton
+├── @tiptap/core@2.0.3 -> ./node_modules/.pnpm/@tiptap+core@2.0.3_@tiptap+pm@2.0.3/node_modules/@tiptap/core
+├── @tiptap/extension-paragraph@2.0.3 -> ./node_modules/.pnpm/@tiptap+extension-paragraph@2.0.3_@tiptap+core@2.0.3/node_modules/@tiptap/extension-paragraph
+├── @tiptap/extension-task-item@2.0.3 -> ./node_modules/.pnpm/@tiptap+extension-task-item@2.0.3_@tiptap+core@2.0.3_@tiptap+pm@2.0.3/node_modules/@tiptap/extension-task-item
+├── @tiptap/extension-task-list@2.0.3 -> ./node_modules/.pnpm/@tiptap+extension-task-list@2.0.3_@tiptap+core@2.0.3/node_modules/@tiptap/extension-task-list
+├── @tiptap/extension-text@2.0.3 -> ./node_modules/.pnpm/@tiptap+extension-text@2.0.3_@tiptap+core@2.0.3/node_modules/@tiptap/extension-text
+├── @tiptap/starter-kit@2.0.3 -> ./node_modules/.pnpm/@tiptap+starter-kit@2.0.3_@tiptap+pm@2.0.3/node_modules/@tiptap/starter-kit
+├── autoprefixer@10.4.14 -> ./node_modules/.pnpm/autoprefixer@10.4.14_postcss@8.4.23/node_modules/autoprefixer
+├── esbuild-plugin-import-glob@0.1.1 -> ./node_modules/.pnpm/esbuild-plugin-import-glob@0.1.1/node_modules/esbuild-plugin-import-glob
+├── esbuild-svelte@0.7.3 -> ./node_modules/.pnpm/esbuild-svelte@0.7.3_esbuild@0.17.19_svelte@3.58.0/node_modules/esbuild-svelte
+├── esbuild@0.17.19 -> ./node_modules/.pnpm/esbuild@0.17.19/node_modules/esbuild
+├── flowbite-datepicker@1.2.2 -> ./node_modules/.pnpm/flowbite-datepicker@1.2.2/node_modules/flowbite-datepicker
+├── flowbite@1.6.5 -> ./node_modules/.pnpm/flowbite@1.6.5/node_modules/flowbite
+├── live_svelte@0.5.1 invalid: "file:../deps/live_svelte" from the root project -> ./node_modules/.pnpm/file+..+deps+live_svelte/node_modules/live_svelte
+├── mermaid@10.2.0 -> ./node_modules/.pnpm/mermaid@10.2.0/node_modules/mermaid
+├── phoenix_html@3.3.1 invalid: "file:../deps/phoenix_html" from the root project -> ./node_modules/.pnpm/file+..+deps+phoenix_html/node_modules/phoenix_html
+├── phoenix_live_view@0.18.18 invalid: "file:../deps/phoenix_live_view" from the root project -> ./node_modules/.pnpm/file+..+deps+phoenix_live_view/node_modules/phoenix_live_view
+├── phoenix@1.7.2 invalid: "file:../deps/phoenix" from the root project -> ./node_modules/.pnpm/file+..+deps+phoenix/node_modules/phoenix
+├── postcss@8.4.23 -> ./node_modules/.pnpm/postcss@8.4.23/node_modules/postcss
+├── pyro@ invalid: "file:../deps/pyro" from the root project -> ./node_modules/.pnpm/file+..+deps+pyro/node_modules/pyro
+├── sass@1.62.1 -> ./node_modules/.pnpm/sass@1.62.1/node_modules/sass
+├── svelte-preprocess@5.0.4 -> ./node_modules/.pnpm/svelte-preprocess@5.0.4_@babel+core@7.22.1_postcss@8.4.23_sass@1.62.1_svelte@3.58.0_typescript@5.0.4/node_modules/svelte-preprocess
+├── svelte@3.58.0 -> ./node_modules/.pnpm/svelte@3.58.0/node_modules/svelte
+├── tailwind-scrollbar-hide@1.1.7 -> ./node_modules/.pnpm/tailwind-scrollbar-hide@1.1.7/node_modules/tailwind-scrollbar-hide
+├── tailwindcss@3.3.2 -> ./node_modules/.pnpm/tailwindcss@3.3.2/node_modules/tailwindcss
+├── typescript@5.0.4 -> ./node_modules/.pnpm/typescript@5.0.4/node_modules/typescript
+├── y-prosemirror@1.2.1 -> ./node_modules/.pnpm/y-prosemirror@1.2.1_prosemirror-model@1.19.2_prosemirror-state@1.4.3_prosemirror-view@1.31.3__2w4i2iw4dm3s5376yjyblpohcu/node_modules/y-prosemirror
+├── y-protocols@1.0.5 -> ./node_modules/.pnpm/y-protocols@1.0.5/node_modules/y-protocols
+├── y-webrtc@10.2.5 -> ./node_modules/.pnpm/y-webrtc@10.2.5/node_modules/y-webrtc
+├── y-websocket@1.5.0 -> ./node_modules/.pnpm/y-websocket@1.5.0_yjs@13.6.1/node_modules/y-websocket
+└── yjs@13.6.1 -> ./node_modules/.pnpm/yjs@13.6.1/node_modules/yjs
+
