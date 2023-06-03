@@ -7,6 +7,8 @@
 
   import { useNodeViewContext } from "@prosemirror-adapter/svelte";
   const node = useNodeViewContext("node");
+  const setAttrs = useNodeViewContext("setAttrs");
+
   let diagram = $node.attrs.value
   let container;
 
@@ -18,6 +20,7 @@ async function renderDiagram() {
   const x = Math.floor(Math.random()*5000);
   const { svg } = await mermaid.render(`mermaid-${x}`, diagram);
   container.innerHTML = svg;
+  setAttrs({ value: diagram });
 }
 
   $: tabSet === 1 && diagram && renderDiagram();
