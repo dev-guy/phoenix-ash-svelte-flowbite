@@ -8,9 +8,9 @@ import Mermaid from './Mermaid.svelte';
 
 // Multiple instances of this plugin are needed because it is Svelte context-dependent
 export function mermaid({nodeViewFactory}) {
-  return $view(diagramSchema.node, () =>
+  return [diagram, $view(diagramSchema.node, () =>
     nodeViewFactory({
       component: Mermaid,
       stopEvent: ()=>true,
-    }));
+    }))];
 }
