@@ -17,7 +17,7 @@ Skeleton includes these already
 
 @import "./pyro.css";
 
-/* @import "@milkdown/prose/lib/style/prosemirror.css"; */
+@import "@milkdown/prose/lib/style/prosemirror.css";
 
 /* Ash Authentication */
 .error-messages {

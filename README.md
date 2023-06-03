@@ -91,8 +91,8 @@ asdf plugin add erlang
 KERL_BUILD_DOCS=yes asdf install erlang 26.0 # For VSCode's Elixir language server extension
 asdf global erlang 26.0
 asdf plugin add elixir
-asdf install elixir 1.14.5-otp-26
-asdf global elixir 1.14.5-otp-26
+asdf install elixir 1.15.0-rc.1-otp-26
+asdf global elixir 1.15.0-rc.1-otp-26
 ```
 
 ## Usage

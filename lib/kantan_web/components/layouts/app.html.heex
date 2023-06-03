@@ -1,6 +1,9 @@
 <.svelte name='Toast'/>
 <KantanWeb.AppShell.top current_user={@current_user} />
-<KantanWeb.AppShell.leftMenu />
+<KantanWeb.AppShell.left>
+  <KantanWeb.AppShell.leftMenu />
+  <KantanWeb.AppShell.leftBottomMenu />
+</KantanWeb.AppShell.left>
 
 <main class="md:ml-64 pt-16">
   <div class="p-2 h-[calc(100vh-4rem)] overflow-auto scrollbar-hide">
