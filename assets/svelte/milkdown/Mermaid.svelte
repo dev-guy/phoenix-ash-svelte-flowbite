@@ -1,7 +1,9 @@
 <script>
   import { TabGroup, Tab } from "@skeletonlabs/skeleton";
   import mermaid from "mermaid";
-  let tabSet = 1;
+
+  // TODO: This should default to 0 for new nodes and should be set to 1 when the editor is first loaded
+  let tabSet = 0;
 
   import { useNodeViewContext } from "@prosemirror-adapter/svelte";
   const node = useNodeViewContext("node");
