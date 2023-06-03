@@ -2,12 +2,15 @@
   import {
     Editor,
     rootCtx,
-    defaultValueCtx,
     remarkStringifyOptionsCtx,
+    defaultValueCtx,
   } from "@milkdown/core";
+
+  import { diagram } from "@milkdown/plugin-diagram";
   import { commonmark } from "@milkdown/preset-commonmark";
   import { gfm } from "@milkdown/preset-gfm";
   import { collab, collabServiceCtx } from "@milkdown/plugin-collab";
+  import { mermaid } from './mermaid';
 
   // Yjs
   import { Doc } from "yjs";
@@ -35,6 +38,8 @@
       .use(empty)
       .use(headingHashes(provider))
       .use(collab)
+      .use(diagram)
+      .use(mermaid(provider))
       .create();
 
     editor.action((ctx) => {
@@ -44,9 +49,9 @@
       const collabService = ctx.get(collabServiceCtx);
       collabService.bindDoc(ydoc).setAwareness(rtc.awareness);
       collabService.applyTemplate(content, (removeNode, templateNode)=> {
-        return true;
+      return true;
       });
-      collabService.connect();
+       collabService.connect();
     });
 
     return editor;

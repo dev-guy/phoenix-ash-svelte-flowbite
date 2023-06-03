@@ -1,0 +1,124 @@
+:root {
+	--theme-font-family-base: system-ui;
+	--theme-font-family-heading: system-ui;
+	--theme-font-color-base: 0 0 0;
+	--theme-font-color-dark: 255 255 255;
+	--theme-rounded-base: 9999px;
+	--theme-rounded-container: 8px;
+	--theme-border-base: 1px;
+
+	--on-primary: 255 255 255;
+	--on-secondary: 0 0 0;
+	--on-tertiary: 255 255 255;
+	--on-success: 255 255 255;
+	--on-warning: 0 0 0;
+	--on-error: 0 0 0;
+	--on-surface: 0 0 0;
+
+	--color-primary-50: 254 246 251;
+	--color-primary-100: 253 232 244;
+	--color-primary-200: 250 204 232;
+	--color-primary-300: 247 171 217;
+	--color-primary-400: 244 133 200;
+	--color-primary-500: 238 68 170;
+	--color-primary-600: 235 31 153;
+	--color-primary-700: 215 20 137;
+	--color-primary-800: 192 17 122;
+	--color-primary-900: 164 15 104;
+	--color-primary-950: 145 13 92;
+
+	--color-secondary-50: 250 246 254;
+	--color-secondary-100: 246 236 253;
+	--color-secondary-200: 234 213 251;
+	--color-secondary-300: 222 190 249;
+	--color-secondary-400: 208 162 246;
+	--color-secondary-500: 192 129 243;
+	--color-secondary-600: 182 111 241;
+	--color-secondary-700: 171 87 239;
+	--color-secondary-800: 154 55 236;
+	--color-secondary-900: 133 21 224;
+	--color-secondary-950: 116 19 196;
+
+	--color-tertiary-50: 250 251 255;
+	--color-tertiary-100: 245 247 255;
+	--color-tertiary-200: 235 239 255;
+	--color-tertiary-300: 224 231 255;
+	--color-tertiary-400: 209 218 255;
+	--color-tertiary-500: 199 210 255;
+	--color-tertiary-600: 173 190 255;
+	--color-tertiary-700: 148 169 255;
+	--color-tertiary-800: 112 141 255;
+	--color-tertiary-900: 61 100 255;
+	--color-tertiary-950: 15 63 255;
+
+	--color-success-50: 65 100 11;
+	--color-success-100: 79 122 13;
+	--color-success-200: 99 153 17;
+	--color-success-300: 119 184 20;
+	--color-success-400: 132 204 22;
+	--color-success-500: 169 219 92;
+	--color-success-600: 206 235 162;
+	--color-success-700: 224 242 197;
+	--color-success-800: 230 245 208;
+	--color-success-900: 237 247 220;
+
+	--color-warning-50: 115 88 4;
+	--color-warning-100: 140 107 5;
+	--color-warning-200: 176 134 6;
+	--color-warning-300: 211 161 7;
+	--color-warning-400: 234 179 8;
+	--color-warning-500: 240 202 82;
+	--color-warning-600: 247 225 156;
+	--color-warning-700: 250 236 193;
+	--color-warning-800: 251 240 206;
+	--color-warning-900: 252 244 218;
+
+	--color-error-50: 253 242 242;
+	--color-error-100: 251 228 228;
+	--color-error-200: 247 202 202;
+	--color-error-300: 241 167 167;
+	--color-error-400: 235 127 127;
+	--color-error-500: 222 41 41;
+	--color-error-600: 217 33 33;
+	--color-error-700: 203 31 31;
+	--color-error-800: 199 31 31;
+	--color-error-900: 181 28 28;
+	--color-error-950: 181 28 28;
+
+	--color-surface-50: 255 245 250;
+	--color-surface-100: 255 240 248;
+	--color-surface-200: 255 219 239;
+	--color-surface-300: 255 199 230;
+	--color-surface-400: 255 179 221;
+	--color-surface-500: 255 152 209;
+	--color-surface-600: 255 143 205;
+	--color-surface-700: 255 128 198;
+	--color-surface-800: 255 112 191;
+	--color-surface-900: 255 102 186;
+	--color-surface-950: 255 92 182;
+}
+
+[data-theme='unicorn'] h1,
+[data-theme='unicorn'] h2,
+[data-theme='unicorn'] h3,
+[data-theme='unicorn'] h4,
+[data-theme='unicorn'] h5,
+[data-theme='unicorn'] h6 {
+	font-weight: 600;
+}
+
+[data-theme='unicorn'] p {
+	font-weight: 400;
+}
+
+[data-theme='unicorn'] {
+	background-image: radial-gradient(at 100% 36%, hsla(264, 59%, 50%, 0.683) 0px, transparent 50%),
+		radial-gradient(at 87% 0%, hsl(0, 0%, 0%) 0px, transparent 50%);
+}
+
+.dark [data-theme='sahara'] {
+	/* prettier-ignore */
+	background-image:
+		radial-gradient(at 100% 36%, hsla(37,81%,56%,0.15) 0px, transparent 50%),
+		radial-gradient(at 7% 0%, hsla(37,81%,56%,0.20) 0px, transparent 50%);
+}
