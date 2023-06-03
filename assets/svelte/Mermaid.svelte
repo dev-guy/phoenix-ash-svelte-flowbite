@@ -16,7 +16,8 @@ erDiagram
   let container;
 
   async function renderDiagram() {
-    const { svg } = await mermaid.render("mermaid", diagram);
+    const x = Math.floor(Math.random()*5000);
+    const { svg } = await mermaid.render("mermaid"+x, diagram);
     container.innerHTML = svg;
   }
 
