@@ -3,10 +3,9 @@
     Editor,
     rootCtx,
     remarkStringifyOptionsCtx,
-    defaultValueCtx,
+    // defaultValueCtx,
   } from "@milkdown/core";
 
-  import { diagram } from "@milkdown/plugin-diagram";
   import { commonmark } from "@milkdown/preset-commonmark";
   import { gfm } from "@milkdown/preset-gfm";
   import { collab, collabServiceCtx } from "@milkdown/plugin-collab";
@@ -38,7 +37,6 @@
       .use(empty)
       .use(headingHashes(provider))
       .use(collab)
-      .use(diagram)
       .use(mermaid(provider))
       .create();
 
