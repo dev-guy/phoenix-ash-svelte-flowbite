@@ -35,9 +35,10 @@ This is a web browser application demonstrating:
   - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets. Uses the convenient ~V sigil.
   - [x] [Mermaid diagram editor](https://terrislinenbach.medium.com/dynamically-render-a-mermaid-diagram-with-sveltekit-and-very-little-code-d8130875cd68) in a .svelte file (dead view)
   - [x] [TipTap 2.0](https://tiptap.dev/) (dead view) with task list plugin
-  - [x] [Milkdown 7.2](https://milkdown.dev) (dead view) with markdown and custom plugins and collaboration
+  - [x] [Milkdown 7.2](https://milkdown.dev) (dead view) with Markdown, Mermaid, and collaboration
 - [x] [Svelte Skeleton 1.6](https://www.skeleton.dev/)
   - [x] Theme and styles provided by Skeleton
+  - [x] Tab group
   - [x] [Accordion](https://www.skeleton.dev/components/accordions) (dead view)
   - [x] [Toast](https://www.skeleton.dev/utilities/toasts) (dead view)
 
