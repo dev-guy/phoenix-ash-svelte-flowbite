@@ -47,7 +47,7 @@
       const collabService = ctx.get(collabServiceCtx);
       collabService.bindDoc(ydoc).setAwareness(rtc.awareness);
       collabService.applyTemplate(content, (removeNode, templateNode)=> {
-      return true;
+        return true;
       });
        collabService.connect();
     });

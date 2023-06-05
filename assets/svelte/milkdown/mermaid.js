@@ -11,6 +11,8 @@ export function mermaid({nodeViewFactory}) {
   return [diagram, $view(diagramSchema.node, () =>
     nodeViewFactory({
       component: Mermaid,
+      update: (node) => false,
+      //  return node.type.name === 'diagram';
       stopEvent: ()=>true,
     }))];
 }

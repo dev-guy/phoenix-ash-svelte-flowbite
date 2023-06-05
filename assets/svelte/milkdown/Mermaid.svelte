@@ -9,19 +9,15 @@
   const node = useNodeViewContext("node");
   const setAttrs = useNodeViewContext("setAttrs");
 
-  let diagram = $node.attrs.value
+  let diagram = $node.attrs.value;
   let container;
 
-async function renderDiagram() {
-  // https://stackoverflow.com/questions/7394748/whats-the-right-way-to-decode-a-string-that-has-special-html-entities-in-it?lq=1
-  // var txt = document.createElement("textarea");
-  // txt.innerHTML = diagram;
-  // const { svg } = await mermaid.render("mermaid", txt.value);
-  const x = Math.floor(Math.random()*5000);
-  const { svg } = await mermaid.render(`mermaid-${x}`, diagram);
-  container.innerHTML = svg;
-  setAttrs({ value: diagram });
-}
+  async function renderDiagram() {
+    const x = Math.floor(Math.random()*5000);
+    const { svg } = await mermaid.render(`mermaid-${x}`, diagram);
+    container.innerHTML = svg;
+    setAttrs({ value: diagram });
+  }
 
   $: tabSet === 1 && diagram && renderDiagram();
 </script>
@@ -29,7 +25,7 @@ async function renderDiagram() {
 <TabGroup>
 	<Tab bind:group={tabSet} name="tab1" value={0}>Code</Tab>
 	<Tab bind:group={tabSet} name="tab2" value={1}>Diagram</Tab>
-	<svelte:fragment slot="panel">
+	<svelte:fragment slot="panel" >
 		{#if tabSet === 0}
       <textarea bind:value={diagram} contenteditable="true"/>
 		{:else if tabSet === 1}
