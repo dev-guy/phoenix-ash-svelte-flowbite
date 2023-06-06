@@ -703,7 +703,7 @@ defmodule KantanWeb.AppShell do
   def left(assigns) do
     ~H"""
     <aside
-      class="fixed top-0 left-0 z-40 w-64 h-screen pt-14 transition-transform -translate-x-full border-gray-200 md:translate-x-0 dark:border-gray-700"
+      class="md:bg-transparent bg-white fixed top-0 left-0 z-40 w-64 h-screen pt-14 transition-transform -translate-x-full border-gray-200 md:translate-x-0 dark:border-gray-700"
       aria-label="Sidenav"
       id="drawer-navigation"
     >
@@ -714,7 +714,7 @@ defmodule KantanWeb.AppShell do
 
   def leftMenu(assigns) do
     ~H"""
-    <div class="overflow-y-auto py-5 px-3 h-full">
+    <div class="overflow-y-auto py-5 px-3">
       <ul class="space-y-2">
         <li>
           <button
@@ -898,7 +898,7 @@ defmodule KantanWeb.AppShell do
 
   def leftBottomMenu(assigns) do
     ~H"""
-    <div class="border-t border-gray-200 dark:border-gray-700 hidden absolute bottom-0 left-2 justify-center p-4 space-x-4 w-full lg:flex z-20">
+    <div class="border-t border-gray-200 dark:border-gray-700 absolute bottom-0 left-2 justify-center p-4 space-x-4 w-full lg:flex z-20">
       <a
         href="#"
         class="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-600"

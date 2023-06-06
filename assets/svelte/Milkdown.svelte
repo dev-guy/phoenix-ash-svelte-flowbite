@@ -7,13 +7,14 @@ const content = `\
 `;
 
 const diagram =
-'```mermaid' + `
+`**hello**
+`
++'```mermaid' + `
   graph TD;
     A-->B;
     A-->C;
     B-->D;
-    C-->D;
-`
+    C-->D;`
 </script>
 
 <!-- <Editor content={content} room='one'/>

@@ -9,6 +9,7 @@
   const node = useNodeViewContext("node");
   const setAttrs = useNodeViewContext("setAttrs");
 
+  console.log('redraw')
   let diagram = $node.attrs.value;
   let container;
 
@@ -16,12 +17,13 @@
     const x = Math.floor(Math.random()*5000);
     const { svg } = await mermaid.render(`mermaid-${x}`, diagram);
     container.innerHTML = svg;
-    setAttrs({ value: diagram });
   }
 
   $: tabSet === 1 && diagram && renderDiagram();
+  $: diagram && setAttrs({ value: diagram });
 </script>
 
+<span contenteditable=false>
 <TabGroup>
 	<Tab bind:group={tabSet} name="tab1" value={0}>Code</Tab>
 	<Tab bind:group={tabSet} name="tab2" value={1}>Diagram</Tab>
@@ -33,7 +35,11 @@
     {/if}
 	</svelte:fragment>
 </TabGroup>
+</span>
 
 <style>
 	textarea { width: 100%; height: 200px; }
+  :global(.tab-label) { display:inline-block; }
+  :global(.tab-interface) { display:inline-block; }
+  :global(.tab-panel) { display:inline-block; }
 </style>
