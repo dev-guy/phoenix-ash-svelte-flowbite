@@ -36,6 +36,7 @@ This is a web browser application demonstrating:
   - [x] [Mermaid diagram editor](https://terrislinenbach.medium.com/dynamically-render-a-mermaid-diagram-with-sveltekit-and-very-little-code-d8130875cd68) in a .svelte file (dead view)
   - [x] [TipTap 2.0](https://tiptap.dev/) (dead view) with task list plugin
   - [x] [Milkdown 7.2](https://milkdown.dev) (dead view) with Markdown, Mermaid, and collaboration
+  - [x] [Kanban board](https://www.npmjs.com/package/svelte-kanban) (dead view)
 - [x] [Svelte Skeleton 1.6](https://www.skeleton.dev/)
   - [x] Theme and styles provided by Skeleton
   - [x] Tab group
