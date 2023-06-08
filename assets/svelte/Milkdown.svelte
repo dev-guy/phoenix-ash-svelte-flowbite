@@ -8,6 +8,11 @@ const content = `\
 
 const diagram =
 `**hello**
+- [ ] task 1
+- [ ] task 2
+- [ ] task 3
+* foo
+1. sldkfj
 `
 +'```mermaid' + `
   graph TD;

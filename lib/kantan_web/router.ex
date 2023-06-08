@@ -25,6 +25,7 @@ defmodule KantanWeb.Router do
     get "/healthcheck", PageController, :healthcheck
 
     # Svelte dead views
+    get "/svelte/kanban", PageController, :kanban
     get "/svelte/mermaid", PageController, :mermaid
     get "/svelte/milkdown", PageController, :milkdown
     get "/svelte/timeline", PageController, :timeline

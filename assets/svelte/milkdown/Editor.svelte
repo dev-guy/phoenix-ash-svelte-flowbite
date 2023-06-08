@@ -57,3 +57,9 @@
 </script>
 
 <div use:createEditor />
+
+<style>
+:global(ul) {
+  list-style-type: circle;
+}
+</style>

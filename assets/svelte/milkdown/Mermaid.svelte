@@ -9,7 +9,6 @@
   const node = useNodeViewContext("node");
   const setAttrs = useNodeViewContext("setAttrs");
 
-  console.log('redraw')
   let diagram = $node.attrs.value;
   let container;
 
@@ -17,10 +16,10 @@
     const x = Math.floor(Math.random()*5000);
     const { svg } = await mermaid.render(`mermaid-${x}`, diagram);
     container.innerHTML = svg;
+    setAttrs({ value: diagram });
   }
 
   $: tabSet === 1 && diagram && renderDiagram();
-  $: diagram && setAttrs({ value: diagram });
 </script>
 
 <span contenteditable=false>
