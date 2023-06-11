@@ -4,8 +4,7 @@ defmodule KantanWeb.Svelte.Counter do
   def render(assigns) do
     ~V"""
     <script>
-    // The number prop is reactive,
-    // this means if the server assigns the number, it will update in the frontend
+    // The number prop is reactive. If the server assigns the number, it will update in the frontend
     export let number = 1;
     // pushEvent to ... push events to the server.
     export let pushEvent;

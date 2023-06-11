@@ -91,9 +91,12 @@ defmodule KantanWeb do
       # Shortcut for generating JS commands
       alias Phoenix.LiveView.JS
 
+      # LiveSvelte
+      # use LiveSvelte.Components
+      import LiveSvelte
+
       # Import all Pyro components
       use Pyro.Components
-       import LiveSvelte
 
       # Routes generation with the ~p sigil
       unquote(verified_routes())

@@ -1,4 +1,6 @@
 <script>
+  export let toastName;
+
   import { Accordion, AccordionItem, TabGroup, Tab } from "@skeletonlabs/skeleton";
   import mermaid from "mermaid";
   import { toastStore } from '@skeletonlabs/skeleton';
@@ -189,5 +191,5 @@ function addToast() {
   </button>
 </div>
 
-<h1 class='h1'>Skeleton Toast</h1>
+<h1 class='h1'>Skeleton Toast - {toastName}</h1>
 <button class='btn btn-sm variant-filled-warning' on:click={addToast}>Toast?</button>

@@ -1,7 +1,16 @@
 <script>
   import Kanban from 'svelte-kanban';
+
+  const colsList = [{
+			name: 'New',
+			cards:[{
+        empty: false,
+        title: "Me",
+        description: "Me",
+        category: {label:'new', bgColor:'gray', color:'white'}
+      },],
+		},
+	];
 </script>
 
-<div style="width:100%; height:100%;">
-  <Kanban/>
-</div>
+<Kanban theme='light' colsList={colsList}/>
