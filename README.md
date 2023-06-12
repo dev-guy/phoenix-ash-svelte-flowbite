@@ -66,36 +66,36 @@ Join the [Ash Discord Server](https://discord.com/invite/D7FNG2q) and check out 
 
 Restart your terminal after installing Elixir.
 
-#### Installing Elixir on MacOS
+#### Installing stable Elixir on MacOS
 
 - [Install Homebrew](https://docs.brew.sh/Installation)
 - Restart your terminal
+- `brew install elixir`
 
-You can use `brew` to install Elixir but `asdf` is preferred by the Elixir community.
+#### Installing bleeding-edge Elixir on MacOS with asdf
 
-Either: `brew install elixir` or:
+This might work better with VSCode language servers for Elixir. Or it might not work at all.
+
+This currently fails to build `erlang-ssl-fun`.
 
 ```sh
-brew install asdf
+brew install autoconf wxwidgets libxslt fop openssl@1.1 asdf
 # I use zsh. Change the following line to >> ~/.bashrc if you use bash.
 echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 # Restart your terminal
-# Proceed to the next section
-```
-
-### Installing Elixir on All Platforms with asdf
-
-```sh
-# Find the current versions of erlang and elixir:
 asdf plugin add erlang https://github.com/asdf-vm/asdf-erlang.git
-# asdf list-all erlang
-KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac --with-ssl=$(brew --prefix openssl@1.1)" KERL_BUILD_DOCS=yes asdf install erlang 26.0.1 # For VSCode's Elixir language server extension
+# To install more docs, add the following at the beginning:
+# KERL_INSTALL_MANPAGES=yes KERL_INSTALL_HTMLDOCS=yes
+KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac --with-ssl=$(brew --prefix openssl@1.1)" KERL_BUILD_DOCS=yes asdf install erlang 26.0.1
 asdf global erlang 26.0.1
 asdf plugin add elixir
-# asdf list-all elixir
 asdf install elixir 1.15.0-rc.2
 asdf global elixir 1.15.0-rc.2
 ```
+
+### Rust
+
+See https://www.rust-lang.org/tools/install
 
 ## Usage
 
