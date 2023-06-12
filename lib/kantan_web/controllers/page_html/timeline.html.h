@@ -1,4 +1,4 @@
-<.svelte name="Timeline" props={%{toastName: "toast name"}}>
+<.svelte name='Timeline' props={%{toastName: "toast name"}}>
   <!-- Slots + LiveSvelte is not supported yet, but it works
 
   Elixir outputs a warning during compilation.

@@ -83,20 +83,18 @@ defmodule KantanWeb do
     quote do
       # HTML escaping functionality
       import Phoenix.HTML
-      # Core UI components and translation
-      # import KantanWeb.CoreComponents # Use Pyro instead
 
       import KantanWeb.Gettext
 
       # Shortcut for generating JS commands
       alias Phoenix.LiveView.JS
 
-      # LiveSvelte
-      # use LiveSvelte.Components
-      import LiveSvelte
-
       # Import all Pyro components
       use Pyro.Components
+
+      # LiveSvelte
+      import LiveSvelte
+      # use LiveSvelte.Components
 
       # Routes generation with the ~p sigil
       unquote(verified_routes())
