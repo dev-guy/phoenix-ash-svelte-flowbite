@@ -94,7 +94,7 @@ defmodule KantanWeb do
 
       # LiveSvelte
       import LiveSvelte
-      # use LiveSvelte.Components
+      use LiveSvelte.Components
 
       # Routes generation with the ~p sigil
       unquote(verified_routes())

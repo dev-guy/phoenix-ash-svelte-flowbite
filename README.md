@@ -87,14 +87,14 @@ echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 
 ```sh
 # Find the current versions of erlang and elixir:
+asdf plugin add erlang https://github.com/asdf-vm/asdf-erlang.git
 # asdf list-all erlang
-# asdf list-all elixir
-asdf plugin add erlang
-KERL_BUILD_DOCS=yes asdf install erlang 26.0 # For VSCode's Elixir language server extension
-asdf global erlang 26.0
+KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac --with-ssl=$(brew --prefix openssl@1.1)" KERL_BUILD_DOCS=yes asdf install erlang 26.0.1 # For VSCode's Elixir language server extension
+asdf global erlang 26.0.1
 asdf plugin add elixir
-asdf install elixir 1.15.0-rc.1-otp-26
-asdf global elixir 1.15.0-rc.1-otp-26
+# asdf list-all elixir
+asdf install elixir 1.15.0-rc.2
+asdf global elixir 1.15.0-rc.2
 ```
 
 ## Usage
