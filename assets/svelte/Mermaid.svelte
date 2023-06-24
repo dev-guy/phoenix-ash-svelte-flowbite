@@ -24,5 +24,6 @@ erDiagram
   $: diagram && renderDiagram();
 </script>
 
+<slot/>
   <pre contenteditable="true" bind:innerHTML={diagram} />
   <span bind:this={container} />
