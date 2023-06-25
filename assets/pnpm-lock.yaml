@@ -95,6 +95,9 @@ devDependencies:
   sass:
     specifier: ^1.63.6
     version: 1.63.6
+  svelte:
+    specifier: 3.58.0
+    version: 3.58.0
   svelte-kanban:
     specifier: ^0.0.960
     version: 0.0.960(svelte@3.58.0)(typescript@5.1.3)

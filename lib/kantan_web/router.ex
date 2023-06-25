@@ -35,6 +35,7 @@ defmodule KantanWeb.Router do
       on_mount: {KantanWeb.LiveUserAuth, :live_user_optional} do
       live "/", Live.Index, :index
       live "/svelte/counter", Svelte.Counter
+      live "/svelte/yrs", Svelte.Yrs
       live "/svelte/navigationExample", Svelte.NavigationExample
     end
 
