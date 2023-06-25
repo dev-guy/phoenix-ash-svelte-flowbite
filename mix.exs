@@ -52,6 +52,7 @@ defmodule Kantan.MixProject do
       {:esbuild, "~> 0.7", runtime: Mix.env() == :dev},
       {:tailwind, "~> 0.2", runtime: Mix.env() == :dev},
       {:swoosh, "~> 1.10"},
+      {:rustler, "~> 0.29.0"},
       {:finch, "~> 0.13"},
       {:telemetry_metrics, "~> 0.6"},
       {:telemetry_poller, "~> 1.0"},

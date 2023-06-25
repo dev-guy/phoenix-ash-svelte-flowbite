@@ -2,6 +2,7 @@
   "name": "kantan",
   "version": "0.1.0",
   "devDependencies": {
+    "svelte": "3.58.0",
     "@milkdown/core": "^7.2.3",
     "@milkdown/plugin-collab": "^7.2.3",
     "@milkdown/plugin-diagram": "^7.2.3",
