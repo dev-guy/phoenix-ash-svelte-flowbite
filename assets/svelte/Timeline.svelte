@@ -24,7 +24,7 @@
 
 function addToast() {
   const t = {
-  message: 'Why is this purple?',
+  message: `Why is this purple? ${toastName}`,
   autohide: true
   };
   toastStore.trigger(t);
@@ -191,5 +191,5 @@ function addToast() {
   </button>
 </div>
 
-<h1 class='h1'>Skeleton Toast - {toastName}</h1>
+<h1 class='h1'>Skeleton Toast</h1>
 <button class='btn btn-sm variant-filled-warning' on:click={addToast}>Toast?</button>

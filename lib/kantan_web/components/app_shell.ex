@@ -730,7 +730,7 @@ defmodule KantanWeb.AppShell do
               xmlns="http://www.w3.org/2000/svg"
             >
               <image
-                xlink:href="https://svelte.dev/_app/immutable/assets/stopwar-947a4798.svg"
+                xlink:href="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg"
                 width="20"
                 height="20"
               />

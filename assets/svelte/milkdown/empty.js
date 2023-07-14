@@ -22,7 +22,7 @@ const plugin = new Plugin({
       element.classList.add('milkdown-placeholder');
       element.style.position = 'absolute';
       element.style['font-style'] = 'italic';
-      element.innerText = 'Enter text here'
+      element.innerText = 'This is the secret message'
 
       const placeholderDecoration = Decoration.widget(0, element, {
         key: 'milkdown-placeholder',

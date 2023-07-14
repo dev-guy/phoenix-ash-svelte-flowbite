@@ -2,17 +2,12 @@
 import Editor from './milkdown/Editor.svelte';
 
 const content = `\
-# Clear this editor for a secret message?
+# Clear this editor for a secret message
 ## h2
-`;
-
-const diagram =
-`**hello**
+**hello**
 - [ ] task 1
 - [ ] task 2
 - [ ] task 3
-* foo
-1. sldkfj
 `
 +'```mermaid' + `
   graph TD;
@@ -25,4 +20,4 @@ const diagram =
 <!-- <Editor content={content} room='one'/>
 -->
 <br/>
-<Editor content={diagram} room='two'/>
+<Editor {content} room='two'/>

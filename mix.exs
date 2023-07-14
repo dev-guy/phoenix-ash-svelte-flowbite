@@ -46,7 +46,7 @@ defmodule Kantan.MixProject do
       {:phoenix_html, "~> 3.3"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_live_view, "~> 0.19", override: true},
-      {:pyro, "~> 0.2"},
+      {:pyro, git: "https://github.com/frankdugan3/pyro.git", branch: "main"},
       {:floki, "~> 0.30", only: :test},
       {:phoenix_live_dashboard, "~> 0.7"},
       {:esbuild, "~> 0.7", runtime: Mix.env() == :dev},

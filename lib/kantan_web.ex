@@ -38,6 +38,7 @@ defmodule KantanWeb do
 
   def controller do
     quote do
+      import LiveSvelte
       use Phoenix.Controller,
         formats: [:html, :json],
         layouts: [html: KantanWeb.Layouts]
@@ -94,7 +95,7 @@ defmodule KantanWeb do
 
       # LiveSvelte
       import LiveSvelte
-      # use LiveSvelte.Components
+      use LiveSvelte.Components
 
       # Routes generation with the ~p sigil
       unquote(verified_routes())

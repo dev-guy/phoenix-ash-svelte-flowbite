@@ -28,7 +28,6 @@ defmodule KantanWeb.Router do
     get "/svelte/kanban", PageController, :kanban
     get "/svelte/mermaid", PageController, :mermaid
     get "/svelte/milkdown", PageController, :milkdown
-    get "/svelte/timeline", PageController, :timeline
     get "/svelte/tiptap", PageController, :tiptap
 
     ash_authentication_live_session :authentication_optional,
@@ -36,6 +35,7 @@ defmodule KantanWeb.Router do
       live "/", Live.Index, :index
       live "/svelte/counter", Svelte.Counter
       live "/svelte/navigationExample", Svelte.NavigationExample
+      live "/svelte/timeline", Svelte.Timeline
     end
 
     # live "/register", AuthLive.Index, :register
