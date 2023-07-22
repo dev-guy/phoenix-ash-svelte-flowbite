@@ -24,7 +24,7 @@ This is a web browser application demonstrating:
   - [x] [Ash Authentication](https://github.com/team-alembic/ash_authentication)
 - [x] [Pyro](https://hexdocs.pm/pyro/about.html)
   - [x] Toggle dark and light themes using Pyro
-  - [ ] Custom Pyro overrides to match Svelte Skeleton (partially implemented)
+  - [x] Custom Pyro overrides to match Svelte Skeleton (partially implemented)
 - [x] [Flowbite 1.6](https://flowbite.com) Tailwind CSS Components
   - [x] [Application Shell](https://flowbite.com/blocks/application/shells) with header and responsive left sidebar
   - [x] [Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
@@ -89,8 +89,8 @@ asdf plugin add erlang https://github.com/asdf-vm/asdf-erlang.git
 KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac --with-ssl=$(brew --prefix openssl@1.1)" KERL_BUILD_DOCS=yes asdf install erlang 26.0.1
 asdf global erlang 26.0.1
 asdf plugin add elixir
-asdf install elixir 1.15.0-rc.2
-asdf global elixir 1.15.0-rc.2
+asdf install elixir 1.15.0
+asdf global elixir 1.15.0
 ```
 
 ### Rust

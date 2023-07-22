@@ -45,8 +45,8 @@ defmodule Kantan.MixProject do
       {:postgrex, "~> 0.17"},
       {:phoenix_html, "~> 3.3"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_view, "~> 0.18"},
-      {:pyro, "~> 0.0"},
+      {:phoenix_live_view, "~> 0.19", override: true},
+      {:pyro, "~> 0.2"},
       {:floki, "~> 0.30", only: :test},
       {:phoenix_live_dashboard, "~> 0.7"},
       {:esbuild, "~> 0.7", runtime: Mix.env() == :dev},
@@ -65,7 +65,7 @@ defmodule Kantan.MixProject do
       {:ash_postgres, "~> 1.3"},
       {:live_svelte, "~> 0.8.0"},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
-      {:dialyxir, "~> 1.3", only: [:dev, :test], runtime: false}
+      {:dialyxir, "~> 1.3", only: [:dev, :test], runtime: false},
     ]
   end
 
