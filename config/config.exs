@@ -8,10 +8,8 @@
 import Config
 
 config :kantan,
-  ecto_repos: [Kantan.Repo]
-
-config :kantan,
-  ash_apis: [Kantan.Accounts]
+  ecto_repos: [Kantan.Repo],
+  ash_apis: [Kantan.Accounts, Kantan.Organizations]
 
 config :ash, :use_all_identities_in_manage_relationship?, false
 config :pyro, :overrides, [Kantan.Pyro.Overrides.Skeleton]
@@ -48,7 +46,7 @@ config :esbuild,
 
 # Configure tailwind (the version is required)
 config :tailwind,
-  version: "3.3.2",
+  version: "3.3.3",
   default: [
     args: ~w(
       --config=tailwind.config.js
