@@ -43,5 +43,10 @@
     "y-webrtc": "^10.2.5",
     "y-websocket": "^1.5.0",
     "yjs": "^13.6.7"
+  },
+  "dependencies": {
+    "@syncedstore/core": "^0.5.2",
+    "@syncedstore/svelte": "^0.5.2",
+    "y-indexeddb": "^9.0.11"
   }
 }
