@@ -93,10 +93,6 @@ asdf install elixir 1.15.0
 asdf global elixir 1.15.0
 ```
 
-### Rust
-
-See https://www.rust-lang.org/tools/install
-
 ## Usage
 
 ```sh
