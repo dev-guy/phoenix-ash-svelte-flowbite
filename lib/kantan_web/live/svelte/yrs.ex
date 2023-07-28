@@ -4,12 +4,35 @@ defmodule KantanWeb.Svelte.Yrs do
   def render(assigns) do
     ~V"""
     <script>
+    import * as Y from 'yjs'
+    import { WebrtcProvider } from 'y-webrtc'
+    import { IndexeddbPersistence } from 'y-indexeddb'
+
+    const ydoc = new Y.Doc()
+
+    // this allows you to instantly get the (cached) documents data
+    const indexeddbProvider = new IndexeddbPersistence('count-demo', ydoc)
+    indexeddbProvider.whenSynced.then(() => {
+      console.log('loaded data from indexed db')
+    })
+
+    // Sync clients with the y-webrtc provider.
+    const webrtcProvider = new WebrtcProvider('count-demo', ydoc)
+
+    const yarray = ydoc.getArray('count')
+
+    yarray.observe(event => {
+      number = yarray.toArray().reduce((a,b) => a + b)
+    })
+
     // The number prop is reactive. If the server assigns the number, it will update in the frontend
-    export let number = 1;
+    let number = 1;
     // pushEvent to ... push events to the server.
     export let pushEvent;
 
     function increase() {
+    if (yarray) yarray.push([1])
+
     // This pushes the event over the websocket
     // The last parameter is optional. It's a callback for when the event is finished.
     // You could for example set a loading state until the event is finished if it takes a longer time.
@@ -35,6 +58,7 @@ defmodule KantanWeb.Svelte.Yrs do
       class="btn btn-sm variant-filled-error"
       on:click={decrease}>-</button
     >
+
     """
   end
 
