@@ -1,5 +1,8 @@
 .DS_Store
 
+# Rust
+/native
+
 .elixir-tools
 
 # Don't add these by mistake
