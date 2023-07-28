@@ -1,9 +1,9 @@
 .DS_Store
 
-# Rust
-/native
-
 .elixir-tools
+
+# Rust
+/native/yrs/target
 
 # Don't add these by mistake
 /package.json
