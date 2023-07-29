@@ -337,7 +337,7 @@ defmodule Kantan.Pyro.Overrides.Skeleton do
     variant = passed_assigns[:variant]
     shape = passed_assigns[:shape]
     color = passed_assigns[:color]
-    disabled = passed_assigns[:disabled]
+    _disabled = passed_assigns[:disabled]
 
     [
       passed_assigns[:case],
