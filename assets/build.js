@@ -47,7 +47,7 @@ let optsServer = {
         importGlobPlugin(),
         sveltePlugin({
             preprocess: sveltePreprocess(),
-            compilerOptions: {hydratable: true, generate: "ssr", format: "cjs"},
+            compilerOptions: {hydratable: true, generate: "ssr"},
         }),
     ],
 }
