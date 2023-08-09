@@ -2,8 +2,6 @@ const esbuild = require("esbuild")
 const sveltePlugin = require("esbuild-svelte")
 const importGlobPlugin = require("esbuild-plugin-import-glob").default
 const sveltePreprocess = require("svelte-preprocess")
-const tailwind = require('tailwindcss')
-const autoprefixer = require('autoprefixer')
 
 const args = process.argv.slice(2)
 const watch = args.includes("--watch")
@@ -11,43 +9,41 @@ const deploy = args.includes("--deploy")
 
 let optsClient = {
     entryPoints: ["js/app.js"],
-    mainFields: ["svelte", "browser", "module", "main"],
+    // mainFields: ["svelte", "browser", "module", "main"],
     bundle: true,
-    minify: false,
+    minify: deploy,
     target: "es2017",
+    conditions: ["svelte", "browser"],
     outdir: "../priv/static/assets",
     logLevel: "info",
+    sourcemap: watch ? "inline" : false,
+    tsconfig: "./tsconfig.json",
     plugins: [
         importGlobPlugin(),
         sveltePlugin({
-            preprocess: sveltePreprocess({
-                postcss: {
-                    plugins: [
-                        tailwind,
-                        autoprefixer
-                    ]
-                }
-            }),
-            compilerOptions: {hydratable: true, css: true},
+            preprocess: sveltePreprocess(),
+            compilerOptions: {dev: !deploy, hydratable: true, css: "injected"},
         }),
     ],
 }
 
 let optsServer = {
     entryPoints: ["js/server.js"],
-    mainFields: ["svelte", "browser", "module", "main"],
+    // mainFields: ["svelte", "browser", "module", "main"],
     platform: "node",
-    format: "cjs",
     bundle: true,
     minify: false,
     target: "node20",
-    outdir: "../priv/static/assets/server",
+    conditions: ["svelte"],
+    outdir: "../priv/svelte",
     logLevel: "info",
+    sourcemap: watch ? "inline" : false,
+    tsconfig: "./tsconfig.json",
     plugins: [
         importGlobPlugin(),
         sveltePlugin({
             preprocess: sveltePreprocess(),
-            compilerOptions: {hydratable: true, generate: "ssr"},
+            compilerOptions: {dev: !deploy, hydratable: true, generate: "ssr"},
         }),
     ],
 }
@@ -98,5 +94,5 @@ if (watch) {
         })
 
         process.stdin.resume()
-    })
+   })
 }

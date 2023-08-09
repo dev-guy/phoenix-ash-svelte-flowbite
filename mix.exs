@@ -16,7 +16,7 @@ defmodule Kantan.MixProject do
         plt_add_apps: [:erlexec, :octo_fetch, :mix],
         plt_file: {:no_warn, "priv/plts/dialyzer.plt"},
         flags: ~w[unmatched_returns error_handling underspecs]a
-      ],
+      ]
     ]
   end
 
@@ -64,7 +64,7 @@ defmodule Kantan.MixProject do
       {:ash_postgres, "~> 1.3"},
       {:live_svelte, "~> 0.10"},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
-      {:dialyxir, "~> 1.3", only: [:dev, :test], runtime: false},
+      {:dialyxir, "~> 1.3", only: [:dev, :test], runtime: false}
     ]
   end
 

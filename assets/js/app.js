@@ -22,7 +22,7 @@ import {Socket} from "phoenix"
 import {LiveSocket} from "phoenix_live_view"
 import topbar from "../vendor/topbar"
 import {getHooks} from "live_svelte"
-import * as SvelteComponents from "../svelte/**/*"
+import * as Components from "../svelte/**/*.svelte"
 import { hooks, getTimezone } from "pyro"
 import "flowbite/dist/flowbite.phoenix.js";
 import Datepicker from 'flowbite-datepicker/Datepicker';
@@ -39,10 +39,7 @@ const datepickerHook = {
 };
 
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
-
-let liveSocket = new LiveSocket("/live", Socket, {
-  hooks: {...getHooks(SvelteComponents), Datepicker: datepickerHook, ...hooks },
-  params: {_csrf_token: csrfToken}})
+let liveSocket = new LiveSocket("/live", Socket, {hooks: getHooks(Components), params: {_csrf_token: csrfToken}})
 
 // Show progress bar on live navigation and form submits
 topbar.config({barColors: {0: "#29d"}, shadowColor: "rgba(0, 0, 0, .3)"})
@@ -53,7 +50,6 @@ window.addEventListener("phx:page-loading-stop", _info => topbar.hide())
 liveSocket.connect()
 
 // expose liveSocket on window for web console debug logs and latency simulation:
-
 // >> liveSocket.enableDebug()
 // >> liveSocket.enableLatencySim(1000)  // enabled for duration of browser session
 // >> liveSocket.disableLatencySim()
