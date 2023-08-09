@@ -7,13 +7,13 @@ defmodule KantanWeb.Svelte.Counter do
     // The number prop is reactive. If the server assigns the number, it will update in the frontend
     export let number = 1;
     // pushEvent to ... push events to the server.
-    export let pushEvent;
+    export let live;
 
     function increase() {
     // This pushes the event over the websocket
     // The last parameter is optional. It's a callback for when the event is finished.
     // You could for example set a loading state until the event is finished if it takes a longer time.
-    pushEvent("set_number", { number: number + 1 }, () => {});
+    live.pushEvent("set_number", { number: number + 1 }, () => {});
 
     // Note that we actually never set the number in the frontend!
     // We ONLY push the event to the server.
@@ -22,7 +22,7 @@ defmodule KantanWeb.Svelte.Counter do
     }
 
     function decrease() {
-    pushEvent("set_number", { number: number - 1 }, () => {});
+    live.pushEvent("set_number", { number: number - 1 }, () => {});
     }
     </script>
 
