@@ -28,12 +28,12 @@ defmodule KantanWeb.Svelte.Counter do
 
     <h1 class="h1">Count: {number}</h1>
     <button
-      class="btn btn-sm variant-filled-success"
-      on:click={increase}>+</button
-    >
-    <button
       class="btn btn-sm variant-filled-error"
       on:click={decrease}>-</button
+    >
+    <button
+      class="btn btn-sm variant-filled-success"
+      on:click={increase}>+</button
     >
     """
   end

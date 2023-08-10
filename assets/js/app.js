@@ -23,7 +23,7 @@ import {LiveSocket} from "phoenix_live_view"
 import topbar from "../vendor/topbar"
 import {getHooks} from "live_svelte"
 import * as Components from "../svelte/**/*.svelte"
-import { hooks, getTimezone } from "pyro"
+import { hooks as pyroHooks, getTimezone } from "pyro"
 import "flowbite/dist/flowbite.phoenix.js";
 import Datepicker from 'flowbite-datepicker/Datepicker';
 
@@ -39,7 +39,10 @@ const datepickerHook = {
 };
 
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
-let liveSocket = new LiveSocket("/live", Socket, {hooks: getHooks(Components), params: {_csrf_token: csrfToken}})
+let liveSocket = new LiveSocket("/live", Socket,
+{hooks: {...pyroHooks, ...getHooks(Components)},
+ params: {_csrf_token: csrfToken, timezone: getTimezone()},
+})
 
 // Show progress bar on live navigation and form submits
 topbar.config({barColors: {0: "#29d"}, shadowColor: "rgba(0, 0, 0, .3)"})
