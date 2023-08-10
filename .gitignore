@@ -3,7 +3,7 @@
 .elixir-tools
 
 # Rust
-/native/yrs/target
+/native
 
 # Don't add these by mistake
 /package.json
@@ -17,6 +17,11 @@
 
 # Editors
 *.swp
+
+# VSCode and Extensions
+/.vscode
+/.elixir_ls
+/.elixir-tools
 
 # The directory Mix will write compiled artifacts to.
 /_build/
@@ -55,12 +60,12 @@ kantan-*.tar
 npm-debug.log
 /assets/node_modules/
 
-# VSCode Extensions
-/.elixir_ls/
-
 # Pyro
 /assets/css/pyro.css
 
-# Svelte
-assets/svelte/_build
 
+# Ignore automatically generated Svelte files by the ~V sigil
+/assets/svelte/_build/
+
+# Ignore ssr build for svelte.
+/priv/svelte/

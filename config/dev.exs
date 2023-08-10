@@ -26,7 +26,6 @@ config :kantan, KantanWeb.Endpoint,
   secret_key_base: "ErNYjqOUfDQ6YTyrlFviSTnapY4uApF4h+63lRcUcxsBL2T2NizmYG/r8/+WI+7w",
   watchers: [
     node: ["build.js", "--watch", cd: Path.expand("../assets", __DIR__)],
-    # esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
     tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
   ],
   reloadable_compilers: [:elixir, :app, :pyro]

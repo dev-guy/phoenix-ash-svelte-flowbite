@@ -1,14 +1,13 @@
-<.svelte name='Timeline' props={%{toastName: "toast name"}}>
+<.svelte name="Timeline" props={%{toastName: "toast name"}}>
   <!-- Slots + LiveSvelte is not supported yet, but it works
 
   Elixir outputs a warning during compilation.
    -->
   <:toast>
-  <div class='flex' align-items>
-
-  <.button color='error'>
-  <.icon name='hero-exclamation-triangle'/>How about some toast?
-  </.button>
-  </div>
+    <div class="flex" align-items>
+      <.button color="error">
+        <.icon name="hero-exclamation-triangle" />How about some toast?
+      </.button>
+    </div>
   </:toast>
 </.svelte>
