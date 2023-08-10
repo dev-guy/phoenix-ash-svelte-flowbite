@@ -10,7 +10,7 @@ dependencies:
     version: 0.5.2(yjs@13.6.7)
   '@syncedstore/svelte':
     specifier: ^0.5.2
-    version: 0.5.2(@reactivedata/reactive@0.2.2)(@syncedstore/core@0.5.2)(svelte@4.1.1)
+    version: 0.5.2(@reactivedata/reactive@0.2.2)(@syncedstore/core@0.5.2)(svelte@4.1.2)
   y-indexeddb:
     specifier: ^9.0.11
     version: 9.0.11(yjs@13.6.7)
@@ -708,7 +708,7 @@ packages:
       yjs: 13.6.7
     dev: false
 
-  /@syncedstore/svelte@0.5.2(@reactivedata/reactive@0.2.2)(@syncedstore/core@0.5.2)(svelte@4.1.1):
+  /@syncedstore/svelte@0.5.2(@reactivedata/reactive@0.2.2)(@syncedstore/core@0.5.2)(svelte@4.1.2):
     resolution: {integrity: sha512-sEq/3G+OfTy8qabCsiS0knTOOwf+SuPNC2w1FocSBkgO2W/bsZO+hznQ7v5T4+3vbTXZmM+bYRyghNlVmiIQfQ==}
     peerDependencies:
       '@reactivedata/reactive': '*'
@@ -717,7 +717,7 @@ packages:
     dependencies:
       '@reactivedata/reactive': 0.2.2
       '@syncedstore/core': 0.5.2(yjs@13.6.7)
-      svelte: 4.1.1
+      svelte: 4.1.2
     dev: false
 
   /@syncedstore/yjs-reactive-bindings@0.5.2(yjs@13.6.7):
