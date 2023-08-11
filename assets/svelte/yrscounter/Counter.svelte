@@ -1,4 +1,4 @@
-<script>
+ <script>
   import * as Y from 'yjs'
   import { WebrtcProvider } from 'y-webrtc'
   import { IndexeddbPersistence } from 'y-indexeddb'
@@ -24,11 +24,11 @@
   let number = 1;
 
   function increase() {
-    if (yarray) yarray.push(1)
+    if (yarray) yarray.push([1])
   }
 
   function decrease() {
-    if (yarray) yarray.pop()
+    if (yarray) yarray.delete(0,1)
   }
   </script>
 

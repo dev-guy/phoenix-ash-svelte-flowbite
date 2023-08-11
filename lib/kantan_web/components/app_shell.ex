@@ -754,7 +754,7 @@ defmodule KantanWeb.AppShell do
           <ul id="dropdown-pages" class="hidden py-2 space-y-2">
             <li>
               <.link
-                navigate={~p"/svelte/yrs"}
+                navigate={~p"/svelte/yrscounter"}
                 class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
               >
                 Yrs Counter
