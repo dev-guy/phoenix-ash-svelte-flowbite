@@ -1,9 +1,9 @@
 defmodule KantanWeb.AuthLive.Index do
   use KantanWeb, :live_view
 
+  alias AshPhoenix.Form
   alias Kantan.Accounts
   alias Kantan.Accounts.User
-  alias AshPhoenix.Form
 
   @impl true
   def mount(_, _, socket) do

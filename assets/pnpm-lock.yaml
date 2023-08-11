@@ -113,6 +113,9 @@ devDependencies:
   typescript:
     specifier: ^5.1.6
     version: 5.1.6
+  y-indexeddb:
+    specifier: ^9.0.11
+    version: 9.0.11(yjs@13.6.7)
   y-prosemirror:
     specifier: ^1.2.1
     version: 1.2.1(prosemirror-model@1.19.3)(prosemirror-state@1.4.3)(prosemirror-view@1.31.7)(y-protocols@1.0.5)(yjs@13.6.7)
@@ -3548,6 +3551,15 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /y-indexeddb@9.0.11(yjs@13.6.7):
+    resolution: {integrity: sha512-HOKQ70qW1h2WJGtOKu9rE8fbX86ExVZedecndMuhwax3yM4DQsQzCTGHt/jvTrFZr/9Ahvd8neD6aZ4dMMjtdg==}
+    peerDependencies:
+      yjs: ^13.0.0
+    dependencies:
+      lib0: 0.2.78
+      yjs: 13.6.7
+    dev: true
 
   /y-leveldb@0.1.2(yjs@13.6.7):
     resolution: {integrity: sha512-6ulEn5AXfXJYi89rXPEg2mMHAyyw8+ZfeMMdOtBbV8FJpQ1NOrcgi6DTAcXof0dap84NjHPT2+9d0rb6cFsjEg==}

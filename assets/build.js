@@ -9,7 +9,6 @@ const deploy = args.includes("--deploy")
 
 let optsClient = {
     entryPoints: ["js/app.js"],
-    // mainFields: ["svelte", "browser", "module", "main"],
     bundle: true,
     minify: deploy,
     target: "es2017",
@@ -29,7 +28,6 @@ let optsClient = {
 
 let optsServer = {
     entryPoints: ["js/server.js"],
-    // mainFields: ["svelte", "browser", "module", "main"],
     platform: "node",
     bundle: true,
     minify: false,
@@ -48,51 +46,24 @@ let optsServer = {
     ],
 }
 
-if (watch) {
-    optsClient = {
-        ...optsClient,
-        sourcemap: "inline",
-    }
-
-    optsServer = {
-        ...optsServer,
-        sourcemap: "inline",
-    }
-}
-
-if (deploy) {
-    optsClient = {
-        ...optsClient,
-        minify: true,
-    }
-}
-
 const client = esbuild.context(optsClient).then(context => {
-    if (watch) {
-        context.watch()
-    }
+    if (watch) context.watch()
+    else context.dispose()
 })
 
 const server = esbuild.context(optsServer).then(context => {
-    if (watch) {
-        context.watch()
-    }
+    if (watch) context.watch()
+    else context.dispose()
 })
 
 if (watch) {
     client.then(_result => {
-        process.stdin.on("close", () => {
-            process.exit(0)
-        })
-
+        process.stdin.on("close", () => process.exit(0))
         process.stdin.resume()
     })
 
     server.then(_result => {
-        process.stdin.on("close", () => {
-            process.exit(0)
-        })
-
+        process.stdin.on("close", () => process.exit(0))
         process.stdin.resume()
    })
 }
