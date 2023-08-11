@@ -3,7 +3,7 @@
 .elixir-tools
 
 # Rust
-/native
+/native/yrs/target
 
 # Don't add these by mistake
 /package.json

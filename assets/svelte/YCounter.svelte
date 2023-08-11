@@ -1,4 +1,4 @@
- <script>
+<script>
   import * as Y from 'yjs'
   import { WebrtcProvider } from 'y-webrtc'
   import { IndexeddbPersistence } from 'y-indexeddb'
