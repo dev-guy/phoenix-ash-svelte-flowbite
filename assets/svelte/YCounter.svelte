@@ -16,13 +16,14 @@
 
   const yarray = ydoc.getArray('count')
 
+  // The displayed counter value
+  let number = 0;
+
   yarray.observe(event => {
     number = yarray.toArray().reduce((a,b) => a + b, 0)
   })
 
-  // The number prop is reactive. If the server assigns the number, it will update in the frontend
-  let number = 1;
-
+  // I'm not sure why you push an array instead of a number
   function increase() {
     if (yarray) yarray.push([1])
   }
