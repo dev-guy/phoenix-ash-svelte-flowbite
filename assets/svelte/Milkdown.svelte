@@ -2,12 +2,7 @@
   import Editor from './milkdown/Editor.svelte';
 
   const content = `\
-  # Clear this editor for a secret message
-  ## h2
-  **hello**
-  - [ ] task 1
-  - [ ] task 2
-  - [ ] task 3
+  # Clear this line for a secret message
   `
   +'```mermaid' + `
     graph TD;
@@ -17,7 +12,8 @@
       C-->D;`
   </script>
 
-  <!-- <Editor content={content} room='one'/>
-  -->
-  <br/>
-  <Editor {content} room='two'/>
+<h1 class='.h1'>First Editor</h1>
+<Editor {content} room='one'/>
+
+<h1 class='.h1'>Second Editor</h1>
+<Editor {content} room='two'/>
