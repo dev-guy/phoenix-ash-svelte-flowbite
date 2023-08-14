@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@goodware/svelte-kanban':
-    specifier: 1.0.0-beta.0
-    version: 1.0.0-beta.0(svelte@4.2.0)
+    specifier: 1.0.0
+    version: 1.0.0(svelte@4.2.0)
   '@milkdown/core':
     specifier: ^7.2.4
     version: 7.2.4(@milkdown/ctx@7.2.4)(@milkdown/prose@7.2.4)(@milkdown/transformer@7.2.4)
@@ -346,8 +346,9 @@ packages:
     dev: true
     optional: true
 
-  /@goodware/svelte-kanban@1.0.0-beta.0(svelte@4.2.0):
-    resolution: {integrity: sha512-2DSwtU01mGsqlSz/tcDvwXm2iOpgCmGkRnha00lqq5SAPwIwRS53xFXqBorP3I4MEzfJ5HwQBpzNMNvG5wvuWw==}
+  /@goodware/svelte-kanban@1.0.0(svelte@4.2.0):
+    resolution: {integrity: sha512-Pr0rNwUWsHQqGwXCUWiGLQAtdV7SKRuzecrQsMIjLyl67L1oGs8jhoHbf313MMCKI+UtXdzESAYZDOlybHMd7Q==}
+    engines: {node: '>=16.14'}
     peerDependencies:
       svelte: ^3.46.4 || ^4.0.0
     dependencies:
