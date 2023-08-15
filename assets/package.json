@@ -20,7 +20,7 @@
     "@tiptap/extension-text": "^2.0.4",
     "@tiptap/starter-kit": "^2.0.4",
     "autoprefixer": "^10.4.15",
-    "esbuild": "^0.19.1",
+    "esbuild": "^0.19.2",
     "esbuild-plugin-import-glob": "^0.1.1",
     "esbuild-svelte": "^0.7.4",
     "flowbite": "^1.8.1",
