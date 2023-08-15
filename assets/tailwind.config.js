@@ -1,27 +1,32 @@
 // See the Tailwind configuration guide for advanced usage
 // https://tailwindcss.com/docs/configuration
 
-import skeleton from '@skeletonlabs/skeleton/tailwind/skeleton.cjs';
+// @ts-check
+import skeleton from '@skeletonlabs/tw-plugin';
+const path = require('path');
 
 const plugin = require("tailwindcss/plugin")
 const fs = require("fs")
-const path = require("path")
 
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   darkMode: 'class',
+  theme: {
+		extend: {},
+	},
   content: [
     "./js/**/*.js",
     "../lib/*_web.ex",
     "../lib/*_web/**/*.*ex",
-    "../deps/ash_authentication_phoenix/**/*.ex",
+    "../deps/ashauthentication_phoenix/**/*.ex",
     "../deps/pyro/lib/pyro/**/*.*ex",
-    "./svelte/**/*.svelte",
+    "./svelte/**/*.svelte", // TODO redundant?
     "./node_modules/flowbite/**/*.js",
-    require('path').join(require.resolve(
+    path.join(require.resolve(
 			'@skeletonlabs/skeleton'),
 			'../**/*.{html,js,svelte,ts}'
 		)
-  ],
+	],
   plugins: [
     require('tailwind-scrollbar-hide'),
     // require("@tailwindcss/forms"),
@@ -70,7 +75,12 @@ module.exports = {
     }),
 
     // Svelte Skeleton
-    ...skeleton(),
+    skeleton({
+      themes: {
+        // Register each theme within this array:
+        preset: [ "skeleton", "modern", "crimson" ]
+      }
+    }),
 
     // Pyro
     plugin(({ addVariant }) => addVariant('aria-selected', '&[aria-selected]')),

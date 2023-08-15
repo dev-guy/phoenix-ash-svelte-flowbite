@@ -2,8 +2,8 @@
   export let toastName;
 
   import { Accordion, AccordionItem, TabGroup, Tab } from "@skeletonlabs/skeleton";
+  import { getToastStore } from '@skeletonlabs/skeleton';
   import mermaid from "mermaid";
-  import { toastStore } from '@skeletonlabs/skeleton';
 
   let tabSet = 0;
   let diagramContainer;
@@ -27,7 +27,7 @@ function addToast() {
   message: 'Why is this purple?',
   autohide: true
   };
-  toastStore.trigger(t);
+  getToastStore().trigger(t);
 }
 
 </script>

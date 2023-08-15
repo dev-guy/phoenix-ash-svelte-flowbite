@@ -50,7 +50,7 @@ config :tailwind,
   default: [
     args: ~w(
       --config=tailwind.config.js
-      --input=css/app.css
+      --input=css/app.postcss
       --output=../priv/static/assets/app.css
     ),
     cd: Path.expand("../assets", __DIR__),

@@ -26,6 +26,7 @@ import * as Components from "../svelte/**/*.svelte"
 import { hooks as pyroHooks, getTimezone } from "pyro"
 import "flowbite/dist/flowbite.phoenix.js";
 import Datepicker from 'flowbite-datepicker/Datepicker';
+import { initializeStores } from '@skeletonlabs/skeleton';
 
 const datepickerHook = {
   mounted() {
@@ -57,3 +58,6 @@ liveSocket.connect()
 // >> liveSocket.enableLatencySim(1000)  // enabled for duration of browser session
 // >> liveSocket.disableLatencySim()
 window.liveSocket = liveSocket
+
+// Skeleton
+initializeStores();
