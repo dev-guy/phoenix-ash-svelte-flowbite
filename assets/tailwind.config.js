@@ -5,8 +5,8 @@
 const path = require('path')
 const { skeleton } = require('@skeletonlabs/tw-plugin')
 
-const plugin = require("tailwindcss/plugin")
-const fs = require("fs")
+const plugin = require('tailwindcss/plugin')
+const fs = require('fs')
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -15,60 +15,59 @@ export default {
 		extend: {},
 	},
   content: [
-    "./js/**/*.js",
-    "../lib/*_web.ex",
-    "../lib/*_web/**/*.*ex",
-    "../deps/ashauthentication_phoenix/**/*.ex",
-    "../deps/pyro/lib/pyro/**/*.*ex",
-    "./svelte/**/*.svelte", // TODO redundant?
-    "./node_modules/flowbite/**/*.js",
-    path.join(require.resolve(
-			'@skeletonlabs/skeleton'),
-			'../**/*.{html,js,svelte,ts}'
-		)
+    './js/**/*.{js,ts}',
+    './svelte/**/*.{html,js,svelte,ts}',
+    './vendor/**/*.{js,ts}',
+    '../lib/*_web.ex',
+    '../lib/*_web/**/*.*ex',
+    '../deps/ashauthentication_phoenix/**/*.ex',
+    '../deps/pyro/lib/pyro/**/*.*ex',
+    './node_modules/flowbite/**/*.{js,ts}',
+    './node_modules/@skeletonlabs/skeleton/**/*.{html,js,svelte,ts}',
 	],
   plugins: [
     require('tailwind-scrollbar-hide'),
-    // require("@tailwindcss/forms"),
+    // require('@tailwindcss/forms'),
+
     // Allows prefixing tailwind classes with LiveView classes to add rules
     // only when LiveView classes are applied, for example:
     //
-    //     <div class="phx-click-loading:animate-ping">
+    //     <div class='phx-click-loading:animate-ping'>
     //
-    plugin(({addVariant}) => addVariant("phx-no-feedback", [".phx-no-feedback&", ".phx-no-feedback &"])),
-    plugin(({addVariant}) => addVariant("phx-click-loading", [".phx-click-loading&", ".phx-click-loading &"])),
-    plugin(({addVariant}) => addVariant("phx-submit-loading", [".phx-submit-loading&", ".phx-submit-loading &"])),
-    plugin(({addVariant}) => addVariant("phx-change-loading", [".phx-change-loading&", ".phx-change-loading &"])),
+    plugin(({addVariant}) => addVariant('phx-no-feedback', ['.phx-no-feedback&', '.phx-no-feedback &'])),
+    plugin(({addVariant}) => addVariant('phx-click-loading', ['.phx-click-loading&', '.phx-click-loading &'])),
+    plugin(({addVariant}) => addVariant('phx-submit-loading', ['.phx-submit-loading&', '.phx-submit-loading &'])),
+    plugin(({addVariant}) => addVariant('phx-change-loading', ['.phx-change-loading&', '.phx-change-loading &'])),
 
     // Embeds Hero Icons (https://heroicons.com) into your app.css bundle
     // See your `CoreComponents.icon/1` for more information.
     //
     plugin(function({matchComponents, theme}) {
-      let iconsDir = path.join(__dirname, "./vendor/heroicons/optimized")
+      let iconsDir = path.join(__dirname, './vendor/heroicons/optimized')
       let values = {}
       let icons = [
-        ["", "/24/outline"],
-        ["-solid", "/24/solid"],
-        ["-mini", "/20/solid"]
+        ['', '/24/outline'],
+        ['-solid', '/24/solid'],
+        ['-mini', '/20/solid']
       ]
       icons.forEach(([suffix, dir]) => {
         fs.readdirSync(path.join(iconsDir, dir)).map(file => {
-          let name = path.basename(file, ".svg") + suffix
+          let name = path.basename(file, '.svg') + suffix
           values[name] = {name, fullPath: path.join(iconsDir, dir, file)}
         })
       })
       matchComponents({
-        "hero": ({name, fullPath}) => {
-          let content = fs.readFileSync(fullPath).toString().replace(/\r?\n|\r/g, "")
+        'hero': ({name, fullPath}) => {
+          let content = fs.readFileSync(fullPath).toString().replace(/\r?\n|\r/g, '')
           return {
             [`--hero-${name}`]: `url('data:image/svg+xml;utf8,${content}')`,
-            "-webkit-mask": `var(--hero-${name})`,
-            "mask": `var(--hero-${name})`,
-            "background-color": "currentColor",
-            "vertical-align": "middle",
-            "display": "inline-block",
-            "width": theme("spacing.5"),
-            "height": theme("spacing.5")
+            '-webkit-mask': `var(--hero-${name})`,
+            'mask': `var(--hero-${name})`,
+            'background-color': 'currentColor',
+            'vertical-align': 'middle',
+            'display': 'inline-block',
+            'width': theme('spacing.5'),
+            'height': theme('spacing.5')
           }
         }
       }, {values})
@@ -79,13 +78,13 @@ export default {
     plugin(({ addVariant }) => addVariant('aria-checked', '&[aria-checked]')),
 
     // Skeleton says not to include this but Without it, tooltip arrows don't work
-    require('flowbite/plugin'),
+    // require('flowbite/plugin'),
 
     // Svelte Skeleton
     skeleton({
       themes: {
         // Register each theme within this array:
-        preset: [ "skeleton", "modern", "crimson" ]
+        preset: [ 'skeleton', 'modern', 'crimson' ]
       }
     }),
   ]

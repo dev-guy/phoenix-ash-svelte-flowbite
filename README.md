@@ -120,7 +120,7 @@ Open a browser to http://localhost:4000
 
 - Svelte Skeleton
   - [Svelte Skeleton](https://www.skeleton.dev) implements styles and themes which are independent of Svelte
-  - The theme is specified in `assets/app.css`. It is also specified in root.html.heex via `data-theme="..."`
+  - The theme is specified in `assets/tailwind.config.js`. It is also specified in `root.html.heex` via `data-theme=`
   - Skeleton's surface, primary, secondary, tertiary, success, warning, and error colors were incorporated with Pyro's components for a consistent look across Pyro and Skeleton components
 - LiveSvelte
   - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
