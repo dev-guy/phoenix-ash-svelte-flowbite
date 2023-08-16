@@ -77,8 +77,9 @@ export default {
     plugin(({ addVariant }) => addVariant('aria-selected', '&[aria-selected]')),
     plugin(({ addVariant }) => addVariant('aria-checked', '&[aria-checked]')),
 
-    // Skeleton says not to include this but Without it, tooltip arrows don't work
-    // require('flowbite/plugin'),
+    // Without this, tooltip arrows don't display. See the tooltip on the login button in the page
+    // header (next to the light/dark mode buttons).
+    require('flowbite/plugin'),
 
     // Svelte Skeleton theme
     skeleton({

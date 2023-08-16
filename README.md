@@ -16,8 +16,8 @@ src="https://www.mermaidchart.com/img/icon-logo.svg">
 This is a web browser application demonstrating:
 
 - [x] [Phoenix 1.7](https://www.phoenixframework.org/)
-  - [x] [pnpm](https://pnpm.io/) replaces npm because it's faster
-  - [x] [esbuild](https://github.com/phoenixframework/esbuild)
+- [x] [pnpm](https://pnpm.io/) Replaces npm because it's faster
+- [x] [esbuild 0.19](https://github.com/phoenixframework/esbuild)
 - [x] [TailwindCSS 3.3](https://tailwindcss.com)
 - [x] [Phoenix LiveView 0.18](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html)
 - [x] [Ash Framework 2.9](https://ash-hq.org)
@@ -30,12 +30,13 @@ This is a web browser application demonstrating:
   - [x] [Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
   - [x] [Menu](https://flowbite.com/docs/components/navbar/#navbar-with-dropdown)
   - [x] [Tooltips](https://flowbite.com/docs/components/tooltips)
+    - Hover over the login/logout buttons which are next to the light/dark mode buttons
 - [x] [Svelte 4](https://svelte.dev) via [LiveSvelte 0.11](https://wout.space/notes/live-svelte)
   - [x] Support Sass/Scss/PostCSS
   - [x] CRDT counter with [Yjs](https://yjs.dev)
   - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets. Uses the convenient ~V sigil.
   - [x] [Mermaid diagram editor](https://terrislinenbach.medium.com/dynamically-render-a-mermaid-diagram-with-sveltekit-and-very-little-code-d8130875cd68) in a .svelte file (dead view)
-  - [x] [TipTap 2.0](https://tiptap.dev/) (dead view) with task list plugin
+  - [x] [TipTap 2.1](https://tiptap.dev/) (dead view) with task list plugin
   - [x] [Milkdown 7.2](https://milkdown.dev) (dead view) with Markdown, Mermaid, and collaboration via [Yjs](https://yjs.dev)
   - [x] [Kanban board](https://www.npmjs.com/package/svelte-kanban) (dead view)
 - [x] [Svelte Skeleton 2](https://www.skeleton.dev/)
@@ -153,6 +154,9 @@ Open a browser to http://localhost:4000
 4. [Install Flowbite for Phoenix](https://flowbite.com/docs/getting-started/phoenix/)
 5. [Install LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
 6. [Install Svelte Skeleton](https://www.skeleton.dev/docs/get-started)
+  - [Skeleton 2 migration guide](https://skeleton-docs-git-v2-skeleton-labs.vercel.app/docs/purgecss)
+  - Include [PurgeCSS](https://skeleton-docs-git-v2-skeleton-labs.vercel.app/docs/purgecss)
+  - Read about [Flowbite Skeleton](https://www.skeleton.dev/blog/skeleton-plus-flowbite)
 7. [Install Tailwind Scrollbar Hide Plugin](https://github.com/reslear/tailwind-scrollbar-hide)
 8. [LiveView feels faster with a delayed loading indicator](https://fly.io/phoenix-files/make-your-liveview-feel-faster/)
 
