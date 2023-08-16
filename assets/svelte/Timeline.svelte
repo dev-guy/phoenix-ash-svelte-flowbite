@@ -1,16 +1,11 @@
 <script>
-import { initializeStores } from '@skeletonlabs/skeleton';
-import { Toast } from '@skeletonlabs/skeleton';
-console.log("Initializing stores");
-initializeStores();
-  export let toastName;
-
   import { Accordion, AccordionItem, TabGroup, Tab } from "@skeletonlabs/skeleton";
-  import { getToastStore } from '@skeletonlabs/skeleton';
-  const toastStore = getToastStore();
-
+  import { initializeStores, getToastStore } from '@skeletonlabs/skeleton';
   import mermaid from "mermaid";
+  import { Toast } from '@skeletonlabs/skeleton';
 
+
+  export let toastName;
   let tabSet = 0;
   let diagramContainer;
 
@@ -26,6 +21,9 @@ initializeStores();
     diagramContainer.innerHTML = svg;
   }
 
+  initializeStores();
+  const toastStore = getToastStore();
+
   $: tabSet === 1 && diagram && renderDiagram();
 
 function addToast() {
@@ -35,10 +33,9 @@ function addToast() {
   };
   toastStore.trigger(t);
 }
-
 </script>
 
-<Toast />
+<Toast/>
 
 <h1 class='h1'>Tab Group + Mermaid</h1>
 
