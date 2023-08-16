@@ -80,11 +80,11 @@ export default {
     // Skeleton says not to include this but Without it, tooltip arrows don't work
     // require('flowbite/plugin'),
 
-    // Svelte Skeleton
+    // Svelte Skeleton theme
     skeleton({
       themes: {
         // Register each theme within this array:
-        preset: [ 'skeleton', 'modern', 'crimson' ]
+        preset: [ { name: 'skeleton', enhancements: true }, 'modern', 'crimson' ]
       }
     }),
   ]
