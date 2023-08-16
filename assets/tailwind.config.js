@@ -1,9 +1,9 @@
 // See the Tailwind configuration guide for advanced usage
 // https://tailwindcss.com/docs/configuration
-
 // @ts-check
-import skeleton from '@skeletonlabs/tw-plugin';
-const path = require('path');
+
+const path = require('path')
+const { skeleton } = require('@skeletonlabs/tw-plugin')
 
 const plugin = require("tailwindcss/plugin")
 const fs = require("fs")
@@ -74,6 +74,13 @@ export default {
       }, {values})
     }),
 
+    // Pyro
+    plugin(({ addVariant }) => addVariant('aria-selected', '&[aria-selected]')),
+    plugin(({ addVariant }) => addVariant('aria-checked', '&[aria-checked]')),
+
+    // Skeleton says not to include this but Without it, tooltip arrows don't work
+    require('flowbite/plugin'),
+
     // Svelte Skeleton
     skeleton({
       themes: {
@@ -81,12 +88,5 @@ export default {
         preset: [ "skeleton", "modern", "crimson" ]
       }
     }),
-
-    // Pyro
-    plugin(({ addVariant }) => addVariant('aria-selected', '&[aria-selected]')),
-    plugin(({ addVariant }) => addVariant('aria-checked', '&[aria-checked]')),
-
-    // Skeleton says not to include this but Without it, tooltip arrows don't work
-    require('flowbite/plugin'),
   ]
 }

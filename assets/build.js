@@ -3,7 +3,7 @@ const sveltePlugin = require("esbuild-svelte")
 const importGlobPlugin = require("esbuild-plugin-import-glob").default
 const sveltePreprocess = require("svelte-preprocess")
 const purgecssPlugin2 = require('esbuild-plugin-purgecss-2')
-const glob = require('glob-all')
+// const glob = require('glob-all')
 
 const args = process.argv.slice(2)
 const watch = args.includes("--watch")
@@ -53,13 +53,6 @@ let optsServer = {
         sveltePlugin({
             preprocess: sveltePreprocess(),
             compilerOptions: {dev: !deploy, hydratable: true, generate: "ssr"},
-        }),
-        purgecssPlugin2({
-          content: glob.sync([
-              // Customize the following URLs to match your setup
-              './*.html',
-              './views/**/*.html'
-          ]),
         }),
     ],
 }

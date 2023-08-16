@@ -31,7 +31,6 @@ defmodule KantanWeb.Svelte.Counter do
       class="btn btn-sm variant-filled-error"
       on:click={decrease}>-</button
     >
-    jklsdjfk
     <button
       class="btn btn-sm variant-filled-success"
       on:click={increase}>+</button

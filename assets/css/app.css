@@ -1,9 +1,14 @@
 /*
-Skeleton includes these already
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "tailwindcss/variants";
 */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
 
 /**
  * See https://www.skeleton.dev/docs/themes

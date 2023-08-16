@@ -1,8 +1,14 @@
 <script>
+import { initializeStores } from '@skeletonlabs/skeleton';
+import { Toast } from '@skeletonlabs/skeleton';
+console.log("Initializing stores");
+initializeStores();
   export let toastName;
 
   import { Accordion, AccordionItem, TabGroup, Tab } from "@skeletonlabs/skeleton";
   import { getToastStore } from '@skeletonlabs/skeleton';
+  const toastStore = getToastStore();
+
   import mermaid from "mermaid";
 
   let tabSet = 0;
@@ -27,10 +33,12 @@ function addToast() {
   message: 'Why is this purple?',
   autohide: true
   };
-  getToastStore().trigger(t);
+  toastStore.trigger(t);
 }
 
 </script>
+
+<Toast />
 
 <h1 class='h1'>Tab Group + Mermaid</h1>
 
