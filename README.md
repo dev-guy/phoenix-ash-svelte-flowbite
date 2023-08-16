@@ -154,9 +154,13 @@ Open a browser to http://localhost:4000
 5. [Install LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
 6. [Install Svelte Skeleton](https://www.skeleton.dev/docs/get-started)
 7. [Install Tailwind Scrollbar Hide Plugin](https://github.com/reslear/tailwind-scrollbar-hide)
-8. After upgrading esbuild, modify config.exs
-9. After upgrading tailwindcss, modify config.exs
-10. After upgrading node (see .nvmrc), modify build.js (see target:)
+8. [LiveView feels faster with a delayed loading indicator](https://fly.io/phoenix-files/make-your-liveview-feel-faster/)
+
+### Upgrading npm packages
+
+1. esbuild: modify config.exs
+2. tailwindcss: modify config.exs
+3. node (see .nvmrc): build.js (see target:)
 
 ### Other
 

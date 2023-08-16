@@ -1,5 +1,5 @@
 <script>
-  import { AppShell, Accordion, AccordionItem, TabGroup, Tab } from "@skeletonlabs/skeleton";
+  import { Accordion, AccordionItem, TabGroup, Tab } from "@skeletonlabs/skeleton";
   import { initializeStores, getToastStore } from '@skeletonlabs/skeleton';
   import mermaid from "mermaid";
   import { Toast } from '@skeletonlabs/skeleton';
@@ -54,13 +54,6 @@ function addToast() {
 
 <h1 class='h1'>Accordion</h1>
 
-<AppShell>
-	<!-- (header) -->
-	<svelte:fragment slot="sidebarLeft">Sidebar Left</svelte:fragment>
-	<!-- (sidebarRight) -->
-	<svelte:fragment slot="pageHeader">Page Header</svelte:fragment>
-	<!-- (pageFooter) -->
-	<svelte:fragment slot="footer">Footer</svelte:fragment>
 <Accordion>
   <AccordionItem open>
     <svelte:fragment slot="lead">
@@ -297,7 +290,6 @@ function addToast() {
     </svelte:fragment>
   </AccordionItem>
 </Accordion>
-</AppShell>
 
 <h1 class='h1'>Slotted Flowbite Toast</h1>
 
