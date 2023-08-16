@@ -25,20 +25,20 @@ This is a web browser application demonstrating:
 - [x] [Pyro](https://hexdocs.pm/pyro/about.html)
   - [x] Toggle dark and light themes using Pyro
   - [x] Custom Pyro overrides to match Svelte Skeleton (partially implemented)
-- [x] [Flowbite 1.6](https://flowbite.com) Tailwind CSS Components
+- [x] [Flowbite 1.8](https://flowbite.com) Tailwind CSS Components
   - [x] [Application Shell](https://flowbite.com/blocks/application/shells) with header and responsive left sidebar
   - [x] [Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
   - [x] [Menu](https://flowbite.com/docs/components/navbar/#navbar-with-dropdown)
   - [x] [Tooltips](https://flowbite.com/docs/components/tooltips)
-- [x] [Svelte 4.0](https://svelte.dev) via [LiveSvelte 0.11](https://wout.space/notes/live-svelte)
+- [x] [Svelte 4](https://svelte.dev) via [LiveSvelte 0.11](https://wout.space/notes/live-svelte)
   - [x] Support Sass/Scss/PostCSS
-  - [x] CRDT counter with [Yjs](https://yjs.dev)  
+  - [x] CRDT counter with [Yjs](https://yjs.dev)
   - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets. Uses the convenient ~V sigil.
   - [x] [Mermaid diagram editor](https://terrislinenbach.medium.com/dynamically-render-a-mermaid-diagram-with-sveltekit-and-very-little-code-d8130875cd68) in a .svelte file (dead view)
   - [x] [TipTap 2.0](https://tiptap.dev/) (dead view) with task list plugin
   - [x] [Milkdown 7.2](https://milkdown.dev) (dead view) with Markdown, Mermaid, and collaboration via [Yjs](https://yjs.dev)
   - [x] [Kanban board](https://www.npmjs.com/package/svelte-kanban) (dead view)
-- [x] [Svelte Skeleton 1.11](https://www.skeleton.dev/)
+- [x] [Svelte Skeleton 2](https://www.skeleton.dev/)
   - [x] Theme and styles provided by Skeleton
   - [x] Tab group
   - [x] [Accordion](https://www.skeleton.dev/components/accordions) (dead view)
@@ -120,7 +120,7 @@ Open a browser to http://localhost:4000
 
 - Svelte Skeleton
   - [Svelte Skeleton](https://www.skeleton.dev) implements styles and themes which are independent of Svelte
-  - The theme is specified in `assets/app.css`. It is also specified in root.html.heex via `data-theme="..."`
+  - The theme is specified in `assets/tailwind.config.js`. It is also specified in `root.html.heex` via `data-theme=`
   - Skeleton's surface, primary, secondary, tertiary, success, warning, and error colors were incorporated with Pyro's components for a consistent look across Pyro and Skeleton components
 - LiveSvelte
   - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
@@ -154,9 +154,13 @@ Open a browser to http://localhost:4000
 5. [Install LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
 6. [Install Svelte Skeleton](https://www.skeleton.dev/docs/get-started)
 7. [Install Tailwind Scrollbar Hide Plugin](https://github.com/reslear/tailwind-scrollbar-hide)
-8. After upgrading esbuild, modify config.exs
-9. After upgrading tailwindcss, modify config.exs
-10. After upgrading node (see .nvmrc), modify build.js (see target:)
+8. [LiveView feels faster with a delayed loading indicator](https://fly.io/phoenix-files/make-your-liveview-feel-faster/)
+
+### Upgrading npm packages
+
+1. esbuild: modify config.exs
+2. tailwindcss: modify config.exs
+3. node (see .nvmrc): build.js (see target:)
 
 ### Other
 

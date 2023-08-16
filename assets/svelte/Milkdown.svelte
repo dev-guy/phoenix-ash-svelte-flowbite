@@ -12,8 +12,8 @@
       C-->D;`
   </script>
 
-<h1 class='.h1'>First Editor</h1>
+<h1 class='h1'>First Editor</h1>
 <Editor {content} room='one'/>
 
-<h1 class='.h1'>Second Editor</h1>
+<h1 class='h1'>Second Editor</h1>
 <Editor {content} room='two'/>

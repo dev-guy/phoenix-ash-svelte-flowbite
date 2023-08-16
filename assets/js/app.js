@@ -22,7 +22,7 @@ import {Socket} from "phoenix"
 import {LiveSocket} from "phoenix_live_view"
 import topbar from "../vendor/topbar"
 import {getHooks} from "live_svelte"
-import * as Components from "../svelte/**/*.svelte"
+import * as SvelteComponents from "../svelte/**/*.svelte"
 import { hooks as pyroHooks, getTimezone } from "pyro"
 import "flowbite/dist/flowbite.phoenix.js";
 import Datepicker from 'flowbite-datepicker/Datepicker';
@@ -40,14 +40,26 @@ const datepickerHook = {
 
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 let liveSocket = new LiveSocket("/live", Socket,
-{hooks: {...pyroHooks, ...getHooks(Components)},
+{hooks: {...pyroHooks, ...getHooks(SvelteComponents), Datepicker: datepickerHook,},
  params: {_csrf_token: csrfToken, timezone: getTimezone()},
 })
 
-// Show progress bar on live navigation and form submits
+// Show progress bar on live navigation and form submits. Only displays if still
+// loading after 120 msec
+// From https://fly.io/phoenix-files/make-your-liveview-feel-faster/
 topbar.config({barColors: {0: "#29d"}, shadowColor: "rgba(0, 0, 0, .3)"})
-window.addEventListener("phx:page-loading-start", _info => topbar.show(300))
-window.addEventListener("phx:page-loading-stop", _info => topbar.hide())
+
+let topBarScheduled;
+window.addEventListener("phx:page-loading-start", () => {
+  if(!topBarScheduled) {
+    topBarScheduled = setTimeout(() => topbar.show(), 120);
+  };
+});
+window.addEventListener("phx:page-loading-stop", () => {
+  clearTimeout(topBarScheduled);
+  topBarScheduled = undefined;
+  topbar.hide();
+});
 
 // connect if there are any LiveViews on the page
 liveSocket.connect()
