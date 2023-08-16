@@ -1,5 +1,5 @@
 <script>
-  import { Accordion, AccordionItem, TabGroup, Tab } from "@skeletonlabs/skeleton";
+  import { AppShell, Accordion, AccordionItem, TabGroup, Tab } from "@skeletonlabs/skeleton";
   import { initializeStores, getToastStore } from '@skeletonlabs/skeleton';
   import mermaid from "mermaid";
   import { Toast } from '@skeletonlabs/skeleton';
@@ -54,6 +54,13 @@ function addToast() {
 
 <h1 class='h1'>Accordion</h1>
 
+<AppShell>
+	<!-- (header) -->
+	<svelte:fragment slot="sidebarLeft">Sidebar Left</svelte:fragment>
+	<!-- (sidebarRight) -->
+	<svelte:fragment slot="pageHeader">Page Header</svelte:fragment>
+	<!-- (pageFooter) -->
+	<svelte:fragment slot="footer">Footer</svelte:fragment>
 <Accordion>
   <AccordionItem open>
     <svelte:fragment slot="lead">
@@ -142,10 +149,155 @@ function addToast() {
       on top of Tailwind CSS.
     </p>
   </li>
+  <li class="ml-4">
+    <div
+      class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+    />
+    <time
+      class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+      >April 2022</time
+    >
+    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+      E-Commerce UI code in Tailwind CSS
+    </h3>
+    <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+      Get started with dozens of web components and interactive elements built
+      on top of Tailwind CSS.
+    </p>
+  </li>
+  <li class="ml-4">
+    <div
+      class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+    />
+    <time
+      class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+      >April 2022</time
+    >
+    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+      E-Commerce UI code in Tailwind CSS
+    </h3>
+    <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+      Get started with dozens of web components and interactive elements built
+      on top of Tailwind CSS.
+    </p>
+  </li>
+  <li class="ml-4">
+    <div
+      class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+    />
+    <time
+      class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+      >April 2022</time
+    >
+    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+      E-Commerce UI code in Tailwind CSS
+    </h3>
+    <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+      Get started with dozens of web components and interactive elements built
+      on top of Tailwind CSS.
+    </p>
+  </li>
+  <li class="ml-4">
+    <div
+      class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+    />
+    <time
+      class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+      >April 2022</time
+    >
+    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+      E-Commerce UI code in Tailwind CSS
+    </h3>
+    <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+      Get started with dozens of web components and interactive elements built
+      on top of Tailwind CSS.
+    </p>
+  </li>
+  <li class="ml-4">
+    <div
+      class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+    />
+    <time
+      class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+      >April 2022</time
+    >
+    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+      E-Commerce UI code in Tailwind CSS
+    </h3>
+    <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+      Get started with dozens of web components and interactive elements built
+      on top of Tailwind CSS.
+    </p>
+  </li>
+  <li class="ml-4">
+    <div
+      class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+    />
+    <time
+      class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+      >April 2022</time
+    >
+    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+      E-Commerce UI code in Tailwind CSS
+    </h3>
+    <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+      Get started with dozens of web components and interactive elements built
+      on top of Tailwind CSS.
+    </p>
+  </li>
+  <li class="ml-4">
+    <div
+      class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+    />
+    <time
+      class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+      >April 2022</time
+    >
+    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+      E-Commerce UI code in Tailwind CSS
+    </h3>
+    <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+      Get started with dozens of web components and interactive elements built
+      on top of Tailwind CSS.
+    </p>
+  </li>
+  <li class="ml-4">
+    <div
+      class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+    />
+    <time
+      class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+      >April 2022</time
+    >
+    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+      E-Commerce UI code in Tailwind CSS
+    </h3>
+    <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+      Get started with dozens of web components and interactive elements built
+      on top of Tailwind CSS.
+    </p>
+  </li>
+  <li class="ml-4">
+    <div
+      class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+    />
+    <time
+      class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+      >April 2022</time
+    >
+    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+      E-Commerce UI code in Tailwind CSS
+    </h3>
+    <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+      Get started with dozens of web components and interactive elements built
+      on top of Tailwind CSS.
+    </p>
+  </li>
 </ol>
     </svelte:fragment>
   </AccordionItem>
 </Accordion>
+</AppShell>
 
 <h1 class='h1'>Slotted Flowbite Toast</h1>
 
@@ -195,6 +347,7 @@ function addToast() {
     >
   </button>
 </div>
+
 
 <h1 class='h1'>Skeleton Toast - {toastName}</h1>
 <button class='btn btn-sm variant-filled-warning' on:click={addToast}>Toast?</button>
