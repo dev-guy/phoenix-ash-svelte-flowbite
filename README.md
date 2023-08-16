@@ -41,7 +41,7 @@ This is a web browser application demonstrating:
   - [x] [Kanban board](https://www.npmjs.com/package/svelte-kanban) (dead view)
 - [x] [Svelte Skeleton 2](https://www.skeleton.dev/)
   - [x] Theme and styles provided by Skeleton
-  - [x] Tab group
+  - [x] [Tabs](https://www.skeleton.dev/components/tabs)
   - [x] [Accordion](https://www.skeleton.dev/components/accordions) (dead view)
   - [x] [Toast](https://www.skeleton.dev/utilities/toasts) (dead view)
 
@@ -156,7 +156,7 @@ Open a browser to http://localhost:4000
 6. [Install Svelte Skeleton](https://www.skeleton.dev/docs/get-started)
   - [Skeleton 2 migration guide](https://skeleton-docs-git-v2-skeleton-labs.vercel.app/docs/purgecss)
   - Include [PurgeCSS](https://skeleton-docs-git-v2-skeleton-labs.vercel.app/docs/purgecss)
-  - Read about [Flowbite Skeleton](https://www.skeleton.dev/blog/skeleton-plus-flowbite)
+  - Read about [Flowbite and Skeleton](https://www.skeleton.dev/blog/skeleton-plus-flowbite)
 7. [Install Tailwind Scrollbar Hide Plugin](https://github.com/reslear/tailwind-scrollbar-hide)
 8. [LiveView feels faster with a delayed loading indicator](https://fly.io/phoenix-files/make-your-liveview-feel-faster/)
 
