@@ -25,12 +25,12 @@ This is a web browser application demonstrating:
 - [x] [Pyro](https://hexdocs.pm/pyro/about.html)
   - [x] Toggle dark and light themes using Pyro
   - [x] Custom Pyro overrides to match Svelte Skeleton (partially implemented)
-- [x] [Flowbite 1.6](https://flowbite.com) Tailwind CSS Components
+- [x] [Flowbite 1.8](https://flowbite.com) Tailwind CSS Components
   - [x] [Application Shell](https://flowbite.com/blocks/application/shells) with header and responsive left sidebar
   - [x] [Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
   - [x] [Menu](https://flowbite.com/docs/components/navbar/#navbar-with-dropdown)
   - [x] [Tooltips](https://flowbite.com/docs/components/tooltips)
-- [x] [Svelte 4.0](https://svelte.dev) via [LiveSvelte 0.11](https://wout.space/notes/live-svelte)
+- [x] [Svelte 4](https://svelte.dev) via [LiveSvelte 0.11](https://wout.space/notes/live-svelte)
   - [x] Support Sass/Scss/PostCSS
   - [x] CRDT counter with [Yjs](https://yjs.dev)
   - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets. Uses the convenient ~V sigil.
@@ -38,7 +38,7 @@ This is a web browser application demonstrating:
   - [x] [TipTap 2.0](https://tiptap.dev/) (dead view) with task list plugin
   - [x] [Milkdown 7.2](https://milkdown.dev) (dead view) with Markdown, Mermaid, and collaboration via [Yjs](https://yjs.dev)
   - [x] [Kanban board](https://www.npmjs.com/package/svelte-kanban) (dead view)
-- [x] [Svelte Skeleton 1.11](https://www.skeleton.dev/)
+- [x] [Svelte Skeleton 2](https://www.skeleton.dev/)
   - [x] Theme and styles provided by Skeleton
   - [x] Tab group
   - [x] [Accordion](https://www.skeleton.dev/components/accordions) (dead view)
