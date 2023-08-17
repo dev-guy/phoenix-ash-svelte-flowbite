@@ -22,7 +22,7 @@ export default {
     '../lib/*_web/**/*.*ex',
     '../deps/ashauthentication_phoenix/**/*.ex',
     '../deps/pyro/lib/pyro/**/*.*ex',
-    './node_modules/flowbite/**/*.{js,ts}',
+    './node_modules/flowbite/**/*.{html,js,ts}',
     './node_modules/@skeletonlabs/skeleton/**/*.{html,js,svelte,ts}',
 	],
   plugins: [

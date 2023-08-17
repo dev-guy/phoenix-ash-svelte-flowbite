@@ -23,7 +23,8 @@ config :kantan, KantanWeb.Endpoint,
     layout: false
   ],
   pubsub_server: Kantan.PubSub,
-  live_view: [signing_salt: "4hZWcG2M"]
+  live_view: [signing_salt: "4hZWcG2M"],
+  adapter: Bandit.PhoenixAdapter
 
 # Configures the mailer
 #
