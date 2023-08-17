@@ -120,7 +120,7 @@ Open a browser to http://localhost:4000
 ## Notes
 
 - Svelte Skeleton
-  - [Svelte Skeleton](https://www.skeleton.dev) implements styles and themes which are independent of Svelte
+  - [Svelte Skeleton](https://www.skeleton.dev) implements styles and themes that can also be used with Phoenix comonents
   - The theme is specified in `assets/tailwind.config.js`. It is also specified in `root.html.heex` via `data-theme=`
   - Skeleton's surface, primary, secondary, tertiary, success, warning, and error colors were incorporated with Pyro's components for a consistent look across Pyro and Skeleton components
 - LiveSvelte
@@ -131,7 +131,7 @@ Open a browser to http://localhost:4000
   - `<style>` elements that need Postcss etc. should use `lang="scss"` instead of `type="text/scss"`
   - SSR has been disabled temporarily because there are too many crashes
     - LiveSvelte elements that use most Svelte Skeleton components must specify ssr={false}
-  - Using @apply in `<style>` blocks with Svelte is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
+  - Using @apply in `<style>` blocks in Svelte files is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
   - Beware [Svelte-Kit $app dependencies](https://github.com/woutdp/live_svelte/discussions/30)!
   - Until editors understand that ~V is for Svelte, using .svelte files will have a better DX. Plus ~V doesn't work with dead views.
   - package.json contains JavaScript dependencies that are installed as Hex packages. This is apparently needed for SSR.
