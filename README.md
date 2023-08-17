@@ -44,6 +44,7 @@ This is a web browser application demonstrating:
   - [x] [Tabs](https://www.skeleton.dev/components/tabs)
   - [x] [Accordion](https://www.skeleton.dev/components/accordions) (dead view)
   - [x] [Toast](https://www.skeleton.dev/utilities/toasts) (dead view)
+- [x] Replace Cowboy with [Bandit 1.0](https://hexdocs.pm/bandit/1.0.0-pre.13/Bandit.html)
 
 ## License
 
@@ -154,7 +155,7 @@ Open a browser to http://localhost:4000
 4. [Install Flowbite for Phoenix](https://flowbite.com/docs/getting-started/phoenix/)
 5. [Install LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
 6. [Install Svelte Skeleton](https://www.skeleton.dev/docs/get-started)
-  - [Skeleton 2 migration guide](https://skeleton-docs-git-v2-skeleton-labs.vercel.app/docs/purgecss)
+  - [Skeleton 2 migration guide](https://github.com/skeletonlabs/skeleton/discussions/1854)
   - Include [PurgeCSS](https://skeleton-docs-git-v2-skeleton-labs.vercel.app/docs/purgecss)
   - Read about [Flowbite and Skeleton](https://www.skeleton.dev/blog/skeleton-plus-flowbite)
 7. [Install Tailwind Scrollbar Hide Plugin](https://github.com/reslear/tailwind-scrollbar-hide)
