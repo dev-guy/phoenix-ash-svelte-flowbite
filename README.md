@@ -30,7 +30,7 @@ This is a web browser application demonstrating:
   - [x] [Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
   - [x] [Menu](https://flowbite.com/docs/components/navbar/#navbar-with-dropdown)
   - [x] [Tooltips](https://flowbite.com/docs/components/tooltips)
-    - Hover over the login/logout buttons which are next to the light/dark mode buttons
+    - <img width="100" height="100" alt="Flowbite Tooltip for the login button" src="https://github.com/dev-guy/phoenix-ash-svelte-flowbite/assets/12297328/e2bb2e5f-f653-4271-83e8-6c5c2d6e3209">
 - [x] [Svelte 4](https://svelte.dev) via [LiveSvelte 0.11](https://wout.space/notes/live-svelte)
   - [x] Support Sass/Scss/PostCSS
   - [x] CRDT counter with [Yjs](https://yjs.dev)
