@@ -54,6 +54,7 @@ This is a web browser application demonstrating:
 
 Join the [Ash Discord Server](https://discord.com/invite/D7FNG2q) and check out the Pyro channel.
 
+
 ## Requirements
 
 ### Postgres
@@ -99,6 +100,16 @@ asdf global elixir 1.15.0
 ### Rust (for Rustler) - not yet needed
 
 See https://www.rust-lang.org/tools/install
+
+## Visual Studio Code Configuration
+
+### Tailwind CSS Intellisence
+
+[vscode-tailwindcss](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+
+```js
+  "tailwindCSS.experimental.configFile": "./assets/tailwind.config.js"
+```
 
 ## Usage
 

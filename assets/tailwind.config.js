@@ -24,6 +24,7 @@ export default {
     '../deps/pyro/lib/pyro/**/*.*ex',
     './node_modules/flowbite/**/*.{html,js,ts}',
     './node_modules/@skeletonlabs/skeleton/**/*.{html,js,svelte,ts}',
+    './node_modules/@goodware/svelte-kanban/**/*.{html,js,svelte,ts}',
 	],
   plugins: [
     require('tailwind-scrollbar-hide'),
