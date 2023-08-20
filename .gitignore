@@ -3,11 +3,12 @@
 .elixir-tools
 
 # Rust
-/native
+/native/yrs/target
 
 # Don't add these by mistake
 /package.json
 /package-lock.json
+/node_modules
 
 # Dialyzer
 /priv

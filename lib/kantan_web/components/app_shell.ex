@@ -79,7 +79,7 @@ defmodule KantanWeb.AppShell do
                   role="tooltip"
                   class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
                 >
-                  Log in
+                  Log in !
                   <div class="tooltip-arrow" data-popper-arrow></div>
                 </div>
               <% end %>
@@ -754,10 +754,10 @@ defmodule KantanWeb.AppShell do
           <ul id="dropdown-pages" class="hidden py-2 space-y-2">
             <li>
               <.link
-                navigate={~p"/svelte/yrscounter"}
+                navigate={~p"/svelte/ycounter"}
                 class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
               >
-                Yrs Counter
+                Yjs Counter
               </.link>
             </li>
             <li>

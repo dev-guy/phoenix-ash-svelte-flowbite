@@ -1,6 +1,6 @@
-# Phoenix Ash Flowbite Svelte Skeleton TipTap Milkdown Mermaid Mash-Up
+# Phoenix Ash Tailwind Svelte Yjs Flowbite Skeleton TipTap Milkdown Mermaid Mash-Up
 
-<img alt='Phoenix' src="https://seeklogo.com/images/P/phoenix-logo-D15F067911-seeklogo.com.png" height=40 width=45><img alt='ash' align="top" src="https://ash-hq.org/images/ash-logo-side.svg" height=50 width=100><img alt='Tailwind CSS' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" height=45 width=45><img alt='Flowbite' src="https://flowbite.com/docs/images/logo.svg" height=45 width=45><img alt='Svelte' src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height=45 width=45><img alt='Skeleton' height=45 width=45 src="https://pbs.twimg.com/profile_images/1587479781544759297/TINbbJLC_400x400.png"><img height=45 width=45 alt="TipTap" src="https://pbs.twimg.com/profile_images/1357340221377974275/dza_FwlU_400x400.jpg"><img height=45 width=45 alt="Milkdown" src="https://milkdown.dev/milkdown-logo.svg"><img height=45 width=45 alt="Mermaid"
+<img alt='Phoenix' src="https://seeklogo.com/images/P/phoenix-logo-D15F067911-seeklogo.com.png" height=40 width=45><img alt='ash' align="top" src="https://ash-hq.org/images/ash-logo-side.svg" height=50 width=100><img alt='Tailwind CSS' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" height=45 width=45><img alt='Flowbite' src="https://flowbite.com/docs/images/logo.svg" height=45 width=45><img alt='Svelte' src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" height=45 width=45><img alt='Yjs' height=45 width=45 src="https://yjs.dev/images/logo/yjs.svg"><img alt='Skeleton' height=45 width=45 src="https://pbs.twimg.com/profile_images/1587479781544759297/TINbbJLC_400x400.png"><img height=45 width=45 alt="TipTap" src="https://camo.githubusercontent.com/a1e57801dcd479596fc7fac670540acda3edc1b07d1820ec4315361eba95f310/68747470733a2f2f756e6176617461722e696f2f6769746875622f7565626572646f736973"><img height=45 width=45 alt="Milkdown" src="https://milkdown.dev/milkdown-logo.svg"><img height=45 width=45 alt="Mermaid"
 src="https://www.mermaidchart.com/img/icon-logo.svg">
 
 ## Previous Versions
@@ -16,8 +16,8 @@ src="https://www.mermaidchart.com/img/icon-logo.svg">
 This is a web browser application demonstrating:
 
 - [x] [Phoenix 1.7](https://www.phoenixframework.org/)
-  - [x] [pnpm](https://pnpm.io/) replaces npm because it's faster
-  - [x] [esbuild](https://github.com/phoenixframework/esbuild)
+- [x] [pnpm](https://pnpm.io/) Replaces npm because it's faster
+- [x] [esbuild 0.19](https://github.com/phoenixframework/esbuild)
 - [x] [TailwindCSS 3.3](https://tailwindcss.com)
 - [x] [Phoenix LiveView 0.18](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html)
 - [x] [Ash Framework 2.9](https://ash-hq.org)
@@ -25,23 +25,26 @@ This is a web browser application demonstrating:
 - [x] [Pyro](https://hexdocs.pm/pyro/about.html)
   - [x] Toggle dark and light themes using Pyro
   - [x] Custom Pyro overrides to match Svelte Skeleton (partially implemented)
-- [x] [Flowbite 1.6](https://flowbite.com) Tailwind CSS Components
+- [x] [Flowbite 1.8](https://flowbite.com) Tailwind CSS Components
   - [x] [Application Shell](https://flowbite.com/blocks/application/shells) with header and responsive left sidebar
   - [x] [Date Picker](https://flowbite.com/docs/plugins/datepicker/) on the home page
   - [x] [Menu](https://flowbite.com/docs/components/navbar/#navbar-with-dropdown)
   - [x] [Tooltips](https://flowbite.com/docs/components/tooltips)
-- [x] [Svelte 3.58](https://svelte.dev) via [LiveSvelte 0.6](https://wout.space/notes/live-svelte)
-  - [x] Support Sass/PostCSS
+    - <img width="100" height="100" alt="Flowbite Tooltip for the login button" src="https://github.com/dev-guy/phoenix-ash-svelte-flowbite/assets/12297328/e2bb2e5f-f653-4271-83e8-6c5c2d6e3209">
+- [x] [Svelte 4](https://svelte.dev) via [LiveSvelte 0.11](https://wout.space/notes/live-svelte)
+  - [x] Support Sass/Scss/PostCSS
+  - [x] CRDT counter with [Yjs](https://yjs.dev)
   - [x] [LiveSvelte Counter](https://github.com/woutdp/live_svelte#create-a-svelte-component) is similar to the [increment/decrement example](https://svelte.dev/repl/65fc4b475b884dcba414139848ff02ef). It communicates with the backend via Websockets. Uses the convenient ~V sigil.
   - [x] [Mermaid diagram editor](https://terrislinenbach.medium.com/dynamically-render-a-mermaid-diagram-with-sveltekit-and-very-little-code-d8130875cd68) in a .svelte file (dead view)
-  - [x] [TipTap 2.0](https://tiptap.dev/) (dead view) with task list plugin
-  - [x] [Milkdown 7.2](https://milkdown.dev) (dead view) with Markdown, Mermaid, and collaboration
+  - [x] [TipTap 2.1](https://tiptap.dev/) (dead view) with task list plugin
+  - [x] [Milkdown 7.2](https://milkdown.dev) (dead view) with Markdown, Mermaid, and collaboration via [Yjs](https://yjs.dev)
   - [x] [Kanban board](https://www.npmjs.com/package/svelte-kanban) (dead view)
-- [x] [Svelte Skeleton 1.6](https://www.skeleton.dev/)
+- [x] [Svelte Skeleton 2](https://www.skeleton.dev/)
   - [x] Theme and styles provided by Skeleton
-  - [x] Tab group
+  - [x] [Tabs](https://www.skeleton.dev/components/tabs)
   - [x] [Accordion](https://www.skeleton.dev/components/accordions) (dead view)
   - [x] [Toast](https://www.skeleton.dev/utilities/toasts) (dead view)
+- [x] Replace Cowboy with [Bandit 1.0](https://hexdocs.pm/bandit/1.0.0-pre.13/Bandit.html)
 
 ## License
 
@@ -50,6 +53,7 @@ This is a web browser application demonstrating:
 ## Help and additional information
 
 Join the [Ash Discord Server](https://discord.com/invite/D7FNG2q) and check out the Pyro channel.
+
 
 ## Requirements
 
@@ -97,6 +101,16 @@ asdf global elixir 1.15.0
 
 See https://www.rust-lang.org/tools/install
 
+## Visual Studio Code Configuration
+
+### Tailwind CSS Intellisence
+
+[vscode-tailwindcss](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+
+```js
+  "tailwindCSS.experimental.configFile": "./assets/tailwind.config.js"
+```
+
 ## Usage
 
 ```sh
@@ -118,18 +132,18 @@ Open a browser to http://localhost:4000
 ## Notes
 
 - Svelte Skeleton
-  - Skeleton implementes styles and themes which are independent of Svelte
-  - The theme is specified in assets/app.css. It is also specified in root.html.heex via data-theme="..."
-  - I'm working on adding Skeleton's surface, primary, secondary, tertiary, success, warning, and error colors to Pyro, and performing other synchronization between them
-  - Skeleton 1.6+ and Svelte 3.59+ result in an <Accordion> error. Use Svelte 3.58 for now.
+  - [Svelte Skeleton](https://www.skeleton.dev) implements styles and themes that can also be used with Phoenix comonents
+  - The theme is specified in `assets/tailwind.config.js`. It is also specified in `root.html.heex` via `data-theme=`
+  - Skeleton's surface, primary, secondary, tertiary, success, warning, and error colors were incorporated with Pyro's components for a consistent look across Pyro and Skeleton components
 - LiveSvelte
   - Svelte delivers many client-side UX niceties such as animations. Combining LiveView and Svelte is 10x!
   - [LiveSvelte video](https://www.youtube.com/watch?v=JMkvbW35QvA)
   - Need another Svelte or JavaScript component? Just add it to package.json!
-  - .svelte files are located in assets/svelte
+  - `.svelte` files are located in assets/svelte
+  - `<style>` elements that need Postcss etc. should use `lang="scss"` instead of `type="text/scss"`
   - SSR has been disabled temporarily because there are too many crashes
     - LiveSvelte elements that use most Svelte Skeleton components must specify ssr={false}
-  - Using @apply in `<style>` blocks with Svelte is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
+  - Using @apply in `<style>` blocks in Svelte files is [a bad idea](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css)
   - Beware [Svelte-Kit $app dependencies](https://github.com/woutdp/live_svelte/discussions/30)!
   - Until editors understand that ~V is for Svelte, using .svelte files will have a better DX. Plus ~V doesn't work with dead views.
   - package.json contains JavaScript dependencies that are installed as Hex packages. This is apparently needed for SSR.
@@ -152,10 +166,17 @@ Open a browser to http://localhost:4000
 4. [Install Flowbite for Phoenix](https://flowbite.com/docs/getting-started/phoenix/)
 5. [Install LiveSvelte](https://github.com/woutdp/live_svelte/blob/master/README.md)
 6. [Install Svelte Skeleton](https://www.skeleton.dev/docs/get-started)
+  - [Skeleton 2 migration guide](https://github.com/skeletonlabs/skeleton/discussions/1854)
+  - Include [PurgeCSS](https://skeleton-docs-git-v2-skeleton-labs.vercel.app/docs/purgecss)
+  - Read about [Flowbite and Skeleton](https://www.skeleton.dev/blog/skeleton-plus-flowbite)
 7. [Install Tailwind Scrollbar Hide Plugin](https://github.com/reslear/tailwind-scrollbar-hide)
-8. After upgrading esbuild, modify config.exs
-9. After upgrading tailwindcss, modify config.exs
-10. After upgrading node (see .nvmrc), modify build.js (see target:)
+8. [LiveView feels faster with a delayed loading indicator](https://fly.io/phoenix-files/make-your-liveview-feel-faster/)
+
+### Upgrading npm packages
+
+1. esbuild: modify config.exs
+2. tailwindcss: modify config.exs
+3. node (see .nvmrc): build.js (see target:)
 
 ### Other
 

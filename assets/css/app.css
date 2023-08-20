@@ -1,16 +1,7 @@
-/*
-Skeleton includes these already
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-*/
-
-/**
- * See https://www.skeleton.dev/docs/themes
- * Change body data-theme="" too!!
- */
-@import "@skeletonlabs/skeleton/dist/themes/theme-skeleton.css";
-@import "@skeletonlabs/skeleton/dist/styles/skeleton.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
 
 @import "./tiptap.css";
 @import "./milkdown.css";
@@ -24,6 +15,16 @@ Skeleton includes these already
   @apply text-error-500 italic;
 }
 
+html { @apply antialiased h-screen; }
+
+/*
 body {
-  @apply antialiased h-screen;
+  background-image:
+    radial-gradient(at 0% 0%, rgba(var(--color-secondary-500) / 0.33) 0px, transparent 50%),
+    radial-gradient(at 98% 1%, rgba(var(--color-error-500) / 0.33) 0px, transparent 50%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+*/

@@ -1,10 +1,11 @@
 <script>
-  export let toastName;
-
   import { Accordion, AccordionItem, TabGroup, Tab } from "@skeletonlabs/skeleton";
+  import { initializeStores, getToastStore } from '@skeletonlabs/skeleton';
   import mermaid from "mermaid";
-  import { toastStore } from '@skeletonlabs/skeleton';
+  import { Toast } from '@skeletonlabs/skeleton';
 
+
+  export let toastName;
   let tabSet = 0;
   let diagramContainer;
 
@@ -20,6 +21,9 @@
     diagramContainer.innerHTML = svg;
   }
 
+  initializeStores();
+  const toastStore = getToastStore();
+
   $: tabSet === 1 && diagram && renderDiagram();
 
 function addToast() {
@@ -29,8 +33,9 @@ function addToast() {
   };
   toastStore.trigger(t);
 }
-
 </script>
+
+<Toast/>
 
 <h1 class='h1'>Tab Group + Mermaid</h1>
 
@@ -190,6 +195,7 @@ function addToast() {
     >
   </button>
 </div>
+
 
 <h1 class='h1'>Skeleton Toast - {toastName}</h1>
 <button class='btn btn-sm variant-filled-warning' on:click={addToast}>Toast?</button>
