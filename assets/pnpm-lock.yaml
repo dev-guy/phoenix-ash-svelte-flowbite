@@ -41,6 +41,12 @@ devDependencies:
   '@skeletonlabs/tw-plugin':
     specifier: 0.0.1-rc.0
     version: 0.0.1-rc.0(tailwindcss@3.3.3)
+  '@syncedstore/core':
+    specifier: ^0.5.2
+    version: 0.5.2(yjs@13.6.7)
+  '@syncedstore/svelte':
+    specifier: ^0.5.2
+    version: 0.5.2(@reactivedata/reactive@0.2.2)(@syncedstore/core@0.5.2)(svelte@4.2.0)
   '@tiptap/core':
     specifier: ^2.1.0
     version: 2.1.0(@tiptap/pm@2.1.0)
@@ -637,6 +643,14 @@ packages:
       tslib: 2.6.1
     dev: true
 
+  /@reactivedata/reactive@0.2.0:
+    resolution: {integrity: sha512-qWmVSmUrjKHBiD+ZS8TxNNzyk9J6rbcZSZJgcnKQpTLwORZoWuX5pYbl07aU0kzXGLaaVX2O/ZW+SZaBjRQW3g==}
+    dev: true
+
+  /@reactivedata/reactive@0.2.2:
+    resolution: {integrity: sha512-KnINM/Sng25QAv6sHkJO9q/XyslLegCF5jTsTSVu+AouY3uZDVf4Am99xNCqsfqFZFvnTBBDvCsHNdvTVGvPEA==}
+    dev: true
+
   /@remirror/core-constants@2.0.2:
     resolution: {integrity: sha512-dyHY+sMF0ihPus3O27ODd4+agdHMEmuRdyiZJ2CCWjPV5UFmn17ZbElvk6WOGVE4rdCJKZQCrPV2BcikOMLUGQ==}
     dev: true
@@ -700,6 +714,38 @@ packages:
       tailwindcss: '>=3.0.0'
     dependencies:
       tailwindcss: 3.3.3
+    dev: true
+
+  /@syncedstore/core@0.5.2(yjs@13.6.7):
+    resolution: {integrity: sha512-gg1cJwhdwF806smc8xfuGk4bH4JRgKN7HqCt383ZvyA2MySEOlyvZf49XOdwz+zia4bE2T/oBfkcBNgZrQNubg==}
+    peerDependencies:
+      yjs: ^13.5.13
+    dependencies:
+      '@reactivedata/reactive': 0.2.0
+      '@syncedstore/yjs-reactive-bindings': 0.5.2(yjs@13.6.7)
+      '@types/eslint': 6.8.0
+      yjs: 13.6.7
+    dev: true
+
+  /@syncedstore/svelte@0.5.2(@reactivedata/reactive@0.2.2)(@syncedstore/core@0.5.2)(svelte@4.2.0):
+    resolution: {integrity: sha512-sEq/3G+OfTy8qabCsiS0knTOOwf+SuPNC2w1FocSBkgO2W/bsZO+hznQ7v5T4+3vbTXZmM+bYRyghNlVmiIQfQ==}
+    peerDependencies:
+      '@reactivedata/reactive': '*'
+      '@syncedstore/core': '*'
+      svelte: '*'
+    dependencies:
+      '@reactivedata/reactive': 0.2.2
+      '@syncedstore/core': 0.5.2(yjs@13.6.7)
+      svelte: 4.2.0
+    dev: true
+
+  /@syncedstore/yjs-reactive-bindings@0.5.2(yjs@13.6.7):
+    resolution: {integrity: sha512-5y4aUtZoDuvpnlCj2RxTR7P0UuQeF9SfL2K3S+JAqihYWECX8YEa0GvGRWgU7CEPpnLcFXkiSxDqgk87wu7fHw==}
+    peerDependencies:
+      yjs: ^13.5.13
+    dependencies:
+      '@types/eslint': 6.8.0
+      yjs: 13.6.7
     dev: true
 
   /@tiptap/core@2.1.0(@tiptap/pm@2.1.0):
@@ -957,8 +1003,19 @@ packages:
       '@types/trusted-types': 2.0.3
     dev: true
 
+  /@types/eslint@6.8.0:
+    resolution: {integrity: sha512-hqzmggoxkOubpgTdcOltkfc5N8IftRJqU70d1jbOISjjZVPvjcr+CLi2CI70hx1SUIRkLgpglTy9w28nGe2Hsw==}
+    dependencies:
+      '@types/estree': 1.0.1
+      '@types/json-schema': 7.0.12
+    dev: true
+
   /@types/estree@1.0.1:
     resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
+    dev: true
+
+  /@types/json-schema@7.0.12:
+    resolution: {integrity: sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==}
     dev: true
 
   /@types/mdast@3.0.12:
