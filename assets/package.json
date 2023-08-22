@@ -13,7 +13,7 @@
     "@milkdown/utils": "^7.2.4",
     "@prosemirror-adapter/svelte": "^0.2.6",
     "@skeletonlabs/skeleton": "2.0.0-rc.1",
-    "@skeletonlabs/tw-plugin": "0.0.1-rc.0",
+    "@skeletonlabs/tw-plugin": "0.0.1-rc.6",
     "@syncedstore/core": "^0.5.2",
     "@syncedstore/svelte": "^0.5.2",
     "@tiptap/core": "^2.1.0",
