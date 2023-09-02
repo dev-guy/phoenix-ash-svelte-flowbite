@@ -29,10 +29,10 @@ let optsClient = {
     sveltePlugin({
       dev: !production,
       preprocess: sveltePreprocess({
-      sourceMap: !production,
-      postcss: {
-        plugins: [autoprefixer()],
-      },
+        sourceMap: !production,
+        postcss: {
+          plugins: [autoprefixer()],
+        },
       }),
       compilerOptions: {dev: !deploy, hydratable: true, css: "injected"},
     }),

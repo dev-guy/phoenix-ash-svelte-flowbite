@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@goodware/svelte-kanban':
-    specifier: 1.0.0
-    version: 1.0.0(svelte@4.2.0)
+    specifier: ^1.1.1
+    version: 1.1.1(@reactivedata/reactive@0.2.2)(svelte@4.2.0)(yjs@13.6.7)
   '@milkdown/core':
     specifier: ^7.3.0
     version: 7.3.0(@milkdown/ctx@7.3.0)(@milkdown/prose@7.3.0)(@milkdown/transformer@7.3.0)
@@ -60,8 +60,8 @@ devDependencies:
     specifier: ^2.1.7
     version: 2.1.7(@tiptap/pm@2.1.7)
   '@types/node':
-    specifier: ^20.5.7
-    version: 20.5.7
+    specifier: ^20.5.9
+    version: 20.5.9
   autoprefixer:
     specifier: ^10.4.15
     version: 10.4.15(postcss@8.4.29)
@@ -358,13 +358,22 @@ packages:
     dev: true
     optional: true
 
-  /@goodware/svelte-kanban@1.0.0(svelte@4.2.0):
-    resolution: {integrity: sha512-Pr0rNwUWsHQqGwXCUWiGLQAtdV7SKRuzecrQsMIjLyl67L1oGs8jhoHbf313MMCKI+UtXdzESAYZDOlybHMd7Q==}
+  /@goodware/svelte-kanban@1.1.1(@reactivedata/reactive@0.2.2)(svelte@4.2.0)(yjs@13.6.7):
+    resolution: {integrity: sha512-K+DBYnXVfk22jMcUIY29jH8VKgmr0BxlFapkwe1AkCcbY/0wmRdj01lV6JjOMqnyDLa9lGXTTAJfsrE2gaYIYg==}
     engines: {node: '>=16.14'}
     peerDependencies:
       svelte: ^3.46.4 || ^4.0.0
     dependencies:
+      '@syncedstore/core': 0.6.0-alpha.0(yjs@13.6.7)
+      '@syncedstore/svelte': 0.6.0-alpha.0(@reactivedata/reactive@0.2.2)(@syncedstore/core@0.6.0-alpha.0)(svelte@4.2.0)
       svelte: 4.2.0
+      y-webrtc: 10.2.5
+    transitivePeerDependencies:
+      - '@reactivedata/reactive'
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+      - yjs
     dev: true
 
   /@jridgewell/gen-mapping@0.3.3:
@@ -635,6 +644,10 @@ packages:
       tslib: 2.6.2
     dev: true
 
+  /@reactivedata/reactive@0.2.2:
+    resolution: {integrity: sha512-KnINM/Sng25QAv6sHkJO9q/XyslLegCF5jTsTSVu+AouY3uZDVf4Am99xNCqsfqFZFvnTBBDvCsHNdvTVGvPEA==}
+    dev: true
+
   /@remirror/core-constants@2.0.2:
     resolution: {integrity: sha512-dyHY+sMF0ihPus3O27ODd4+agdHMEmuRdyiZJ2CCWjPV5UFmn17ZbElvk6WOGVE4rdCJKZQCrPV2BcikOMLUGQ==}
     dev: true
@@ -698,6 +711,38 @@ packages:
       tailwindcss: '>=3.0.0'
     dependencies:
       tailwindcss: 3.3.3
+    dev: true
+
+  /@syncedstore/core@0.6.0-alpha.0(yjs@13.6.7):
+    resolution: {integrity: sha512-Fo/iGOU/esZd81skwTc1JF8tauHou08QK1O3WEvmG2YPdpU9jmbcBUCLB4IuC9IGR3ATFOSA5Ih6B+/00XzooQ==}
+    peerDependencies:
+      yjs: ^13.5.13
+    dependencies:
+      '@reactivedata/reactive': 0.2.2
+      '@syncedstore/yjs-reactive-bindings': 0.5.2(yjs@13.6.7)
+      '@types/eslint': 6.8.0
+      yjs: 13.6.7
+    dev: true
+
+  /@syncedstore/svelte@0.6.0-alpha.0(@reactivedata/reactive@0.2.2)(@syncedstore/core@0.6.0-alpha.0)(svelte@4.2.0):
+    resolution: {integrity: sha512-Sr5mYJ5sUyRamx0azVr5V9qRY+vdclmYUFfOWcqQORUeR1fU4BQxDJkQVg2GY29RRsc9o4WzNLdyMvuKevObPw==}
+    peerDependencies:
+      '@reactivedata/reactive': '*'
+      '@syncedstore/core': '*'
+      svelte: '*'
+    dependencies:
+      '@reactivedata/reactive': 0.2.2
+      '@syncedstore/core': 0.6.0-alpha.0(yjs@13.6.7)
+      svelte: 4.2.0
+    dev: true
+
+  /@syncedstore/yjs-reactive-bindings@0.5.2(yjs@13.6.7):
+    resolution: {integrity: sha512-5y4aUtZoDuvpnlCj2RxTR7P0UuQeF9SfL2K3S+JAqihYWECX8YEa0GvGRWgU7CEPpnLcFXkiSxDqgk87wu7fHw==}
+    peerDependencies:
+      yjs: ^13.5.13
+    dependencies:
+      '@types/eslint': 6.8.0
+      yjs: 13.6.7
     dev: true
 
   /@tiptap/core@2.1.7(@tiptap/pm@2.1.7):
@@ -955,8 +1000,19 @@ packages:
       '@types/trusted-types': 2.0.3
     dev: true
 
+  /@types/eslint@6.8.0:
+    resolution: {integrity: sha512-hqzmggoxkOubpgTdcOltkfc5N8IftRJqU70d1jbOISjjZVPvjcr+CLi2CI70hx1SUIRkLgpglTy9w28nGe2Hsw==}
+    dependencies:
+      '@types/estree': 1.0.1
+      '@types/json-schema': 7.0.12
+    dev: true
+
   /@types/estree@1.0.1:
     resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
+    dev: true
+
+  /@types/json-schema@7.0.12:
+    resolution: {integrity: sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==}
     dev: true
 
   /@types/mdast@3.0.12:
@@ -979,8 +1035,8 @@ packages:
     resolution: {integrity: sha512-PfF1qL/9veo8BSHLV84C9ORNr3lHSlnWJ6yU8OdNufoftajeWHTLVbGHvp2B7e7DPDS9gMs6cfeSsqo5rqSitg==}
     dev: true
 
-  /@types/node@20.5.7:
-    resolution: {integrity: sha512-dP7f3LdZIysZnmvP3ANJYTSwg+wLLl8p7RqniVlV7j+oXSXAbt9h0WIBFmJy5inWZoX9wZN6eXx+YXd9Rh3RBA==}
+  /@types/node@20.5.9:
+    resolution: {integrity: sha512-PcGNd//40kHAS3sTlzKB9C9XL4K0sTup8nbG5lC14kzEteTNuAFh9u5nA0o5TWnSG2r/JNPRXFVcHJIIeRlmqQ==}
     dev: true
 
   /@types/object.omit@3.0.0:
@@ -1095,8 +1151,8 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.10
-      caniuse-lite: 1.0.30001524
-      fraction.js: 4.3.2
+      caniuse-lite: 1.0.30001525
+      fraction.js: 4.3.6
       normalize-range: 0.1.2
       picocolors: 1.0.0
       postcss: 8.4.29
@@ -1145,8 +1201,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001524
-      electron-to-chromium: 1.4.506
+      caniuse-lite: 1.0.30001525
+      electron-to-chromium: 1.4.508
       node-releases: 2.0.13
       update-browserslist-db: 1.0.11(browserslist@4.21.10)
     dev: true
@@ -1181,8 +1237,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /caniuse-lite@1.0.30001524:
-    resolution: {integrity: sha512-Jj917pJtYg9HSJBF95HVX3Cdr89JUyLT4IZ8SvM5aDRni95swKgYi3TgYLH5hnGfPE/U1dg6IfZ50UsIlLkwSA==}
+  /caniuse-lite@1.0.30001525:
+    resolution: {integrity: sha512-/3z+wB4icFt3r0USMwxujAqRvaD/B7rvGTsKhbhSQErVrJvkZCLhgNLJxU8MevahQVH6hCU9FsHdNUFbiwmE7Q==}
     dev: true
 
   /case-anything@2.1.13:
@@ -1679,8 +1735,8 @@ packages:
     resolution: {integrity: sha512-F9e6wPGtY+8KNMRAVfxeCOHU0/NPWMSENNq4pQctuXRqqdEPW7q3CrLbR5Nse044WwacyjHGOMlvNsBe1y6z9A==}
     dev: true
 
-  /electron-to-chromium@1.4.506:
-    resolution: {integrity: sha512-xxGct4GPAKSRlrLBtJxJFYy74W11zX6PO9GyHgl/U+2s3Dp0ZEwAklDfNHXOWcvH7zWMpsmgbR0ggEuaYAVvHA==}
+  /electron-to-chromium@1.4.508:
+    resolution: {integrity: sha512-FFa8QKjQK/A5QuFr2167myhMesGrhlOBD+3cYNxO9/S4XzHEXesyTD/1/xF644gC8buFPz3ca6G1LOQD0tZrrg==}
     dev: true
 
   /elkjs@0.8.2:
@@ -1868,8 +1924,8 @@ packages:
       mini-svg-data-uri: 1.4.4
     dev: true
 
-  /fraction.js@4.3.2:
-    resolution: {integrity: sha512-9VLF466MqX1OUP7/d9r7/Vsvu6Hpp+taXBLmiR5x6mEYfT0BDkGVBt5TyA1aDu1WzIE1sF8F66evOFaz7iAEGQ==}
+  /fraction.js@4.3.6:
+    resolution: {integrity: sha512-n2aZ9tNfYDwaHhvFTkhFErqOMIb8uyzSQ+vGJBjZyanAKZVbGUQ1sngfk9FdkBw7G26O7AgNjLcecLffD1c7eg==}
     dev: true
 
   /fs-extra@8.1.0:
