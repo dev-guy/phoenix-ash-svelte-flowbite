@@ -2,7 +2,7 @@
   "name": "kantan",
   "version": "0.1.0",
   "devDependencies": {
-    "@goodware/svelte-kanban": "^1.1.7",
+    "@goodware/svelte-kanban": "^1.1.12",
     "@milkdown/core": "^7.3.0",
     "@milkdown/plugin-collab": "^7.3.0",
     "@milkdown/plugin-diagram": "^7.3.0",
@@ -20,7 +20,7 @@
     "@tiptap/extension-task-list": "^2.1.8",
     "@tiptap/extension-text": "^2.1.8",
     "@tiptap/starter-kit": "^2.1.8",
-    "@types/node": "^20.5.9",
+    "@types/node": "^20.6.0",
     "autoprefixer": "^10.4.15",
     "esbuild": "^0.19.2",
     "esbuild-plugin-import-glob": "^0.1.1",
