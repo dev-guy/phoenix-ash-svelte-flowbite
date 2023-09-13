@@ -36,11 +36,11 @@ devDependencies:
     specifier: ^0.2.6
     version: 0.2.6(svelte@4.2.0)
   '@skeletonlabs/skeleton':
-    specifier: ^2.0.0
-    version: 2.0.0(svelte@4.2.0)
+    specifier: ^2.1.0
+    version: 2.1.0(svelte@4.2.0)
   '@skeletonlabs/tw-plugin':
-    specifier: ^0.1.0
-    version: 0.1.0(tailwindcss@3.3.3)
+    specifier: ^0.2.0
+    version: 0.2.0(tailwindcss@3.3.3)
   '@tiptap/core':
     specifier: ^2.1.8
     version: 2.1.8(@tiptap/pm@2.1.8)
@@ -696,8 +696,8 @@ packages:
       escape-string-regexp: 5.0.0
     dev: true
 
-  /@skeletonlabs/skeleton@2.0.0(svelte@4.2.0):
-    resolution: {integrity: sha512-8SaDK3kEUU57cSb/5a984EbINgnOPzShlkwPkduAhqc71SEqhRvx+RlLEpe1174NAYi00oi//LguIAYuVrSfBA==}
+  /@skeletonlabs/skeleton@2.1.0(svelte@4.2.0):
+    resolution: {integrity: sha512-i+H67MTo9w3BP8dqr0l9qjVWmxEDwLyTqif/+pTmTOpAZpV/B3wqHShtoh0sxminUBSncE3bsNdn694B+6zUnw==}
     peerDependencies:
       svelte: ^3.56.0 || ^4.0.0
     dependencies:
@@ -705,8 +705,8 @@ packages:
       svelte: 4.2.0
     dev: true
 
-  /@skeletonlabs/tw-plugin@0.1.0(tailwindcss@3.3.3):
-    resolution: {integrity: sha512-ufnm4FS+s/khuho4yJ/uqfW91u2YXnH3E5N541MtX9XjmoimQzYIcxWyTIuX9AM/brIPP6M6l0et3nRx17CRoQ==}
+  /@skeletonlabs/tw-plugin@0.2.0(tailwindcss@3.3.3):
+    resolution: {integrity: sha512-Mtao12JMrmlYvhv9AfvKNBd5qz+v5MImMG9tri++/4FUORAmzB3F3Qq9+ukfdDtoPT/+Q1CRPn1CL05gDxsKSQ==}
     peerDependencies:
       tailwindcss: '>=3.0.0'
     dependencies:
@@ -1151,7 +1151,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.10
-      caniuse-lite: 1.0.30001533
+      caniuse-lite: 1.0.30001534
       fraction.js: 4.3.6
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -1201,8 +1201,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001533
-      electron-to-chromium: 1.4.515
+      caniuse-lite: 1.0.30001534
+      electron-to-chromium: 1.4.518
       node-releases: 2.0.13
       update-browserslist-db: 1.0.11(browserslist@4.21.10)
     dev: true
@@ -1237,8 +1237,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /caniuse-lite@1.0.30001533:
-    resolution: {integrity: sha512-9aY/b05NKU4Yl2sbcJhn4A7MsGwR1EPfW/nrqsnqVA0Oq50wpmPaGI+R1Z0UKlUl96oxUkGEOILWtOHck0eCWw==}
+  /caniuse-lite@1.0.30001534:
+    resolution: {integrity: sha512-vlPVrhsCS7XaSh2VvWluIQEzVhefrUQcEsQWSS5A5V+dM07uv1qHeQzAOTGIMy9i3e9bH15+muvI/UHojVgS/Q==}
     dev: true
 
   /case-anything@2.1.13:
@@ -1735,8 +1735,8 @@ packages:
     resolution: {integrity: sha512-F9e6wPGtY+8KNMRAVfxeCOHU0/NPWMSENNq4pQctuXRqqdEPW7q3CrLbR5Nse044WwacyjHGOMlvNsBe1y6z9A==}
     dev: true
 
-  /electron-to-chromium@1.4.515:
-    resolution: {integrity: sha512-VTq6vjk3kCfG2qdzQRd/i9dIyVVm0dbtZIgFzrLgfB73mXDQT2HPKVRc1EoZcAVUv9XhXAu08DWqJuababdGGg==}
+  /electron-to-chromium@1.4.518:
+    resolution: {integrity: sha512-eqbfyW9i/en/qgIPsddW+cuxQvjq3KZmfH+/gc3f/gnynYj0qxee0yRmll69W0SGwiVD+goeU1J9LT6zDHDzlg==}
     dev: true
 
   /elkjs@0.8.2:
@@ -2273,8 +2273,8 @@ packages:
     dev: true
     optional: true
 
-  /lib0@0.2.84:
-    resolution: {integrity: sha512-DEDV6HYC0XRqV8iyNh2Q7AaiX2OT8gFYn/BOfpTOujLwhz9wleJaxf9bX0ltV5FxjRxsRpK9XRdhJSkHSf1Utg==}
+  /lib0@0.2.85:
+    resolution: {integrity: sha512-vtAhVttLXCu3ps2OIsTz8CdKYKdcMo7ds1MNBIcSXz6vrY8sxASqpTi4vmsAIn7xjWvyT7haKcWW6woP6jebjQ==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
@@ -3825,7 +3825,7 @@ packages:
     peerDependencies:
       yjs: ^13.0.0
     dependencies:
-      lib0: 0.2.84
+      lib0: 0.2.85
       yjs: 13.6.7
     dev: true
 
@@ -3836,7 +3836,7 @@ packages:
       yjs: ^13.0.0
     dependencies:
       level: 6.0.1
-      lib0: 0.2.84
+      lib0: 0.2.85
       yjs: 13.6.7
     dev: true
     optional: true
@@ -3850,7 +3850,7 @@ packages:
       y-protocols: ^1.0.1
       yjs: ^13.5.38
     dependencies:
-      lib0: 0.2.84
+      lib0: 0.2.85
       prosemirror-model: 1.19.3
       prosemirror-state: 1.4.3
       prosemirror-view: 1.31.8
@@ -3861,7 +3861,7 @@ packages:
   /y-protocols@1.0.5:
     resolution: {integrity: sha512-Wil92b7cGk712lRHDqS4T90IczF6RkcvCwAD0A2OPg+adKmOe+nOiT/N2hvpQIWS3zfjmtL4CPaH5sIW1Hkm/A==}
     dependencies:
-      lib0: 0.2.84
+      lib0: 0.2.85
     dev: true
 
   /y-webrtc@10.2.5:
@@ -3869,7 +3869,7 @@ packages:
     engines: {node: '>=12'}
     hasBin: true
     dependencies:
-      lib0: 0.2.84
+      lib0: 0.2.85
       simple-peer: 9.11.1
       y-protocols: 1.0.5
     optionalDependencies:
@@ -3886,7 +3886,7 @@ packages:
     peerDependencies:
       yjs: ^13.5.6
     dependencies:
-      lib0: 0.2.84
+      lib0: 0.2.85
       lodash.debounce: 4.0.8
       y-protocols: 1.0.5
       yjs: 13.6.7
@@ -3936,7 +3936,7 @@ packages:
     resolution: {integrity: sha512-mCZTh4kjvUS2DnaktsYN6wLH3WZCJBLqrTdkWh1bIDpA/sB/GNFaLA/dyVJj2Hc7KwONuuoC/vWe9bwBBosZLQ==}
     engines: {node: '>=16.0.0', npm: '>=8.0.0'}
     dependencies:
-      lib0: 0.2.84
+      lib0: 0.2.85
     dev: true
 
   /zwitch@2.0.4:
