@@ -97,7 +97,7 @@ asdf install elixir 1.15.0
 asdf global elixir 1.15.0
 ```
 
-### Rust (for Rustler) - not yet needed
+### Rust (for Rustler)
 
 See https://www.rust-lang.org/tools/install
 

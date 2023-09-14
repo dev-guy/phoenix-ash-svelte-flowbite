@@ -47,8 +47,5 @@
     "y-webrtc": "^10.2.5",
     "y-websocket": "^1.5.0",
     "yjs": "^13.6.7"
-  },
-  "scripts": {
-    "build": "NODE_PATH=../../deps node build.js --deploy"
   }
 }
