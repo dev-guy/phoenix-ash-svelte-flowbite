@@ -1,5 +1,6 @@
 <script>
   import Kanban from '@goodware/svelte-kanban';
+  /*import Kanban from 'svelte-kanban';*/
 
   const colsList = [{
 			name: 'New',
