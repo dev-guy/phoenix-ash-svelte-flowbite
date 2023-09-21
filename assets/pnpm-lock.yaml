@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@goodware/svelte-kanban':
-    specifier: ^1.1.20
-    version: 1.1.20(svelte@4.2.1)
+    specifier: ^1.1.21
+    version: 1.1.21(@reactivedata/reactive@0.2.2)(svelte@4.2.1)(yjs@13.6.8)
   '@milkdown/core':
     specifier: ^7.3.0
     version: 7.3.0(@milkdown/ctx@7.3.0)(@milkdown/prose@7.3.0)(@milkdown/transformer@7.3.0)
@@ -358,13 +358,22 @@ packages:
     dev: true
     optional: true
 
-  /@goodware/svelte-kanban@1.1.20(svelte@4.2.1):
-    resolution: {integrity: sha512-ruSzAUa/NoWiWKBbEyHPlwJrXjkpuMWvKguqqHCVTOnXK1GqmJSQGvzvfzuIRIbtMMTo61kehZ4kR80NCoNDTg==}
+  /@goodware/svelte-kanban@1.1.21(@reactivedata/reactive@0.2.2)(svelte@4.2.1)(yjs@13.6.8):
+    resolution: {integrity: sha512-nCIBowjA9eyJ0Frye4eMOZw3Mc5RZS3n5SePkUXTbWmqwGE+Tejc/1QxZtkrFHXymVB0/xak9C5i37geg076MA==}
     engines: {node: '>=16.14'}
     peerDependencies:
       svelte: ^3.46.4 || ^4.0.0
     dependencies:
+      '@syncedstore/core': 0.6.0-alpha.0(yjs@13.6.8)
+      '@syncedstore/svelte': 0.6.0-alpha.0(@reactivedata/reactive@0.2.2)(@syncedstore/core@0.6.0-alpha.0)(svelte@4.2.1)
       svelte: 4.2.1
+      y-webrtc: 10.2.5(yjs@13.6.8)
+    transitivePeerDependencies:
+      - '@reactivedata/reactive'
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+      - yjs
     dev: true
 
   /@jridgewell/gen-mapping@0.3.3:
@@ -635,6 +644,10 @@ packages:
       tslib: 2.6.2
     dev: true
 
+  /@reactivedata/reactive@0.2.2:
+    resolution: {integrity: sha512-KnINM/Sng25QAv6sHkJO9q/XyslLegCF5jTsTSVu+AouY3uZDVf4Am99xNCqsfqFZFvnTBBDvCsHNdvTVGvPEA==}
+    dev: true
+
   /@remirror/core-constants@2.0.2:
     resolution: {integrity: sha512-dyHY+sMF0ihPus3O27ODd4+agdHMEmuRdyiZJ2CCWjPV5UFmn17ZbElvk6WOGVE4rdCJKZQCrPV2BcikOMLUGQ==}
     dev: true
@@ -698,6 +711,38 @@ packages:
       tailwindcss: '>=3.0.0'
     dependencies:
       tailwindcss: 3.3.3
+    dev: true
+
+  /@syncedstore/core@0.6.0-alpha.0(yjs@13.6.8):
+    resolution: {integrity: sha512-Fo/iGOU/esZd81skwTc1JF8tauHou08QK1O3WEvmG2YPdpU9jmbcBUCLB4IuC9IGR3ATFOSA5Ih6B+/00XzooQ==}
+    peerDependencies:
+      yjs: ^13.5.13
+    dependencies:
+      '@reactivedata/reactive': 0.2.2
+      '@syncedstore/yjs-reactive-bindings': 0.5.2(yjs@13.6.8)
+      '@types/eslint': 6.8.0
+      yjs: 13.6.8
+    dev: true
+
+  /@syncedstore/svelte@0.6.0-alpha.0(@reactivedata/reactive@0.2.2)(@syncedstore/core@0.6.0-alpha.0)(svelte@4.2.1):
+    resolution: {integrity: sha512-Sr5mYJ5sUyRamx0azVr5V9qRY+vdclmYUFfOWcqQORUeR1fU4BQxDJkQVg2GY29RRsc9o4WzNLdyMvuKevObPw==}
+    peerDependencies:
+      '@reactivedata/reactive': '*'
+      '@syncedstore/core': '*'
+      svelte: '*'
+    dependencies:
+      '@reactivedata/reactive': 0.2.2
+      '@syncedstore/core': 0.6.0-alpha.0(yjs@13.6.8)
+      svelte: 4.2.1
+    dev: true
+
+  /@syncedstore/yjs-reactive-bindings@0.5.2(yjs@13.6.8):
+    resolution: {integrity: sha512-5y4aUtZoDuvpnlCj2RxTR7P0UuQeF9SfL2K3S+JAqihYWECX8YEa0GvGRWgU7CEPpnLcFXkiSxDqgk87wu7fHw==}
+    peerDependencies:
+      yjs: ^13.5.13
+    dependencies:
+      '@types/eslint': 6.8.0
+      yjs: 13.6.8
     dev: true
 
   /@tiptap/core@2.1.11(@tiptap/pm@2.1.11):
@@ -955,8 +1000,19 @@ packages:
       '@types/trusted-types': 2.0.4
     dev: true
 
+  /@types/eslint@6.8.0:
+    resolution: {integrity: sha512-hqzmggoxkOubpgTdcOltkfc5N8IftRJqU70d1jbOISjjZVPvjcr+CLi2CI70hx1SUIRkLgpglTy9w28nGe2Hsw==}
+    dependencies:
+      '@types/estree': 1.0.1
+      '@types/json-schema': 7.0.13
+    dev: true
+
   /@types/estree@1.0.1:
     resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
+    dev: true
+
+  /@types/json-schema@7.0.13:
+    resolution: {integrity: sha512-RbSSoHliUbnXj3ny0CNFOoxrIDV6SUGyStHsvDqosw6CkdPV8TtWGlfecuK4ToyMEAql6pzNxgCFKanovUzlgQ==}
     dev: true
 
   /@types/mdast@3.0.12:

@@ -2,7 +2,7 @@
   "name": "kantan",
   "version": "0.1.0",
   "devDependencies": {
-    "@goodware/svelte-kanban": "^1.1.20",
+    "@goodware/svelte-kanban": "^1.1.21",
     "@milkdown/core": "^7.3.0",
     "@milkdown/plugin-collab": "^7.3.0",
     "@milkdown/plugin-diagram": "^7.3.0",
